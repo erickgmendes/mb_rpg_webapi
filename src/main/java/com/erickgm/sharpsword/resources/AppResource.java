@@ -46,7 +46,7 @@ public class AppResource {
 	@GetMapping("/carga_inicial")
 	@ApiOperation(value = "Este método executa a carga inicial nas tabelas do sistema")
 	public List<String> cargaInicial() {
-		List<String> lista = new ArrayList<String>();
+		List<String> lista = new ArrayList<>();
 
 		lista.add(racaService.cargaInicial());
 		lista.add(classeService.cargaInicial());

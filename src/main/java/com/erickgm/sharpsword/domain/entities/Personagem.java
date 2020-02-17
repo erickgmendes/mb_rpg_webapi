@@ -108,7 +108,7 @@ public class Personagem implements Serializable {
 	@OneToMany
 	private List<Municao> municoes;
 
-	public void calcularInformacoesIniciais() {
+	private void calcularInformacoesIniciais() {
 		forca = 0;
 		agilidade = 0;
 		inteligencia = 0;
@@ -231,7 +231,7 @@ public class Personagem implements Serializable {
 		return "Fauno".equals(raca.getNome()) ? 1 : 0;
 	}
 
-	public void calcularDeterminacao() {
+	private void calcularDeterminacao() {
 		int modificadorDeterminacao = vontade > inteligencia ? vontade : inteligencia;
 		determinacao = 8 + modificadorDeterminacao + bonusDeterminacao;
 	}
