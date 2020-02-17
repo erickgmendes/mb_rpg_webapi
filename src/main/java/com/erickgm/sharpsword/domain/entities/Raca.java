@@ -15,13 +15,10 @@ public class Raca implements Serializable {
 		super();
 	}
 
-	public Raca(Long id, String nome, Boolean usuarioEscolhe) {
-		
+	public Raca(Long id, String nome) {
 		super();
-		
 		this.id = id;
-		
-		modificaValores(nome, usuarioEscolhe);
+		modificaValores(nome);
 	}
 
 	private static final long serialVersionUID = 1L;
@@ -32,8 +29,6 @@ public class Raca implements Serializable {
 
 	@Column(unique = true, nullable = false)
 	private String nome;
-
-	private Boolean usuarioEscolhe;
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
@@ -55,17 +50,8 @@ public class Raca implements Serializable {
 		this.nome = nome;
 	}
 
-	public Boolean getUsuarioEscolhe() {
-		return usuarioEscolhe;
-	}
-
-	protected void setUsuarioEscolhe(Boolean usuarioEscolhe) {
-		this.usuarioEscolhe = usuarioEscolhe;
-	}
-
-	public void modificaValores(String nome, Boolean usuarioEscolhe) {
+	public void modificaValores(String nome) {
 		this.nome = nome;
-		this.usuarioEscolhe = usuarioEscolhe;
 	}
 
 }

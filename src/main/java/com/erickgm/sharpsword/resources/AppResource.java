@@ -54,11 +54,12 @@ public class AppResource {
 
 		lista.add(racaService.cargaInicial());
 		lista.add(classeService.cargaInicial());
-		lista.add(armaService.cargaInicial());
-		lista.add(armaduraService.cargaInicial());
-		lista.add(equipamentoService.cargaInicial());
-		lista.add(municaoService.cargaInicial());
-		lista.add(habilidadeService.cargaInicial());
+
+		// lista.add(armaService.cargaInicial());
+		// lista.add(armaduraService.cargaInicial());
+		// lista.add(equipamentoService.cargaInicial());
+		// lista.add(municaoService.cargaInicial());
+		// lista.add(habilidadeService.cargaInicial());
 		
 		return lista;
 	}

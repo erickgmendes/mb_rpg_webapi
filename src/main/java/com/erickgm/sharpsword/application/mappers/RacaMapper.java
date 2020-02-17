@@ -13,7 +13,6 @@ public class RacaMapper {
 
 		response.setId(raca.getId());
 		response.setNome(raca.getNome());
-		response.setUsuarioEscolhe(raca.getUsuarioEscolhe());
 
 		return response;
 	}

@@ -22,7 +22,12 @@ public class ClasseService {
 		List<Classe> itens = new ArrayList<Classe>();
 
 		if (classeRepository.count() == 0) {
+			itens.add(new Classe(null, "Clérigo"));
+			itens.add(new Classe(null, "Homem de Armas"));
+			itens.add(new Classe(null, "Ladrão"));
+			itens.add(new Classe(null, "Mago"));
 
+			/*
 			itens.add(new Classe(null, "Bardo"));
 			itens.add(new Classe(null, "Druida"));
 			itens.add(new Classe(null, "Espadachim"));
@@ -34,6 +39,7 @@ public class ClasseService {
 			itens.add(new Classe(null, "Rúnico"));
 			itens.add(new Classe(null, "Sacerdote"));
 			itens.add(new Classe(null, "Xamã"));
+			 */
 			
 			for (Classe item : itens) {
 				classeRepository.save(item);

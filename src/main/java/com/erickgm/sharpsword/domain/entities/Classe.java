@@ -53,20 +53,4 @@ public class Classe implements Serializable {
 		this.nome = nome;		
 	}
 
-/*
-	TODAS(0L, "Todas"), 
-	BARDO(1L, "Bardo"), 
-	DRUIDA(2L, "Druida"), 
-	ESPADACHIM(3L, "Espadachim"), 
-	FEITICEIRO(4L, "Feiticeiro"),
-	GUERREIRO(5L, "Guerreiro"), 
-	LADINO(6L, "Ladino"), 
-	PALADINO(7L, "Paladino"), 
-	PATRULHEIRO(8L, "Patrulheiro"),
-	RUNICO(9L, "R�nico"), 
-	SACERDOTE(10L, "Sacerdote"), 
-	XAMA(11L, "Xam�");
-
-*/
-
 }

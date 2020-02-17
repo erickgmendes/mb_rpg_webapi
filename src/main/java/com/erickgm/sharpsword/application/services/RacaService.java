@@ -19,87 +19,88 @@ import com.erickgm.sharpsword.repository.RacaRepository;
 @Service
 public class RacaService {
 
-	@Autowired
-	private RacaRepository racaRepository;
+    @Autowired
+    private RacaRepository racaRepository;
 
-	public String cargaInicial() {
-		List<Raca> itens = new ArrayList<Raca>();
+    public String cargaInicial() {
+        List<Raca> itens = new ArrayList<Raca>();
 
-		if (racaRepository.count() == 0) {
+        if (racaRepository.count() == 0) {
+            itens.add(new Raca(null, "Anões"));
+            itens.add(new Raca(null, "Elfos"));
+            itens.add(new Raca(null, "Halflings"));
+            itens.add(new Raca(null, "Humanos"));
+			/*
+			itens.add(new Raca(null, "Aesires"   ));
+			itens.add(new Raca(null, "Faens"     ));
+			itens.add(new Raca(null, "Faunos"    ));
+			itens.add(new Raca(null, "Firas"     ));
+			itens.add(new Raca(null, "Hamelins"  ));
+			itens.add(new Raca(null, "Jubans"    ));
+			itens.add(new Raca(null, "Levents"   ));
+			itens.add(new Raca(null, "Mahoks"    ));
+			itens.add(new Raca(null, "Metadílios"));
+			itens.add(new Raca(null, "Tailoxs"   ));
+			*/
+            for (Raca item : itens) {
+                racaRepository.save(item);
+            }
 
-			itens.add(new Raca(null, "Aesires", true));
-			itens.add(new Raca(null, "Anões", true));
-			itens.add(new Raca(null, "Elfos", true));
-			itens.add(new Raca(null, "Faens", true));
-			itens.add(new Raca(null, "Faunos", true));
-			itens.add(new Raca(null, "Firas", true));
-			itens.add(new Raca(null, "Hamelins", false));
-			itens.add(new Raca(null, "Humanos", true));
-			itens.add(new Raca(null, "Jubans", true));
-			itens.add(new Raca(null, "Levents", true));
-			itens.add(new Raca(null, "Mahoks", true));
-			itens.add(new Raca(null, "Metadílios", false));
-			itens.add(new Raca(null, "Tailoxs", true));		
+            return "Raças carregadas";
+        }
+        return "Não foi possível carregar Raças";
+    }
 
-			for (Raca item : itens) {
-				racaRepository.save(item);
-			}
+    public Page<Raca> listarRacasPaginacao(Integer pagina) {
+        return racaRepository.findAll(PageRequest.of(pagina, 10));
+    }
 
-			return "Raças carregadas";
-		}
-		return "Não foi possível carregar Raças";
-	}
+    public List<Raca> listarRacas() {
+        return racaRepository.findByOrderByNomeAsc();
+    }
 
-	public Page<Raca> listarRacasPaginacao(Integer pagina) {
-		return racaRepository.findAll(PageRequest.of(pagina, 10));
-	}
+    public RacaDtoResponse obterRacaPeloId(long id) {
+        Raca raca = racaRepository.findById(id);
+        return RacaMapper.mapToDtoResponse(raca);
+    }
 
-	public List<Raca> listarRacas() {
-		return racaRepository.findByOrderByNomeAsc();
-	}
+    public RacaDtoResponse incluirRaca(RacaDtoRequest dto) {
+        if (dto == null) {
+            return null;
+        }
 
-	public RacaDtoResponse obterRacaPeloId(long id) {
-		Raca raca = racaRepository.findById(id);
-		return RacaMapper.mapToDtoResponse(raca);
-	}
+        Raca raca = racaRepository.findByNome(dto.getNome());
+        if (raca != null) {
+            return RacaMapper.mapToDtoResponse(raca);
+        }
 
-	public RacaDtoResponse incluirRaca(RacaDtoRequest dto) {
-		if (dto == null) {
-			return null;
-		}
+        raca = new Raca(null, dto.getNome());
+        raca.modificaValores(dto.getNome());
+        raca = racaRepository.save(raca);
 
-		Raca raca = racaRepository.findByNome(dto.getNome());
-		if (raca != null) {
-			return RacaMapper.mapToDtoResponse(raca);
-		}
+        return RacaMapper.mapToDtoResponse(raca);
+    }
 
-		raca = new Raca(null, dto.getNome(), dto.getUsuarioEscolhe());
-		raca.modificaValores(dto.getNome(), dto.getUsuarioEscolhe());
-		raca = racaRepository.save(raca);
+    public RacaDtoResponse alterarRaca(long id, RacaDtoRequest dto) {
+        Raca raca = racaRepository.findById(id);
 
-		return RacaMapper.mapToDtoResponse(raca);
-	}
+        raca.modificaValores(dto.getNome());
 
-	public RacaDtoResponse alterarRaca(long id, RacaDtoRequest dto) {
-		Raca raca = racaRepository.findById(id);
+        racaRepository.save(raca);
 
-		raca.modificaValores(dto.getNome(), dto.getUsuarioEscolhe());
+        return RacaMapper.mapToDtoResponse(raca);
+    }
 
-		racaRepository.save(raca);
+    public boolean excluirRaca(long id) {
+        Raca raca = racaRepository.findById(id);
 
-		return RacaMapper.mapToDtoResponse(raca);
-	}
+        if (raca == null) {
+            return false;
+        }
 
-	public boolean excluirRaca(long id) {
-		Raca raca = racaRepository.findById(id);
+        racaRepository.delete(raca);
 
-		if (raca == null) {
-			return false;
-		}
-
-		racaRepository.delete(raca);
-
-		return true;
-	}
+        return true;
+    }
 
 }

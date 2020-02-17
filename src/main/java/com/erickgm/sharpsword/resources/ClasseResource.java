@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping(value = "/api")
-@Api(value = "API REST Raça")
+@Api(value = "API REST Classes")
 @CrossOrigin(origins = "*")
 public class ClasseResource {
 
@@ -38,7 +38,7 @@ public class ClasseResource {
 		return new ResponseEntity<List<ClasseDtoResponse>>(response, HttpStatus.OK);
 	}
 
-	@GetMapping("/classe/{id}")
+	@GetMapping("/classes/{id}")
 	@ApiOperation(value = "Este método retorna uma classe pelo seu identificador")
 	public ResponseEntity<ClasseDtoResponse> obterClassePeloId(@PathVariable(value = "id") long id) {
 		ClasseDtoResponse response = classeService.obterClassePeloId(id);
@@ -50,7 +50,7 @@ public class ClasseResource {
 		return new ResponseEntity<ClasseDtoResponse>(response, HttpStatus.OK);
 	}
 	
-	@PostMapping("/classe")
+	@PostMapping("/classes")
 	@ApiOperation(value = "Este método adiciona um classe")
 	public ResponseEntity<ClasseDtoResponse> incluirClasse(@RequestBody ClasseDtoRequest dto) {
 		ClasseDtoResponse response = classeService.incluirClasse(dto);
@@ -62,7 +62,7 @@ public class ClasseResource {
 		return new ResponseEntity<ClasseDtoResponse>(response, HttpStatus.OK);
 	}
 	
-	@PutMapping("/classe/{id}")
+	@PutMapping("/classes/{id}")
 	@ApiOperation(value = "Este método atualiza uma classe")
 	public ResponseEntity<ClasseDtoResponse> alterarClasse(@PathVariable(value = "id") long id, @RequestBody ClasseDtoRequest dto) {
 		ClasseDtoResponse response = classeService.alterarClasse(id, dto);
@@ -74,7 +74,7 @@ public class ClasseResource {
 		return new ResponseEntity<ClasseDtoResponse>(response, HttpStatus.OK);
 	}	
 
-	@DeleteMapping("/classe/{id}")
+	@DeleteMapping("/classes/{id}")
 	@ApiOperation(value = "Este método exclui uma classe")
 	public ResponseEntity<Boolean> excluirClasse(@PathVariable(value = "id") long id) {
 		if(!classeService.excluirClasse(id)) {

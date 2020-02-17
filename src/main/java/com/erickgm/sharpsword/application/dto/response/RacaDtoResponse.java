@@ -6,8 +6,6 @@ public class RacaDtoResponse {
 
 	private String nome;
 
-	private Boolean usuarioEscolhe;
-
 	public Long getId() {
 		return id;
 	}
@@ -22,14 +20,6 @@ public class RacaDtoResponse {
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public Boolean getUsuarioEscolhe() {
-		return usuarioEscolhe;
-	}
-
-	public void setUsuarioEscolhe(Boolean usuarioEscolhe) {
-		this.usuarioEscolhe = usuarioEscolhe;
 	}
 
 }
