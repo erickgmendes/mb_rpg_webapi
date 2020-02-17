@@ -2,17 +2,14 @@ package com.erickgm.sharpsword.domain.entities;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import com.erickgm.sharpsword.domain.enums.TipoArma;
 import com.erickgm.sharpsword.domain.enums.TipoDanoArma;
 import com.erickgm.sharpsword.domain.enums.TipoDistanciaArma;
 
 @Entity
+@Table(name = "armas")
 public class Arma implements Serializable {
 
 	protected Arma() {

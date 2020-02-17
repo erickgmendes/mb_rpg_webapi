@@ -19,7 +19,7 @@ public class ClasseService {
 	private ClasseRepository classeRepository;
 	
 	public String cargaInicial() {
-		List<Classe> itens = new ArrayList<Classe>();
+		List<Classe> itens = new ArrayList<>();
 
 		if (classeRepository.count() == 0) {
 			itens.add(new Classe(null, "Clérigo"));

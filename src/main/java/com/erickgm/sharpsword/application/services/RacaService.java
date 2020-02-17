@@ -23,7 +23,7 @@ public class RacaService {
     private RacaRepository racaRepository;
 
     public String cargaInicial() {
-        List<Raca> itens = new ArrayList<Raca>();
+        List<Raca> itens = new ArrayList<>();
 
         if (racaRepository.count() == 0) {
             itens.add(new Raca(null, "Anões"));
