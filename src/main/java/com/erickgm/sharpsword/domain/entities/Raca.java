@@ -21,7 +21,7 @@ public class Raca implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(generator = "seq_raca", strategy = GenerationType.AUTO)
+	@GeneratedValue(generator = "seq_raca", strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	@Column(unique = true, nullable = false)

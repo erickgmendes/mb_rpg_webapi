@@ -30,7 +30,7 @@ public class Habilidade implements Serializable {
 	}
 
 	@Id
-	@GeneratedValue(generator = "seq_habilidade", strategy = GenerationType.AUTO)
+	@GeneratedValue(generator = "seq_habilidade", strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	@Column(unique = true, nullable = false)

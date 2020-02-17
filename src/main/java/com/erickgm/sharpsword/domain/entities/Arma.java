@@ -29,7 +29,7 @@ public class Arma implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(generator = "seq_arma", strategy = GenerationType.AUTO)
+	@GeneratedValue(generator = "seq_arma", strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	private TipoArma tipoArma;

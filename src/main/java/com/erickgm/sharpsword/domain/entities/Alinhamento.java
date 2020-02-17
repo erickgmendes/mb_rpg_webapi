@@ -20,7 +20,7 @@ public class Alinhamento implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(generator = "seq_alinhamento", strategy = GenerationType.AUTO)
+    @GeneratedValue(generator = "seq_alinhamento", strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(unique = true, nullable = false)

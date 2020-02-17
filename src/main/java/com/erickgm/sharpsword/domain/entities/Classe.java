@@ -24,7 +24,7 @@ public class Classe implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(generator = "seq_classe", strategy = GenerationType.AUTO)
+	@GeneratedValue(generator = "seq_classe", strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	@Column(unique = true, nullable = false)

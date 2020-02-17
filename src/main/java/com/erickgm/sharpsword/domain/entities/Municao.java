@@ -24,7 +24,7 @@ public class Municao implements Serializable {
 	}
 
 	@Id
-	@GeneratedValue(generator = "seq_municao", strategy = GenerationType.AUTO)
+	@GeneratedValue(generator = "seq_municao", strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	@Column(unique = true)

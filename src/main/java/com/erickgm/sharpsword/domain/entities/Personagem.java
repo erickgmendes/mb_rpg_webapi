@@ -31,7 +31,7 @@ public class Personagem implements Serializable {
 	}
 
 	@Id
-	@GeneratedValue(generator = "seq_personagem", strategy = GenerationType.AUTO)
+	@GeneratedValue(generator = "seq_personagem", strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	@Column(unique = true)

@@ -24,7 +24,7 @@ public class Equipamento implements Serializable {
 	}
 
 	@Id
-	@GeneratedValue(generator = "seq_equipamento", strategy = GenerationType.AUTO)
+	@GeneratedValue(generator = "seq_equipamento", strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	@Column(unique = true)
