@@ -26,10 +26,10 @@ public class RacaService {
         List<Raca> itens = new ArrayList<>();
 
         if (racaRepository.count() == 0) {
-            itens.add(new Raca(null, "Anões"));
-            itens.add(new Raca(null, "Elfos"));
-            itens.add(new Raca(null, "Halflings"));
-            itens.add(new Raca(null, "Humanos"));
+            itens.add(new Raca(null, "Anão"));
+            itens.add(new Raca(null, "Elfo"));
+            itens.add(new Raca(null, "Halfling"));
+            itens.add(new Raca(null, "Humano"));
 			/*
 			itens.add(new Raca(null, "Aesires"   ));
 			itens.add(new Raca(null, "Faens"     ));
