@@ -16,16 +16,13 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 public class CalculosAtributoForcaResource {
 
-    @GetMapping("/CalculosAtributoForcaAjuste/{valor}")
+    @GetMapping("/calculosAtributoForca/{valor}")
     @ApiOperation(value = "Este método retorna uma classe pelo seu identificador")
-    public ResponseEntity<CalculoAtributoForcaDtoResponse> calcularAtributoForcaAjuste(@PathVariable(value = "valor") int valor) {
+    public ResponseEntity<CalculoAtributoForcaDtoResponse> calcularAtributoForca(@PathVariable(value = "valor") int valor) {
 
         String ajuste = "-5";
 
         switch (valor) {
-            case 1:
-                ajuste = "-5";
-                break;
             case 2: case 3:
                 ajuste = "-4";
                 break;
@@ -56,14 +53,11 @@ public class CalculosAtributoForcaResource {
             case 20: case 21:
                 ajuste =  "5";
                 break;
-            default:
-                ajuste =  "-5";
-                break;
         }
 
         CalculoAtributoForcaDtoResponse retorno = new CalculoAtributoForcaDtoResponse(ajuste);
 
-        return new ResponseEntity<CalculoAtributoForcaDtoResponse>(retorno, HttpStatus.OK);
+        return new ResponseEntity<>(retorno, HttpStatus.OK);
     }
 
 }
