@@ -6,27 +6,25 @@ public class InteligenciaDtoResponse {
     private String chanceDeAprenderMagia;
     private String magiasArcanasAdicionais;
 
-    public String getIdiomasAdicionais() {
-        return idiomasAdicionais;
+    protected InteligenciaDtoResponse() {
     }
 
-    public void setIdiomasAdicionais(String idiomasAdicionais) {
+    public InteligenciaDtoResponse(String idiomasAdicionais, String chanceDeAprenderMagia, String magiasArcanasAdicionais) {
         this.idiomasAdicionais = idiomasAdicionais;
+        this.chanceDeAprenderMagia = chanceDeAprenderMagia;
+        this.magiasArcanasAdicionais = magiasArcanasAdicionais;
+    }
+
+    public String getIdiomasAdicionais() {
+        return idiomasAdicionais;
     }
 
     public String getChanceDeAprenderMagia() {
         return chanceDeAprenderMagia;
     }
 
-    public void setChanceDeAprenderMagia(String chanceDeAprenderMagia) {
-        this.chanceDeAprenderMagia = chanceDeAprenderMagia;
-    }
-
     public String getMagiasArcanasAdicionais() {
         return magiasArcanasAdicionais;
     }
 
-    public void setMagiasArcanasAdicionais(String magiasArcanasAdicionais) {
-        this.magiasArcanasAdicionais = magiasArcanasAdicionais;
-    }
 }

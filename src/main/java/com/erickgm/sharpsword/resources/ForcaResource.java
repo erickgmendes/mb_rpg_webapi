@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 public class ForcaResource {
 
     @GetMapping("/forca/{valor}")
-    @ApiOperation(value = "Este método retorna uma classe pelo seu identificador")
+    @ApiOperation(value = "Este método retorna os cálculos para o atributo força")
     public ResponseEntity<ForcaDtoResponse> calcularForca(@PathVariable(value = "valor") int valor) {
 
         String ajuste = "-5";

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 public class InteligenciaResource {
 
     @GetMapping("/inteligencia/{valor}")
-    @ApiOperation(value = "Este método retorna uma classe pelo seu identificador")
+    @ApiOperation(value = "Este método retorna os cálculos para o atributo inteligência")
     public ResponseEntity<InteligenciaDtoResponse> calcularInteligencia(@PathVariable(value = "valor") int valor) {
 
          String idiomasAdicionais = "0";
@@ -44,10 +44,11 @@ public class InteligenciaResource {
                 break;
         }
 
-        InteligenciaDtoResponse retorno = new InteligenciaDtoResponse();
-        retorno.setIdiomasAdicionais(idiomasAdicionais);
-        retorno.setChanceDeAprenderMagia(chanceDeAprenderMagia);
-        retorno.setMagiasArcanasAdicionais(magiasArcanasAdicionais);
+        InteligenciaDtoResponse retorno = new InteligenciaDtoResponse(
+            idiomasAdicionais,
+            chanceDeAprenderMagia,
+            magiasArcanasAdicionais
+        );
 
         return new ResponseEntity<>(retorno, HttpStatus.OK);
     }
