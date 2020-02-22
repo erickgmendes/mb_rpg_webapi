@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping(value = "/api")
-@Api(value = "API REST Raça")
+@Api(value = "API REST Equipamento")
 @CrossOrigin(origins = "*")
 public class EquipamentoResource {
 
@@ -36,7 +36,7 @@ public class EquipamentoResource {
 	public ResponseEntity<List<EquipamentoDtoResponse>> listarEquipamento() {
 		List<EquipamentoDtoResponse> response = equipamentoService.listarEquipamentos();
 
-		return new ResponseEntity<List<EquipamentoDtoResponse>>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
 	@GetMapping("/equipamento/{id}")
@@ -45,10 +45,10 @@ public class EquipamentoResource {
 		EquipamentoDtoResponse response = equipamentoService.obterEquipamentoPeloId(id);
 
 		if (response == null) {
-			return new ResponseEntity<EquipamentoDtoResponse>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 
-		return new ResponseEntity<EquipamentoDtoResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	
 	@PostMapping("/equipamento")
@@ -57,10 +57,10 @@ public class EquipamentoResource {
 		EquipamentoDtoResponse response = equipamentoService.incluirEquipamento(dto);
 
 		if (response == null) {
-			return new ResponseEntity<EquipamentoDtoResponse>(HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 
-		return new ResponseEntity<EquipamentoDtoResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	
 	@PutMapping("/equipamento/{id}")
@@ -69,18 +69,18 @@ public class EquipamentoResource {
 		EquipamentoDtoResponse response = equipamentoService.alterarEquipamento(id, dto);
 
 		if (response == null) {
-			return new ResponseEntity<EquipamentoDtoResponse>(HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 
-		return new ResponseEntity<EquipamentoDtoResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}	
 
 	@DeleteMapping("/equipamento/{id}")
 	@ApiOperation(value = "Este método exclui uma equipamento")
 	public ResponseEntity<Boolean> excluirEquipamento(@PathVariable(value = "id") long id) {
 		if(!equipamentoService.excluirEquipamento(id)) {
-			return new ResponseEntity<Boolean>(false, HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(false, HttpStatus.BAD_REQUEST);
 		}
-		return new ResponseEntity<Boolean>(true, HttpStatus.OK);
+		return new ResponseEntity<>(true, HttpStatus.OK);
 	}
 }

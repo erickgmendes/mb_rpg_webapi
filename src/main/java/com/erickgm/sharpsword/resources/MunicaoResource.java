@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping(value = "/api")
-@Api(value = "API REST Raça")
+@Api(value = "API REST Munição")
 @CrossOrigin(origins = "*")
 public class MunicaoResource {
 
@@ -36,7 +36,7 @@ public class MunicaoResource {
 	public ResponseEntity<List<MunicaoDtoResponse>> listarMunicao() {
 		List<MunicaoDtoResponse> response = municaoService.listarMunicoes();
 
-		return new ResponseEntity<List<MunicaoDtoResponse>>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
 	@GetMapping("/municao/{id}")
@@ -45,10 +45,10 @@ public class MunicaoResource {
 		MunicaoDtoResponse response = municaoService.obterMunicaoPeloId(id);
 
 		if (response == null) {
-			return new ResponseEntity<MunicaoDtoResponse>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 
-		return new ResponseEntity<MunicaoDtoResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
 	@PostMapping("/municao")
@@ -57,10 +57,10 @@ public class MunicaoResource {
 		MunicaoDtoResponse response = municaoService.incluirMunicao(dto);
 
 		if (response == null) {
-			return new ResponseEntity<MunicaoDtoResponse>(HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 
-		return new ResponseEntity<MunicaoDtoResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
 	@PutMapping("/municao/{id}")
@@ -70,18 +70,18 @@ public class MunicaoResource {
 		MunicaoDtoResponse response = municaoService.alterarMunicao(id, dto);
 
 		if (response == null) {
-			return new ResponseEntity<MunicaoDtoResponse>(HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 
-		return new ResponseEntity<MunicaoDtoResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
 	@DeleteMapping("/municao/{id}")
 	@ApiOperation(value = "Este método exclui uma municao")
 	public ResponseEntity<Boolean> excluirMunicao(@PathVariable(value = "id") long id) {
 		if (!municaoService.excluirMunicao(id)) {
-			return new ResponseEntity<Boolean>(false, HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(false, HttpStatus.BAD_REQUEST);
 		}
-		return new ResponseEntity<Boolean>(true, HttpStatus.OK);
+		return new ResponseEntity<>(true, HttpStatus.OK);
 	}
 }

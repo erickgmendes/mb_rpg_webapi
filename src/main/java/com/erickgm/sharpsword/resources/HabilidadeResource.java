@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping(value = "/api")
-@Api(value = "API REST Raça")
+@Api(value = "API REST Habilidade")
 @CrossOrigin(origins = "*")
 public class HabilidadeResource {
 
@@ -36,7 +36,7 @@ public class HabilidadeResource {
 	public ResponseEntity<List<HabilidadeDtoResponse>> listarHabilidade() {
 		List<HabilidadeDtoResponse> response = habilidadeService.listarHabilidades();
 
-		return new ResponseEntity<List<HabilidadeDtoResponse>>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
 	@GetMapping("/habilidade/{id}")
@@ -45,10 +45,10 @@ public class HabilidadeResource {
 		HabilidadeDtoResponse response = habilidadeService.obterHabilidadePeloId(id);
 
 		if (response == null) {
-			return new ResponseEntity<HabilidadeDtoResponse>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 
-		return new ResponseEntity<HabilidadeDtoResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	
 	@PostMapping("/habilidade")
@@ -57,10 +57,10 @@ public class HabilidadeResource {
 		HabilidadeDtoResponse response = habilidadeService.incluirHabilidade(dto);
 
 		if (response == null) {
-			return new ResponseEntity<HabilidadeDtoResponse>(HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 
-		return new ResponseEntity<HabilidadeDtoResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	
 	@PutMapping("/habilidade/{id}")
@@ -69,18 +69,18 @@ public class HabilidadeResource {
 		HabilidadeDtoResponse response = habilidadeService.alterarHabilidade(id, dto);
 
 		if (response == null) {
-			return new ResponseEntity<HabilidadeDtoResponse>(HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 
-		return new ResponseEntity<HabilidadeDtoResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}	
 
 	@DeleteMapping("/habilidade/{id}")
 	@ApiOperation(value = "Este método exclui uma habilidade")
 	public ResponseEntity<Boolean> excluirHabilidade(@PathVariable(value = "id") long id) {
 		if(!habilidadeService.excluirHabilidade(id)) {
-			return new ResponseEntity<Boolean>(false, HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(false, HttpStatus.BAD_REQUEST);
 		}
-		return new ResponseEntity<Boolean>(true, HttpStatus.OK);
+		return new ResponseEntity<>(true, HttpStatus.OK);
 	}
 }

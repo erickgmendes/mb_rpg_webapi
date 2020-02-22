@@ -1,7 +1,6 @@
 package com.erickgm.sharpsword.resources;
 
 import com.erickgm.sharpsword.application.dto.response.DestrezaDtoResponse;
-import com.erickgm.sharpsword.application.dto.response.ForcaDtoResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
@@ -10,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/api")
-@Api(value = "API REST Classes")
+@Api(value = "API REST Destreza")
 @CrossOrigin(origins = "*")
 public class DestrezaResource {
 
@@ -89,7 +88,7 @@ public class DestrezaResource {
         DestrezaDtoResponse retorno = new DestrezaDtoResponse(ajuste,moverSeEmSilecioEabrirFechaduras,
                 localizarDesarmarArmadilhas, esconderSeNasSombrasEPungar);
 
-        return new ResponseEntity<DestrezaDtoResponse>(retorno, HttpStatus.OK);
+        return new ResponseEntity<>(retorno, HttpStatus.OK);
     }
 
 }
