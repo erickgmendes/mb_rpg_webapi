@@ -1,6 +1,6 @@
 package com.erickgm.sharpsword.application.dto.response;
 
-public class CalculoAtributoForcaDtoResponse {
+public class ForcaDtoResponse {
 
     private String ajuste;
 
@@ -8,11 +8,11 @@ public class CalculoAtributoForcaDtoResponse {
         return ajuste;
     }
 
-    protected CalculoAtributoForcaDtoResponse() {
+    protected ForcaDtoResponse() {
 
     }
 
-    public CalculoAtributoForcaDtoResponse(String ajuste) {
+    public ForcaDtoResponse(String ajuste) {
         this.ajuste = ajuste;
     }
 }

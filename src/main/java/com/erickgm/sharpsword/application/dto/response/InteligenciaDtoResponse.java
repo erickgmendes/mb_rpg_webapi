@@ -1,6 +1,6 @@
 package com.erickgm.sharpsword.application.dto.response;
 
-public class CalculoAtributoInteligenciaDtoResponse {
+public class InteligenciaDtoResponse {
 
     private String idiomasAdicionais;
     private String chanceDeAprenderMagia;

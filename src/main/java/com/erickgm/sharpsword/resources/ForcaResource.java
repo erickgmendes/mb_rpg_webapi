@@ -1,24 +1,21 @@
 package com.erickgm.sharpsword.resources;
 
-import com.erickgm.sharpsword.application.dto.response.CalculoAtributoForcaDtoResponse;
-import com.erickgm.sharpsword.application.dto.response.ClasseDtoResponse;
+import com.erickgm.sharpsword.application.dto.response.ForcaDtoResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping(value = "/api")
 @Api(value = "API REST Classes")
 @CrossOrigin(origins = "*")
-public class CalculosAtributoForcaResource {
+public class ForcaResource {
 
-    @GetMapping("/calculosAtributoForca/{valor}")
+    @GetMapping("/forca/{valor}")
     @ApiOperation(value = "Este método retorna uma classe pelo seu identificador")
-    public ResponseEntity<CalculoAtributoForcaDtoResponse> calcularAtributoForca(@PathVariable(value = "valor") int valor) {
+    public ResponseEntity<ForcaDtoResponse> calcularForca(@PathVariable(value = "valor") int valor) {
 
         String ajuste = "-5";
 
@@ -55,7 +52,7 @@ public class CalculosAtributoForcaResource {
                 break;
         }
 
-        CalculoAtributoForcaDtoResponse retorno = new CalculoAtributoForcaDtoResponse(ajuste);
+        ForcaDtoResponse retorno = new ForcaDtoResponse(ajuste);
 
         return new ResponseEntity<>(retorno, HttpStatus.OK);
     }

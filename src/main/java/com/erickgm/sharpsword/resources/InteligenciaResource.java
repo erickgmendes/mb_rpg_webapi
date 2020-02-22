@@ -1,6 +1,6 @@
 package com.erickgm.sharpsword.resources;
 
-import com.erickgm.sharpsword.application.dto.response.CalculoAtributoInteligenciaDtoResponse;
+import com.erickgm.sharpsword.application.dto.response.InteligenciaDtoResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/api")
 @Api(value = "API REST Classes")
 @CrossOrigin(origins = "*")
-public class CalculosAtributoInteligenciaResource {
+public class InteligenciaResource {
 
-    @GetMapping("/calculosAtributoInteligenciaAjuste/{valor}")
+    @GetMapping("/inteligencia/{valor}")
     @ApiOperation(value = "Este método retorna uma classe pelo seu identificador")
-    public ResponseEntity<CalculoAtributoInteligenciaDtoResponse> calcularAtributoInteligenciaAjuste(@PathVariable(value = "valor") int valor) {
+    public ResponseEntity<InteligenciaDtoResponse> calcularInteligencia(@PathVariable(value = "valor") int valor) {
 
          String idiomasAdicionais = "0";
          String chanceDeAprenderMagia = "0%";
@@ -44,7 +44,7 @@ public class CalculosAtributoInteligenciaResource {
                 break;
         }
 
-        CalculoAtributoInteligenciaDtoResponse retorno = new CalculoAtributoInteligenciaDtoResponse();
+        InteligenciaDtoResponse retorno = new InteligenciaDtoResponse();
         retorno.setIdiomasAdicionais(idiomasAdicionais);
         retorno.setChanceDeAprenderMagia(chanceDeAprenderMagia);
         retorno.setMagiasArcanasAdicionais(magiasArcanasAdicionais);
