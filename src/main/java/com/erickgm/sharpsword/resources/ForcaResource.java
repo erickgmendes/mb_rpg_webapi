@@ -36,19 +36,19 @@ public class ForcaResource {
                 ajuste =  "0";
                 break;
             case 12: case 13:
-                ajuste =  "1";
+                ajuste =  "+1";
                 break;
             case 14: case 15:
-                ajuste =  "2";
+                ajuste =  "+2";
                 break;
             case 16: case 17:
-                ajuste =  "3";
+                ajuste =  "+3";
                 break;
             case 18: case 19:
-                ajuste =  "4";
+                ajuste =  "+4";
                 break;
             case 20: case 21:
-                ajuste =  "5";
+                ajuste =  "+5";
                 break;
         }
 

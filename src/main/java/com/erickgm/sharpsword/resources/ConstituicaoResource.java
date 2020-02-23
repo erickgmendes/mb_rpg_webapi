@@ -40,23 +40,23 @@ public class ConstituicaoResource {
                 percentualRessurreicao = "10%";
                 break;
             case 12: case 13:
-                pontosDeVidaEProtecao =  "1";
+                pontosDeVidaEProtecao =  "+1";
                 percentualRessurreicao = "25%";
                 break;
             case 14: case 15:
-                pontosDeVidaEProtecao =  "2";
+                pontosDeVidaEProtecao =  "+2";
                 percentualRessurreicao = "50%";
                 break;
             case 16: case 17:
-                pontosDeVidaEProtecao =  "3";
+                pontosDeVidaEProtecao =  "+3";
                 percentualRessurreicao = "75%";
                 break;
             case 18: case 19:
-                pontosDeVidaEProtecao =  "4";
+                pontosDeVidaEProtecao =  "+4";
                 percentualRessurreicao = "95%";
                 break;
             case 20: case 21:
-                pontosDeVidaEProtecao =  "5";
+                pontosDeVidaEProtecao =  "+5";
                 percentualRessurreicao = "100%";
                 break;
         }
