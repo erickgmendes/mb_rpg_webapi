@@ -18,6 +18,9 @@ public class ForcaResource {
     public ResponseEntity<ForcaDtoResponse> calcularForca(@PathVariable(value = "valor") int valor) {
 
         String ajuste = "-5";
+        String cargaLeve = "0";
+        String cargaPesada = "0";
+        String cargaMaxima = "0";
 
         switch (valor) {
             case 2: case 3:
@@ -52,7 +55,7 @@ public class ForcaResource {
                 break;
         }
 
-        ForcaDtoResponse retorno = new ForcaDtoResponse(ajuste);
+        ForcaDtoResponse retorno = new ForcaDtoResponse(ajuste, cargaLeve, cargaPesada, cargaMaxima);
 
         return new ResponseEntity<>(retorno, HttpStatus.OK);
     }

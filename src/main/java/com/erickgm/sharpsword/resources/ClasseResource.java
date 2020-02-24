@@ -2,6 +2,7 @@ package com.erickgm.sharpsword.resources;
 
 import java.util.List;
 
+import com.erickgm.sharpsword.application.dto.response.ClerigoDtoResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -35,7 +36,7 @@ public class ClasseResource {
 	@ApiOperation(value = "Este método retorna uma lista de classes")
 	public ResponseEntity<List<ClasseDtoResponse>> listarClasse() {
 		List<ClasseDtoResponse> response = classeService.listarClasses();
-		return new ResponseEntity<List<ClasseDtoResponse>>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
 	@GetMapping("/classes/{id}")
@@ -44,10 +45,10 @@ public class ClasseResource {
 		ClasseDtoResponse response = classeService.obterClassePeloId(id);
 
 		if (response == null) {
-			return new ResponseEntity<ClasseDtoResponse>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 
-		return new ResponseEntity<ClasseDtoResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	
 	@PostMapping("/classes")
@@ -56,10 +57,10 @@ public class ClasseResource {
 		ClasseDtoResponse response = classeService.incluirClasse(dto);
 
 		if (response == null) {
-			return new ResponseEntity<ClasseDtoResponse>(HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 
-		return new ResponseEntity<ClasseDtoResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	
 	@PutMapping("/classes/{id}")
@@ -68,18 +69,18 @@ public class ClasseResource {
 		ClasseDtoResponse response = classeService.alterarClasse(id, dto);
 
 		if (response == null) {
-			return new ResponseEntity<ClasseDtoResponse>(HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 
-		return new ResponseEntity<ClasseDtoResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}	
 
 	@DeleteMapping("/classes/{id}")
 	@ApiOperation(value = "Este método exclui uma classe")
 	public ResponseEntity<Boolean> excluirClasse(@PathVariable(value = "id") long id) {
 		if(!classeService.excluirClasse(id)) {
-			return new ResponseEntity<Boolean>(false, HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(false, HttpStatus.BAD_REQUEST);
 		}
-		return new ResponseEntity<Boolean>(true, HttpStatus.OK);
+		return new ResponseEntity<>(true, HttpStatus.OK);
 	}
 }
