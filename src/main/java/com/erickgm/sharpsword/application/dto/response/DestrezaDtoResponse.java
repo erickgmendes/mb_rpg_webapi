@@ -2,48 +2,35 @@ package com.erickgm.sharpsword.application.dto.response;
 
 public class DestrezaDtoResponse {
 
-    private String ajuste;
+    private String ajusteAtaqueSurpresaDefesaProtecao;
     private String localizarDesarmarArmadilhas;
-    private String moverSeEmSilecio;
-    private String abrirFechaduras;
-    private String esconderSeNasSombras;
-    private String pungar;
+    private String moverSeEmSilecioAbrirFechaduras;
+    private String esconderSeNasSombrasPungar;
 
     protected DestrezaDtoResponse() {}
 
-    public DestrezaDtoResponse(String ajuste, String moverSeEmSilecioEabrirFechaduras,
-                               String localizarDesarmarArmadilhas,
-                               String esconderSeNasSombrasEPungar) {
+    public DestrezaDtoResponse(String ajusteAtaqueSurpresaDefesaProtecao, String localizarDesarmarArmadilhas,
+                               String moverSeEmSilecioAbrirFechaduras, String esconderSeNasSombrasPungar) {
 
-        this.ajuste = ajuste;
-        this.abrirFechaduras = moverSeEmSilecioEabrirFechaduras;
+        this.ajusteAtaqueSurpresaDefesaProtecao = ajusteAtaqueSurpresaDefesaProtecao;
         this.localizarDesarmarArmadilhas = localizarDesarmarArmadilhas;
-        this.moverSeEmSilecio = moverSeEmSilecioEabrirFechaduras;
-        this.esconderSeNasSombras = esconderSeNasSombrasEPungar;
-        this.pungar = esconderSeNasSombrasEPungar;
+        this.moverSeEmSilecioAbrirFechaduras = moverSeEmSilecioAbrirFechaduras;
+        this.esconderSeNasSombrasPungar = esconderSeNasSombrasPungar;
     }
 
-    public String getAjuste() {
-        return ajuste;
-    }
-
-    public String getAbrirFechaduras() {
-        return abrirFechaduras;
+    public String getAjusteAtaqueSurpresaDefesaProtecao() {
+        return ajusteAtaqueSurpresaDefesaProtecao;
     }
 
     public String getLocalizarDesarmarArmadilhas() {
         return localizarDesarmarArmadilhas;
     }
 
-    public String getMoverSeEmSilecio() {
-        return moverSeEmSilecio;
+    public String getMoverSeEmSilecioAbrirFechaduras() {
+        return moverSeEmSilecioAbrirFechaduras;
     }
 
-    public String getEsconderSeNasSombras() {
-        return esconderSeNasSombras;
-    }
-
-    public String getPungar() {
-        return pungar;
+    public String getEsconderSeNasSombrasPungar() {
+        return esconderSeNasSombrasPungar;
     }
 }
