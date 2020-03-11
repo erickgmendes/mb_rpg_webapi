@@ -22,25 +22,15 @@ public class ClasseService {
 		List<Classe> itens = new ArrayList<>();
 
 		if (classeRepository.count() == 0) {
-			itens.add(new Classe(null, "Clérigo"));
-			itens.add(new Classe(null, "Homem de Armas"));
-			itens.add(new Classe(null, "Ladrão"));
-			itens.add(new Classe(null, "Mago"));
+			itens.add(new Classe(null, "Espadachim",1,1,0,0));
+			itens.add(new Classe(null, "Guerreiro",1,1,0,0));
+			itens.add(new Classe(null, "Bárbaro",1,1,0,0));
+			itens.add(new Classe(null, "Paladino",1,0,0,1));
+			itens.add(new Classe(null, "Ranger",0,1,1,0));
+			itens.add(new Classe(null, "Ladrão",0,1,1,0));
+			itens.add(new Classe(null, "Feiticeiro",0,0,1,1));
+			itens.add(new Classe(null, "Sacerdote",0,0,1,1));
 
-			/*
-			itens.add(new Classe(null, "Bardo"));
-			itens.add(new Classe(null, "Druida"));
-			itens.add(new Classe(null, "Espadachim"));
-			itens.add(new Classe(null, "Feiticeiro"));
-			itens.add(new Classe(null, "Guerreiro"));
-			itens.add(new Classe(null, "Ladino"));
-			itens.add(new Classe(null, "Paladino"));
-			itens.add(new Classe(null, "Patrulheiro"));
-			itens.add(new Classe(null, "Rúnico"));
-			itens.add(new Classe(null, "Sacerdote"));
-			itens.add(new Classe(null, "Xamã"));
-			 */
-			
 			for (Classe item : itens) {
 				classeRepository.save(item);
 			}
@@ -59,43 +49,4 @@ public class ClasseService {
 		Classe classe = classeRepository.findById(id);
 		return  ClasseMapper.mapToDtoResponse(classe);
 	}
-
-	public ClasseDtoResponse incluirClasse(ClasseDtoRequest dto) {
-		if (dto == null) {
-			return null;
-		}
-
-		Classe classe = classeRepository.findByNome(dto.getNome());
-		if (classe != null) {
-			return ClasseMapper.mapToDtoResponse(classe);
-		}
-
-		classe = new Classe(null, dto.getNome());
-		classe = classeRepository.save(classe);
-
-		return ClasseMapper.mapToDtoResponse(classe);
-	}
-
-	public ClasseDtoResponse alterarClasse(long id, ClasseDtoRequest dto) {
-		Classe classe = classeRepository.findById(id);
-		
-		classe.modificaValores(dto.getNome());	
-		
-		classeRepository.save(classe);
-		
-		return ClasseMapper.mapToDtoResponse(classe);
-	}
-
-	public boolean excluirClasse(long id) {
-		Classe classe = classeRepository.findById(id);
-
-		if (classe == null) {
-			return false;
-		}
-
-		classeRepository.delete(classe);
-
-		return true;
-	}
-
 }

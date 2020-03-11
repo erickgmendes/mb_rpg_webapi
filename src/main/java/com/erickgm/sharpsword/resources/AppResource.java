@@ -40,9 +40,6 @@ public class AppResource {
 	@Autowired
 	private ClasseService classeService;
 
-	@Autowired
-	private AlinhamentoService alinhamentoService;
-
 	@GetMapping("/carga_inicial")
 	@ApiOperation(value = "Este método executa a carga inicial nas tabelas do sistema")
 	public List<String> cargaInicial() {
@@ -50,7 +47,6 @@ public class AppResource {
 
 		lista.add(racaService.cargaInicial());
 		lista.add(classeService.cargaInicial());
-		lista.add(alinhamentoService.cargaInicial());
 
 		// lista.add(armaService.cargaInicial());
 		// lista.add(armaduraService.cargaInicial());
