@@ -6,8 +6,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.erickgm.sharpsword.application.dto.response.RacaDtoResponse;
-import com.erickgm.sharpsword.application.mappers.RacaMapper;
 import com.erickgm.sharpsword.domain.entities.Raca;
 import com.erickgm.sharpsword.repository.RacaRepository;
 
@@ -30,7 +28,6 @@ public class RacaService {
             for (Raca item : itens) {
                 racaRepository.save(item);
             }
-
             return "Raças carregadas";
         }
         return "Não foi possível carregar Raças";
@@ -40,8 +37,4 @@ public class RacaService {
         return racaRepository.findByOrderByNomeAsc();
     }
 
-    public RacaDtoResponse obterRacaPeloId(long id) {
-        Raca raca = racaRepository.findById(id);
-        return RacaMapper.mapToDtoResponse(raca);
-    }
 }

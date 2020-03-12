@@ -2,16 +2,15 @@ package com.erickgm.sharpsword.resources;
 
 import java.util.List;
 
+import com.erickgm.sharpsword.domain.entities.Classe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.erickgm.sharpsword.application.dto.response.ClasseDtoResponse;
 import com.erickgm.sharpsword.application.services.ClasseService;
 
 import io.swagger.annotations.Api;
@@ -28,20 +27,8 @@ public class ClasseResource {
 
 	@GetMapping("/classes")
 	@ApiOperation(value = "Este método retorna uma lista de classes")
-	public ResponseEntity<List<ClasseDtoResponse>> listarClasse() {
-		List<ClasseDtoResponse> response = classeService.listarClasses();
-		return new ResponseEntity<>(response, HttpStatus.OK);
-	}
-
-	@GetMapping("/classes/{id}")
-	@ApiOperation(value = "Este método retorna uma classe pelo seu identificador")
-	public ResponseEntity<ClasseDtoResponse> obterClassePeloId(@PathVariable(value = "id") long id) {
-		ClasseDtoResponse response = classeService.obterClassePeloId(id);
-
-		if (response == null) {
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-		}
-
+	public ResponseEntity<List<Classe>> listarClasse() {
+		List<Classe> response = classeService.listarClasses();
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 }

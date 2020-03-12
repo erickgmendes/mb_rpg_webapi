@@ -6,9 +6,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.erickgm.sharpsword.application.dto.request.ClasseDtoRequest;
-import com.erickgm.sharpsword.application.dto.response.ClasseDtoResponse;
-import com.erickgm.sharpsword.application.mappers.ClasseMapper;
 import com.erickgm.sharpsword.domain.entities.Classe;
 import com.erickgm.sharpsword.repository.ClasseRepository;
 
@@ -40,13 +37,7 @@ public class ClasseService {
 		return "Não foi possível carregar Classes";
 	}
 
-	public List<ClasseDtoResponse> listarClasses() {
-		List<Classe> classes = classeRepository.findByOrderByNomeAsc();
-		return ClasseMapper.mapToListDtoResponse(classes);
-	}
-
-	public ClasseDtoResponse obterClassePeloId(long id) {
-		Classe classe = classeRepository.findById(id);
-		return  ClasseMapper.mapToDtoResponse(classe);
+	public List<Classe> listarClasses() {
+		return classeRepository.findByOrderByNomeAsc();
 	}
 }
