@@ -1,8 +1,11 @@
 package com.erickgm.sharpsword.domain.enums;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public enum TipoRaca {
 
-    TODAS("Todas"),
+    //TODAS("Todas"),
     AESIR("Aesir"),
     ANAO("Anão"),
     ELFO("Elfo"),
@@ -41,6 +44,45 @@ public enum TipoRaca {
                 return t;
         }
         return null;
+    }
+
+    public static List<TipoRaca> obterTodas() {
+        List<TipoRaca> retorno = new ArrayList<>();
+
+        for (TipoRaca t : TipoRaca.values())
+            retorno.add(t);
+
+        return retorno;
+    }
+
+    public static List<TipoRaca> obterTodasMenos(TipoRaca tipo) {
+        List<TipoRaca> retorno = new ArrayList<>();
+
+        for (TipoRaca t : TipoRaca.values())
+            if (!t.equals(tipo))
+                retorno.add(t);
+
+        return retorno;
+    }
+
+    public static List<TipoRaca> obterDupla(TipoRaca tipo1, TipoRaca tipo2) {
+        List<TipoRaca> retorno = new ArrayList<>();
+
+        for (TipoRaca t : TipoRaca.values())
+            if (t.equals(tipo1) || t.equals(tipo2))
+                retorno.add(t);
+
+        return retorno;
+    }
+
+    public static List<TipoRaca> obterTrio(TipoRaca tipo1, TipoRaca tipo2, TipoRaca tipo3) {
+        List<TipoRaca> retorno = new ArrayList<>();
+
+        for (TipoRaca t : TipoRaca.values())
+            if (t.equals(tipo1) || t.equals(tipo2) || t.equals(tipo3))
+                retorno.add(t);
+
+        return retorno;
     }
 
     @Override
