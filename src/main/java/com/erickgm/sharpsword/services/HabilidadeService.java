@@ -38,6 +38,7 @@ public class HabilidadeService {
 		if (habilidadeRepository.count() == 0) {
 			retorno += cargaHabilidadesGerais();
 			retorno += cargaHabilidadesTodasMenosAesir();
+            retorno += cargaHabilidadesTodasMenosMahok();
 			retorno += cargaHabilidadesAesir();
 			retorno += cargaHabilidadesAnao();
 			retorno += cargaHabilidadesElfo();
@@ -49,6 +50,7 @@ public class HabilidadeService {
 			retorno += cargaHabilidadesLevents();
 			retorno += cargaHabilidadesMahoks();
 			retorno += cargaHabilidadesTailoxs();
+			retorno += cargaHabilidades_Fauno_Juban();
 			retorno += cargaHabilidades_Faens_Elfos();
 			retorno += cargaHabilidades_Faunos_Elfos_Tailox();
 			retorno += cargaHabilidades_Aesir_Jubans();
@@ -215,11 +217,22 @@ public class HabilidadeService {
 				"Pinturas corporais são comuns entre os Faunos, utilizadas em rituais ou simplesmente como forma de expressão artística. Você deposita muita fé nos significados tradicionais das pinturas, ao ponto de conseguir se beneficiar dessa convicção quando estiver usando uma pintura. Sempre que estiver usando uma pintura corporal e que ela esteja completamente à mostra, você recebe um dos benefícios listados. Apenas uma pintura corporal pode ser usada por vez. Uma pintura corporal dura até você tomar banho – intencionalmente ou não! - ou dormir. Pintura de Caça: Realizada ao redor dos olhos e nas mãos. Você recebe +1 em seus testes ligados à visão e ataques à distância. Além disso, seus ataques à distância causam +1 de dano. Pintura de Guerra: Realizada nos braços, mãos e peito. Seus ataques corporais causam +2 de dano e você recebe Defesa +1 (Este é um bônus de esquiva). Pintura de Oração: Realizada ao redor da boca e pescoço. Você recebe +2 em todos os seus testes ligados à sua voz e instrumentos musicais de sopro, incluindo interações sociais (como convencer ou mentir) e cantar ou usar instrumentos musicais de sopro (incluindo Habilidades do tipo Música). Pintura Ritual: Realizada no peito e no rosto. Você recebe +1 em todos os seus testes ligados à liguagem corporal (como dançar, seduzir ou detectar mentiras) e Habilidades do tipo Magia. Especial: A tintura necessária para a pintura é feita com materiais simples, facilmente encontrados na natureza (como folhas ou frutas trituradas, carvão e argila) e geralmente não tem custo, mas o Mestre pode exigir que o personagem gaste meia hora em busca dos materiais necessários e no preparo da tintura. O processo de aplicar a pintura demora cerca de 10 minutos, e exige sucesso num teste de Inteligência (Dificuldade 8) que pode ser realizado por você mesmo ou por alguém em quem você confia.",
 				null, null, null, null, null));
 
-		habilidades.add(new Habilidade(null, "Sentidos de Caçador", TipoHabilidade.SUPORTE, listaRaca, 1,
-				"Você possui uma audição aguçada e uma visão treinada. Você rola +1d6 em todos os seus testes de Inteligência para perceber e rastrear alvos.",
-				null, null, null, null, ""));
 
 		return gravarHabilidades(habilidades, TipoRaca.FAUNO);
+	}
+
+	private String cargaHabilidades_Fauno_Juban(){
+		List<TipoRaca> listaTipoRacas = new ArrayList<>();
+		listaTipoRacas.add(TipoRaca.FAUNO);
+		listaTipoRacas.add(TipoRaca.JUBAN);
+		List<Raca> listaRacas = obterListaRaca(listaTipoRacas);
+		List<Habilidade> habilidades = new ArrayList<>();
+
+		habilidades.add(new Habilidade(null, "Sentidos de Caçador", TipoHabilidade.SUPORTE, listaRacas, 1,
+				"Você possui uma audição aguçada e uma visão treinada. Você rola +1d6 em todos os seus testes de Inteligência envolvendo percepção, para perceber e rastrear alvos.",
+				null, null, null, null, null));
+
+		return gravarHabilidades(habilidades, listaTipoRacas);
 	}
 
 	private String cargaHabilidades_Faens_Elfos() {
@@ -299,7 +312,7 @@ public class HabilidadeService {
 		List<Habilidade> habilidades = new ArrayList<>();
 
 		habilidades.add(new Habilidade(null, "Estabilidade", TipoHabilidade.SUPORTE, listaRacas, 1,
-				" Você gosta de ter os dois pés solidamente plantados no chão – e faz isso muito bem! Você sempre rola +1d6 em todos os seus testes de evitar quedas e manter o equilíbrio. ",
+				" Você gosta de ter os dois pés solidamente plantados no chão – e faz isso muito bem! Você sempre rola +1d6 em todos os seus testes de evitar quedas e manter o equilíbrio.",
 				null, null, null, null, null));
 
 		habilidades.add(new Habilidade(null, "Nascido nas Montanhas", TipoHabilidade.SUPORTE, listaRacas, 1,
@@ -399,10 +412,10 @@ public class HabilidadeService {
 				null, null, null, null, "Vontade+1;Determinação+2"));
 
 		habilidades.add(new Habilidade(null, "Coração da Montanha 2", TipoHabilidade.SUPORTE, listaRaca, 1,
-				"Você é ainda mais vigoroso e resistente que a maioria dos Anões. Você tem +5 Pontos de Vida e é imune à todas as doenças de origem natural ou mágica e rola +1d6 em testes para resistir a quaisquer efeitos de fadiga ou outros efeitos físicos. Esse bônus se acumula com o bônus de Vigor da Montanha. ",
+				"Você é ainda mais vigoroso e resistente que a maioria dos Anões. Você tem +5 Pontos de Vida e é imune à todas as doenças de origem natural ou mágica e rola +1d6 em testes para resistir a quaisquer efeitos de fadiga ou outros efeitos físicos. Esse bônus se acumula com o bônus de Vigor da Montanha.",
 				null, null, null, null, "PV+5"));
 
-		habilidades.add(new Habilidade(null, "Duro como Pedra ", TipoHabilidade.SUPORTE, listaRaca, 1,
+		habilidades.add(new Habilidade(null, "Duro como Pedra", TipoHabilidade.SUPORTE, listaRaca, 1,
 				"Sua pele é mais grossa e resistente que a da maioria dos outros Anões. Você tem +10 Pontos de Vida e Defesa +1 (esse bônus de Defesa conta como Armadura).",
 				"Você só pode selecionar essa Habilidade durante a criação do personagem.", null, null, null,
 				"PV+10;Defesa+1"));
@@ -424,7 +437,7 @@ public class HabilidadeService {
 		List<Raca> listaRaca = obterListaRaca(listaTipoRacas);
 		List<Habilidade> habilidades = new ArrayList<>();
 
-		habilidades.add(new Habilidade(null, "Vigor Nórdico ", TipoHabilidade.SUPORTE, listaRaca, 1,
+		habilidades.add(new Habilidade(null, "Vigor Nórdico", TipoHabilidade.SUPORTE, listaRaca, 1,
 				"Você nasceu em uma região gelada, e os rigores climáticos de Eishelm tornaram você vigoroso e resiliente. Você é Resistente à Frio e não é afetado nem por efeitos de climas gelados nem por efeitos provenientes de danos por Frio (como Enregelamento).",
 				null, null, null, null, null));
 
@@ -437,7 +450,7 @@ public class HabilidadeService {
 				"Você confia mais nas suas habilidades naturais do que em armaduras para se defender. Quando não estiver usando armadura, você recebe +2 em sua Defesa. Quando escolhe essa Habilidade, você deve escolher se este será um bônus de Bloqueio ou Esquiva. Essa escolha é permanente e não pode ser mudada mais tarde.",
 				null, null, null, null, "Defesa+2"));
 
-		habilidades.add(new Habilidade(null, "Bravura Selvagem 2 ", TipoHabilidade.SUPORTE, listaRaca, 5,
+		habilidades.add(new Habilidade(null, "Bravura Selvagem 2", TipoHabilidade.SUPORTE, listaRaca, 5,
 				"Você veste sua bravura em batalha melhor do que alguns vestem armaduras. O Bônus Defesa conferido por Bravura Selvagem 1 aumenta para +4 e você pode escolher se esse bônus será de Bloqueio ou Esquiva no início de cada um de seus turnos, como uma ação livre.",
 				null, null, null, "Bravura Selvagem 1", null));
 
@@ -480,19 +493,45 @@ public class HabilidadeService {
 		return gravarHabilidades(habilidades, listaTipoRacas);
 	}
 
+    private String cargaHabilidadesTodasMenosMahok(){
+        List<TipoRaca> listaTipoRacas = new ArrayList<>();
+        listaTipoRacas.add(TipoRaca.AESIR);
+        listaTipoRacas.add(TipoRaca.ANAO);
+        listaTipoRacas.add(TipoRaca.ELFO);
+        listaTipoRacas.add(TipoRaca.FAEN);
+        listaTipoRacas.add(TipoRaca.FAUNO);
+        listaTipoRacas.add(TipoRaca.FIRA);
+        listaTipoRacas.add(TipoRaca.HUMANO);
+        listaTipoRacas.add(TipoRaca.JUBAN);
+        listaTipoRacas.add(TipoRaca.LEVENT);
+        listaTipoRacas.add(TipoRaca.TAILOX);
+        List<Raca> listaRaca = obterListaRaca(listaTipoRacas);
+        List<Habilidade> habilidades = new ArrayList<>();
+
+        habilidades.add(new Habilidade(null, "Sentidos Apurados", TipoHabilidade.SUPORTE, listaRaca, 1,
+                "Você possui sentidos treinados e extremamente apurados e aprendeu a confiar instintivamente no que eles captam. Você recebe +2 em todos os testes de para perceber, procurar, observar, ouvir ou usar seus cinco sentidos e também em testes de Iniciativa.",
+                null, null, 0, null, "Força+2"));
+
+        return gravarHabilidades(habilidades, listaTipoRacas);
+    }
+
 	private String cargaHabilidadesFiras() {
 		List<TipoRaca> listaTipoRacas = new ArrayList<>();
 		listaTipoRacas.add(TipoRaca.FIRA);
 		List<Raca> listaRaca = obterListaRaca(listaTipoRacas);
 		List<Habilidade> habilidades = new ArrayList<>();
 
-		habilidades.add(new Habilidade(null, "Habitante do Deserto ", TipoHabilidade.SUPORTE, listaRaca, 1,
+		habilidades.add(new Habilidade(null, "Habitante do Deserto", TipoHabilidade.SUPORTE, listaRaca, 1,
 				"Você descende de um povo que enfrentou os rigores do deserto sem esmorecer. Você é Resistente a Fogo e pode passar até 5 dias sem precisar ingerir água. Além disso, você não é afetado por climas particularmente quentes ou áridos.",
 				null, null, null, null, null));
 
 		habilidades.add(new Habilidade(null, "Chamas Internas 1", TipoHabilidade.ACAO, listaRaca, 1,
 				" O Vigor de Hou incendeia seu espírito e encandece seu corpo. Você é capaz de produzir tanto calor em seu interior que se torna incandescente durante 1 minuto, ficando Imune à Fogo (ou, se você já possui Imunidade à Fogo, você passa a absorver fogo, recuperando uma quantidade de Pontos de Vida iguais à qualquer quantidade de dano por fogo que sofreria). Além disso, qualquer um que toca-lo (ou que seja atingido por seus ataques desarmados) sofre dano igual à 6/Fogo.",
 				null, null, 10, null, null));
+
+		habilidades.add(new Habilidade(null, "Chamas Internas 2", TipoHabilidade.ACAO, listaRaca, 1,
+				"O Vigor de Hou incendeia seu espírito e encandece seu corpo. Você é capaz de produzir tanto calor em seu interior que se torna incandescente durante 1 minuto, ficando Imune à Fogo (ou, se você já possui Imunidade à Fogo, você passa a absorver fogo, recuperando uma quantidade de Pontos de Vida iguais à qualquer quantidade de dano por fogo que sofreria). Além disso, qualquer um que toca-lo (ou que seja atingido por seus ataques desarmados) sofre dano igual à 6/Fogo.",
+				null, null, 20, "Chamas Internas 1", null));
 
 		habilidades.add(new Habilidade(null, "Cavaleiro Experiente", TipoHabilidade.SUPORTE, listaRaca, 1,
 				"Você passou muito tempo com animais de montaria e conhece seus hábitos, características e como lidar com eles. Você recebe +1d6 em todas as suas rolagens referentes à criaturas com a Habilidade Montaria – incluindo cavalgar, treinar e atacar.",
@@ -503,7 +542,7 @@ public class HabilidadeService {
 				"Você só pode selecionar essa Habilidade durante a criação do personagem.", null, null, null, null));
 
 		habilidades.add(new Habilidade(null, "Sopro de Fogo", TipoHabilidade.ACAO, listaRaca, 1,
-				"Você é capaz de externar o calor do seu corpo na forma de potentes labaredas. Todos que estiverem numa área até 3 metros a sua frente sofrem dano igual à 20/fogo. ",
+				"Você é capaz de externar o calor do seu corpo na forma de potentes labaredas. Todos que estiverem numa área até 3 metros a sua frente sofrem dano igual à 20/fogo.",
 				null, null, 30, "Chamas Internas 1, Vontade 5", null));
 
 		habilidades.add(new Habilidade(null, "Vigor do Deserto", TipoHabilidade.SUPORTE, listaRaca, 1,
@@ -572,13 +611,9 @@ public class HabilidadeService {
 				"Você pode usar seus dentes para fazer um ataque desarmado. O dano da sua mordida é igual a Força +4/Corte.",
 				null, null, null, null, null));
 
-		habilidades.add(new Habilidade(null, "Rugido de Ahogr ", TipoHabilidade.ACAO, listaRaca, 1,
+		habilidades.add(new Habilidade(null, "Rugido de Ahogr", TipoHabilidade.ACAO, listaRaca, 1,
 				"Você aprendeu a canalizar a fúria de Ahogr em um poderoso rugido. Todos os oponentes que estiverem a até 10 metros à sua frente devem fazer um teste de Vontade (Dificuldade igual à sua Determinação). Aqueles que falharem no teste ficam Amedrontados e Atordoados por 1 turno (ver Condições, pág. 169). Um oponente só é afetado por esta habilidade uma vez por combate. Este é um efeito de Medo.",
 				null, null, 20, null, null));
-
-		habilidades.add(new Habilidade(null, "Sentidos de Caçador ", TipoHabilidade.SUPORTE, listaRaca, 1,
-				"Você possui uma audição aguçada e uma visão treinada. Você rola +1d6 em todos os seus testes de Inteligência envolvendo percepção.",
-				null, null, null, null, null));
 
 		return gravarHabilidades(habilidades, listaTipoRacas);
 	}
@@ -599,7 +634,7 @@ public class HabilidadeService {
 				null, null, null, "Força 4", null));
 
 		habilidades.add(new Habilidade(null, "Contato com Espíritos", TipoHabilidade.ACAO, listaRaca, 1,
-				"Você pode se comunicar com os espíritos que estejam próximos. Você é capaz de ouvir e ver qualquer espírito num raio de 20 metros. Esse efeito dura 10 minutos. Você pode gastar 10 Pontos de Mana enquanto estiver sob o efeito dessa Habilidade para ser capaz de tocar espíritos por 1 minuto. ",
+				"Você pode se comunicar com os espíritos que estejam próximos. Você é capaz de ouvir e ver qualquer espírito num raio de 20 metros. Esse efeito dura 10 minutos. Você pode gastar 10 Pontos de Mana enquanto estiver sob o efeito dessa Habilidade para ser capaz de tocar espíritos por 1 minuto.",
 				null, null, 5, null, null));
 
 		habilidades.add(new Habilidade(null, "Comunhão com Espíritos", TipoHabilidade.SUPORTE, listaRaca, 1,
