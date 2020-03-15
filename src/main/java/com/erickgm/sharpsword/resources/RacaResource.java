@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.erickgm.sharpsword.application.services.RacaService;
+import com.erickgm.sharpsword.services.RacaService;
 import com.erickgm.sharpsword.domain.entities.Raca;
 
 import io.swagger.annotations.Api;
@@ -29,6 +29,6 @@ public class RacaResource {
 	@ApiOperation(value = "Este método retorna uma lista de raças")
 	public ResponseEntity<List<Raca>> listarRaca() {
 		List<Raca> response = racaService.listarRacas();
-		return new ResponseEntity<List<Raca>>(response, HttpStatus.OK);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 }

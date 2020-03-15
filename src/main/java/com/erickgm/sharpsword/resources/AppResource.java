@@ -3,7 +3,7 @@ package com.erickgm.sharpsword.resources;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.erickgm.sharpsword.application.services.*;
+import com.erickgm.sharpsword.services.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,22 +20,13 @@ import io.swagger.annotations.ApiOperation;
 public class AppResource {
 
 	@Autowired
-	private ArmaService armaService;
-
-	@Autowired
-	private ArmaduraService armaduraService;
-	
-	@Autowired
 	private HabilidadeService habilidadeService;
 
 	@Autowired
 	private EquipamentoService equipamentoService;
 	
 	@Autowired
-	private MunicaoService municaoService;
-	
-	@Autowired
-	private RacaService racaService;	
+	private RacaService racaService;
 
 	@Autowired
 	private ClasseService classeService;
@@ -47,14 +38,9 @@ public class AppResource {
 
 		lista.add(racaService.cargaInicial());
 		lista.add(classeService.cargaInicial());
+		lista.add(habilidadeService.cargaInicial());
+		lista.add(equipamentoService.cargaInicial());
 
-		// lista.add(armaService.cargaInicial());
-		// lista.add(armaduraService.cargaInicial());
-		// lista.add(equipamentoService.cargaInicial());
-		// lista.add(municaoService.cargaInicial());
-		// lista.add(habilidadeService.cargaInicial());
-		
 		return lista;
 	}
-
 }

@@ -17,16 +17,18 @@ public class Habilidade implements Serializable {
 		super();
 	}
 
-	public Habilidade(Long id, String nome, TipoHabilidade tipoHabilidade, List<Raca> racas, Integer nivel,
-			String descricao, String especial, Integer dificuldade, Integer mana, String requisito,
-			String modificador) {
-		
-		super();
-		
+	public Habilidade(Long id, String nome, TipoHabilidade tipoHabilidade, List<Raca> racas, Integer nivel, String descricao, String especial, Integer dificuldade, Integer mana, String requisito, String modificador) {
 		this.id = id;
-
-		modificaValores(nome, tipoHabilidade, racas, nivel, descricao, especial, dificuldade, mana, requisito,
-				modificador);
+		this.nome = nome;
+		this.tipoHabilidade = tipoHabilidade;
+		this.racas = racas;
+		this.nivel = nivel;
+		this.descricao = descricao;
+		this.especial = especial;
+		this.dificuldade = dificuldade;
+		this.mana = mana;
+		this.requisito = requisito;
+		this.modificador = modificador;
 	}
 
 	@Id
@@ -143,20 +145,4 @@ public class Habilidade implements Serializable {
 	protected void setModificador(String modificador) {
 		this.modificador = modificador;
 	}
-
-	public void modificaValores(String nome, TipoHabilidade tipoHabilidade, List<Raca> racas, Integer nivel,
-			String descricao, String especial, Integer dificuldade, Integer mana, String requisito,
-			String modificador) {
-		this.nome = nome;
-		this.tipoHabilidade = tipoHabilidade;
-		this.racas = racas;
-		this.nivel = nivel;
-		this.descricao = descricao;
-		this.especial = especial;
-		this.dificuldade = dificuldade;
-		this.mana = mana;
-		this.requisito = requisito;
-		this.modificador = modificador;
-	}
-
 }

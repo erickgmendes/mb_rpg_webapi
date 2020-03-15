@@ -16,8 +16,8 @@ public class Personagem implements Serializable {
 	}
 
 	public Personagem(Long id, String nome, Usuario usuario, Raca raca, Classe classe, int nivel,
-			String motivacao, List<Habilidade> habilidades, List<Arma> armas, List<Armadura> armaduras,
-			List<Equipamento> equipamentos, List<Municao> municoes) {
+					  String motivacao, List<Habilidade> habilidades, List<Arma> armas, List<Armadura> armaduras,
+					  List<Equipamento> equipamentos, List<Municao> municoes) {
 		
 		super();
 		
@@ -232,7 +232,7 @@ public class Personagem implements Serializable {
 	}
 
 	private void calcularDeterminacao() {
-		int modificadorDeterminacao = vontade > inteligencia ? vontade : inteligencia;
+		int modificadorDeterminacao = Math.max(vontade, inteligencia);
 		determinacao = 8 + modificadorDeterminacao + bonusDeterminacao;
 	}
 	
@@ -514,8 +514,8 @@ public class Personagem implements Serializable {
 	}	
 
 	public void modificaValores(String nome, Usuario usuario, Raca raca, Classe classe, int nivel, String motivacao,
-			List<Habilidade> habilidades, List<Arma> armas, List<Armadura> armaduras, List<Equipamento> equipamentos,
-			List<Municao> municoes) {
+								List<Habilidade> habilidades, List<Arma> armas, List<Armadura> armaduras, List<Equipamento> equipamentos,
+								List<Municao> municoes) {
 		this.nome = nome;
 		this.usuario = usuario;
 		this.raca = raca;

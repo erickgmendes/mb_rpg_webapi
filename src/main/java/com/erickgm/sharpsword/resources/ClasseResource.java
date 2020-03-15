@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.erickgm.sharpsword.application.services.ClasseService;
+import com.erickgm.sharpsword.services.ClasseService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
