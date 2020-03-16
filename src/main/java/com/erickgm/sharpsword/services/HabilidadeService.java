@@ -814,7 +814,6 @@ public class HabilidadeService {
                 "", 0, 0, "Princípio Natural, Companheiro Animal 1, Sabedoria Selvagem", ""));
 
         // Espadachim
-
         List<Classe> espadachim = obterListaClasse(TipoClasse.ESPADACHIM);
 
         habilidades.add(new Habilidade(null, "", TipoHabilidade.ACAO, todasRacas, espadachim, 1,
