@@ -137,40 +137,9 @@ public class HabilidadeService {
     private String cargaHabilidades() {
         List<Habilidade> habilidades = new ArrayList<>();
 
-        // Configuração das Raças
-        List<Raca> todasRacas = obterListaRaca(TipoRaca.obterTodas());
-
-        List<Raca> faunos = obterListaRaca(TipoRaca.FAUNO);
-        List<Raca> jubans = obterListaRaca(TipoRaca.JUBAN);
-        List<Raca> faens = obterListaRaca(TipoRaca.FAEN);
-        List<Raca> elfos = obterListaRaca(TipoRaca.ELFO);
-        List<Raca> tailox = obterListaRaca(TipoRaca.TAILOX);
-        List<Raca> aesires = obterListaRaca(TipoRaca.AESIR);
-        List<Raca> firas = obterListaRaca(TipoRaca.FIRA);
-        List<Raca> levents = obterListaRaca(TipoRaca.LEVENT);
-        List<Raca> anoes = obterListaRaca(TipoRaca.ANAO);
-        List<Raca> mahoks = obterListaRaca(TipoRaca.MAHOK);
-        List<Raca> humanos = obterListaRaca(TipoRaca.HUMANO);
-
-        List<Raca> todasRacasMenosAesir = obterListaRaca(TipoRaca.obterTodasMenos(TipoRaca.AESIR));
-        List<Raca> todasRacasMenosMahok = obterListaRaca(TipoRaca.obterTodasMenos(TipoRaca.MAHOK));
-
-        List<Raca> faunos_Jubans = obterListaRaca(TipoRaca.obterDupla(TipoRaca.FAUNO, TipoRaca.JUBAN));
-        List<Raca> faens_elfos = obterListaRaca(TipoRaca.obterDupla(TipoRaca.FAEN, TipoRaca.ELFO));
-        List<Raca> faunos_elfos_tailox = obterListaRaca(TipoRaca.obterTrio(TipoRaca.FAUNO, TipoRaca.ELFO, TipoRaca.TAILOX));
-        List<Raca> aesires_jubans = obterListaRaca(TipoRaca.obterDupla(TipoRaca.AESIR, TipoRaca.JUBAN));
-        List<Raca> firas_levents = obterListaRaca(TipoRaca.obterDupla(TipoRaca.FIRA, TipoRaca.LEVENT));
-        List<Raca> anoes_mahoks = obterListaRaca(TipoRaca.obterDupla(TipoRaca.ANAO, TipoRaca.MAHOK));
-        List<Raca> humanos_tailox = obterListaRaca(TipoRaca.obterDupla(TipoRaca.HUMANO, TipoRaca.TAILOX));
-        List<Raca> humanos_mahoks = obterListaRaca(TipoRaca.obterDupla(TipoRaca.HUMANO, TipoRaca.MAHOK));
-
-        // Configuração das Classes
-        List<Classe> todasClasses = obterListaClasse(TipoClasse.obterTodas());
-
-        List<Classe> bardos = obterListaClasse(TipoClasse.BARDO);
-        List<Classe> druidas = obterListaClasse(TipoClasse.DRUIDA);
-
         // G E R A I S
+        List<Raca> todasRacas = obterListaRaca(TipoRaca.obterTodas());
+        List<Classe> todasClasses = obterListaClasse(TipoClasse.obterTodas());
 
         habilidades.add(new Habilidade(null, "Agilidade Heróica", TipoHabilidade.SUPORTE, todasRacas,
                 todasClasses, 5,
@@ -183,7 +152,7 @@ public class HabilidadeService {
 
         habilidades.add(new Habilidade(null, "Força Heróica", TipoHabilidade.ACAO, todasRacas, todasClasses, 5,
                 "Você possui uma força e resistência forjadas na batalha. Você tem Força +1.",
-                "", 0, 0, "","Força+1"));
+                "", 0, 0, "", "Força+1"));
 
         habilidades.add(new Habilidade(null, "Força Interior", TipoHabilidade.SUPORTE, todasRacas, todasClasses, 1,
                 "Você é capaz de se manter em pé usando sua vontade e força interiores. Você recupera 5 Pontos de Vida.",
@@ -211,21 +180,27 @@ public class HabilidadeService {
 
         habilidades.add(new Habilidade(null, "Vontade Heróica", TipoHabilidade.SUPORTE, todasRacas, todasClasses, 5,
                 "Sua determinação e autoconfiança são quase inabaláveis. Você tem Vontade +1.",
-                "", 0, 0, "","Vontade+1"));
+                "", 0, 0, "", "Vontade+1"));
 
         // R A Ç A S
 
         // Todas menos Aesir
+        List<Raca> todasRacasMenosAesir = obterListaRaca(TipoRaca.obterTodasMenos(TipoRaca.AESIR));
+
         habilidades.add(new Habilidade(null, "Fúria de Batalha", TipoHabilidade.REACAO, todasRacasMenosAesir, todasClasses, 1,
                 "Quando você é ferido você é tomado por uma irrefreável fúria destrutiva, ficando neste estado até o final do combate – ou até ficar dois turnos sem atacar. Você precisa sofrer pelo menos 1 ponto de dano de qualquer fonte – inclusive auto-infligido – para que essa Habilidade possa ser ativada. Enquanto estiver em Fúria, você recebe Força +2 e fica imune a efeitos de Medo.",
                 "", 0, 30, "", "Força+2"));
 
         // Todas menos Mahok
+        List<Raca> todasRacasMenosMahok = obterListaRaca(TipoRaca.obterTodasMenos(TipoRaca.MAHOK));
+
         habilidades.add(new Habilidade(null, "Sentidos Apurados", TipoHabilidade.SUPORTE, todasRacasMenosMahok, todasClasses, 1,
                 "Você possui sentidos treinados e extremamente apurados e aprendeu a confiar instintivamente no que eles captam. Você recebe +2 em todos os testes de para perceber, procurar, observar, ouvir ou usar seus cinco sentidos e também em testes de Iniciativa.",
                 "", 0, 0, "", "Força+2"));
 
         // Faunos
+        List<Raca> faunos = obterListaRaca(TipoRaca.FAUNO);
+
         habilidades.add(new Habilidade(null, "Patas com Cascos", TipoHabilidade.SUPORTE, faunos, todasClasses, 1,
                 "Você possui fortes patas munidas de cascos resistentes. Você pode rolar +1d6 quando fizer testes de correr, saltar ou desviar de obstáculos, e seu Deslocamento é aumentado em 1. Além disso, se fizer ataques desarmados com seus cascos, seu dano será Força +2/Contusão.",
                 "", 0, 0, "", "Força+2"));
@@ -251,11 +226,15 @@ public class HabilidadeService {
                 "", 0, 0, "", ""));
 
         // Faunos e Jubans
+        List<Raca> faunos_Jubans = obterListaRaca(TipoRaca.obterDupla(TipoRaca.FAUNO, TipoRaca.JUBAN));
+
         habilidades.add(new Habilidade(null, "Sentidos de Caçador", TipoHabilidade.SUPORTE, faunos_Jubans, todasClasses, 1,
                 "Você possui uma audição aguçada e uma visão treinada. Você rola +1d6 em todos os seus testes de Inteligência envolvendo percepção, para perceber e rastrear alvos.",
                 "", 0, 0, "", ""));
 
         // Faens e Elfos
+        List<Raca> faens_elfos = obterListaRaca(TipoRaca.obterDupla(TipoRaca.FAEN, TipoRaca.ELFO));
+
         habilidades.add(new Habilidade(null, "Herança Feérica", TipoHabilidade.SUPORTE, faens_elfos, todasClasses, 1,
                 "Você possui algumas características comuns aos seus ancestrais feéricos. Você é imune a qualquer efeito mental e efeito de medo além de perceber automaticamente ilusões. Você também ganha +5 Pontos de Mana.",
                 "", 0, 0, "", "Mana+5"));
@@ -273,21 +252,29 @@ public class HabilidadeService {
                 "", 0, 15, "Herança Feérica", ""));
 
         // Faunos, Elfos e Tailox
+        List<Raca> faunos_elfos_tailox = obterListaRaca(TipoRaca.obterTrio(TipoRaca.FAUNO, TipoRaca.ELFO, TipoRaca.TAILOX));
+
         habilidades.add(new Habilidade(null, "Raça Florestal", TipoHabilidade.SUPORTE, faunos_elfos_tailox, todasClasses, 1,
                 "Você se sente confortável e renovado quando está sob a proteção da vegetação. Quando estiver dentro de uma floresta, bosque ou selva você recebe +2 em todos os seus testes.",
                 "", 0, 0, "", ""));
 
         // Aesires e Jubans
+        List<Raca> aesires_jubans = obterListaRaca(TipoRaca.obterDupla(TipoRaca.AESIR, TipoRaca.JUBAN));
+
         habilidades.add(new Habilidade(null, "Robustez", TipoHabilidade.SUPORTE, aesires_jubans, todasClasses, 1,
                 "Você possui uma constituição vigorosa para os padrões da sua raça. Você tem +5 Pontos de vida e rola +1d6 em testes de Força para resistir à fadiga, venenos e doenças.",
                 "", 0, 0, "", ""));
 
         // Firas e Levents
+        List<Raca> firas_levents = obterListaRaca(TipoRaca.obterDupla(TipoRaca.FIRA, TipoRaca.LEVENT));
+
         habilidades.add(new Habilidade(null, "Mente Iluminada", TipoHabilidade.SUPORTE, firas_levents, todasClasses, 1,
                 "Você possui uma clareza única de raciocínio. Você tem Vontade +1 e +5 Pontos de Mana.",
-                "", 0,0, "", "Vontade+1;Mana+5"));
+                "", 0, 0, "", "Vontade+1;Mana+5"));
 
         // Anões e Mahoks
+        List<Raca> anoes_mahoks = obterListaRaca(TipoRaca.obterDupla(TipoRaca.ANAO, TipoRaca.MAHOK));
+
         habilidades.add(new Habilidade(null, "Estabilidade", TipoHabilidade.SUPORTE, anoes_mahoks, todasClasses, 1,
                 " Você gosta de ter os dois pés solidamente plantados no chão – e faz isso muito bem! Você sempre rola +1d6 em todos os seus testes de evitar quedas e manter o equilíbrio.",
                 "", 0, 0, "", ""));
@@ -296,16 +283,24 @@ public class HabilidadeService {
                 "Você nasceu ou passou grande parte da sua vida em ambientes montanhosos. Você recebe +2 em seus testes ligados à locais rochosos e montanhosos – como escalar rocha (nua ou trabalhada), percepção e sobrevivência em áreas montanhosas, identificar animais dessas regiões, avaliar formações rochosas e pedras brutas ou trabalhadas (incluindo construções de pedra e pedras preciosas) e para trabalhar em pedra – seja artesanato, alvenaria ou joalheria.",
                 "", 0, 0, "", ""));
 
+        // Humanos e Tailox
+        List<Raca> humanos_tailox = obterListaRaca(TipoRaca.obterDupla(TipoRaca.HUMANO, TipoRaca.TAILOX));
+
         habilidades.add(new Habilidade(null, "Audácia", TipoHabilidade.SUPORTE, humanos_tailox, todasClasses, 1,
                 "Você enfrenta ameaças e situações de perigo com entusiasmo. Sempre que estiver frente à uma situação de risco eminente – saltar entre duas bordas de um precipício, equilibrar-se em uma corda sobre um rio de lava, entrar em um combate ou qualquer situação em que você possa potencialmente perder a vida (ou pelo se ferir seriamente), você recupera imediatamente 10 Pontos de Vida ou 10 Pontos de Mana, à sua escolha. Essa Habilidade só pode ser usada uma vez para cada situação de risco, e apenas quando o risco se apresentar – não depois da sua primeira ação em um combate ou depois de cair, por exemplo.",
                 "", 0, 0, "", ""));
 
         // Raças: Humanos e Mahoks / Classe: Bardo
+        List<Classe> bardos = obterListaClasse(TipoClasse.BARDO);
+        List<Raca> humanos_mahoks = obterListaRaca(TipoRaca.obterDupla(TipoRaca.HUMANO, TipoRaca.MAHOK));
+
         habilidades.add(new Habilidade(null, "Gregário", TipoHabilidade.SUPORTE, humanos_mahoks, bardos, 1,
                 "Você consegue compreender muito rapidamente as estruturas sociais de uma cultura e seus indivíduos e é capaz de fazer amigos em qualquer lugar. Depois de cinco minutos de conversa, a pessoa com quem você esteja interagindo – e que não seja obviamente hostil a você, como um captor ou um inimigo jurado – torna-se propensa a ajudá-lo. Essa Habilidade geralmente serve para colher informações gerais (apesar de segredos não serem possíveis de conseguir) ou pequenos favores – como ser apresentado a alguém ou conseguir uma cerveja de graça. Você também recebe +2 em testes de seduzir, mentir, detectar mentiras ou qualquer outra interação social.",
                 "", 0, 0, "", ""));
 
         // Faens
+        List<Raca> faens = obterListaRaca(TipoRaca.FAEN);
+
         habilidades.add(new Habilidade(null, "Constituição Feérica", TipoHabilidade.SUPORTE, faens, todasClasses, 1,
                 "Você possui uma constituição leve e um par de asas que lhe permitem voar. Você pode voar em qualquer direção (com o dobro da sua movimentação normal) e pode parar no ar. No entanto, suas asas precisam bater continua e velozmente, e você não pode planar nem permanecer no ar por mais do que uma hora antes de ter que descansá-las por pelo menos meia hora. Enquanto está voando, o bater das suas asas produzem um zumbido característico e facilmente audível, e é impossível para você se mover em silêncio enquanto voa.",
                 "O dano de qualquer manobra de Encontrão usada em voo é duplicado (mas o dano da arma que você usar no Encontrão não é alterado, nem quaisquer outros possíveis efeitos de Encontrão).",
@@ -324,6 +319,8 @@ public class HabilidadeService {
                 "", 0, 0, "Força 3", "Defesa+1"));
 
         // Elfos
+        List<Raca> elfos = obterListaRaca(TipoRaca.ELFO);
+
         habilidades.add(new Habilidade(null, "Benção de Lathellanis", TipoHabilidade.SUPORTE, elfos, todasClasses, 1,
                 "A proteção de Lathellanis é evidente em você, assim como uma pálida sombra da astúcia da divindade da natureza. Você é imune à todas as doenças de origem natural ou mágica, Dreno de Energia e efeitos que causem Envelhecimento (de qualquer tipo ou origem). Além disso, Você rola +1d6 em todos os seus testes de Inteligência para perceber e rastrear alvos.",
                 "", 0, 0, "", ""));
@@ -334,9 +331,11 @@ public class HabilidadeService {
 
         habilidades.add(new Habilidade(null, "Intelecto Élfico", TipoHabilidade.SUPORTE, elfos, todasClasses, 1,
                 "Seu raciocínio é veloz e objetivo. Você tem Inteligência +1 e +5 Pontos de Mana.",
-                "", 0, 0,"", "Inteligência+1;Mana+5"));
+                "", 0, 0, "", "Inteligência+1;Mana+5"));
 
         // Anões
+        List<Raca> anoes = obterListaRaca(TipoRaca.ANAO);
+
         habilidades.add(new Habilidade(null, "Coração da Montanha", TipoHabilidade.SUPORTE, anoes, todasClasses, 1,
                 "Sua constituição foi forjada nos subterrâneos agrestes e impiedosos, onde apenas os mais resistentes conseguem sobreviver. Você é imune a todos os venenos naturais e mágicos e rola +1d6 em testes para resistir à fadiga, doenças e quaisquer outros efeitos físicos. Além disso, sua Carga é calculada como se você tivesse Força +2.",
                 "", 0, 0, "", ""));
@@ -363,6 +362,8 @@ public class HabilidadeService {
                 "", 0, null, "", ""));
 
         // Aesires
+        List<Raca> aesires = obterListaRaca(TipoRaca.AESIR);
+
         habilidades.add(new Habilidade(null, "Vigor Nórdico", TipoHabilidade.SUPORTE, aesires, todasClasses, 1,
                 "Você nasceu em uma região gelada, e os rigores climáticos de Eishelm tornaram você vigoroso e resiliente. Você é Resistente à Frio e não é afetado nem por efeitos de climas gelados nem por efeitos provenientes de danos por Frio (como Enregelamento).",
                 "", 0, 0, "", ""));
@@ -395,6 +396,8 @@ public class HabilidadeService {
                 0, 0, "Fúria Bestial, Vontade 4", ""));
 
         // Firas
+        List<Raca> firas = obterListaRaca(TipoRaca.FIRA);
+
         habilidades.add(new Habilidade(null, "Habitante do Deserto", TipoHabilidade.SUPORTE, firas, todasClasses, 1,
                 "Você descende de um povo que enfrentou os rigores do deserto sem esmorecer. Você é Resistente a Fogo e pode passar até 5 dias sem precisar ingerir água. Além disso, você não é afetado por climas particularmente quentes ou áridos.",
                 "", 0, 0, "", ""));
@@ -424,6 +427,8 @@ public class HabilidadeService {
                 "", 0, 0, "", ""));
 
         // Humanos
+        List<Raca> humanos = obterListaRaca(TipoRaca.HUMANO);
+
         habilidades.add(new Habilidade(null, "Adaptabilidade", TipoHabilidade.SUPORTE, humanos, todasClasses, 1,
                 "Você se adaptou ao ambiente em que cresceu ou à atividade que escolheu – ou precisou – desempenhar. Você tem +1 em qualquer um dos seus Atributos a sua escolha.",
                 null, null, null, null, null));
@@ -449,6 +454,8 @@ public class HabilidadeService {
                 "", 0, 10, "", ""));
 
         // Jubans
+        List<Raca> jubans = obterListaRaca(TipoRaca.JUBAN);
+
         habilidades.add(new Habilidade(null, "Corpo Pesado", TipoHabilidade.SUPORTE, jubans, todasClasses, 1,
                 "Você possui uma musculatura poderosa – e pesada. Você rola +1d6 em testes de para não ser derrubado e para realizar encontrões, mas é considerado Inapto em testes de natação, escalada e salto. Além disso, você precisa de uma ação de rodada completa para se levantar ao invés de uma ação de movimento, mas sua Carga é calculada como se você tivesse Força +2.",
                 "", 0, 0, "", ""));
@@ -474,10 +481,12 @@ public class HabilidadeService {
                 "", 0, 20, "", ""));
 
         // Levents
+        List<Raca> levents = obterListaRaca(TipoRaca.LEVENT);
+
         habilidades.add(new Habilidade(null, "Asas Pesadas", TipoHabilidade.SUPORTE, levents, todasClasses, 1,
                 "Você possui grandes asas e pode voar, precisando de um espaço igual à sua envergadura para pegar impulso antes de alçar voo. Quando estiver voando, você não pode parar no ar (mas pode planar) e seu deslocamento em voo é o dobro de seu deslocamento normal.",
                 "O dano de qualquer manobra de Encontrão usada em voo é duplicado (mas o dano da arma que você usar no Encontrão não é alterado, nem quaisquer outros possíveis efeitos do Encontrão). A envergadura do personagem é duas vezes a sua altura.",
-                "", 0, 0, ""));
+                0, 0, "", ""));
 
         habilidades.add(new Habilidade(null, "Asas Fortes", TipoHabilidade.SUPORTE, levents, todasClasses, 1,
                 "Você desenvolveu suas capacidades musculares de forma que ultrapassa os limites naturais dos outros Levent durante o voo. Você é capaz de parar no ar e não precisa pegar impulso para decolar, desde que tenha espaço suficiente para abrir as asas. Além disso, em manobras de Encontrão quando estiver voando, você recebe um bônus igual à sua Força para qualquer efeito relevante, incluindo danos e tentativas de derrubar oponentes, por exemplo.",
@@ -504,6 +513,8 @@ public class HabilidadeService {
                 "Você só pode selecionar essa Habilidade durante a criação do personagem.", 0, 0, "", ""));
 
         // Mahoks
+        List<Raca> mahoks = obterListaRaca(TipoRaca.MAHOK);
+
         habilidades.add(new Habilidade(null, "Pele de Pedra", TipoHabilidade.SUPORTE, mahoks, todasClasses, 1,
                 "Sua pele é composta por uma grossa camada de rocha que o tornam extremamente resistente e pesado. Você recebe +1d6 em todos os seus testes para evitar ser derrubado, resistir à doenças e venenos, empurrar ou segurar peso, mas é considerado Inapto em testes de escalar, saltar, correr ou se mover com agilidade. Você precisa de um turno inteiro para se levantar, ao invés de uma ação de movimento e para você é impossível nadar. Você não possui o sentido do tato, mas não sente desconforto por ambientes com condições climáticas hostis. Seus ataques desarmados causam dano igual a Força +2/Contusão e você tem Defesa +4 (Esse bônus de Defesa conta como Armadura). Além disso, sua pele tem as características de uma armadura Pesada, mas a conformação única da sua pele o impede de usar armaduras, e qualquer roupa precisa ser feita sob medida para você, custando duas vezes mais que o normal.",
                 "", 0, 0, "", ""));
@@ -525,6 +536,8 @@ public class HabilidadeService {
                 "", 0, 0, "", "PV+5"));
 
         // Tailox
+        List<Raca> tailox = obterListaRaca(TipoRaca.TAILOX);
+
         habilidades.add(new Habilidade(null, "Pernas Vulpinas", TipoHabilidade.SUPORTE, tailox, todasClasses, 1,
                 "Suas pernas são flexíveis e próprias para saltar, terminando em pés pequenos dotados de solas acolchoadas que permitem que você ande quase sem fazer sons. Você rola +1d6 quando fizer testes para saltar, correr e se mover em silêncio. Além disso, você tem Deslocamento +1 e a distância dos seus saltos é aumentada em 1 metro.",
                 "", 0, 0, "", "Deslocamento+1"));
@@ -554,20 +567,20 @@ public class HabilidadeService {
         // Bardos
         habilidades.add(new Habilidade(null, "Poesia dos Bardos", TipoHabilidade.SUPORTE, todasRacas, bardos, 1,
                 "Através das inúmeras canções e poemas épicos, você conhece muitas histórias e lendas. Você pode rolar +1d6 quando fizer testes referentes à qualquer tipo de conhecimento. Se o conhecimento em questão for considerado perdido, maçante ou técnico para figurar uma canção ou poema, não há como o Bardo conseguir informações sobre o assunto.",
-				"", 0, 0, "", ""));
+                "", 0, 0, "", ""));
 
         habilidades.add(new Habilidade(null, "Canção do Triunfo", TipoHabilidade.ACAO, todasRacas, bardos, 1,
                 "Você canta uma música relembrando os êxitos e vitórias do grupo, seus feitos mais memoráveis e exaltando seus laços de amizade, aumentando a moral do grupo. Todos os seus aliados (incluindo você) que puderem ouvir essa canção recuperam 5 Pontos e Vida por turno, enquanto você continuar a tocar essa Música.",
-				"", 0, 25, "Melodia do Repouso", ""));
+                "", 0, 25, "Melodia do Repouso", ""));
 
         habilidades.add(new Habilidade(
                 null, "Canção Exultante", TipoHabilidade.ACAO, todasRacas, bardos, 1,
                 "Você canta uma música exaltando as capacidades e qualidades dos seus aliados, deixando-os confiantes. Todos os seus aliados (incluindo você) que puderem ouvir essa canção recebem +1 em todos os seus testes enquanto você continuar a tocar essa Música.",
-				"", 0, 0, "Melodia do Repouso", ""));
+                "", 0, 0, "Melodia do Repouso", ""));
 
         habilidades.add(new Habilidade(null, "Eloquente", TipoHabilidade.SUPORTE, todasRacas, bardos, 1,
                 "Você tem um talento de convencer ou comover outras pessoas apenas falando do jeito certo. Você recebe +1d6 em todos os seus testes para persuadir, mentir, perceber mentiras, intimidar ou em qualquer outra interação social.",
-				"", 0, 0, "", ""));
+                "", 0, 0, "", ""));
 
         habilidades.add(new Habilidade(null, "Evasão", TipoHabilidade.REACAO, todasRacas, bardos, 1,
                 "Se o seu inimigo fizer um ataque corporal e acertar, você pode declarar evasão, e obrigar o inimigo a rolar novamente o teste de ataque. Você pode escolher com qual dos resultados o oponente vai ficar. Esta Habilidade só pode ser usada uma vez por rodada.",
@@ -575,100 +588,102 @@ public class HabilidadeService {
 
         habilidades.add(new Habilidade(null, "Furtivo", TipoHabilidade.SUPORTE, todasRacas, bardos, 1,
                 "Você é particularmente discreto quando quer. Você pode rolar +1d6 quando fizer testes para se mover em silêncio, se esconder, camuflar, ou usar disfarces.",
-				"", 0, 0, "", ""));
+                "", 0, 0, "", ""));
 
         habilidades.add(new Habilidade(null, "Grito de Guerra 1", TipoHabilidade.ACAO, todasRacas, bardos, 1,
                 "Você pode dar um grito fervoroso que motiva todos seus aliados. Eles recebem (assim como você) +1 em todas as rolagens até o final da batalha. Além disso, remova todos os efeitos de Medo que estiverem afetando os seus aliados. Você não pode usar esta Habilidade se estiver sob qualquer efeito de Medo. Este é um efeito mental.",
-				"", 0, 10, "", ""));
+                "", 0, 10, "", ""));
 
         habilidades.add(new Habilidade(null, "Grito Ensurdecedor", TipoHabilidade.ACAO, todasRacas, bardos, 1,
                 "Você solta um grito tão alto e poderoso que faz com que todos ao redor fiquem atordoados. Todas as criaturas em uma área de 10 metros à sua frente ficam atordoadas por um número de turnos igual à sua Vontade.",
-				"", 0, 10, "", ""));
+                "", 0, 10, "", ""));
 
-		habilidades.add(new Habilidade(null, "Grito Estilhaçador", TipoHabilidade.ACAO, todasRacas, bardos, 1,
-				"Seu agudo é tão poderoso que você pode direcionar um grito capaz de romper vidros, cristais e tímpanos! Tudo e todos em até 10 metros à sua frente sofrem dano igual a 10/Corte. Criaturas com Corpo Amórfico, objetos inanimados e estruturas que sejam atingidas por esse grito sofrem o dobro do dano.",
-				"", 0, 20, "Grito Ensurdecedor", ""));
+        habilidades.add(new Habilidade(null, "Grito Estilhaçador", TipoHabilidade.ACAO, todasRacas, bardos, 1,
+                "Seu agudo é tão poderoso que você pode direcionar um grito capaz de romper vidros, cristais e tímpanos! Tudo e todos em até 10 metros à sua frente sofrem dano igual a 10/Corte. Criaturas com Corpo Amórfico, objetos inanimados e estruturas que sejam atingidas por esse grito sofrem o dobro do dano.",
+                "", 0, 20, "Grito Ensurdecedor", ""));
 
-		habilidades.add(new Habilidade(null, "Língua Afiada", TipoHabilidade.ACAO, todasRacas, bardos, 1,
-				"Você possui uma língua ferina e um talento especial para insultar seus adversários. Escolha um inimigo do tipo Humanoide ou Esfinge. Você faz uma série de comentários jocosos ou degradantes sobre ele. Faça um confronto de Vontade contra o alvo. Se você tiver um resultado igual ou maior do que o alvo e se ele for capaz de entendê-lo, ele ataca você em detrimento de qualquer outro alvo, e é considerado Desprevenido para todos os seus aliados – mas não para você. Este é um efeito mental.",
-				"", 0, 10, "Eloquente", ""));
+        habilidades.add(new Habilidade(null, "Língua Afiada", TipoHabilidade.ACAO, todasRacas, bardos, 1,
+                "Você possui uma língua ferina e um talento especial para insultar seus adversários. Escolha um inimigo do tipo Humanoide ou Esfinge. Você faz uma série de comentários jocosos ou degradantes sobre ele. Faça um confronto de Vontade contra o alvo. Se você tiver um resultado igual ou maior do que o alvo e se ele for capaz de entendê-lo, ele ataca você em detrimento de qualquer outro alvo, e é considerado Desprevenido para todos os seus aliados – mas não para você. Este é um efeito mental.",
+                "", 0, 10, "Eloquente", ""));
 
-		habilidades.add(new Habilidade(null, "Malabarista", TipoHabilidade.SUPORTE, todasRacas, bardos, 1,
-				"Você tem uma ótima coordenação para jogar e pegar objetos no ar. Além de poder realizar malabarismos – mesmo usando objetos perigosos como adagas ou tochas – como entretenimento, você recebe +2 em todas as suas jogadas para arremessar objetos e +1 na Defesa contra ataques à distância. Esse bônus de Defesa conta como Esquiva.",
-				"", 0, 0, "", ""));
+        habilidades.add(new Habilidade(null, "Malabarista", TipoHabilidade.SUPORTE, todasRacas, bardos, 1,
+                "Você tem uma ótima coordenação para jogar e pegar objetos no ar. Além de poder realizar malabarismos – mesmo usando objetos perigosos como adagas ou tochas – como entretenimento, você recebe +2 em todas as suas jogadas para arremessar objetos e +1 na Defesa contra ataques à distância. Esse bônus de Defesa conta como Esquiva.",
+                "", 0, 0, "", ""));
 
-		habilidades.add(new Habilidade(null, "Melodia Dançante", TipoHabilidade.ACAO, todasRacas, bardos, 1,
-				"Você toca ritmos empolgantes que fazem com que todos que escutarem esta música sintam uma vontade incontrolável de dançar. Todos os Humanoides que estiverem escutando sua música rolam um confronto de Vontade contra você. Aqueles que tiverem um resultado mais baixo que o seu começarão a dançar incontrolavelmente, realizando todos os seus testes baseados em Agilidade como se fosse Inábil e ficando com Defesa -1 enquanto você continuar a tocar essa Melodia. Este é um efeito mental.",
-				"Personagens usando Dança das Espadas são imunes a esse efeito.", null, 20, "", ""));
+        habilidades.add(new Habilidade(null, "Melodia Dançante", TipoHabilidade.ACAO, todasRacas, bardos, 1,
+                "Você toca ritmos empolgantes que fazem com que todos que escutarem esta música sintam uma vontade incontrolável de dançar. Todos os Humanoides que estiverem escutando sua música rolam um confronto de Vontade contra você. Aqueles que tiverem um resultado mais baixo que o seu começarão a dançar incontrolavelmente, realizando todos os seus testes baseados em Agilidade como se fosse Inábil e ficando com Defesa -1 enquanto você continuar a tocar essa Melodia. Este é um efeito mental.",
+                "Personagens usando Dança das Espadas são imunes a esse efeito.", null, 20, "", ""));
 
-		habilidades.add(new Habilidade(null, "Melodia do Enjoo", TipoHabilidade.ACAO, todasRacas, bardos, 1,
-				"Sua melodia é perfeitamente desconexa e perturbadora. Todas as criaturas vivas que puderem lhe escutar rolam um confronto de Vontade contra você a cada turno em que você continuar tocando. Aqueles que tiverem um resultado mais baixo do que você ficam enjoados, sofrendo um redutor de -1 em sua Defesa e testes de ataque até o final do turno. Qualquer um que obtenha 3 resultados mais baixos que os seus em confrontos para resistir a esse efeito durante um mesmo combate ficarão tão enjoados que vomitarão, ficando Paralisados durante 1 turno.",
-				"", 0, 20, "", ""));
+        habilidades.add(new Habilidade(null, "Melodia do Enjoo", TipoHabilidade.ACAO, todasRacas, bardos, 1,
+                "Sua melodia é perfeitamente desconexa e perturbadora. Todas as criaturas vivas que puderem lhe escutar rolam um confronto de Vontade contra você a cada turno em que você continuar tocando. Aqueles que tiverem um resultado mais baixo do que você ficam enjoados, sofrendo um redutor de -1 em sua Defesa e testes de ataque até o final do turno. Qualquer um que obtenha 3 resultados mais baixos que os seus em confrontos para resistir a esse efeito durante um mesmo combate ficarão tão enjoados que vomitarão, ficando Paralisados durante 1 turno.",
+                "", 0, 20, "", ""));
 
-		habilidades.add(new Habilidade(null, "Melodia do Repouso", TipoHabilidade.ACAO, todasRacas, bardos, 1,
-				"Você toca uma série de canções simples e relaxantes, que permitem que todos os que a ouvirem repousem com serenidade e recobrem suas forças. Qualquer um que escute sua canção por pelo menos 10 minutos – mesmo que esteja dormindo – recupera o dobro de Pontos de Mana e de Pontos de Vida devido ao descanso por aquele período. Tocar a Melodia do Repouso é considerado descanso, e os efeitos dessa música também afetam você.",
-				"", 0, 0, "", ""));
+        habilidades.add(new Habilidade(null, "Melodia do Repouso", TipoHabilidade.ACAO, todasRacas, bardos, 1,
+                "Você toca uma série de canções simples e relaxantes, que permitem que todos os que a ouvirem repousem com serenidade e recobrem suas forças. Qualquer um que escute sua canção por pelo menos 10 minutos – mesmo que esteja dormindo – recupera o dobro de Pontos de Mana e de Pontos de Vida devido ao descanso por aquele período. Tocar a Melodia do Repouso é considerado descanso, e os efeitos dessa música também afetam você.",
+                "", 0, 0, "", ""));
 
-		habilidades.add(new Habilidade(null, "Melodia Sonífera", TipoHabilidade.ACAO, todasRacas, bardos, 1,
-				"Você toca uma melodia lenta e ritmada, que acalma a ponto de fazer quem a escuta cair no sono. Após 3 turnos ouvindo essa Melodia, todos que puderem escutá-la (menos você) rolam um confronto de Vontade contra você. Aqueles que tiverem um resultado menor que o seu caem em um sono profundo que dura 1 hora. Este é um efeito mental.",
-				"", 0, 15, "Melodia do Repouso", ""));
+        habilidades.add(new Habilidade(null, "Melodia Sonífera", TipoHabilidade.ACAO, todasRacas, bardos, 1,
+                "Você toca uma melodia lenta e ritmada, que acalma a ponto de fazer quem a escuta cair no sono. Após 3 turnos ouvindo essa Melodia, todos que puderem escutá-la (menos você) rolam um confronto de Vontade contra você. Aqueles que tiverem um resultado menor que o seu caem em um sono profundo que dura 1 hora. Este é um efeito mental.",
+                "", 0, 15, "Melodia do Repouso", ""));
 
-		habilidades.add(new Habilidade(null, "Mestre das Notas", TipoHabilidade.REACAO, todasRacas, bardos, 1,
-				"Sempre que você fizer um teste que envolva contar histórias, entreter uma plateia, cantar ou tocar instrumento musicais (incluindo Habilidades do tipo Música) você pode rolar novamente 1 dos dados. Você pode escolher com qual dos resultados vai ficar. Você só pode usar esta Habilidade 1 vez por turno.",
-				"", 0, 10, "", ""));
+        habilidades.add(new Habilidade(null, "Mestre das Notas", TipoHabilidade.REACAO, todasRacas, bardos, 1,
+                "Sempre que você fizer um teste que envolva contar histórias, entreter uma plateia, cantar ou tocar instrumento musicais (incluindo Habilidades do tipo Música) você pode rolar novamente 1 dos dados. Você pode escolher com qual dos resultados vai ficar. Você só pode usar esta Habilidade 1 vez por turno.",
+                "", 0, 10, "", ""));
 
-		habilidades.add(new Habilidade(null, "Truque Sujo", TipoHabilidade.ACAO, todasRacas, bardos, 1,
-				"Quando estiver em distância corporal do oponente e ele estiver te vendo, faça um Confronto de Inteligência contra o alvo. Se você tiver um resultado igual ou maior do que o do oponente nesse teste, você realiza um truque sujo (joga areia nos olhos do oponente, joga um pano em seu rosto, enrola uma corda em suas pernas, etc.) fazendo com que o alvo fique confuso ou desequilibrado, não podendo realizar nenhuma ação no próximo turno, e sendo considerado Desprevenido por 1 turno.",
-				"", 0, 10, "Evasão", ""));
+        habilidades.add(new Habilidade(null, "Truque Sujo", TipoHabilidade.ACAO, todasRacas, bardos, 1,
+                "Quando estiver em distância corporal do oponente e ele estiver te vendo, faça um Confronto de Inteligência contra o alvo. Se você tiver um resultado igual ou maior do que o do oponente nesse teste, você realiza um truque sujo (joga areia nos olhos do oponente, joga um pano em seu rosto, enrola uma corda em suas pernas, etc.) fazendo com que o alvo fique confuso ou desequilibrado, não podendo realizar nenhuma ação no próximo turno, e sendo considerado Desprevenido por 1 turno.",
+                "", 0, 10, "Evasão", ""));
 
-		habilidades.add(new Habilidade(null, "Canção da Sereia", TipoHabilidade.ACAO, todasRacas, bardos, 5,
-				"Você canta uma música melancólica capaz de deixar aqueles que a escutam enfeitiçados. Todos que estiverem a até 10 metros de você e puderem ouvir a canção rolam um confronto de Vontade contra você a cada turno enquanto você continuar cantando. Alvos que tenham um resultado menor do que o seu não poderão realizar qualquer ação exceto tentar se aproximar de você enquanto você estiver cantando – ou ficar imóvel lhe observando se estiverem a 1 metro ou menos de você. Esse efeito é cancelado e o alvo fica imune aos seus efeitos até o fim do combate se a vítima sofrer algum dano enquanto estiver sob efeito dessa Música. Enquanto estiver sob o efeito dessa Música o alvo é considerado Desprevenido para todos os seus aliados – mas não para você. Este é um efeito mental.",
-				"", 0, 20, "Eloquente", ""));
+        habilidades.add(new Habilidade(null, "Canção da Sereia", TipoHabilidade.ACAO, todasRacas, bardos, 5,
+                "Você canta uma música melancólica capaz de deixar aqueles que a escutam enfeitiçados. Todos que estiverem a até 10 metros de você e puderem ouvir a canção rolam um confronto de Vontade contra você a cada turno enquanto você continuar cantando. Alvos que tenham um resultado menor do que o seu não poderão realizar qualquer ação exceto tentar se aproximar de você enquanto você estiver cantando – ou ficar imóvel lhe observando se estiverem a 1 metro ou menos de você. Esse efeito é cancelado e o alvo fica imune aos seus efeitos até o fim do combate se a vítima sofrer algum dano enquanto estiver sob efeito dessa Música. Enquanto estiver sob o efeito dessa Música o alvo é considerado Desprevenido para todos os seus aliados – mas não para você. Este é um efeito mental.",
+                "", 0, 20, "Eloquente", ""));
 
-		habilidades.add(new Habilidade(null, "Canção Desconcentrante", TipoHabilidade.ACAO, todasRacas, bardos, 5,
-				"Você canta uma canção com tom jocoso e com uma melodia irritante que prende a atenção dos ouvintes e não permite que eles se concentrem. Todos que estiverem a até 10 metros de você e puderem ouvir a canção rolam um confronto de Vontade contra você a cada turno enquanto você continuar cantando. Alvos que tenham um resultado menor do que o seu são considerados Distraídos até o final do seu próximo turno. Este é um efeito mental.",
-				"", 0, 20, "Melodia do Enjoo", ""));
+        habilidades.add(new Habilidade(null, "Canção Desconcentrante", TipoHabilidade.ACAO, todasRacas, bardos, 5,
+                "Você canta uma canção com tom jocoso e com uma melodia irritante que prende a atenção dos ouvintes e não permite que eles se concentrem. Todos que estiverem a até 10 metros de você e puderem ouvir a canção rolam um confronto de Vontade contra você a cada turno enquanto você continuar cantando. Alvos que tenham um resultado menor do que o seu são considerados Distraídos até o final do seu próximo turno. Este é um efeito mental.",
+                "", 0, 20, "Melodia do Enjoo", ""));
 
-		habilidades.add(new Habilidade(null, "Coração da Batalha", TipoHabilidade.REACAO, todasRacas, bardos, 5,
-				"Quando sofrer algum dano proveniente de um ataque, Magia, ou Música você recupera 5 Pontos de Mana. Você só pode usar esta Habilidade uma vez por turno.",
-				"", 0, 0, "", ""));
+        habilidades.add(new Habilidade(null, "Coração da Batalha", TipoHabilidade.REACAO, todasRacas, bardos, 5,
+                "Quando sofrer algum dano proveniente de um ataque, Magia, ou Música você recupera 5 Pontos de Mana. Você só pode usar esta Habilidade uma vez por turno.",
+                "", 0, 0, "", ""));
 
-		habilidades.add(new Habilidade(null, "Grito de Guerra 2", TipoHabilidade.ACAO, todasRacas, bardos, 5,
-				"Você pode dar um grito fervoroso que motiva todos seus aliados. Eles recebem (assim como você) +2 em todas as rolagens até o final da batalha. Além disso, remova todos os efeitos de Medo que estiverem afetando os seus aliados. Você não pode usar esta Habilidade se estiver sob qualquer efeito de Medo.",
-				"", 0, 15, " Grito de Guerra 1", ""));
+        habilidades.add(new Habilidade(null, "Grito de Guerra 2", TipoHabilidade.ACAO, todasRacas, bardos, 5,
+                "Você pode dar um grito fervoroso que motiva todos seus aliados. Eles recebem (assim como você) +2 em todas as rolagens até o final da batalha. Além disso, remova todos os efeitos de Medo que estiverem afetando os seus aliados. Você não pode usar esta Habilidade se estiver sob qualquer efeito de Medo.",
+                "", 0, 15, " Grito de Guerra 1", ""));
 
-		habilidades.add(new Habilidade(null, "Grito de Intimidação", TipoHabilidade.ACAO, todasRacas, bardos, 5,
-				"Você pode dar um grito para intimidar seus inimigos. Todos os oponentes que estiverem a até 10 metros à sua frente que tiverem uma Determinação menor do que a sua ficam Paralisados por 2 turnos. Esse é um efeito de Medo.",
-				"", 0, 35, "Grito de Guerra 1", ""));
+        habilidades.add(new Habilidade(null, "Grito de Intimidação", TipoHabilidade.ACAO, todasRacas, bardos, 5,
+                "Você pode dar um grito para intimidar seus inimigos. Todos os oponentes que estiverem a até 10 metros à sua frente que tiverem uma Determinação menor do que a sua ficam Paralisados por 2 turnos. Esse é um efeito de Medo.",
+                "", 0, 35, "Grito de Guerra 1", ""));
 
-		habilidades.add(new Habilidade(null, "Melodia da Fúria", TipoHabilidade.ACAO, todasRacas, bardos, 5,
-				"Você toca um ritmo primitivo, que faz com que todos os Humanoides que o escutem sintam seus instintos mais violentos aflorarem. Todos os Humanoides capazes de escutar essa canção desferem seus ataques com mais selvageria, causando +5 de dano, mas sofrendo um redutor de -2 em sua Defesa enquanto você continuar a tocar essa música. Este é um efeito mental.",
-				"", 0, 10, "Melodia Dançante", ""));
+        habilidades.add(new Habilidade(null, "Melodia da Fúria", TipoHabilidade.ACAO, todasRacas, bardos, 5,
+                "Você toca um ritmo primitivo, que faz com que todos os Humanoides que o escutem sintam seus instintos mais violentos aflorarem. Todos os Humanoides capazes de escutar essa canção desferem seus ataques com mais selvageria, causando +5 de dano, mas sofrendo um redutor de -2 em sua Defesa enquanto você continuar a tocar essa música. Este é um efeito mental.",
+                "", 0, 10, "Melodia Dançante", ""));
 
-		habilidades.add(new Habilidade(null, "Melodia dos Animais", TipoHabilidade.ACAO, todasRacas, bardos, 5,
-				"Escolha um tipo de Besta (mamífero, réptil ou ave). Todas as criaturas do tipo escolhido que puderem escutar sua música ficarão fascinadas com ela e o seguirão enquanto você continuar a tocar. Os alvos não irão realizar qualquer ação além de seguir você para onde for enquanto você continuar a tocar. Esse efeito é cancelado se o alvo sofrer algum dano enquanto estiver sob efeito dessa Música, mas se você continuar a tocar essa Música o alvo será afetado novamente no começo do seu próximo turno. Este é um efeito mental.",
-				"", 0, 10, "Canção da Sereia", ""));
+        habilidades.add(new Habilidade(null, "Melodia dos Animais", TipoHabilidade.ACAO, todasRacas, bardos, 5,
+                "Escolha um tipo de Besta (mamífero, réptil ou ave). Todas as criaturas do tipo escolhido que puderem escutar sua música ficarão fascinadas com ela e o seguirão enquanto você continuar a tocar. Os alvos não irão realizar qualquer ação além de seguir você para onde for enquanto você continuar a tocar. Esse efeito é cancelado se o alvo sofrer algum dano enquanto estiver sob efeito dessa Música, mas se você continuar a tocar essa Música o alvo será afetado novamente no começo do seu próximo turno. Este é um efeito mental.",
+                "", 0, 10, "Canção da Sereia", ""));
 
-		habilidades.add(new Habilidade(null, "Trapaceiro Impecável", TipoHabilidade.SUPORTE, todasRacas, bardos, 5,
-				"Você está acostumado a enganar e mentir, e seu raciocínio se tornou tão condicionado a extrapolar situações rapidamente que até ler (ou mesmo dominar) sua mente é mais difícil! Sua Inteligência é considerada o dobro em Confrontos para tentar esconder ou dissimular a verdade e para calcular sua Determinação contra efeitos mentais – exceto os de medo.",
-				"", 0, 0, "Eloquente", ""));
+        habilidades.add(new Habilidade(null, "Trapaceiro Impecável", TipoHabilidade.SUPORTE, todasRacas, bardos, 5,
+                "Você está acostumado a enganar e mentir, e seu raciocínio se tornou tão condicionado a extrapolar situações rapidamente que até ler (ou mesmo dominar) sua mente é mais difícil! Sua Inteligência é considerada o dobro em Confrontos para tentar esconder ou dissimular a verdade e para calcular sua Determinação contra efeitos mentais – exceto os de medo.",
+                "", 0, 0, "Eloquente", ""));
 
-		habilidades.add(new Habilidade(null, "Virtuoso", TipoHabilidade.SUPORTE, todasRacas, bardos, 5,
-				"Você treinou exaustivamente até se tornar um mestre no uso de instrumentos musicais. Você rola +1d6 em todos os testes envolvendo tocar instrumentos musicais (incluindo Habilidades do tipo Música).",
-				"", 0, 0, "Mestre das Notas", ""));
+        habilidades.add(new Habilidade(null, "Virtuoso", TipoHabilidade.SUPORTE, todasRacas, bardos, 5,
+                "Você treinou exaustivamente até se tornar um mestre no uso de instrumentos musicais. Você rola +1d6 em todos os testes envolvendo tocar instrumentos musicais (incluindo Habilidades do tipo Música).",
+                "", 0, 0, "Mestre das Notas", ""));
 
-		habilidades.add(new Habilidade(null, "Vocalista", TipoHabilidade.SUPORTE, todasRacas, bardos, 5,
-				"Você treinou sua voz para se tornar mais potente e límpida e sua dicção mais clara e segura. Você recebe +2 em todos os testes que envolvam a fala – como mentir, seduzir, barganhar ou cantar (incluindo Canções, mas não Melodias) – e na sua Determinação para determinar se os alvos de seus Gritos e Rugidos são afetados por seus efeitos. Além disso, seus Gritos e Rugidos têm a área de efeito dobrada.",
-				"", 0, 0, "Pelo menos uma Habilidade de Grito", ""));
+        habilidades.add(new Habilidade(null, "Vocalista", TipoHabilidade.SUPORTE, todasRacas, bardos, 5,
+                "Você treinou sua voz para se tornar mais potente e límpida e sua dicção mais clara e segura. Você recebe +2 em todos os testes que envolvam a fala – como mentir, seduzir, barganhar ou cantar (incluindo Canções, mas não Melodias) – e na sua Determinação para determinar se os alvos de seus Gritos e Rugidos são afetados por seus efeitos. Além disso, seus Gritos e Rugidos têm a área de efeito dobrada.",
+                "", 0, 0, "Pelo menos uma Habilidade de Grito", ""));
 
-		habilidades.add(new Habilidade(null, "Canção do Réquiem", TipoHabilidade.ACAO, todasRacas, bardos, 10,
-				"Você toca uma música que fala sobre a morte, derrota e fracasso dos ancestrais do alvo e do sofrimento e amarguras que ele ainda provará no futuro. A cada turno em que você canta essa canção e o alvo estiver a menos de 10 metros de você e puder escutá-lo, ele rola um Confronto de Vontade contra você. O alvo tem sua moral tão profundamente atingida pela canção que perde 20 Pontos de Mana sempre que rolar esse Confronto (independente do resultado), e se ficar sem Pontos de Mana devido aos efeitos dessa canção, ele imediatamente entra em um estado de profundo pesar e tristeza, e se entregará sem resistir. Além disso, se tiver um resultado menor do que o seu na rolagem, ele é tomado por um profundo pesar e sofrimento decorrente dos desgostos que já viveu, além das perspectivas de um futuro negro, perdendo 50 Pontos de Vida. Este é um efeito mental.",
-				"", 0, 80, "Virtuoso, Canção Desesperadora", ""));
+        habilidades.add(new Habilidade(null, "Canção do Réquiem", TipoHabilidade.ACAO, todasRacas, bardos, 10,
+                "Você toca uma música que fala sobre a morte, derrota e fracasso dos ancestrais do alvo e do sofrimento e amarguras que ele ainda provará no futuro. A cada turno em que você canta essa canção e o alvo estiver a menos de 10 metros de você e puder escutá-lo, ele rola um Confronto de Vontade contra você. O alvo tem sua moral tão profundamente atingida pela canção que perde 20 Pontos de Mana sempre que rolar esse Confronto (independente do resultado), e se ficar sem Pontos de Mana devido aos efeitos dessa canção, ele imediatamente entra em um estado de profundo pesar e tristeza, e se entregará sem resistir. Além disso, se tiver um resultado menor do que o seu na rolagem, ele é tomado por um profundo pesar e sofrimento decorrente dos desgostos que já viveu, além das perspectivas de um futuro negro, perdendo 50 Pontos de Vida. Este é um efeito mental.",
+                "", 0, 80, "Virtuoso, Canção Desesperadora", ""));
 
-		// Druidas
-		habilidades.add(new Habilidade(null, "Conhecimento Místico", TipoHabilidade.SUPORTE, todasRacas, druidas, 1,
-				"Você está ligado as energias místicas provenientes de forças superiores e consegue comungar com elas. Você pode ler e utilizar tomos mágicos e desenhar Selos Místicos (veja a página 36 para regras sobre magia). Você também pode entrar em um estado de transe se concentrando por 1 minuto. Enquanto continuar meditando dessa forma, você recupera uma quantidade de Pontos de Mana igual à sua Vontade a cada 10 minutos.",
-				"", 0, 0, "", ""));
+        // Druidas
+        List<Classe> druidas = obterListaClasse(TipoClasse.DRUIDA);
+
+        habilidades.add(new Habilidade(null, "Conhecimento Místico", TipoHabilidade.SUPORTE, todasRacas, druidas, 1,
+                "Você está ligado as energias místicas provenientes de forças superiores e consegue comungar com elas. Você pode ler e utilizar tomos mágicos e desenhar Selos Místicos (veja a página 36 para regras sobre magia). Você também pode entrar em um estado de transe se concentrando por 1 minuto. Enquanto continuar meditando dessa forma, você recupera uma quantidade de Pontos de Mana igual à sua Vontade a cada 10 minutos.",
+                "", 0, 0, "", ""));
 
         habilidades.add(new Habilidade(null, "Aparar Magia", TipoHabilidade.REACAO, todasRacas, druidas, 1,
                 "Sempre que for alvo de uma Magia que cause dano ou perda de vida, você pode reduzir aquele dano ou perda de vida pela metade. Essa Habilidade não afeta quaisquer outros efeitos da magia além de dano ou perda de vida.",
@@ -754,17 +769,58 @@ public class HabilidadeService {
                 "Desenhando um Selo Místico sobre você mesmo e em seguida realizando um rápido movimento circular com as mãos você dispara poderosas rajadas de água. Todas as criaturas a até 10 metros de você sofrem um dano igual à 6/contusão e precisam vencer um teste de Força (Dificuldade igual à sua Determinação) para não serem arremessados um número de metros igual à sua Vontade e ficando caídos. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados e qualquer quantidade de água criada é permanente.",
                 "", 12, 25, "Rajada de àgua", ""));
 
-        habilidades.add(new Habilidade(null, "", TipoHabilidade.ACAO, todasRacas, druidas, 1,
+        habilidades.add(new Habilidade(null, "Companheiro Animal 3", TipoHabilidade.SUPORTE, todasRacas, druidas, 5,
+                "Seu Companheiro Animal recebe +1 em todos os seus Atributos e +10 Pontos de Vida ou +10 Pontos de Mana à sua escolha. Além disso, seu Companheiro Animal recebe uma Habilidade do tipo Técnica à sua escolha (desde que faça sentido; o Mestre tem a palavra final sobre o assunto).",
+                "", 0, 0, "Companheiro animal 2", ""));
+
+        habilidades.add(new Habilidade(null, "Conjurar Abrigo", TipoHabilidade.ACAO, todasRacas, druidas, 5,
+                "Você desenha um Selo Místico sobre o solo, de onde uma estrutura simples e resistente se ergue seguindo a sua vontade. O custo em Mana da Magia depende do tamanho da estrutura: 10 Pontos de Mana criam um domo para até 4 pessoas, 20 Pontos de Mana criam uma cabana para até 10 pessoas, 40 Pontos de Mana criam uma torre para até 20 pessoas e 80 Pontos de Mana criam um pequeno forte para até 40 pessoas. O Selo Místico se dissipa depois de 24h, fazendo com que a estrutura comece a desmoronar lentamente. *Mana variável",
+                "", 12, 0, "Mover Terra", "")); // Mana: Variável??
+
+        habilidades.add(new Habilidade(null, "Despertar a Flora", TipoHabilidade.ACAO, todasRacas, druidas, 5,
+                "Você desenha um Selo Místico sobre uma planta, imbuindo ela com percepção e fala de uma criatura inteligente além de capacidade de movimentação. Um rosto se cria no caule ou tronco da planta e pode interagir com qualquer um. Nenhuma planta gosta de ser incomodada e elas tendem a não ser muito amistosas. O custo em Mana da Magia depende do tamanho da planta: 10 Pontos de Mana para afetar uma planta pequena, 20 Pontos de Mana para afetar uma planta média, 40 Pontos de Mana para afetar uma planta grande e 80 Pontos de Mana para afetar uma planta gigante. Trate uma planta sob efeito dessa magia como um Golem de madeira do tamanho apropriado, exceto o Tipo que será Esfinge e o Temperamento que será Pacífico. O Selo Místico dura 1 minuto por ponto de Vontade do conjurador. *Mana variável",
+                "", 13, 0, "Entrelaçar", ""));
+
+        habilidades.add(new Habilidade(null, "Dissipar Magia", TipoHabilidade.ACAO, todasRacas, druidas, 5,
+                "Você dissipa todas as Runas Arcanas ou Selos Místicos de uma criatura, objeto ou estrutura com seu toque. Essa Habilidade não tem efeito em Runas ou Selos com efeitos instantâneos (como Curar Ferimentos, Rajada de Espinhos ou Teleporte) nem reverte efeitos permanentes de magia (como restaurar os Pontos de Vida perdidos devido a uma Bola de Fogo, dissipar água criada por Princípio Natural ou reverter água afetada por Raio Gélido de volta ao estado líquido). Você pode também escolher quais Runas ou Selos dissipar e quais não, caso o alvo tenha mais de um Selo ou Runa afetando-o. O custo para dissipar um Selo ou Runa é igual ao custo usado para conjurá-los. *Mana variável",
+                "", 0, 0, "Aparar Magia", ""));
+
+        habilidades.add(new Habilidade(null, "Evocar Nevasca", TipoHabilidade.ACAO, todasRacas, druidas, 5,
+                "Desenhando um Selo Místico sobre si mesmo, você pode iniciar um nevasca ou chuva de granizo que cobre uma área de 1 km de diâmetro. Essa área se move conforme você se desloca, permanecendo centrada em você. Todos na área, exceto você, sofrem dano igual a 6/Frio (nevasca) ou 6/ Contusão (granizo) a cada turno que estiverem desabrigados e todos os testes dentro da área são realizados como se os personagens fossem Inaptos. O temporal leva 3 turnos para se formar e o Selo Místico se dissipa em um número de minutos igual à sua vontade.",
+                "", 12, 40, "Evocar Temporal", ""));
+
+        habilidades.add(new Habilidade(null, "Gavinhas e Espinhos", TipoHabilidade.ACAO, todasRacas, druidas, 5,
+                "Desenhando um Selo Místico sobre o solo você faz com que plantas espinhosas comecem a brotar e agarrem um alvo que esteja com os pés no chão. O alvo fica com Deslocamento 0, é considerado Desprevenido e sofre uma quantidade de dano igual a 10/Perfuração. Para se soltar ele (ou outro personagem) deve passar uma quantidade de turnos igual à sua Vontade cortando as plantas (com uma arma que faça dano por corte), ou passar em um teste de Força (Dificuldade igual à Determinação do conjurador). Toda vez que ataca as plantas ou fracassa no teste de Força, o alvo sofre dano igual a 10/Perfuração. As plantas murcham e se desfazem após 1 minuto. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                "", 12, 25, "Entrelaçar, Rajada de Espinhos", ""));
+
+        habilidades.add(new Habilidade(null, "Olho do Furacão", TipoHabilidade.ACAO, todasRacas, druidas, 5,
+                "Desenhando um Selo Místico sobre si mesmo, você cria um poderoso turbilhão de vento em uma área com um diâmetro em metros igual à sua Vontade e uma altura igual à 10 vezes sua Vontade. Essa área tem um olho central com cerca de 2 metros de diâmetro onde não há vento. O furacão se move conforme você se desloca, permanecendo centrado em você. Todos dentro da área do furacão devem fazer um teste de Força (Dificuldade igual à sua Determinação) para não serem arremessados um número de metros igual à sua Vontade, ficando caídos. Vencendo 2 testes consecutivos um personagem consegue chegar ao olho do furacão – mas o conjurador pode se deslocar para tentar engolfar personagens na parede de vento outra vez. O furacão impede a linha de visão através dele. Este Selo Místico dura uma quantidade de turnos igual à Vontade do conjurador.",
+                "", 14, 40, "Evocar Temporal", ""));
+
+        habilidades.add(new Habilidade(null, "Orbe de Contenção", TipoHabilidade.ACAO, todasRacas, druidas, 5,
+                "Conjurando um Selo Místico sobre um item esférico com pelo menos 10 cm de diâmetro (um ovo de canidrako ou uma maçã por exemplo) que não tenha nenhum Selo Místico ou Runa Arcana sobre ele, o item passa a ser capaz de absorver qualquer Besta que tenha o temperamento Protetor com relação á você, simplesmente tocando-o. Enquanto estiver dentro da orbe o tempo não passa para o animal (ele não envelhece, não precisa comer ou dormir e não é afetado por efeitos de sangramentos, venenos ou doenças, nem recupera Pontos de Vida e Mana por descanso). Liberar o animal exige que o conjurador destrua o item (geralmente arremessando-o no chão) o que exige uma ação padrão, mas não exige novos testes para conjurar a magia. Esse Selo Místico dura indefinidamente até o item ser destruído.",
+                "", 12, 20, "Convocar Animais", ""));
+
+        habilidades.add(new Habilidade(null, "Punho de Pedra", TipoHabilidade.ACAO, todasRacas, druidas, 5,
+                "Você desenha um Selo Místico sobre o solo (ou em uma estrutura de pedra como Paredes de alvenaria, estátuas de pedra e tetos de cavernas), fazendo com que uma coluna se projete violentamente da estrutura. Um alvo dessa magia sofre dano igual à 30/Contusão e precisa vencer um teste de Força (dificuldade igual à Determinação do conjurador) para não ser derrubado. A coluna tem cerca de 1 metro de diâmetro e uma extensão em metros igual à Vontade do conjurador. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados, mas a coluna de pedra é permanente.",
+                "", 12, 30, "Mover Terra", ""));
+
+        habilidades.add(new Habilidade(null, "Venefício", TipoHabilidade.ACAO, todasRacas, druidas, 5,
+                "Você é um especialista na fabricação, aplicação e cura de venenos. Você pode produzir qualquer veneno ou antídoto avançado.",
+                "Se você tiver alguma Habilidade do tipo Magia que cause dano por Perfuração ou Corte em um alvo, ela também aplicam um efeito de veneno potente (O alvo perde 5 Pontos de Vida por turno) além do dano normal. Esse veneno é considerado mágico e permanece ativo por uma quantidade de turnos igual à sua Vontade ou até ser curado.", 0, 0, "Herbalismo", ""));
+
+        habilidades.add(new Habilidade(null, "Hierofante", TipoHabilidade.SUPORTE, todasRacas, druidas, 10,
+                "Você adquiriu um vínculo poderoso com a natureza e um vasto entendimento de seu funcionamento. Você recebe +2 em seus testes com relação a natureza, animais e magias e o custo de todas as magias que você lançar é diminuído em 5. Além disso, você pode atrair um segundo Companheiro Animal seguindo as mesmas regras descritas em Companheiro Animal 1. Seu segundo Companheiro Animal recebe os benefícios de todas as Habilidades Companheiro Animal que você tiver.",
+                "", 0, 0, "Princípio Natural, Companheiro Animal 1, Sabedoria Selvagem", ""));
+
+        // Espadachim
+
+        List<Classe> espadachim = obterListaClasse(TipoClasse.ESPADACHIM);
+
+        habilidades.add(new Habilidade(null, "", TipoHabilidade.ACAO, todasRacas, espadachim, 1,
                 "",
                 "", 0, 0, "", ""));
 
-        habilidades.add(new Habilidade(null, "", TipoHabilidade.ACAO, todasRacas, druidas, 1,
-                "",
-                "", 0, 0, "", ""));
-
-        habilidades.add(new Habilidade(null, "", TipoHabilidade.ACAO, todasRacas, druidas, 1,
-                "",
-                "", 0, 0, "", ""));
         return gravarHabilidades(habilidades);
     }
 
