@@ -820,6 +820,30 @@ public class HabilidadeService {
                 "",
                 "", 0, 0, "", ""));
 
+        // Feiticeiro
+        List<Classe> feiticeiro = obterListaClasse(TipoClasse.FEITICEIRO);
+
+        // Guerreiro
+        List<Classe> guerreiro = obterListaClasse(TipoClasse.GUERREIRO);
+
+        // Ladino
+        List<Classe> ladino = obterListaClasse(TipoClasse.LADINO);
+
+        // Paladino
+        List<Classe> paladino = obterListaClasse(TipoClasse.PALADINO);
+
+        // Patrulheiro
+        List<Classe> patrulheiro = obterListaClasse(TipoClasse.PATRULHEIRO);
+
+        // Rúnico
+        List<Classe> runico = obterListaClasse(TipoClasse.RUNICO);
+
+        // Sacerdote
+        List<Classe> sacerdote = obterListaClasse(TipoClasse.SACERDOTE);
+
+        // Xamã
+        List<Classe> xama = obterListaClasse(TipoClasse.XAMA);
+
         return gravarHabilidades(habilidades);
     }
 
