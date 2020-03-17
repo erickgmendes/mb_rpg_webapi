@@ -578,14 +578,6 @@ public class HabilidadeService {
                 "Você canta uma música exaltando as capacidades e qualidades dos seus aliados, deixando-os confiantes. Todos os seus aliados (incluindo você) que puderem ouvir essa canção recebem +1 em todos os seus testes enquanto você continuar a tocar essa Música.",
                 "", 0, 0, "Melodia do Repouso", ""));
 
-        habilidades.add(new Habilidade(null, "Eloquente", TipoHabilidade.SUPORTE, todasRacas, bardos, 1,
-                "Você tem um talento de convencer ou comover outras pessoas apenas falando do jeito certo. Você recebe +1d6 em todos os seus testes para persuadir, mentir, perceber mentiras, intimidar ou em qualquer outra interação social.",
-                "", 0, 0, "", ""));
-
-        habilidades.add(new Habilidade(null, "Evasão", TipoHabilidade.REACAO, todasRacas, bardos, 1,
-                "Se o seu inimigo fizer um ataque corporal e acertar, você pode declarar evasão, e obrigar o inimigo a rolar novamente o teste de ataque. Você pode escolher com qual dos resultados o oponente vai ficar. Esta Habilidade só pode ser usada uma vez por rodada.",
-                "", 0, 20, "", ""));
-
         habilidades.add(new Habilidade(null, "Furtivo", TipoHabilidade.SUPORTE, todasRacas, bardos, 1,
                 "Você é particularmente discreto quando quer. Você pode rolar +1d6 quando fizer testes para se mover em silêncio, se esconder, camuflar, ou usar disfarces.",
                 "", 0, 0, "", ""));
@@ -601,10 +593,6 @@ public class HabilidadeService {
         habilidades.add(new Habilidade(null, "Grito Estilhaçador", TipoHabilidade.ACAO, todasRacas, bardos, 1,
                 "Seu agudo é tão poderoso que você pode direcionar um grito capaz de romper vidros, cristais e tímpanos! Tudo e todos em até 10 metros à sua frente sofrem dano igual a 10/Corte. Criaturas com Corpo Amórfico, objetos inanimados e estruturas que sejam atingidas por esse grito sofrem o dobro do dano.",
                 "", 0, 20, "Grito Ensurdecedor", ""));
-
-        habilidades.add(new Habilidade(null, "Língua Afiada", TipoHabilidade.ACAO, todasRacas, bardos, 1,
-                "Você possui uma língua ferina e um talento especial para insultar seus adversários. Escolha um inimigo do tipo Humanoide ou Esfinge. Você faz uma série de comentários jocosos ou degradantes sobre ele. Faça um confronto de Vontade contra o alvo. Se você tiver um resultado igual ou maior do que o alvo e se ele for capaz de entendê-lo, ele ataca você em detrimento de qualquer outro alvo, e é considerado Desprevenido para todos os seus aliados – mas não para você. Este é um efeito mental.",
-                "", 0, 10, "Eloquente", ""));
 
         habilidades.add(new Habilidade(null, "Malabarista", TipoHabilidade.SUPORTE, todasRacas, bardos, 1,
                 "Você tem uma ótima coordenação para jogar e pegar objetos no ar. Além de poder realizar malabarismos – mesmo usando objetos perigosos como adagas ou tochas – como entretenimento, você recebe +2 em todas as suas jogadas para arremessar objetos e +1 na Defesa contra ataques à distância. Esse bônus de Defesa conta como Esquiva.",
@@ -629,10 +617,6 @@ public class HabilidadeService {
         habilidades.add(new Habilidade(null, "Mestre das Notas", TipoHabilidade.REACAO, todasRacas, bardos, 1,
                 "Sempre que você fizer um teste que envolva contar histórias, entreter uma plateia, cantar ou tocar instrumento musicais (incluindo Habilidades do tipo Música) você pode rolar novamente 1 dos dados. Você pode escolher com qual dos resultados vai ficar. Você só pode usar esta Habilidade 1 vez por turno.",
                 "", 0, 10, "", ""));
-
-        habilidades.add(new Habilidade(null, "Truque Sujo", TipoHabilidade.ACAO, todasRacas, bardos, 1,
-                "Quando estiver em distância corporal do oponente e ele estiver te vendo, faça um Confronto de Inteligência contra o alvo. Se você tiver um resultado igual ou maior do que o do oponente nesse teste, você realiza um truque sujo (joga areia nos olhos do oponente, joga um pano em seu rosto, enrola uma corda em suas pernas, etc.) fazendo com que o alvo fique confuso ou desequilibrado, não podendo realizar nenhuma ação no próximo turno, e sendo considerado Desprevenido por 1 turno.",
-                "", 0, 10, "Evasão", ""));
 
         habilidades.add(new Habilidade(null, "Canção da Sereia", TipoHabilidade.ACAO, todasRacas, bardos, 5,
                 "Você canta uma música melancólica capaz de deixar aqueles que a escutam enfeitiçados. Todos que estiverem a até 10 metros de você e puderem ouvir a canção rolam um confronto de Vontade contra você a cada turno enquanto você continuar cantando. Alvos que tenham um resultado menor do que o seu não poderão realizar qualquer ação exceto tentar se aproximar de você enquanto você estiver cantando – ou ficar imóvel lhe observando se estiverem a 1 metro ou menos de você. Esse efeito é cancelado e o alvo fica imune aos seus efeitos até o fim do combate se a vítima sofrer algum dano enquanto estiver sob efeito dessa Música. Enquanto estiver sob o efeito dessa Música o alvo é considerado Desprevenido para todos os seus aliados – mas não para você. Este é um efeito mental.",
@@ -816,7 +800,85 @@ public class HabilidadeService {
         // Espadachim
         List<Classe> espadachim = obterListaClasse(TipoClasse.ESPADACHIM);
 
-        habilidades.add(new Habilidade(null, "", TipoHabilidade.ACAO, todasRacas, espadachim, 1,
+        habilidades.add(new Habilidade(null, "Mestre de Armas 1", TipoHabilidade.SUPORTE, todasRacas, espadachim, 1,
+                "Você é particularmente eficiente no uso de armas brancas. Sempre que realizar um ataque corporal usando uma arma, adicione 3 ao dano do ataque.",
+                "", 0, 0, "", ""));
+
+        habilidades.add(new Habilidade(null, "Acrobata", TipoHabilidade.SUPORTE, todasRacas, espadachim, 1,
+                "Você sempre rola +1d6 em seus testes de equilíbrio, salto, piruetas e qualquer outra tentativa de se deslocar que exija coordenação, flexibilidade e precisão. Além disso, você sofre apenas metade dos danos por queda.",
+                "", 0, 0, "", ""));
+
+        habilidades.add(new Habilidade(null, "Aparar", TipoHabilidade.SUPORTE, todasRacas, espadachim, 1,
+                "Você pode usar qualquer coisa que esteja em suas mãos para afastar e desviar golpes desferidos contra você. Enquanto estiver com um objeto em pelo menos uma das mãos, você recebe Defesa +1. Se estiver segurando uma objeto em ambas as mãos ou um objeto em cada mão você recebe Defesa +2. Este e um bônus de Esquiva.",
+                "", 0, 0, "", ""));
+
+        habilidades.add(new Habilidade(null, "Ataque Aleijador", TipoHabilidade.ACAO, todasRacas, espadachim, 1,
+                "Faça um ataque corpo-a-corpo ou à distância, visando o quadril, joelho ou tornozelo do alvo, comprometendo sua locomoção e deixando um ferimento doloroso. Além de receber o dano normal pelo ataque, o alvo fica com seu Deslocamento reduzido em 1 e sempre que se deslocar ou fizer um teste de Agilidade que envolva as pernas ele sofre 10 pontos de dano. Esse é um efeito de Sangramento.",
+                "", 0, 20, "", ""));
+
+        habilidades.add(new Habilidade(null, "Ataque Giratório", TipoHabilidade.ACAO, todasRacas, espadachim, 1,
+                "Você realiza um ataque amplo, girando sua arma para atingir todos os oponentes próximos. Faça um ataque corporal contra cada alvo dentro do seu alcance corporal.",
+                "", 0, 10, "", ""));
+
+        habilidades.add(new Habilidade(null, "Ataque Redirecionado", TipoHabilidade.REACAO, todasRacas, espadachim, 1,
+                "Quando um oponente errar um ataque corporal contra você, você pode direcionar o ataque dele para outro alvo. O novo alvo precisa estar adjacente a você ou ao oponente que errou o ataque. Esse ataque acerta automaticamente – sem chance de errar ou de ser um sucesso decisivo. Esta Habilidade só pode ser usada uma vez por rodada.",
+                "", 0, 0, "Evasão", ""));
+
+        habilidades.add(new Habilidade(null, "Combate com Duas Armas 1", TipoHabilidade.SUPORTE, todasRacas, espadachim, 1,
+                "Você treinou para usar duas armas em combate de forma eficiente. Você pode fazer um ataque para cada arma que estiver segurando, desde que pelo menos uma delas tenha uma FN igual à metade (ou menos) do que a Força do personagem.",
+                "Se você utilizar uma Habilidade de Ação, seus efeitos se aplicam a apenas um dos seus ataques – mas você ainda pode fazer um ataque normal com a outra arma no mesmo turno, antes ou depois de utilizar a Habilidade de Ação.", 0, 0, "", ""));
+
+        habilidades.add(new Habilidade(null, "Combate Tático", TipoHabilidade.REACAO, todasRacas, espadachim, 1,
+                "Se você derrotar um oponente com um ataque corporal, você pode imediatamente realizar outro ataque corporal normal (mas não Habilidades de Ação).",
+                "", 0, 0, "", ""));
+
+        habilidades.add(new Habilidade(null, "Corte Arterial", TipoHabilidade.ACAO, todasRacas, espadachim, 1,
+                "Faça um ataque corporal com uma arma de corte ou perfuração. Se acertar, a vítima começará a sangrar, perdendo 10 Pontos de Vida no início de cada um de seus turnos. Este é um efeito de sangramento.",
+                "", 0, 30, "Ataque Aleijador", ""));
+
+        habilidades.add(new Habilidade(null, "Dança das Espadas 1", TipoHabilidade.ACAO, todasRacas, espadachim, 1,
+                "Você pode entrar em um fluxo incessante de movimentos fluidos e vigorosos. Enquanto estiver neste estado você recebe Agilidade +2 e recebe +1d6 em seus testes de dança. Este efeito dura até 5 minutos ou até que você pare, ou seja alvo de um efeito que o impeça da continuar se movendo continuamente (Constringido, Derrubado, amedrontado, etc.).",
+                "", 0, 30, "", ""));
+
+        habilidades.add(new Habilidade(null, "Desarmar Oponente", TipoHabilidade.ACAO, todasRacas, espadachim, 1,
+                "Você pode usar a sua arma para tirar a arma do seu oponente. Faça um teste resistido de Agilidade contra Força ou Agilidade do adversário (dependendo do que ele usar para combater), somando a FN das armas (a sua e a do seu adversário) nas suas respectivas rolagens. Se você estiver desarmado, use apenas Agilidade. Se o seu adversário tiver um sucesso igual ou menor do que o seu, a arma dele cairá no chão entre você e ele.",
+                "", 0, 20, "Ataque Redirecionado", ""));
+
+        habilidades.add(new Habilidade(null, "Falhas da Armadura", TipoHabilidade.SUPORTE, todasRacas, espadachim, 1,
+                "Você sabe como acertar ataques entre as frestas e falhas das armaduras do inimigo. Ignore sempre o bônus de Armadura da Defesa do oponente.",
+                "", 0, 0, "", ""));
+
+        habilidades.add(new Habilidade(null, "Golpes Rápidos", TipoHabilidade.ACAO, todasRacas, espadachim, 1,
+                "Você pode fazer dois ataques corporais com uma arma que estiver empunhando, desde que esteja empunhando a arma com apenas 1 mão.",
+                "", 0, 20, "", ""));
+
+        habilidades.add(new Habilidade(null, "Investida Mortal", TipoHabilidade.ACAO, todasRacas, espadachim, 1,
+                "Faça uma manobra de encontrão contra um alvo. Esse ataque causa +10 de dano, e se acertar deixa o alvo Atordoado (O personagem tem -1 na Defesa, no Deslocamento e em todos os seus testes) por 1 turno.",
+                "", 0, 10, "", ""));
+
+        habilidades.add(new Habilidade(null, "Movimentos Evasivos", TipoHabilidade.SUPORTE, todasRacas, espadachim, 1,
+                "Você ganha +1 na sua Defesa para cada 2 pontos que tiver em Agilidade. Esta habilidade só funciona se você estiver sem armadura. Esse é um bônus de Esquiva.",
+                "", 0, 0, "Acrobata", ""));
+
+        habilidades.add(new Habilidade(null, "Panache", TipoHabilidade.SUPORTE, todasRacas, espadachim, 1,
+                "Você possui uma bravura petulante e uma confiança inabalável nas suas próprias habilidades. Enquanto não estiver usando armadura, você recebe +1 na Defesa para cada 2 pontos de Vontade. Esse é um bônus de Esquiva.",
+                "", 0, 0, "Língua Afiada", ""));
+
+        habilidades.add(new Habilidade(null, "Sem Escapatória", TipoHabilidade.REACAO, todasRacas, espadachim, 1,
+                "Se um oponente que está adjacente a você tentar se afastar ou se levantar, você pode imediatamente fazer um ataque corporal normal contra ele. Se acertar, além de sofrer o dano normal pelo ataque, o oponente não poderá se deslocar neste turno.",
+                "", 0, 0, "Combate Tático", ""));
+
+        habilidades.add(new Habilidade(null, "Touché", TipoHabilidade.ACAO, todasRacas, espadachim, 1,
+                " Faça um ataque corporal com uma arma que estiver empunhando com apenas 1 mão, rolando +1d6 no teste.",
+                "", 0, 10, "", ""));
+
+        Combate com Duas Armas 2
+
+        habilidades.add(new Habilidade(null, "", TipoHabilidade.ACAO, todasRacas, espadachim, 5,
+                "",
+                "", 0, 0, "", ""));
+
+        habilidades.add(new Habilidade(null, "", TipoHabilidade.ACAO, todasRacas, espadachim, 5,
                 "",
                 "", 0, 0, "", ""));
 
@@ -843,6 +905,25 @@ public class HabilidadeService {
 
         // Xamã
         List<Classe> xama = obterListaClasse(TipoClasse.XAMA);
+
+        // Bardos e Espadachins
+        List<Classe> bardos_espadachins = obterListaClasse(TipoClasse.obterDupla(TipoClasse.BARDO, TipoClasse.ESPADACHIM));
+
+        habilidades.add(new Habilidade(null, "Eloquente", TipoHabilidade.SUPORTE, todasRacas, bardos_espadachins, 1,
+                "Você tem um talento de convencer ou comover outras pessoas apenas falando do jeito certo. Você recebe +1d6 em todos os seus testes para persuadir, mentir, perceber mentiras, intimidar ou em qualquer outra interação social.",
+                "", 0, 0, "", ""));
+
+        habilidades.add(new Habilidade(null, "Evasão", TipoHabilidade.REACAO, todasRacas, bardos_espadachins, 1,
+                "Se o seu inimigo fizer um ataque corporal e acertar, você pode declarar evasão, e obrigar o inimigo a rolar novamente o teste de ataque. Você pode escolher com qual dos resultados o oponente vai ficar. Esta Habilidade só pode ser usada uma vez por rodada.",
+                "", 0, 20, "", ""));
+
+        habilidades.add(new Habilidade(null, "Língua Afiada", TipoHabilidade.ACAO, todasRacas, bardos_espadachins, 1,
+                "Você possui uma língua ferina e um talento especial para insultar seus adversários. Escolha um inimigo do tipo Humanoide ou Esfinge. Você faz uma série de comentários jocosos ou degradantes sobre ele. Faça um confronto de Vontade contra o alvo. Se você tiver um resultado igual ou maior do que o alvo e se ele for capaz de entendê-lo, ele ataca você em detrimento de qualquer outro alvo, e é considerado Desprevenido para todos os seus aliados – mas não para você. Este é um efeito mental.",
+                "", 0, 10, "Eloquente", ""));
+
+        habilidades.add(new Habilidade(null, "Truque Sujo", TipoHabilidade.ACAO, todasRacas, bardos_espadachins, 1,
+                "Quando estiver em distância corporal do oponente e ele estiver te vendo, faça um Confronto de Inteligência contra o alvo. Se você tiver um resultado igual ou maior do que o do oponente nesse teste, você realiza um truque sujo (joga areia nos olhos do oponente, joga um pano em seu rosto, enrola uma corda em suas pernas, etc.) fazendo com que o alvo fique confuso ou desequilibrado, não podendo realizar nenhuma ação no próximo turno, e sendo considerado Desprevenido por 1 turno.",
+                "", 0, 10, "Evasão", ""));
 
         return gravarHabilidades(habilidades);
     }
