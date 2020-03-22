@@ -17,7 +17,7 @@ public class Habilidade implements Serializable {
 		super();
 	}
 
-	public Habilidade(Long id, String nome, TipoHabilidade tipoHabilidade, List<Raca> racas, List<Classe> classes, Integer nivel, String descricao, String especial, Integer dificuldade, Integer mana, String requisito, String modificador) {
+	public Habilidade(Long id, String nome, TipoHabilidade tipoHabilidade, List<Raca> racas, List<Classe> classes, Integer nivel, String descricao, String especial, Integer dificuldade, Integer mana, String requisito, String modificador, Boolean automatica) {
 		this.id = id;
 		this.nome = nome;
 		this.tipoHabilidade = tipoHabilidade;
@@ -30,6 +30,7 @@ public class Habilidade implements Serializable {
 		this.mana = mana;
 		this.requisito = requisito;
 		this.modificador = modificador;
+        this.automatica = automatica;
 	}
 
 	@Id
@@ -51,7 +52,8 @@ public class Habilidade implements Serializable {
 
 	@Column(length = 2000)
 	private String descricao;
-	
+
+	@Column(length = 2000)
 	private String especial;
 
 	private Integer dificuldade;
@@ -61,6 +63,8 @@ public class Habilidade implements Serializable {
 	private String requisito;
 
 	private String modificador;
+
+    private Boolean automatica;
 
 	public Long getId() {
 		return id;
@@ -157,4 +161,13 @@ public class Habilidade implements Serializable {
 	protected void setModificador(String modificador) {
 		this.modificador = modificador;
 	}
+
+    public Boolean getAutomatica() {
+        return automatica;
+    }
+
+    protected void setId(Boolean automatica) {
+        this.automatica = automatica;
+    }
+
 }
