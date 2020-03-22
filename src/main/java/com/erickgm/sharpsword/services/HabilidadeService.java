@@ -3251,13 +3251,14 @@ public class HabilidadeService {
                 )
         );
 
+        /*
         habilidades.add(
                 new Habilidade(
                         null,
                         "",
                         acao,
                         todasRacas,
-                        espadachim,
+                        feiticeiro,
                         1,
                         "",
                         "",
@@ -3275,7 +3276,7 @@ public class HabilidadeService {
                         "",
                         acao,
                         todasRacas,
-                        espadachim,
+                        feiticeiro,
                         1,
                         "",
                         "",
@@ -3293,7 +3294,7 @@ public class HabilidadeService {
                         "",
                         acao,
                         todasRacas,
-                        espadachim,
+                        feiticeiro,
                         1,
                         "",
                         "",
@@ -3311,7 +3312,7 @@ public class HabilidadeService {
                         "",
                         acao,
                         todasRacas,
-                        espadachim,
+                        feiticeiro,
                         1,
                         "",
                         "",
@@ -3329,7 +3330,7 @@ public class HabilidadeService {
                         "",
                         acao,
                         todasRacas,
-                        espadachim,
+                        feiticeiro,
                         1,
                         "",
                         "",
@@ -3347,7 +3348,7 @@ public class HabilidadeService {
                         "",
                         acao,
                         todasRacas,
-                        espadachim,
+                        feiticeiro,
                         1,
                         "",
                         "",
@@ -3365,7 +3366,7 @@ public class HabilidadeService {
                         "",
                         acao,
                         todasRacas,
-                        espadachim,
+                        feiticeiro,
                         1,
                         "",
                         "",
@@ -3383,7 +3384,7 @@ public class HabilidadeService {
                         "",
                         acao,
                         todasRacas,
-                        espadachim,
+                        feiticeiro,
                         1,
                         "",
                         "",
@@ -3394,7 +3395,7 @@ public class HabilidadeService {
                         false
                 )
         );
-
+*/
         // Guerreiro
         List<Classe> guerreiro = obterListaClasse(TipoClasse.GUERREIRO);
 
