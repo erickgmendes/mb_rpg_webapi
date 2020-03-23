@@ -158,7 +158,14 @@ public class HabilidadeService {
                         0,
                         5,
                         "",
-                        "Agilidade+1",
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 ));
 
@@ -175,7 +182,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -193,7 +207,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Força+1",
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -211,7 +232,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Vontade 4 ou mais.",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -229,7 +257,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Inteligência+1",
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -247,7 +282,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -265,7 +307,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Mana+20",
+                        0,
+                        0,
+                        0,
+                        0,
+                        20,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -283,7 +332,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -301,7 +357,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "PV+20",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        20,
+                        0,
+                        0,
                         false
                 )
         );
@@ -319,7 +382,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Vontade+1",
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -342,7 +412,14 @@ public class HabilidadeService {
                         0,
                         30,
                         "",
-                        "Força+2",
+                        2,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -363,7 +440,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Força+2",
+                        2,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -384,7 +468,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Força+2",
+                        2,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -402,7 +493,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Agilidade+1;Deslocamento+1",
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
                         false
                 )
         );
@@ -420,7 +518,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -438,7 +543,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -456,7 +568,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -474,7 +593,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -495,7 +621,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -516,7 +649,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Mana+5",
+                        0,
+                        0,
+                        0,
+                        0,
+                        5,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -531,11 +671,17 @@ public class HabilidadeService {
                         1,
                         "Você é capaz de canalizar magias muito mais facilmente. As dificuldades de todas as Magia são diminuídas em 1 para você. Você também tem +5 Pontos de Mana.",
                         "",
-
                         0,
                         0,
                         "",
-                        "Mana+5",
+                        0,
+                        0,
+                        0,
+                        0,
+                        5,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -553,7 +699,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "Herança Feérica",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -571,7 +724,14 @@ public class HabilidadeService {
                         0,
                         15,
                         "Herança Feérica",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -592,7 +752,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -613,7 +780,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -634,7 +808,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Vontade+1;Mana+5",
+                        0,
+                        0,
+                        0,
+                        1,
+                        5,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -655,7 +836,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -673,7 +861,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -694,7 +889,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -716,7 +918,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -737,7 +946,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -755,7 +971,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -773,7 +996,14 @@ public class HabilidadeService {
                         0,
                         5,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -791,7 +1021,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Força 3",
-                        "Defesa+1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
                         false
                 )
         );
@@ -812,7 +1049,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -830,7 +1074,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -848,7 +1099,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Inteligência+1;Mana+5",
+                        0,
+                        0,
+                        1,
+                        0,
+                        5,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -869,7 +1127,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -882,12 +1147,19 @@ public class HabilidadeService {
                         anoes,
                         todasClasses,
                         1,
-                        "Você é extremamente teimoso e é muito difícil dissuadi-lo de uma opinião, intimidá-lo, controlar sua mente ou manipulá-lo de qualquer forma. Você tem Vontade +1 e Determinação +2.",
+                        "Você é extremamente teimoso e é muito difícil dissuadi-lo de uma opinião, intimidá-lo, controlar sua mente ou manipulá-lo de qualquer forma. Você tem Vontade +1 e *Determinação +2.",
                         "",
                         0,
                         0,
                         "",
-                        "Vontade+1;Determinação+2",
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -905,7 +1177,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "PV+5",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        5,
+                        0,
+                        0,
                         false
                 )
         );
@@ -923,7 +1202,14 @@ public class HabilidadeService {
                         null,
                         null,
                         null,
-                        "PV+10;Defesa+1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        10,
+                        1,
+                        0,
                         false
                 )
         );
@@ -941,7 +1227,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -959,7 +1252,14 @@ public class HabilidadeService {
                         0,
                         null,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -980,7 +1280,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -998,7 +1305,14 @@ public class HabilidadeService {
                         0,
                         30,
                         "Fúria Bestial, Vontade 4",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1016,7 +1330,14 @@ public class HabilidadeService {
                         null,
                         null,
                         null,
-                        "Defesa+2",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        2,
+                        0,
                         false
                 )
         );
@@ -1030,11 +1351,18 @@ public class HabilidadeService {
                         todasClasses,
                         5,
                         "Você veste sua bravura em batalha melhor do que alguns vestem armaduras. O Bônus Defesa conferido por Bravura Selvagem 1 aumenta para +4 e você pode escolher se esse bônus será de Bloqueio ou Esquiva no início de cada um de seus turnos, como uma ação livre.",
-                        null,
-                        null,
-                        null,
+                        "",
+                        0,
+                        0,
                         "Bravura Selvagem 1",
-                        null,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1052,7 +1380,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1070,7 +1405,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Força+1;PV+5",
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        5,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1088,7 +1430,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Fúria Bestial, Vontade 4",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1109,7 +1458,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -1127,7 +1483,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1145,7 +1508,14 @@ public class HabilidadeService {
                         0,
                         20,
                         "Chamas Internas 1",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1160,7 +1530,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1177,7 +1554,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1195,7 +1579,14 @@ public class HabilidadeService {
                         0,
                         30,
                         "Chamas Internas 1, Vontade 5",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1213,7 +1604,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1230,11 +1628,18 @@ public class HabilidadeService {
                         todasClasses,
                         1,
                         "Você se adaptou ao ambiente em que cresceu ou à atividade que escolheu – ou precisou – desempenhar. Você tem +1 em qualquer um dos seus Atributos a sua escolha.",
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
+                        "",
+                        0,
+                        0,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -1252,7 +1657,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1270,7 +1682,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1288,7 +1707,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1306,7 +1732,14 @@ public class HabilidadeService {
                         0,
                         20,
                         "Sorte",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1324,7 +1757,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1345,7 +1785,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -1363,7 +1810,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "PV+5",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        5,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1381,7 +1835,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1399,7 +1860,14 @@ public class HabilidadeService {
                         0,
                         20,
                         "Fortaleza, Vontade 5",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1417,7 +1885,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1435,7 +1910,14 @@ public class HabilidadeService {
                         0,
                         20,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1456,7 +1938,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -1474,7 +1963,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Força 4",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1492,7 +1988,14 @@ public class HabilidadeService {
                         0,
                         5,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1510,7 +2013,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "Contato com Espíritos",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1528,7 +2038,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Agilidade 5",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1546,7 +2063,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Dançarino do Ar",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1564,7 +2088,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1585,7 +2116,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -1603,7 +2141,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1621,7 +2166,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1639,7 +2191,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Braços Extras 1",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1657,7 +2216,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "PV+5",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        5,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1678,7 +2244,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Deslocamento+1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
                         true
                 )
         );
@@ -1696,7 +2269,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "Inteligência+1;TestesInteligência+2",
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1714,7 +2294,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1731,7 +2318,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1749,7 +2343,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "Raça Florestal, Vontade 5",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1767,7 +2368,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1788,7 +2396,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -1806,7 +2421,14 @@ public class HabilidadeService {
                         0,
                         25,
                         "Melodia do Repouso",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1824,7 +2446,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Melodia do Repouso",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1842,7 +2471,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1860,7 +2496,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1878,7 +2521,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1896,7 +2546,14 @@ public class HabilidadeService {
                         0,
                         20,
                         "Grito Ensurdecedor",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1914,7 +2571,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1932,7 +2596,14 @@ public class HabilidadeService {
                         null,
                         20,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1950,7 +2621,14 @@ public class HabilidadeService {
                         0,
                         20,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1968,7 +2646,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -1986,7 +2671,14 @@ public class HabilidadeService {
                         0,
                         15,
                         "Melodia do Repouso",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2004,7 +2696,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2022,7 +2721,14 @@ public class HabilidadeService {
                         0,
                         20,
                         "Eloquente",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2040,7 +2746,14 @@ public class HabilidadeService {
                         0,
                         20,
                         "Melodia do Enjoo",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2058,7 +2771,14 @@ public class HabilidadeService {
                         0,
                         15,
                         " Grito de Guerra 1",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2076,7 +2796,14 @@ public class HabilidadeService {
                         0,
                         35,
                         "Grito de Guerra 1",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2094,7 +2821,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "Melodia Dançante",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2112,7 +2846,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "Canção da Sereia",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2130,7 +2871,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Eloquente",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2148,7 +2896,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Mestre das Notas",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2166,7 +2921,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Pelo menos uma Habilidade de Grito",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2184,7 +2946,14 @@ public class HabilidadeService {
                         0,
                         80,
                         "Virtuoso, Canção Desesperadora",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2205,7 +2974,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -2223,7 +2999,14 @@ public class HabilidadeService {
                         10,
                         20,
                         " Caminhada Mágica",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2241,7 +3024,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2259,7 +3049,14 @@ public class HabilidadeService {
                         11,
                         20,
                         "Benção de Ellenis",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2277,7 +3074,14 @@ public class HabilidadeService {
                         8,
                         0,
                         "Sabedoria Selvagem",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2295,7 +3099,14 @@ public class HabilidadeService {
                         9,
                         10,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2313,7 +3124,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2331,7 +3149,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Companheiro Animal 1",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2349,25 +3174,14 @@ public class HabilidadeService {
                         10,
                         10,
                         "Benção de Ellenis",
-                        "",
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Detectar Magia",
-                        acao,
-                        todasRacas,
-                        druidas,
-                        1,
-                        "Concentrando-se nos fluxos de energias mágicas, você pode enxergar a aura de objetos mágicos, Runas Arcanas e Selos Místicos. Você pode analisar a aura mágica de um Selo, Runa ou objeto para entender suas propriedades observando-a por 1 minuto.",
-                        "",
-                        8,
                         0,
-                        "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2385,7 +3199,14 @@ public class HabilidadeService {
                         10,
                         10,
                         "Sabedoria Selvagem",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2403,7 +3224,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2421,7 +3249,14 @@ public class HabilidadeService {
                         11,
                         20,
                         "Princípio Natural",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2439,7 +3274,14 @@ public class HabilidadeService {
                         10,
                         10,
                         "Bons Frutos",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2457,7 +3299,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Sabedoria Selvagem",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2475,7 +3324,14 @@ public class HabilidadeService {
                         11,
                         15,
                         "Princípio Natural",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2493,7 +3349,14 @@ public class HabilidadeService {
                         8,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2511,7 +3374,14 @@ public class HabilidadeService {
                         10,
                         10,
                         "Princípio Natural",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2529,7 +3399,14 @@ public class HabilidadeService {
                         10,
                         10,
                         "Sabedoria Selvagem",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2547,7 +3424,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2565,7 +3449,14 @@ public class HabilidadeService {
                         12,
                         25,
                         "Rajada de àgua",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2583,7 +3474,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Companheiro animal 2",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2601,7 +3499,14 @@ public class HabilidadeService {
                         12,
                         0,
                         "Mover Terra",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         ); // Mana: Variável??
@@ -2619,7 +3524,14 @@ public class HabilidadeService {
                         13,
                         0,
                         "Entrelaçar",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2637,7 +3549,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Aparar Magia",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2655,7 +3574,14 @@ public class HabilidadeService {
                         12,
                         40,
                         "Evocar Temporal",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2673,7 +3599,14 @@ public class HabilidadeService {
                         12,
                         25,
                         "Entrelaçar, Rajada de Espinhos",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2691,7 +3624,14 @@ public class HabilidadeService {
                         14,
                         40,
                         "Evocar Temporal",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2709,7 +3649,14 @@ public class HabilidadeService {
                         12,
                         20,
                         "Convocar Animais",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2727,7 +3674,14 @@ public class HabilidadeService {
                         12,
                         30,
                         "Mover Terra",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2745,7 +3699,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Herbalismo",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2763,7 +3724,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Princípio Natural, Companheiro Animal 1, Sabedoria Selvagem",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2784,7 +3752,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
@@ -2802,7 +3777,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2820,7 +3802,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2835,7 +3824,14 @@ public class HabilidadeService {
                         0,
                         20,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2850,7 +3846,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2865,7 +3868,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Evasão",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2883,7 +3893,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2898,7 +3915,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2913,7 +3937,14 @@ public class HabilidadeService {
                         0,
                         30,
                         "Ataque Aleijador",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2928,7 +3959,14 @@ public class HabilidadeService {
                         0,
                         30,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2943,7 +3981,14 @@ public class HabilidadeService {
                         0,
                         20,
                         "Ataque Redirecionado",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2961,7 +4006,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2976,7 +4028,14 @@ public class HabilidadeService {
                         0,
                         20,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -2991,7 +4050,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3009,7 +4075,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Acrobata",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3027,7 +4100,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Língua Afiada",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3042,7 +4122,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Combate Tático",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3057,7 +4144,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3075,7 +4169,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Combate com Duas Armas 1",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3093,7 +4194,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Dança das Espadas 1",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3108,7 +4216,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Retalhar",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3126,7 +4241,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Sem Escapatória",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3144,7 +4266,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3162,7 +4291,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Corte Arterial",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3177,7 +4313,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Ataque Redirecionado",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3192,7 +4335,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Golpes Rápidos",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3207,7 +4357,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3225,7 +4382,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "Touché",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3246,26 +4410,514 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         true
                 )
         );
 
-        /*
         habilidades.add(
                 new Habilidade(
                         null,
+                        "Arco Voltaico",
+                        reacao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Você aprendeu a usar sua capacidade de teleporte na velocidade de um raio! Desenhando uma Runa Arcana sobre si mesmo, você sempre pode ativá-la se for alvo de um ataque ou magia que cause dano (mas não perda de vida ou outros efeitos que não causem dano), se teleportando para algum lugar a um número de metros igual à sua Inteligência de onde você está, evitando o ataque completamente. Essa Runa Arcana se dissipa apenas quando você dormir (ou perder a consciência de alguma forma) e não quando é ativada – mas consome seu custo em Mana sempre que seu efeito for desencadeado.",
                         "",
+                        12,
+                        15,
+                        "Relâmpago 1, Teleporte 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Aríete Mágico",
                         acao,
                         todasRacas,
                         feiticeiro,
                         1,
+                        "Você projeta um poderoso golpe mágico capaz de derrubar oponentes – e estruturas! Desenhando uma runa arcana no ar, você projeta uma rajada de energia mágica bruta que causa dano igual a 10/Contusão em um alvo em sua linha de visão, e obriga o alvo a vencer um teste de Força com dificuldade igual à Determinação do conjurador para não ser derrubado. Itens inanimados e estruturas sofrem o dobro do dano normal. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
                         "",
+                        10,
+                        10,
+                        "Telecinésia",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Bola de Fogo",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Desenhando uma runa Arcana no ar você projeta uma esfera de chamas de 20 cm de diâmetro contra um alvo na sua linha de visão. A esfera explode ao atingir o alvo, causando dano igual a 20/Fogo nele e 10/Fogo em tudo e todos em até 2 metros dele. Objetos inanimados inflamáveis atingidos por essa magia tendem a entrar em combustão. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                        "",
+                        12,
+                        20,
+                        "Inflamar",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Congelar",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Desenhando uma runa Arcana sobre um objeto ou superfície, você infunde um frio intenso congelando-o. Essa magia pode congelar até 200 litros de líquido ou de material sólido por ponto de Inteligência do conjurador. Apenas matéria inanimada pode ser afetada por essa magia. Essa magia pode ser usada para criar uma camada de gelo grosso (cerca de 5 centímetros) e extremamente escorregadio numa área circular com um diâmetro igual à sua Inteligência. Qualquer criatura sobre essa superfície (incluindo você) precisa fazer um teste de Agilidade (Dificuldade 12) sempre que realizar um ataque, se mover ou tentar se levantar. Uma falha nesse teste significa que o personagem cai. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas o gelo criado é permanente e descongela em velocidade normal.",
+                        "",
+                        8,
+                        10,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Eletricidade Estática",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Desenhando uma runa Arcana sobre um objeto ou criatura, você o carrega com uma forte carga de eletricidade estática, prendendo-o à qualquer superfície em que estiver tocando. Pode ser usado em um item portátil para tornar impossível que ele seja derrubado ou em uma criatura para impedir que ela tire os pés do chão – reduzindo seu Deslocamento para 0 e sua Agilidade em -2. Um alvo afetado dessa forma pode fazer um teste de Força com dificuldade igual à Determinação do conjurador como uma ação de movimento para tentar tirar os pés do chão. Essa Runa Arcana dura 1 minuto, mas se a criatura afetada conseguir tirar um dos pés do chão, seus efeitos sobre ela se dissipam imediatamente.",
+                        "",
+                        8,
+                        10,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Inflamar",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Desenhando uma Runa Arcana entre você e um objeto ou superfície dentro de sua linha de visão você faz com que ele irrompa em chamas. O custo depende do tamanho da chama criada: criar a chama em uma vela tem custo 0, enquanto uma chama suficiente para acender uma tocha tem custo 5 e fazer uma fogueira de acampamento irromper em chamas imediatamente tem custo 10. Você pode produzir uma explosão de chamas diretamente sobre um item segurado por uma criatura ou na superfície onde ela está, causando dano igual a 4/Fogo, por 0 Pontos de Mana, 8/Fogo por 5 Pontos de Mana ou 12/Fogo por 10 Pontos de Mana. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas material combustível afetado se incendeia automaticamente. Mana Variado.",
+                        "",
+                        8,
+                        0,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Infravisão",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Você desenha uma Runa Arcana sobre um alvo, que passa a perceber o calor que emana dos objetos e criaturas sobrepondo a sua visão normal. Ele pode enxergar normalmente em locais sem iluminação nenhuma, pode perceber criaturas invisíveis pelo calor (ou frio) que elas emanam e consegue identificar ilusões, já que elas não emanam calor nem frio. Essa Runa Arcana dura 1 hora.",
+                        "",
+                        9,
+                        5,
+                        "Detectar Magia, Inflamar",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Invocar Elemental 1",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Você conjura um pequeno Elemental de Fogo ou do Gelo desenhando uma runa Elemental no ar. O Elemental obedecerá todos os seus comandos e agirá a partir do turno seguinte, logo depois de você. A runa que mantém o Elemental coeso se dissipa depois de 10 minutos. Veja os dados dos Elementais no Monstrum Codex para mais detalhes.",
+                        "",
+                        9,
+                        15,
+                        "Congelar e Inflamar",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Invocar Elemental 2",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Você conjura um Elemental Médio de Fogo ou do Gelo desenhando uma Runa arcana no ar. O Elemental obedecerá todos os seus comandos e agirá a partir do turno seguinte, logo depois de você. A runa que mantém o Elemental coeso se dissipa depois de 10 minutos. Veja os dados dos Elementais no Monstrum Codex para mais detalhes.",
+                        "",
+                        11,
+                        30,
+                        "Invocar Elemental 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Levitar",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Desenhando uma Runa Arcana sobre uma criatura, você faz com que ela seja capaz de voar livremente no ar para qualquer direção no seu deslocamento normal. Essa Runa Arcana dura 1 hora, mas se dissipa automaticamente se alvo tocar o solo.",
+                        "",
+                        11,
+                        20,
+                        "Telecinésia",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Manto Crepitante",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Você desenha uma Runa Arcana sobre uma criatura, envolvendo-a numa aura elétrica extremamente brilhante. A aura ilumina uma área de 20 metros ao seu redor, tornando-a clara como se fosse dia, de forma que, qualquer um tentando acertar você à distância (com ataques ou magias) fica ofuscado, realizando seus ataques como se fossem Inaptos. Além disso, a aura elétrica causa dano igual a 10/Eletricidade em qualquer um que tocar em você ou golpeá-lo com ataques corporais. Essa Runa dura 1 minuto, mas pode ser dissipada a qualquer momento pela criatura sobre a qual foi desenhada.",
+                        "",
+                        9,
+                        15,
+                        "Eletricidade Estática",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Mente Disciplinada",
+                        suporte,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Você possui uma vontade extremamente organizada, acostumada a se concentrar em tarefas complexas. Você tem Determinação +2 e as dificuldades de todas as magias que você realiza são reduzidas em 1.",
                         "",
                         0,
                         0,
                         "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Parede de Gelo",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Desenhando uma runa Arcana no ar, você congela a umidade do ambiente na forma de uma grossa parede de gelo. A parede tem 3 metros de altura por 3 de largura e 1 metro de espessura, e pode ser criada em qualquer ângulo. A parede tem 60 Pontos de Vida, Defesa 10, é Vulnerável ao Fogo e sempre que receber dano por Frio recupera Pontos de Vida ao invés de sofrer dano. Ela pode suportar até 500 quilos de peso sobre ela antes de quebrar. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas o gelo criado é permanente e descongela em velocidade normal.",
                         "",
+                        10,
+                        15,
+                        "Congelar",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Rajada de Gelo",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Desenhando uma Runa arcana no ar você projeta a partir dela uma rajada de energia mágica que causa dano igual a 20/Frio em um alvo dentro da sua linha de visão. Se o alvo for uma criatura viva, ele fica Enregelado por 1 turno. Se a magia tiver como alvo um objeto inanimado, ela congela até 100 litros ou 100 quilos de material. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas o gelo criado é permanente e descongela em velocidade normal.",
+                        "",
+                        12,
+                        20,
+                        "Congelar",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Relâmpago 1",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "A partir de uma Runa Arcana que desenha no ar você dispara uma faísca elétrica contra um alvo dentro de seu campo de visão. O alvo sofre um dano igual a 20/Eletricidade e fica Atordoado por 2 rodadas. Alvos usando armaduras de metal sofrem o dobro do redutor (-2 na Defesa, no Deslocamento e em todos os seus testes). A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                        "",
+                        10,
+                        20,
+                        "Eletricidade Estática",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Rajada Elemental",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Desenhando uma runa Arcana no ar você pode disparar uma rajada de energia elemental em qualquer alvo que possa ver. Essa magia causa 8 pontos de dano elemental (Fogo, Frio ou Eletricidade) escolhido no momento que o conjurador lança a magia. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                        "",
+                        8,
+                        0,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Resistência Elemental",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Desenhando uma Runa Arcana sobre uma criatura ou objeto, você confere Resistência ao Fogo, Frio ou Eletricidade a ele. Essa Runa Arcana dura por 1 minuto.",
+                        "",
+                        9,
+                        10,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Telecinésia",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Desenhando uma Runa Arcana entre você e um objeto ou criatura dentro de sua linha de visão, você pode mover o alvo através de uma energia mágica invisível. O alvo pode ser movido à vontade em qualquer direção, e até mesmo ser erguido no ar, mas apenas de forma lenta (1 metro por turno no máximo). A dificuldade será igual ao peso do alvo dividido por 5 (arredondado para baixo) Se estiver usando essa magia sobre si próprio, diminua a sua Vontade da Dificuldade final. A dificuldade mínima dessa magia será sempre 8, independente do peso do alvo ou da Vontade do Conjurador. Essa Runa Arcana dura por tanto tempo quanto você estiver concentrado nela, mas se o alvo for uma criatura, ela pode cancelar os efeitos dessa Runa no início do seu turno se vencer um teste de Força com dificuldade igual à Determinação do conjurador. *Dificuldade variável.",
+                        "",
+                        0,
+                        10,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Teleporte 1",
+                        acao,
+                        todasRacas,
+                        feiticeiro,
+                        1,
+                        "Desenhando uma Runa Arcana sobre si mesmo enquanto fita um local você se teleporta de onde está para o ponto que está olhando. Você pode levar alguém com você se puder tocar o alvo e ele concordar (ou estiver inconsciente). Some +2 na dificuldade da magia para cada pessoa além de você. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                        "",
+                        12,
+                        30,
+                        "Levitar",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Aptidão Elemental",
+                        suporte,
+                        todasRacas,
+                        feiticeiro,
+                        5,
+                        "Você possui um domínio considerável sobre as energias mais elementares da magia. Todas as suas magias custam 5 Pontos de Mana a menos para serem conjuradas e todas as suas magias e técnicas que causam dano por Fogo, Frio ou Eletricidade causam 5 pontos de dano a mais.",
+                        "",
+                        0,
+                        0,
+                        "Mente Disciplinada",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3277,13 +4929,20 @@ public class HabilidadeService {
                         acao,
                         todasRacas,
                         feiticeiro,
-                        1,
+                        5,
                         "",
                         "",
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3295,13 +4954,20 @@ public class HabilidadeService {
                         acao,
                         todasRacas,
                         feiticeiro,
-                        1,
+                        5,
                         "",
                         "",
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3313,13 +4979,20 @@ public class HabilidadeService {
                         acao,
                         todasRacas,
                         feiticeiro,
-                        1,
+                        5,
                         "",
                         "",
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3331,71 +5004,24 @@ public class HabilidadeService {
                         acao,
                         todasRacas,
                         feiticeiro,
-                        1,
+                        5,
                         "",
                         "",
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
 
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "",
-                        acao,
-                        todasRacas,
-                        feiticeiro,
-                        1,
-                        "",
-                        "",
-                        0,
-                        0,
-                        "",
-                        "",
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "",
-                        acao,
-                        todasRacas,
-                        feiticeiro,
-                        1,
-                        "",
-                        "",
-                        0,
-                        0,
-                        "",
-                        "",
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "",
-                        acao,
-                        todasRacas,
-                        feiticeiro,
-                        1,
-                        "",
-                        "",
-                        0,
-                        0,
-                        "",
-                        "",
-                        false
-                )
-        );
-*/
         // Guerreiro
         List<Classe> guerreiro = obterListaClasse(TipoClasse.GUERREIRO);
 
@@ -3433,7 +5059,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3451,7 +5084,14 @@ public class HabilidadeService {
                         0,
                         20,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3469,7 +5109,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "Eloquente",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3487,7 +5134,14 @@ public class HabilidadeService {
                         0,
                         10,
                         "Evasão",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3505,7 +5159,14 @@ public class HabilidadeService {
                         0,
                         0,
                         "",
-                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
@@ -3525,7 +5186,39 @@ public class HabilidadeService {
                         null,
                         5,
                         "Detectar Magia",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Detectar Magia",
+                        acao,
+                        todasRacas,
+                        druidas_feiticeiros,
+                        1,
+                        "Concentrando-se nos fluxos de energias mágicas, você pode enxergar a aura de objetos mágicos, Runas Arcanas e Selos Místicos. Você pode analisar a aura mágica de um Selo, Runa ou objeto para entender suas propriedades observando-a por 1 minuto.",
                         "",
+                        8,
+                        0,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         false
                 )
         );
