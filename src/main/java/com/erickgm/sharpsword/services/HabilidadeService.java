@@ -133,6 +133,7 @@ public class HabilidadeService {
     }
 
     private String cargaHabilidades() {
+
         List<Habilidade> habilidades = new ArrayList<>();
 
         // G E R A I S
@@ -2436,31 +2437,6 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "Furtivo",
-                        suporte,
-                        todasRacas,
-                        bardos,
-                        1,
-                        "Você é particularmente discreto quando quer. Você pode rolar +1d6 quando fizer testes para se mover em silêncio, se esconder, camuflar, ou usar disfarces.",
-                        "",
-                        0,
-                        null,
-                        "",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
                         "Grito Ensurdecedor",
                         acao,
                         todasRacas,
@@ -2496,31 +2472,6 @@ public class HabilidadeService {
                         0,
                         "20",
                         "Grito Ensurdecedor",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Malabarista",
-                        suporte,
-                        todasRacas,
-                        bardos,
-                        1,
-                        "Você tem uma ótima coordenação para jogar e pegar objetos no ar. Além de poder realizar malabarismos – mesmo usando objetos perigosos como adagas ou tochas – como entretenimento, você recebe +2 em todas as suas jogadas para arremessar objetos e +1 na Defesa contra ataques à distância. Esse bônus de Defesa conta como Esquiva.",
-                        "",
-                        0,
-                        null,
-                        "",
                         0,
                         0,
                         0,
@@ -2711,56 +2662,6 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "Grito de Guerra 2",
-                        acao,
-                        todasRacas,
-                        bardos,
-                        5,
-                        "Você pode dar um grito fervoroso que motiva todos seus aliados. Eles recebem (assim como você) +2 em todas as rolagens até o final da batalha. Além disso, remova todos os efeitos de Medo que estiverem afetando os seus aliados. Você não pode usar esta Habilidade se estiver sob qualquer efeito de Medo.",
-                        "",
-                        0,
-                        "15",
-                        " Grito de Guerra 1",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Grito de Intimidação",
-                        acao,
-                        todasRacas,
-                        bardos,
-                        5,
-                        "Você pode dar um grito para intimidar seus inimigos. Todos os oponentes que estiverem a até 10 metros à sua frente que tiverem uma Determinação menor do que a sua ficam Paralisados por 2 turnos. Esse é um efeito de Medo.",
-                        "",
-                        0,
-                        "35",
-                        "Grito de Guerra 1",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
                         "Melodia da Fúria",
                         acao,
                         todasRacas,
@@ -2796,31 +2697,6 @@ public class HabilidadeService {
                         0,
                         "10",
                         "Canção da Sereia",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Trapaceiro Impecável",
-                        suporte,
-                        todasRacas,
-                        bardos,
-                        5,
-                        "Você está acostumado a enganar e mentir, e seu raciocínio se tornou tão condicionado a extrapolar situações rapidamente que até ler (ou mesmo dominar) sua mente é mais difícil! Sua Inteligência é considerada o dobro em Confrontos para tentar esconder ou dissimular a verdade e para calcular sua Determinação contra efeitos mentais – exceto os de medo.",
-                        "",
-                        0,
-                        null,
-                        "Eloquente",
                         0,
                         0,
                         0,
@@ -3642,125 +3518,6 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "Acrobata",
-                        suporte,
-                        todasRacas,
-                        espadachim,
-                        1,
-                        "Você sempre rola +1d6 em seus testes de equilíbrio, salto, piruetas e qualquer outra tentativa de se deslocar que exija coordenação, flexibilidade e precisão. Além disso, você sofre apenas metade dos danos por queda.",
-                        "",
-                        0,
-                        null,
-                        "",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Aparar",
-                        suporte,
-                        todasRacas,
-                        espadachim,
-                        1,
-                        "Você pode usar qualquer coisa que esteja em suas mãos para afastar e desviar golpes desferidos contra você. Enquanto estiver com um objeto em pelo menos uma das mãos, você recebe Defesa +1. Se estiver segurando uma objeto em ambas as mãos ou um objeto em cada mão você recebe Defesa +2. Este e um bônus de Esquiva.",
-                        "",
-                        0,
-                        null,
-                        "",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Ataque Aleijador",
-                        acao,
-                        todasRacas,
-                        espadachim,
-                        1,
-                        "Faça um ataque corpo-a-corpo ou à distância, visando o quadril, joelho ou tornozelo do alvo, comprometendo sua locomoção e deixando um ferimento doloroso. Além de receber o dano normal pelo ataque, o alvo fica com seu Deslocamento reduzido em 1 e sempre que se deslocar ou fizer um teste de Agilidade que envolva as pernas ele sofre 10 pontos de dano. Esse é um efeito de Sangramento.",
-                        "",
-                        0,
-                        "20",
-                        "",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Ataque Redirecionado", reacao, todasRacas, espadachim,
-                        1,
-                        "Quando um oponente errar um ataque corporal contra você, você pode direcionar o ataque dele para outro alvo. O novo alvo precisa estar adjacente a você ou ao oponente que errou o ataque. Esse ataque acerta automaticamente – sem chance de errar ou de ser um sucesso decisivo. Esta Habilidade só pode ser usada uma vez por rodada.",
-                        "",
-                        0,
-                        null,
-                        "Evasão",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Corte Arterial", acao, todasRacas, espadachim,
-                        1,
-                        "Faça um ataque corporal com uma arma de corte ou perfuração. Se acertar, a vítima começará a sangrar, perdendo 10 Pontos de Vida no início de cada um de seus turnos. Este é um efeito de sangramento.",
-                        "",
-                        0,
-                        "30",
-                        "Ataque Aleijador",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
                         "Dança das Espadas 1", acao, todasRacas, espadachim,
                         1,
                         "Você pode entrar em um fluxo incessante de movimentos fluidos e vigorosos. Enquanto estiver neste estado você recebe Agilidade +2 e recebe +1d6 em seus testes de dança. Este efeito dura até 5 minutos ou até que você pare, ou seja alvo de um efeito que o impeça da continuar se movendo continuamente (Constringido, Derrubado, amedrontado, etc.).",
@@ -3790,78 +3547,6 @@ public class HabilidadeService {
                         0,
                         "20",
                         "Ataque Redirecionado",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Falhas da Armadura",
-                        suporte,
-                        todasRacas,
-                        espadachim,
-                        1,
-                        "Você sabe como acertar ataques entre as frestas e falhas das armaduras do inimigo. Ignore sempre o bônus de Armadura da Defesa do oponente.",
-                        "",
-                        0,
-                        null,
-                        "",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Golpes Rápidos", acao, todasRacas, espadachim,
-                        1,
-                        "Você pode fazer dois ataques corporais com uma arma que estiver empunhando, desde que esteja empunhando a arma com apenas 1 mão.",
-                        "",
-                        0,
-                        "20",
-                        "",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Movimentos Evasivos",
-                        suporte,
-                        todasRacas,
-                        espadachim,
-                        1,
-                        "Você ganha +1 na sua Defesa para cada 2 pontos que tiver em Agilidade. Esta habilidade só funciona se você estiver sem armadura. Esse é um bônus de Esquiva.",
-                        "",
-                        0,
-                        null,
-                        "Acrobata",
                         0,
                         0,
                         0,
@@ -3924,31 +3609,6 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "Combate com Duas Armas 2",
-                        suporte,
-                        todasRacas,
-                        espadachim,
-                        5,
-                        "Como Combate com Duas Armas 1, mas você pode usar duas armas com a mesma FN.",
-                        "Se você utilizar uma Habilidade de Ação, seus efeitos se aplicam a apenas um dos seus ataques – mas você ainda pode fazer um ataque normal com a outra arma no mesmo turno, antes ou depois de utilizar a Habilidade de Ação.",
-                        0,
-                        null,
-                        "Combate com Duas Armas 1",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
                         "Dança das Espadas 2",
                         suporte,
                         todasRacas,
@@ -3996,56 +3656,6 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "Implacável",
-                        suporte,
-                        todasRacas,
-                        espadachim,
-                        5,
-                        "Sempre que errar um ataque corporal, o alvo sofre metade do dano normal do ataque (arredondando para baixo).",
-                        "",
-                        0,
-                        null,
-                        "Sem Escapatória",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Mestre de Armas 2",
-                        suporte,
-                        todasRacas,
-                        espadachim,
-                        5,
-                        "Você é extremamente eficaz no uso de armas brancas. Sempre que realizar um ataque corporal bem sucedido, adicione 3 ao dano do ataque. Esse bônus de dano se acumula com o bônus fornecido por Mestre de armas 1.",
-                        "",
-                        0,
-                        null,
-                        "",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
                         "Retalhar",
                         suporte,
                         todasRacas,
@@ -4071,28 +3681,6 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "", reacao, todasRacas, espadachim,
-                        5,
-                        "Ripostar",
-                        "Você está sempre atento à guarda do oponente, esperando uma falha para contra-atacar de modo oportuno. Sempre que um oponente fizer um ataque contra você e errar, você pode imediatamente fazer um ataque normal contra aquele oponente.",
-                        0,
-                        null,
-                        "Ataque Redirecionado",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
                         "Tempestade de Lâminas", reacao, todasRacas, espadachim,
                         5,
                         "Sempre que acertar um ataque corporal você pode fazer 1 ataque normal extra com a mesma arma. Esse efeito só pode ser usado 1 vez por turno com cada arma que você estiver usando.",
@@ -4100,28 +3688,6 @@ public class HabilidadeService {
                         0,
                         null,
                         "Golpes Rápidos",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Valor da Vitória", reacao, todasRacas, espadachim,
-                        5,
-                        "Cada vez que você derrota um oponente (isso inclui se ele se render ou fugir após a batalha) você recupera 5 pontos de vida e 5 pontos de mana.",
-                        "",
-                        0,
-                        null,
-                        "",
                         0,
                         0,
                         0,
@@ -5243,16 +4809,16 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "",
-                        acao,
+                        "Força de Explosão",
+                        suporte,
                         todasRacas,
                         guerreiro,
                         5,
-                        "",
+                        "Quando fizer ataques que têm chance de derrubar o oponente você pode afetar alvos até 10 vezes mais pesados do que você (a maioria dos ataques que derrubam oponentes só afetam alvos com até o dobro do seu peso). Além disso, se você usar qualquer Habilidade que derrube o oponente, a dificuldade para resistir ao efeito e aumentada em +2.",
                         "",
                         0,
                         "0",
-                        "",
+                        "Ataque do Búfalo",
                         0,
                         0,
                         0,
@@ -5268,16 +4834,16 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "",
+                        "Golpe Devastador 2",
                         acao,
                         todasRacas,
                         guerreiro,
                         1,
-                        "",
+                        "Faça um ataque corporal contra o alvo. Se acertar, o ataque causa o triplo do dano normal e o alvo precisa vencer um confronto de Força (adicione a FN da arma que estiver usando no seu teste) contra você ou ficará Paralisado por um turno.",
                         "",
                         0,
-                        "0",
-                        "",
+                        "60",
+                        "Golpe Devastador 1",
                         0,
                         0,
                         0,
@@ -5293,16 +4859,16 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "",
-                        acao,
+                        "Guerreiro de Aço 2",
+                        suporte,
                         todasRacas,
                         guerreiro,
                         5,
-                        "",
+                        "Você está extremamente acostumado a usar armaduras pesadas e se sente confortável quando verga uma. Você considera a FN de Qualquer armadura com a Característica Pesada como tendo FN-1 para todos os propósitos. Essa redução se acumula com a redução fornecida por Guerreiro de Aço 1.",
                         "",
                         0,
                         "0",
-                        "",
+                        "Guerreiro de Aço 1",
                         0,
                         0,
                         0,
@@ -5318,16 +4884,16 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "",
-                        acao,
+                        "Investida Forte",
+                        suporte,
                         todasRacas,
                         guerreiro,
                         5,
-                        "",
+                        "Sempre que acertar uma manobra de encontrão usando um escudo, o alvo precisa vencer um teste de Resistência (Dificuldade igual à sua Determinação + a FN do escudo que você estiver usando) ou será derrubado. Alvos com o dobro do seu peso não são afetados. Um ataque com um escudo causa dano igual à Força + FN do escudo/Contusão.",
                         "",
                         0,
                         "0",
-                        "",
+                        "Golpe com Escudo",
                         0,
                         0,
                         0,
@@ -5343,12 +4909,40 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "",
+                        "Mestre de Armas 3",
                         acao,
                         todasRacas,
                         guerreiro,
-                        5,
+                        10,
+                        "Faça um ataque corporal contra uma criatura. Se o ataque acertar o alvo, ao invés do dano normal da arma, os Pontos de Vida atuais dele são reduzidos à metade. No caso de um sucesso crítico no ataque, o oponente é morto instantaneamente.",
                         "",
+                        0,
+                        "50",
+                        "Mestre de Armas 2",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        // Ladinos
+        List<Classe> ladinos = obterListaClasse(TipoClasse.LADINO);
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Gatuno",
+                        suporte,
+                        todasRacas,
+                        ladinos,
+                        1,
+                        "Você aprendeu com a dura vida nas ruas a sobreviver na selva urbana. Você nunca é considerado Inapto quando tentar furtar bolsos ou arrombar fechaduras usando um kit de arrombamento. Além disso, você rola +1d6 quando tentar escalar, se esconder e tentar passar despercebido.",
                         "",
                         0,
                         "0",
@@ -5361,19 +4955,19 @@ public class HabilidadeService {
                         0,
                         0,
                         0,
-                        false
+                        true
                 )
         );
 
         habilidades.add(
                 new Habilidade(
                         null,
-                        "",
+                        "Armadilheiro",
                         acao,
                         todasRacas,
-                        guerreiro,
-                        5,
-                        "",
+                        ladinos,
+                        1,
+                        "Você se especializou em desarmar e preparar armadilhas. Você nunca é considerado Inapto para desarmar armadilhas e se tiver os materiais e o tempo necessários, você pode armar uma armadilha. Faça um teste de Inteligência: O resultado do teste será a dificuldade para a armadilha ser percebida e desarmada.",
                         "",
                         0,
                         "0",
@@ -5386,19 +4980,473 @@ public class HabilidadeService {
                         0,
                         0,
                         0,
-                        false
+                        true
                 )
         );
 
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Ataque Evasivo",
+                        acao,
+                        todasRacas,
+                        ladinos,
+                        1,
+                        "Você realiza um ataque seguido de uma movimentação errática para confundir seu oponente. Faça um ataque baseado em Agilidade. Se acertar, o alvo realiza seus ataques contra você como se fosse Inapto durante o próximo turno. Se o ataque for à distância e houver alguma cobertura à disposição, você pode se esconder tornando impossível para o alvo lhe atacar enquanto ele não o ver primeiro.",
+                        "",
+                        0,
+                        "10",
+                        "Evasão",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Contatos no Crime",
+                        suporte,
+                        todasRacas,
+                        ladinos,
+                        1,
+                        "Você possui muitos contatos entre os criminosos – pequenos e grandes. Com isto você pode descobrir informações privilegiadas ou comprar e vender mercadoria roubada. Obviamente o mestre poderá restringir informações se isso for atrapalhar o andamento ou a trama da campanha, e você nem sempre será capaz de encontrar qualquer item à disposição em qualquer lugar – mas o mercado negro nas grandes cidades costuma estar abastecido de praticamente qualquer item disponível na campanha. Criminosos pagarão metade do preço normal de qualquer item que você quiser vender – desde que tenham dinheiro para tanto – e venderão itens com um custo um terço menor do que o normal. Itens proibido ou controlados, no entanto, podem ser extremamente caros. Informações terão um preço dependendo da importância e dificuldade de obtê-las, de acordo com a vontade do Mestre.",
+                        "",
+                        0,
+                        "0",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Flanquear",
+                        suporte,
+                        todasRacas,
+                        ladinos,
+                        1,
+                        "Você prefere atacar seus alvos quando eles estão desatentos – e é muito eficiente fazendo isso! Sempre que você e pelo menos mais um aliado estiverem em alcance corporal de um oponente, você considera aquele oponente Despreparado em relação a você. Você só pode flanquear um alvo por turno. Se 2 ou mais adversários estiverem adjacentes a você e a um aliado ao mesmo tempo, você deve definir qual deles vai flanquear.",
+                        "",
+                        0,
+                        "0",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Flexível",
+                        suporte,
+                        todasRacas,
+                        ladinos,
+                        1,
+                        "Você tem o corpo muito flexível, capaz de se dobrar, esticar e espremer de maneiras extremas. Você pode passar por aberturas como se tivesse apenas metade do seu tamanho, consegue escorregar para fora de grilhões e amarras com facilidade, pode se esticar e dobrar de modos a alcançar pontos de apoio difíceis numa escalada além de ser mais ágil quando corre e escapa de obstáculos, recebendo um bônus de +2 em qualquer teste que envolva esse tipo de circunstância.",
+                        "Armaduras com a Característica Pesada impedem que você receba os bônus por esta Habilidade.",
+                        0,
+                        "0",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Mestre das Adagas 1",
+                        acao,
+                        todasRacas,
+                        ladinos,
+                        1,
+                        "Você se especializou em arremessar armas pequenas de forma eficiente. Você pode arremessar 2 armas com a característica Arremesso e FN 1.",
+                        "",
+                        0,
+                        "0",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Mestre das Adagas 2",
+                        acao,
+                        todasRacas,
+                        ladinos,
+                        1,
+                        "Você refinou sua técnica de arremesso de pequenos objetos. Você pode arremessar até 4 armas com a característica Arremesso e FN 1.",
+                        "",
+                        0,
+                        "0",
+                        "Mestre das Adagas 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Camuflagem",
+                        suporte,
+                        todasRacas,
+                        ladinos,
+                        5,
+                        "Você pode se camuflar em florestas usando galhos, folhas e lama, ou nas sombras de becos e ruas usando uma capa preta e talvez fuligem ou barro. Quando puder usar o ambiente a seu favor dessa forma, você pode rolar +1d6 nos testes para se esconder.",
+                        "",
+                        0,
+                        "0",
+                        "Furtivo",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Emboscar",
+                        acao,
+                        todasRacas,
+                        ladinos,
+                        5,
+                        "Você se especializou em emboscar inimigos incapazes de percebê-lo. Quando fizer um ataque à distância contra um alvo Desprevenido (ver Condições, pág. 169), faça imediatamente um Confronto com sua Agilidade versus Inteligência do alvo. Se o seu resultado for mais alto do que o do alvo, ele não consegue perceber de onde veio o ataque, tornando impossível para o alvo lhe atacar (ou mesmo ter uma ideia aproximada da sua posição, a menos que ela seja óbvia) enquanto você permanecer escondido.",
+                        "",
+                        0,
+                        "20",
+                        "Camuflagem",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "En Passant",
+                        reacao,
+                        todasRacas,
+                        ladinos,
+                        5,
+                        "Se um alvo que está adjacente a você tentar se afastar ou se levantar, você pode imediatamente fazer uma ação normal (sem Habilidades de Ação) contra ele. O alvo é considerado Despreparado contra essa ação",
+                        "",
+                        0,
+                        "0",
+                        "Flanquear",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Explorar Surpresa",
+                        acao,
+                        todasRacas,
+                        ladinos,
+                        5,
+                        "Faça um ataque contra um alvo Despreparado. Esse ataque causa o dobro do dano normal.",
+                        "",
+                        0,
+                        "20",
+                        "Flanquear",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Improvisação Ladina",
+                        suporte,
+                        todasRacas,
+                        ladinos,
+                        5,
+                        "Você pode pegar garrafas quebradas, lascas de madeira ou osso, pedaços de vidro ou mesmo de gelo e usar como se fosse uma adaga. Em geral uma adaga improvisada dessa forma se torna inútil depois de um ataque. Você também pode montar ou desarmar armadilhas e abrir fechaduras sem ter os materiais apropriados, desde que possa improvisar gazuas ou ferramentas – com agulhas, galhos, lascas de pedra, pedaços de armas, etc.",
+                        "",
+                        0,
+                        "0",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Mestre das Adagas 3",
+                        acao,
+                        todasRacas,
+                        ladinos,
+                        5,
+                        "Você é um mestre da técnica de arremessar pequenos objetos! Você pode arremessar até 6 armas com a característica Arremesso e FN 1.",
+                        "",
+                        0,
+                        "0",
+                        "Mestre das Adagas 2",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Passo Leve",
+                        reacao,
+                        todasRacas,
+                        ladinos,
+                        5,
+                        "Sempre que você fizer um teste para mover-se em silencio, se esconder ou camuflar ou bater carteiras você pode rolar novamente 1 dos dados. Você pode escolher com qual dos resultados vai ficar. Esta Habilidade só pode ser usada uma vez por turno.",
+                        "",
+                        0,
+                        "10",
+                        "Furtivo",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Mestre Especialista",
+                        suporte,
+                        todasRacas,
+                        ladinos,
+                        10,
+                        "Sempre que uma Habilidade oferecer um bônus de +1d6 em uma determinada ação, você recebe +2d6 para aquela ação ao invés disso.",
+                        "",
+                        0,
+                        "0",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        // Paladino
+		/*
+habilidades.add(
+	new Habilidade(
+		null,
+		"",
+		suporte,
+		todasRacas,
+		paladinos,
+		5,
+		"",
+		"",
+		0,
+		"0",
+		"",
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		true
+	)
+);
+
+habilidades.add(
+	new Habilidade(
+		null,
+		"",
+		suporte,
+		todasRacas,
+		ladinos,
+		5,
+		"",
+		"",
+		0,
+		"0",
+		"",
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		true
+	)
+);
+
+habilidades.add(
+	new Habilidade(
+		null,
+		"",
+		suporte,
+		todasRacas,
+		ladinos,
+		5,
+		"",
+		"",
+		0,
+		"0",
+		"",
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		true
+	)
+);
+
+habilidades.add(
+	new Habilidade(
+		null,
+		"",
+		suporte,
+		todasRacas,
+		ladinos,
+		5,
+		"",
+		"",
+		0,
+		"0",
+		"",
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		true
+	)
+);
 */
-        // Anões, Mahoks e Guerreiros
+
+        // Anões, Mahoks e Guerreiros e Paladinos
+        List<Classe> guerreiros_paladinos = obterListaClasse(TipoClasse.obterDupla(TipoClasse.GUERREIRO, TipoClasse.PALADINO));
+
         habilidades.add(
                 new Habilidade(
                         null,
                         "Estabilidade",
                         suporte,
                         anoes_mahoks,
-                        guerreiro,
+                        guerreiros_paladinos,
                         1,
                         " Você gosta de ter os dois pés solidamente plantados no chão – e faz isso muito bem! Você sempre rola +1d6 em todos os seus testes de evitar quedas e manter o equilíbrio.",
                         "",
@@ -5435,8 +5483,86 @@ public class HabilidadeService {
         // Xamã
         List<Classe> xama = obterListaClasse(TipoClasse.XAMA);
 
-        // Bardos e Espadachins
-        List<Classe> bardos_espadachins = obterListaClasse(TipoClasse.obterDupla(TipoClasse.BARDO, TipoClasse.ESPADACHIM));
+        // Bardos e ladinos
+        List<Classe> bardos_ladinos = obterListaClasse(TipoClasse.obterDupla(TipoClasse.BARDO, TipoClasse.LADINO));
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Furtivo",
+                        suporte,
+                        todasRacas,
+                        bardos_ladinos,
+                        1,
+                        "Você é particularmente discreto quando quer. Você pode rolar +1d6 quando fizer testes para se mover em silêncio, se esconder, camuflar, ou usar disfarces.",
+                        "",
+                        0,
+                        null,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Malabarista",
+                        suporte,
+                        todasRacas,
+                        bardos_ladinos,
+                        1,
+                        "Você tem uma ótima coordenação para jogar e pegar objetos no ar. Além de poder realizar malabarismos – mesmo usando objetos perigosos como adagas ou tochas – como entretenimento, você recebe +2 em todas as suas jogadas para arremessar objetos e +1 na Defesa contra ataques à distância. Esse bônus de Defesa conta como Esquiva.",
+                        "",
+                        0,
+                        null,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Trapaceiro Impecável",
+                        suporte,
+                        todasRacas,
+                        bardos_ladinos,
+                        5,
+                        "Você está acostumado a enganar e mentir, e seu raciocínio se tornou tão condicionado a extrapolar situações rapidamente que até ler (ou mesmo dominar) sua mente é mais difícil! Sua Inteligência é considerada o dobro em Confrontos para tentar esconder ou dissimular a verdade e para calcular sua Determinação contra efeitos mentais – exceto os de medo.",
+                        "",
+                        0,
+                        null,
+                        "Eloquente",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        // Bardos, espadachins e ladinos
+        List<Classe> bardos_espadachins_ladinos = obterListaClasse(TipoClasse.obterTrio(TipoClasse.BARDO, TipoClasse.ESPADACHIM, TipoClasse.LADINO));
 
         habilidades.add(
                 new Habilidade(
@@ -5444,7 +5570,7 @@ public class HabilidadeService {
                         "Eloquente",
                         suporte,
                         todasRacas,
-                        bardos_espadachins,
+                        bardos_espadachins_ladinos,
                         1,
                         "Você tem um talento de convencer ou comover outras pessoas apenas falando do jeito certo. Você recebe +1d6 em todos os seus testes para persuadir, mentir, perceber mentiras, intimidar ou em qualquer outra interação social.",
                         "",
@@ -5469,7 +5595,7 @@ public class HabilidadeService {
                         "Evasão",
                         reacao,
                         todasRacas,
-                        bardos_espadachins,
+                        bardos_espadachins_ladinos,
                         1,
                         "Se o seu inimigo fizer um ataque corporal e acertar, você pode declarar evasão, e obrigar o inimigo a rolar novamente o teste de ataque. Você pode escolher com qual dos resultados o oponente vai ficar. Esta Habilidade só pode ser usada uma vez por rodada.",
                         "",
@@ -5491,16 +5617,16 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "Língua Afiada",
+                        "Truque Sujo",
                         acao,
                         todasRacas,
-                        bardos_espadachins,
+                        bardos_espadachins_ladinos,
                         1,
-                        "Você possui uma língua ferina e um talento especial para insultar seus adversários. Escolha um inimigo do tipo Humanoide ou Esfinge. Você faz uma série de comentários jocosos ou degradantes sobre ele. Faça um confronto de Vontade contra o alvo. Se você tiver um resultado igual ou maior do que o alvo e se ele for capaz de entendê-lo, ele ataca você em detrimento de qualquer outro alvo, e é considerado Desprevenido para todos os seus aliados – mas não para você. Este é um efeito mental.",
+                        "Quando estiver em distância corporal do oponente e ele estiver te vendo, faça um Confronto de Inteligência contra o alvo. Se você tiver um resultado igual ou maior do que o do oponente nesse teste, você realiza um truque sujo (joga areia nos olhos do oponente, joga um pano em seu rosto, enrola uma corda em suas pernas, etc.) fazendo com que o alvo fique confuso ou desequilibrado, não podendo realizar nenhuma ação no próximo turno, e sendo considerado Desprevenido por 1 turno.",
                         "",
                         0,
                         "10",
-                        "Eloquente",
+                        "Evasão",
                         0,
                         0,
                         0,
@@ -5513,19 +5639,23 @@ public class HabilidadeService {
                 )
         );
 
+
+        // Bardos e Espadachins
+        List<Classe> bardos_espadachins = obterListaClasse(TipoClasse.obterDupla(TipoClasse.BARDO, TipoClasse.ESPADACHIM));
+
         habilidades.add(
                 new Habilidade(
                         null,
-                        "Truque Sujo",
+                        "Língua Afiada",
                         acao,
                         todasRacas,
                         bardos_espadachins,
                         1,
-                        "Quando estiver em distância corporal do oponente e ele estiver te vendo, faça um Confronto de Inteligência contra o alvo. Se você tiver um resultado igual ou maior do que o do oponente nesse teste, você realiza um truque sujo (joga areia nos olhos do oponente, joga um pano em seu rosto, enrola uma corda em suas pernas, etc.) fazendo com que o alvo fique confuso ou desequilibrado, não podendo realizar nenhuma ação no próximo turno, e sendo considerado Desprevenido por 1 turno.",
+                        "Você possui uma língua ferina e um talento especial para insultar seus adversários. Escolha um inimigo do tipo Humanoide ou Esfinge. Você faz uma série de comentários jocosos ou degradantes sobre ele. Faça um confronto de Vontade contra o alvo. Se você tiver um resultado igual ou maior do que o alvo e se ele for capaz de entendê-lo, ele ataca você em detrimento de qualquer outro alvo, e é considerado Desprevenido para todos os seus aliados – mas não para você. Este é um efeito mental.",
                         "",
                         0,
                         "10",
-                        "Evasão",
+                        "Eloquente",
                         0,
                         0,
                         0,
@@ -5644,16 +5774,65 @@ public class HabilidadeService {
                 )
         );
 
-        // Espadachim e Guerreiro
-        List<Classe> espadachins_guerreiros = obterListaClasse(TipoClasse.obterDupla(TipoClasse.DRUIDA, TipoClasse.FEITICEIRO));
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Grito de Guerra 2",
+                        acao,
+                        todasRacas,
+                        bardos_guerreiros,
+                        5,
+                        "Você pode dar um grito fervoroso que motiva todos seus aliados. Eles recebem (assim como você) +2 em todas as rolagens até o final da batalha. Além disso, remova todos os efeitos de Medo que estiverem afetando os seus aliados. Você não pode usar esta Habilidade se estiver sob qualquer efeito de Medo.",
+                        "",
+                        0,
+                        "15",
+                        " Grito de Guerra 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
 
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Grito de Intimidação",
+                        acao,
+                        todasRacas,
+                        bardos_guerreiros,
+                        5,
+                        "Você pode dar um grito para intimidar seus inimigos. Todos os oponentes que estiverem a até 10 metros à sua frente que tiverem uma Determinação menor do que a sua ficam Paralisados por 2 turnos. Esse é um efeito de Medo.",
+                        "",
+                        0,
+                        "35",
+                        "Grito de Guerra 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        // Espadachim, Guerreiro e Paladinos
+        List<Classe> espadachins_guerreiros_paladinos = obterListaClasse(TipoClasse.obterTrio(TipoClasse.ESPADACHIM, TipoClasse.GUERREIRO, TipoClasse.PALADINO));
         habilidades.add(
                 new Habilidade(
                         null,
                         "Mestre de Armas 1",
                         suporte,
                         todasRacas,
-                        espadachins_guerreiros,
+                        espadachins_guerreiros_paladinos,
                         1,
                         "Você é particularmente eficiente no uso de armas brancas. Sempre que realizar um ataque corporal usando uma arma, adicione 3 ao dano do ataque.",
                         "",
@@ -5672,6 +5851,9 @@ public class HabilidadeService {
                 )
         );
 
+        // Espadachim e Guerreiro
+        List<Classe> espadachins_guerreiros = obterListaClasse(TipoClasse.obterDupla(TipoClasse.DRUIDA, TipoClasse.FEITICEIRO));
+
         habilidades.add(
                 new Habilidade(
                         null,
@@ -5684,31 +5866,6 @@ public class HabilidadeService {
                         "",
                         0,
                         "10",
-                        "",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Combate com Duas Armas 1",
-                        suporte,
-                        todasRacas,
-                        espadachins_guerreiros,
-                        1,
-                        "Você treinou para usar duas armas em combate de forma eficiente. Você pode fazer um ataque para cada arma que estiver segurando, desde que pelo menos uma delas tenha uma FN igual à metade (ou menos) do que a Força do personagem.",
-                        "Se você utilizar uma Habilidade de Ação, seus efeitos se aplicam a apenas um dos seus ataques – mas você ainda pode fazer um ataque normal com a outra arma no mesmo turno, antes ou depois de utilizar a Habilidade de Ação.",
-                        0,
-                        null,
                         "",
                         0,
                         0,
@@ -5797,6 +5954,363 @@ public class HabilidadeService {
                 )
         );
 
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Implacável",
+                        suporte,
+                        todasRacas,
+                        espadachins_guerreiros,
+                        5,
+                        "Sempre que errar um ataque corporal, o alvo sofre metade do dano normal do ataque (arredondando para baixo).",
+                        "",
+                        0,
+                        null,
+                        "Sem Escapatória",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Mestre de Armas 2",
+                        suporte,
+                        todasRacas,
+                        espadachins_guerreiros,
+                        5,
+                        "Você é extremamente eficaz no uso de armas brancas. Sempre que realizar um ataque corporal bem sucedido, adicione 3 ao dano do ataque. Esse bônus de dano se acumula com o bônus fornecido por Mestre de armas 1.",
+                        "",
+                        0,
+                        null,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Valor da Vitória",
+                        reacao,
+                        todasRacas,
+                        espadachins_guerreiros,
+                        5,
+                        "Cada vez que você derrota um oponente (isso inclui se ele se render ou fugir após a batalha) você recupera 5 pontos de vida e 5 pontos de mana.",
+                        "",
+                        0,
+                        null,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        // Espadachins, guerreiros e ladinos
+        List<Classe> espadachins_guerreiros_ladinos = obterListaClasse(TipoClasse.obterTrio(TipoClasse.ESPADACHIM, TipoClasse.GUERREIRO, TipoClasse.LADINO));
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Combate com Duas Armas 1",
+                        suporte,
+                        todasRacas,
+                        espadachins_guerreiros_ladinos,
+                        1,
+                        "Você treinou para usar duas armas em combate de forma eficiente. Você pode fazer um ataque para cada arma que estiver segurando, desde que pelo menos uma delas tenha uma FN igual à metade (ou menos) do que a Força do personagem.",
+                        "Se você utilizar uma Habilidade de Ação, seus efeitos se aplicam a apenas um dos seus ataques – mas você ainda pode fazer um ataque normal com a outra arma no mesmo turno, antes ou depois de utilizar a Habilidade de Ação.",
+                        0,
+                        null,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Combate com Duas Armas 2",
+                        suporte,
+                        todasRacas,
+                        espadachins_guerreiros_ladinos,
+                        5,
+                        "Como Combate com Duas Armas 1, mas você pode usar duas armas com a mesma FN.",
+                        "Se você utilizar uma Habilidade de Ação, seus efeitos se aplicam a apenas um dos seus ataques – mas você ainda pode fazer um ataque normal com a outra arma no mesmo turno, antes ou depois de utilizar a Habilidade de Ação.",
+                        0,
+                        null,
+                        "Combate com Duas Armas 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        // Espadachins e Ladinos
+        List<Classe> espadachins_ladinos = obterListaClasse(TipoClasse.obterDupla(TipoClasse.ESPADACHIM, TipoClasse.LADINO));
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Acrobata",
+                        suporte,
+                        todasRacas,
+                        espadachins_ladinos,
+                        1,
+                        "Você sempre rola +1d6 em seus testes de equilíbrio, salto, piruetas e qualquer outra tentativa de se deslocar que exija coordenação, flexibilidade e precisão. Além disso, você sofre apenas metade dos danos por queda.",
+                        "",
+                        0,
+                        null,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Aparar",
+                        suporte,
+                        todasRacas,
+                        espadachins_ladinos,
+                        1,
+                        "Você pode usar qualquer coisa que esteja em suas mãos para afastar e desviar golpes desferidos contra você. Enquanto estiver com um objeto em pelo menos uma das mãos, você recebe Defesa +1. Se estiver segurando uma objeto em ambas as mãos ou um objeto em cada mão você recebe Defesa +2. Este e um bônus de Esquiva.",
+                        "",
+                        0,
+                        null,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Ataque Aleijador",
+                        acao,
+                        todasRacas,
+                        espadachins_ladinos,
+                        1,
+                        "Faça um ataque corpo-a-corpo ou à distância, visando o quadril, joelho ou tornozelo do alvo, comprometendo sua locomoção e deixando um ferimento doloroso. Além de receber o dano normal pelo ataque, o alvo fica com seu Deslocamento reduzido em 1 e sempre que se deslocar ou fizer um teste de Agilidade que envolva as pernas ele sofre 10 pontos de dano. Esse é um efeito de Sangramento.",
+                        "",
+                        0,
+                        "20",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Ataque Redirecionado",
+                        reacao,
+                        todasRacas,
+                        espadachins_ladinos,
+                        1,
+                        "Quando um oponente errar um ataque corporal contra você, você pode direcionar o ataque dele para outro alvo. O novo alvo precisa estar adjacente a você ou ao oponente que errou o ataque. Esse ataque acerta automaticamente – sem chance de errar ou de ser um sucesso decisivo. Esta Habilidade só pode ser usada uma vez por rodada.",
+                        "",
+                        0,
+                        null,
+                        "Evasão",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Corte Arterial",
+                        acao,
+                        todasRacas,
+                        espadachins_ladinos,
+                        1,
+                        "Faça um ataque corporal com uma arma de corte ou perfuração. Se acertar, a vítima começará a sangrar, perdendo 10 Pontos de Vida no início de cada um de seus turnos. Este é um efeito de sangramento.",
+                        "",
+                        0,
+                        "30",
+                        "Ataque Aleijador",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Falhas da Armadura",
+                        suporte,
+                        todasRacas,
+                        espadachins_ladinos,
+                        1,
+                        "Você sabe como acertar ataques entre as frestas e falhas das armaduras do inimigo. Ignore sempre o bônus de Armadura da Defesa do oponente.",
+                        "",
+                        0,
+                        null,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Golpes Rápidos",
+                        acao,
+                        todasRacas,
+                        espadachins_ladinos,
+                        1,
+                        "Você pode fazer dois ataques corporais com uma arma que estiver empunhando, desde que esteja empunhando a arma com apenas 1 mão.",
+                        "",
+                        0,
+                        "20",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Movimentos Evasivos",
+                        suporte,
+                        todasRacas,
+                        espadachins_ladinos,
+                        1,
+                        "Você ganha +1 na sua Defesa para cada 2 pontos que tiver em Agilidade. Esta habilidade só funciona se você estiver sem armadura. Esse é um bônus de Esquiva.",
+                        "",
+                        0,
+                        null,
+                        "Acrobata",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Ripostar",
+                        reacao,
+                        todasRacas,
+                        espadachins_ladinos,
+                        5,
+                        "Você está sempre atento à guarda do oponente, esperando uma falha para contra-atacar de modo oportuno. Sempre que um oponente fizer um ataque contra você e errar, você pode imediatamente fazer um ataque normal contra aquele oponente.",
+                        "",
+                        0,
+                        null,
+                        "Ataque Redirecionado",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+
         // Druidas, Patrulheiros e Xamãs
         List<Classe> druidas_patrulheiros_xamas = obterListaClasse(TipoClasse.obterDupla(TipoClasse.DRUIDA, TipoClasse.GUERREIRO));
 
@@ -5855,6 +6369,8 @@ public class HabilidadeService {
         );
 
         return gravarHabilidades(habilidades);
+
+
     }
 
     public List<Habilidade> listarHabilidades() {
