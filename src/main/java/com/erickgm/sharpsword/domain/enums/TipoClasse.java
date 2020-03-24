@@ -75,6 +75,16 @@ public enum TipoClasse {
         return retorno;
     }
 
+    public static List<TipoClasse> obterTrio(TipoClasse tipo1, TipoClasse tipo2, TipoClasse tipo3) {
+        List<TipoClasse> retorno = new ArrayList<>();
+
+        for (TipoClasse t : TipoClasse.values())
+            if (t.equals(tipo1) || t.equals(tipo2) || t.equals(tipo3))
+                retorno.add(t);
+
+        return retorno;
+    }
+
     @Override
     public String toString() {
         return this.nome;

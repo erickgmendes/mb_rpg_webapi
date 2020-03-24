@@ -11,13 +11,11 @@ import com.erickgm.sharpsword.domain.enums.TipoHabilidade;
 @Table(name = "habilidades")
 public class Habilidade implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-
     protected Habilidade() {
         super();
     }
 
-    public Habilidade(Long id, String nome, TipoHabilidade tipoHabilidade, List<Raca> racas, List<Classe> classes, Integer nivel, String descricao, String especial, Integer dificuldade, Integer mana, String requisito, Integer modificadorForca, Integer modificadorAgilidade, Integer modificadorInteligencia, Integer modificadorVontade, Integer modificadorMana, Integer modificadorPv, Integer modificadorDefesa, Integer modificadorDeslocamento, Boolean automatica) {
+    public Habilidade(Long id, String nome, TipoHabilidade tipoHabilidade, List<Raca> racas, List<Classe> classes, Integer nivel, String descricao, String especial, Integer dificuldade, String mana, String requisito, Integer modificadorForca, Integer modificadorAgilidade, Integer modificadorInteligencia, Integer modificadorVontade, Integer modificadorMana, Integer modificadorPv, Integer modificadorDefesa, Integer modificadorDeslocamento, Boolean automatica) {
         this.id = id;
         this.nome = nome;
         this.tipoHabilidade = tipoHabilidade;
@@ -65,7 +63,7 @@ public class Habilidade implements Serializable {
 
     private Integer dificuldade;
 
-    private Integer mana;
+    private String mana;
 
     private String requisito;
 
@@ -87,5 +85,163 @@ public class Habilidade implements Serializable {
 
     private Boolean automatica;
 
+    public Long getId() {
+        return id;
+    }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public TipoHabilidade getTipoHabilidade() {
+        return tipoHabilidade;
+    }
+
+    public List<Raca> getRacas() {
+        return racas;
+    }
+
+    public List<Classe> getClasses() {
+        return classes;
+    }
+
+    public Integer getNivel() {
+        return nivel;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public String getEspecial() {
+        return especial;
+    }
+
+    public Integer getDificuldade() {
+        return dificuldade;
+    }
+
+    public String getMana() {
+        return mana;
+    }
+
+    public String getRequisito() {
+        return requisito;
+    }
+
+    public Integer getModificadorForca() {
+        return modificadorForca;
+    }
+
+    public Integer getModificadorAgilidade() {
+        return modificadorAgilidade;
+    }
+
+    public Integer getModificadorInteligencia() {
+        return modificadorInteligencia;
+    }
+
+    public Integer getModificadorVontade() {
+        return modificadorVontade;
+    }
+
+    public Integer getModificadorMana() {
+        return modificadorMana;
+    }
+
+    public Integer getModificadorPv() {
+        return modificadorPv;
+    }
+
+    public Integer getModificadorDefesa() {
+        return modificadorDefesa;
+    }
+
+    public Integer getModificadorDeslocamento() {
+        return modificadorDeslocamento;
+    }
+
+    public Boolean getAutomatica() {
+        return automatica;
+    }
+
+    protected void setId(Long id) {
+        this.id = id;
+    }
+
+    protected void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    protected void setTipoHabilidade(TipoHabilidade tipoHabilidade) {
+        this.tipoHabilidade = tipoHabilidade;
+    }
+
+    protected void setRacas(List<Raca> racas) {
+        this.racas = racas;
+    }
+
+    protected void setClasses(List<Classe> classes) {
+        this.classes = classes;
+    }
+
+    protected void setNivel(Integer nivel) {
+        this.nivel = nivel;
+    }
+
+    protected void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    protected void setEspecial(String especial) {
+        this.especial = especial;
+    }
+
+    protected void setDificuldade(Integer dificuldade) {
+        this.dificuldade = dificuldade;
+    }
+
+    protected void setMana(String mana) {
+        this.mana = mana;
+    }
+
+    protected void setRequisito(String requisito) {
+        this.requisito = requisito;
+    }
+
+    protected void setModificadorForca(Integer modificadorForca) {
+        this.modificadorForca = modificadorForca;
+    }
+
+    protected void setModificadorAgilidade(Integer modificadorAgilidade) {
+        this.modificadorAgilidade = modificadorAgilidade;
+    }
+
+    protected void setModificadorInteligencia(Integer modificadorInteligencia) {
+        this.modificadorInteligencia = modificadorInteligencia;
+    }
+
+    protected void setModificadorVontade(Integer modificadorVontade) {
+        this.modificadorVontade = modificadorVontade;
+    }
+
+    protected void setModificadorMana(Integer modificadorMana) {
+        this.modificadorMana = modificadorMana;
+    }
+
+    protected void setModificadorPv(Integer modificadorPv) {
+        this.modificadorPv = modificadorPv;
+    }
+
+    protected void setModificadorDefesa(Integer modificadorDefesa) {
+        this.modificadorDefesa = modificadorDefesa;
+    }
+
+    protected void setModificadorDeslocamento(Integer modificadorDeslocamento) {
+        this.modificadorDeslocamento = modificadorDeslocamento;
+    }
+
+    protected void setAutomatica(Boolean automatica) {
+        this.automatica = automatica;
+    }
 }
