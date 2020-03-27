@@ -85,6 +85,16 @@ public enum TipoClasse {
         return retorno;
     }
 
+    public static List<TipoClasse> obterQuarteto(TipoClasse tipo1, TipoClasse tipo2, TipoClasse tipo3, TipoClasse tipo4) {
+        List<TipoClasse> retorno = new ArrayList<>();
+
+        for (TipoClasse t : TipoClasse.values())
+            if (t.equals(tipo1) || t.equals(tipo2) || t.equals(tipo3) || t.equals(tipo4))
+                retorno.add(t);
+
+        return retorno;
+    }
+
     @Override
     public String toString() {
         return this.nome;

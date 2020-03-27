@@ -453,7 +453,7 @@ public class HabilidadeService {
                 )
         );
 
-// Faunos
+        // Faunos
         List<Raca> faunos = obterListaRaca(TipoRaca.FAUNO);
 
         habilidades.add(
@@ -3115,31 +3115,6 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "Sabedoria Selvagem",
-                        suporte,
-                        todasRacas,
-                        druidas,
-                        1,
-                        "Você passou muito tempo em ambientes selvagens e dedicou muito tempo ao estudo da natureza em todas as suas formas. Você rola +1d6 em testes que envolvam a natureza como forragear, rastrear, encontrar abrigo, identificar ervas, etc.",
-                        "",
-                        0,
-                        null,
-                        "",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
                         "Turbilhão",
                         acao,
                         todasRacas,
@@ -3150,31 +3125,6 @@ public class HabilidadeService {
                         12,
                         "25",
                         "Rajada de àgua",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Companheiro Animal 3",
-                        suporte,
-                        todasRacas,
-                        druidas,
-                        5,
-                        "Seu Companheiro Animal recebe +1 em todos os seus Atributos e +10 Pontos de Vida ou +10 Pontos de Mana à sua escolha. Além disso, seu Companheiro Animal recebe uma Habilidade do tipo Técnica à sua escolha (desde que faça sentido; o Mestre tem a palavra final sobre o assunto).",
-                        "",
-                        0,
-                        null,
-                        "Companheiro animal 2",
                         0,
                         0,
                         0,
@@ -3350,31 +3300,6 @@ public class HabilidadeService {
                         12,
                         "30",
                         "Mover Terra",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Venefício",
-                        acao,
-                        todasRacas,
-                        druidas,
-                        5,
-                        "Você é um especialista na fabricação, aplicação e cura de venenos. Você pode produzir qualquer veneno ou antídoto avançado.",
-                        "Se você tiver alguma Habilidade do tipo Magia que cause dano por Perfuração ou Corte em um alvo, ela também aplicam um efeito de veneno potente (O alvo perde 5 Pontos de Vida por turno) além do dano normal. Esse veneno é considerado mágico e permanece ativo por uma quantidade de turnos igual à sua Vontade ou até ser curado.",
-                        0,
-                        null,
-                        "Herbalismo",
                         0,
                         0,
                         0,
@@ -3642,31 +3567,6 @@ public class HabilidadeService {
 
         // Feiticeiro
         List<Classe> feiticeiros = obterListaClasse(TipoClasse.FEITICEIRO);
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Conhecimento Arcano",
-                        acao,
-                        todasRacas,
-                        feiticeiros,
-                        1,
-                        "Você é capaz de decifrar e canalizar os fenômenos do sobrenatural. Você pode ler e utilizar tomos mágicos e desenhar Runas Arcanas (veja a página 36 para regras sobre magia). Você também é capaz de canalizar sua energia para a conjuração de fenômenos mágicos com eficiência. Sempre que usar uma Habilidade do tipo Magia, você pode gastar Pontos de Vida ao invés de Pontos de Mana para pagar seu custo. Nesse caso, cada 2 Pontos de Vida equivalem à 1 Ponto de Mana.",
-                        "",
-                        0,
-                        null,
-                        "",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        true
-                )
-        );
 
         habilidades.add(
                 new Habilidade(
@@ -4927,56 +4827,6 @@ public class HabilidadeService {
         habilidades.add(
                 new Habilidade(
                         null,
-                        "Camuflagem",
-                        suporte,
-                        todasRacas,
-                        ladinos,
-                        5,
-                        "Você pode se camuflar em florestas usando galhos, folhas e lama, ou nas sombras de becos e ruas usando uma capa preta e talvez fuligem ou barro. Quando puder usar o ambiente a seu favor dessa forma, você pode rolar +1d6 nos testes para se esconder.",
-                        "",
-                        0,
-                        "0",
-                        "Furtivo",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        true
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Emboscar",
-                        acao,
-                        todasRacas,
-                        ladinos,
-                        5,
-                        "Você se especializou em emboscar inimigos incapazes de percebê-lo. Quando fizer um ataque à distância contra um alvo Desprevenido (ver Condições, pág. 169), faça imediatamente um Confronto com sua Agilidade versus Inteligência do alvo. Se o seu resultado for mais alto do que o do alvo, ele não consegue perceber de onde veio o ataque, tornando impossível para o alvo lhe atacar (ou mesmo ter uma ideia aproximada da sua posição, a menos que ela seja óbvia) enquanto você permanecer escondido.",
-                        "",
-                        0,
-                        "20",
-                        "Camuflagem",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        true
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
                         "En Passant",
                         reacao,
                         todasRacas,
@@ -5062,31 +4912,6 @@ public class HabilidadeService {
                         0,
                         "0",
                         "Mestre das Adagas 2",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        true
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Passo Leve",
-                        reacao,
-                        todasRacas,
-                        ladinos,
-                        5,
-                        "Sempre que você fizer um teste para mover-se em silencio, se esconder ou camuflar ou bater carteiras você pode rolar novamente 1 dos dados. Você pode escolher com qual dos resultados vai ficar. Esta Habilidade só pode ser usada uma vez por turno.",
-                        "",
-                        0,
-                        "10",
-                        "Furtivo",
                         0,
                         0,
                         0,
@@ -5680,6 +5505,420 @@ public class HabilidadeService {
                 )
         );
 
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Caçador de [Monstro]",
+                        suporte,
+                        todasRacas,
+                        patrulheiros,
+                        5,
+                        "Escolha um monstro (orc, troll, ogro, goblin ou qualquer outro monstro) quando comprar esta habilidade. Você sempre causa +6 de dano em todos os ataques contra este tipo de monstro e rola +1d6 em testes relacionados a eles.",
+                        "",
+                        0,
+                        "0",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Chuva de Flechas 2",
+                        acao,
+                        todasRacas,
+                        patrulheiros,
+                        5,
+                        "Você pode atirar até 6 flechas em um só ataque. Faça uma rolagem para cada flecha, que podem ter alvos diferentes.",
+                        "",
+                        0,
+                        "40",
+                        "Chuva de Flechas",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Empalar",
+                        suporte,
+                        todasRacas,
+                        patrulheiros,
+                        5,
+                        "Se você rolar um Sucesso Crítico em um ataque à distância (incluindo arremessos) usando uma arma que cause dano por Perfuração, o dano será multiplicado por 3 ao invés de 2. Este é um efeito de sangramento.",
+                        "",
+                        0,
+                        "0",
+                        "Ataque Aleijador, Disparo Certeiro",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Matador de [Criatura]",
+                        suporte,
+                        todasRacas,
+                        patrulheiros,
+                        5,
+                        "Escolha uma criatura dentre aquelas do tipo que escolheu para Caçador (Goblins, Orcs, Gnolls ou Draconianos se você escolheu Humanóides, por exemplo). Você sempre causa +4 pontos de dano em todos os ataques contra este tipo de criatura (esse bônus se acumula com o bônus de Caçador de [Criatura]). Além disso, você rola +1d6 em todos os testes relacionados a essa criatura (esse bônus se acumula com o bônus de Caçador de [Criatura]).",
+                        "",
+                        0,
+                        "0",
+                        "Caçador de [Criatura]",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Olho da Águia",
+                        reacao,
+                        todasRacas,
+                        patrulheiros,
+                        5,
+                        "Sempre que você fizer um ataque à distância (incluindo arremessos) você pode rolar novamente 1 dos dados. Você pode escolher com qual dos resultados vai ficar. Você só pode usar esta Habilidade 1 vez por turno.",
+                        "",
+                        0,
+                        "10",
+                        "Disparo Certeiro",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Arqueria de Mestre",
+                        suporte,
+                        todasRacas,
+                        patrulheiros,
+                        10,
+                        "Você sempre rola +1d6 para ataques à distância (incluindo arremessos).",
+                        "",
+                        0,
+                        "0",
+                        "Olho da Águia",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        // Runicos
+        List<Classe> runicos = obterListaClasse(TipoClasse.RUNICO);
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Arma Fiel",
+                        acao,
+                        todasRacas,
+                        runicos,
+                        1,
+                        "Você pode fazer um item portátil vir até você desenhando uma Runa Arcana no ar entre você e o objeto. O item precisa estar em sua linha de visão, e irá desaparecer de onde está e aparecer na sua mão. Essa magia só funciona com itens portáteis como armas, escudos, ferramentas ou frascos e o item precisa estar marcado com sua Runa pessoal. Além disso, você precisa ter pelo menos uma mão livre para que essa magia funcione.",
+                        "",
+                        12,
+                        "20",
+                        "Enfeitiçar Arma 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Arma Incandescente",
+                        acao,
+                        todasRacas,
+                        runicos,
+                        1,
+                        "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal. Esse ataque causa o dano normal da arma e um dano adicional igual a 10/Fogo. Esse efeito pode ser usado para inflamar objetos combustíveis – mas não faz alvos vivos irromperem em chamas.",
+                        "",
+                        0,
+                        "10",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Arma Gélida",
+                        acao,
+                        todasRacas,
+                        runicos,
+                        1,
+                        "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal. Esse ataque causa o dano normal da arma, mais um dano adicional igual a 8/Frio. Se esse efeito for conjurado enquanto a arma estiver submersa em líquido, ele congela uma esfera de meio metro de diâmetro (aproximadamente 125 litros). ",
+                        "",
+                        0,
+                        "5",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Arma Relampejante",
+                        acao,
+                        todasRacas,
+                        runicos,
+                        1,
+                        "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal. Esse ataque causa o dano normal da arma, mais um dano adicional igual a 10/Eletricidade. Ignore bônus de Armadura e Bloqueio se o alvo estiver usando armaduras ou escudos de metal ou se estiver usando uma arma de metal para bloquear.",
+                        "",
+                        0,
+                        "15",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Armadura Fiel",
+                        acao,
+                        todasRacas,
+                        runicos,
+                        1,
+                        "Você pode fazer uma vestimenta vir até você desenhando uma Runa Arcana no ar entre você e ela. O item precisa estar em sua linha de visão, e irá desaparecer de onde está e aparecer vestido no seu corpo. Essa magia só funciona com itens que possam ser vestidos, como armaduras, roupas, mochilas ou cintos e o item precisa estar marcado com sua Runa pessoal. Além disso, você precisa ter espaço para que o item seja vestido para que essa magia funcione – é impossível trazer uma mochila se você já estiver usando alguma coisa nas costas, ou trazer uma armadura se você já estiver usando uma.",
+                        "",
+                        12,
+                        "30",
+                        "Arma Fiel, Enfeitiçar Armadura",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Ataque Fantasma",
+                        acao,
+                        todasRacas,
+                        runicos,
+                        1,
+                        "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal. Esse ataque causa +8 de dano e afeta criaturas incorpóreas como se elas não tivessem essa Habilidade.",
+                        "",
+                        0,
+                        "15",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Conjurar Escudo",
+                        acao,
+                        todasRacas,
+                        runicos,
+                        1,
+                        "Você desenha uma Runa Arcana no ar e ela se transforma em um escudo de energia para proteger uma criatura dentro de sua linha de visão. O escudo flutua ao redor do alvo, bloqueando ataques, mas pode ser segurado como um escudo normal. Ele garante um Bônus de Bloqueio de +2, e se for segurado tem FN 2 e ocupa 1 mão. A Runa Arcana que mantém o escudo se dissipa depois de 1 minuto.",
+                        "",
+                        10,
+                        "10",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Desativar Item",
+                        acao,
+                        todasRacas,
+                        runicos,
+                        1,
+                        "Você pode desativar temporariamente um item mágico desenhando uma Runa Arcana sobre ele, fazendo com que todos os efeitos mágicos fornecidos pelo item deixem de funcionar por 10 minutos por ponto de Inteligência que você tiver – mas ele ainda conta como um item mágico para qualquer efeito que afete ou não afete itens mágicos especificamente. Itens mágicos de aura Nula ou Divina não são afetados por essa Habilidade. Esta Habilidade também dissipa todas as Runas Arcanas e Selos Místicos do item tocado.",
+                        "",
+                        11,
+                        "20",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Enfeitiçar Arma 1",
+                        acao,
+                        todasRacas,
+                        runicos,
+                        1,
+                        "Desenhando uma Runa Arcana sobre uma arma, você confere um bônus de +1 nas rolagens de ataque e nos danos dessa arma. Essa Runa Arcana dura 1 minuto.",
+                        "",
+                        10,
+                        "10",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Enfeitiçar Armadura",
+                        acao,
+                        todasRacas,
+                        runicos,
+                        1,
+                        "Desenhando uma Runa Arcana sobre uma armadura ou vestimenta, você aumenta o bônus de defesa do item em +1 (ou confere +1 de Armadura para uma peça de roupa comum). Essa Runa Arcana dura 1 minuto.",
+                        "",
+                        10,
+                        "20",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+
+        // Sacerdote
+        List<Classe> sacerdote = obterListaClasse(TipoClasse.SACERDOTE);
+
+
+
+        // Xamã
+        List<Classe> xama = obterListaClasse(TipoClasse.XAMA);
+
+
+
         // Ladinos e Patrulheiros
         List<Classe> ladinos_patrulheiros = obterListaClasse(TipoClasse.obterDupla(TipoClasse.LADINO, TipoClasse.PATRULHEIRO));
 
@@ -5696,6 +5935,81 @@ public class HabilidadeService {
                         0,
                         "0",
                         "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Camuflagem",
+                        suporte,
+                        todasRacas,
+                        ladinos_patrulheiros,
+                        5,
+                        "Você pode se camuflar em florestas usando galhos, folhas e lama, ou nas sombras de becos e ruas usando uma capa preta e talvez fuligem ou barro. Quando puder usar o ambiente a seu favor dessa forma, você pode rolar +1d6 nos testes para se esconder.",
+                        "",
+                        0,
+                        "0",
+                        "Furtivo",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Emboscar",
+                        acao,
+                        todasRacas,
+                        ladinos_patrulheiros,
+                        5,
+                        "Você se especializou em emboscar inimigos incapazes de percebê-lo. Quando fizer um ataque à distância contra um alvo Desprevenido (ver Condições, pág. 169), faça imediatamente um Confronto com sua Agilidade versus Inteligência do alvo. Se o seu resultado for mais alto do que o do alvo, ele não consegue perceber de onde veio o ataque, tornando impossível para o alvo lhe atacar (ou mesmo ter uma ideia aproximada da sua posição, a menos que ela seja óbvia) enquanto você permanecer escondido.",
+                        "",
+                        0,
+                        "20",
+                        "Camuflagem",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Passo Leve",
+                        reacao,
+                        todasRacas,
+                        ladinos_patrulheiros,
+                        5,
+                        "Sempre que você fizer um teste para mover-se em silencio, se esconder ou camuflar ou bater carteiras você pode rolar novamente 1 dos dados. Você pode escolher com qual dos resultados vai ficar. Esta Habilidade só pode ser usada uma vez por turno.",
+                        "",
+                        0,
+                        "10",
+                        "Furtivo",
                         0,
                         0,
                         0,
@@ -5862,15 +6176,6 @@ public class HabilidadeService {
                 )
         );
 
-        // Rúnico
-        List<Classe> runico = obterListaClasse(TipoClasse.RUNICO);
-
-        // Sacerdote
-        List<Classe> sacerdote = obterListaClasse(TipoClasse.SACERDOTE);
-
-        // Xamã
-        List<Classe> xama = obterListaClasse(TipoClasse.XAMA);
-
         // Bardos, ladinos e patrulheiros
         List<Classe> bardos_ladinos_patrulheiros = obterListaClasse(TipoClasse.obterTrio(TipoClasse.BARDO, TipoClasse.LADINO, TipoClasse.PATRULHEIRO));
 
@@ -5952,7 +6257,7 @@ public class HabilidadeService {
                 )
         );
 
-// Bardos, espadachins e ladinos
+        // Bardos, espadachins e ladinos
         List<Classe> bardos_espadachins_ladinos = obterListaClasse(TipoClasse.obterTrio(TipoClasse.BARDO, TipoClasse.ESPADACHIM, TipoClasse.LADINO));
 
         habilidades.add(
@@ -5980,37 +6285,8 @@ public class HabilidadeService {
                 )
         );
 
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Truque Sujo",
-                        acao,
-                        todasRacas,
-                        bardos_espadachins_ladinos,
-                        1,
-                        "Quando estiver em distância corporal do oponente e ele estiver te vendo, faça um Confronto de Inteligência contra o alvo. Se você tiver um resultado igual ou maior do que o do oponente nesse teste, você realiza um truque sujo (joga areia nos olhos do oponente, joga um pano em seu rosto, enrola uma corda em suas pernas, etc.) fazendo com que o alvo fique confuso ou desequilibrado, não podendo realizar nenhuma ação no próximo turno, e sendo considerado Desprevenido por 1 turno.",
-                        "",
-                        0,
-                        "10",
-                        "Evasão",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
-
         // Bardos, Espadachins, Ladinos e Patrulheiro
-        List<Classe> bardos_espadachins_ladinos_patrulheiro = new ArrayList<>();
-        bardos_espadachins_ladinos_patrulheiro.addAll(bardos);
-        bardos_espadachins_ladinos_patrulheiro.addAll(espadachins);
-        bardos_espadachins_ladinos_patrulheiro.addAll(ladinos);
-        bardos_espadachins_ladinos_patrulheiro.addAll(patrulheiros);
+        List<Classe> bardos_espadachins_ladinos_patrulheiro = obterListaClasse(TipoClasse.obterQuarteto(TipoClasse.BARDO, TipoClasse.ESPADACHIM, TipoClasse.LADINO, TipoClasse.PATRULHEIRO));
 
         habilidades.add(
                 new Habilidade(
@@ -6037,7 +6313,32 @@ public class HabilidadeService {
                 )
         );
 
-// Bardos e Espadachins
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Truque Sujo",
+                        acao,
+                        todasRacas,
+                        bardos_espadachins_ladinos_patrulheiro,
+                        1,
+                        "Quando estiver em distância corporal do oponente e ele estiver te vendo, faça um Confronto de Inteligência contra o alvo. Se você tiver um resultado igual ou maior do que o do oponente nesse teste, você realiza um truque sujo (joga areia nos olhos do oponente, joga um pano em seu rosto, enrola uma corda em suas pernas, etc.) fazendo com que o alvo fique confuso ou desequilibrado, não podendo realizar nenhuma ação no próximo turno, e sendo considerado Desprevenido por 1 turno.",
+                        "",
+                        0,
+                        "10",
+                        "Evasão",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        // Bardos e Espadachins
         List<Classe> bardos_espadachins = obterListaClasse(TipoClasse.obterDupla(TipoClasse.BARDO, TipoClasse.ESPADACHIM));
 
         habilidades.add(
@@ -6092,7 +6393,6 @@ public class HabilidadeService {
                 )
         );
 
-
         // Bardos e Guerreiros
         List<Classe> bardos_guerreiros_paladinos = obterListaClasse(TipoClasse.obterTrio(TipoClasse.BARDO, TipoClasse.GUERREIRO, TipoClasse.PALADINO));
 
@@ -6146,36 +6446,11 @@ public class HabilidadeService {
                 )
         );
 
-// Bardos e Guerreiros
+        // Bardos e Guerreiros
         List<Classe> bardos_guerreiros = obterListaClasse(TipoClasse.obterDupla(TipoClasse.BARDO, TipoClasse.GUERREIRO));
 
-// Druidas e Feiticeiros
+        // Druidas e Feiticeiros
         List<Classe> druidas_feiticeiros = obterListaClasse(TipoClasse.obterDupla(TipoClasse.DRUIDA, TipoClasse.FEITICEIRO));
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Aparar Magia",
-                        reacao,
-                        todasRacas,
-                        druidas_feiticeiros,
-                        1,
-                        "Sempre que for alvo de uma Magia que cause dano ou perda de vida, você pode reduzir aquele dano ou perda de vida pela metade. Essa Habilidade não afeta quaisquer outros efeitos da magia além de dano ou perda de vida.",
-                        "Se você tiver Resistência ao tipo de dano que a magia causa, você não sofre dano e evita qualquer outro efeito da magia.",
-                        null,
-                        "0",
-                        "Detectar Magia",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
-                )
-        );
 
         habilidades.add(
                 new Habilidade(
@@ -6227,8 +6502,37 @@ public class HabilidadeService {
                 )
         );
 
-// Espadachim, Guerreiro e Paladinos
+        // Espadachim, Guerreiro, Paladinos e Rúnicos
+        List<Classe> espadachins_guerreiros_paladinos_runicos = obterListaClasse(TipoClasse.obterQuarteto(TipoClasse.ESPADACHIM, TipoClasse.GUERREIRO, TipoClasse.PALADINO, TipoClasse.RUNICO));
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Combate Tático",
+                        reacao,
+                        todasRacas,
+                        espadachins_guerreiros_paladinos_runicos,
+                        1,
+                        "Se você derrotar um oponente com um ataque corporal, você pode imediatamente realizar outro ataque corporal normal (mas não Habilidades de Ação).",
+                        "",
+                        0,
+                        null,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        // Espadachim, Guerreiro e Paladinos
         List<Classe> espadachins_guerreiros_paladinos = obterListaClasse(TipoClasse.obterTrio(TipoClasse.ESPADACHIM, TipoClasse.GUERREIRO, TipoClasse.PALADINO));
+
         habilidades.add(
                 new Habilidade(
                         null,
@@ -6251,31 +6555,6 @@ public class HabilidadeService {
                         0,
                         0,
                         true
-                )
-        );
-
-        habilidades.add(
-                new Habilidade(
-                        null,
-                        "Combate Tático",
-                        reacao,
-                        todasRacas,
-                        espadachins_guerreiros_paladinos,
-                        1,
-                        "Se você derrotar um oponente com um ataque corporal, você pode imediatamente realizar outro ataque corporal normal (mas não Habilidades de Ação).",
-                        "",
-                        0,
-                        null,
-                        "",
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        false
                 )
         );
 
@@ -6354,7 +6633,7 @@ public class HabilidadeService {
                 )
         );
 
-// Espadachim e Guerreiro
+        // Espadachim e Guerreiro
         List<Classe> espadachins_guerreiros = obterListaClasse(TipoClasse.obterDupla(TipoClasse.DRUIDA, TipoClasse.FEITICEIRO));
 
         habilidades.add(
@@ -6432,7 +6711,7 @@ public class HabilidadeService {
                 )
         );
 
-// Espadachins, guerreiros e ladinos
+        // Espadachins, guerreiros e ladinos
         List<Classe> espadachins_guerreiros_ladinos = obterListaClasse(TipoClasse.obterTrio(TipoClasse.ESPADACHIM, TipoClasse.GUERREIRO, TipoClasse.LADINO));
 
         habilidades.add(
@@ -6485,7 +6764,7 @@ public class HabilidadeService {
                 )
         );
 
-// Espadachins e Ladinos
+        // Espadachins e Ladinos
         List<Classe> espadachins_ladinos = obterListaClasse(TipoClasse.obterDupla(TipoClasse.ESPADACHIM, TipoClasse.LADINO));
 
         habilidades.add(
@@ -6663,7 +6942,7 @@ public class HabilidadeService {
                 )
         );
 
-// Espadachins, Ladinos e Patrulheiros
+        // Espadachins, Ladinos e Patrulheiros
         List<Classe> espadachins_ladinos_patrulheiros = obterListaClasse(TipoClasse.obterTrio(TipoClasse.ESPADACHIM, TipoClasse.LADINO, TipoClasse.PATRULHEIRO));
 
         habilidades.add(
@@ -6716,7 +6995,7 @@ public class HabilidadeService {
                 )
         );
 
-// Druidas, Patrulheiros
+        // Druidas, Patrulheiros
         List<Classe> druidas_patrulheiros = obterListaClasse(TipoClasse.obterDupla(TipoClasse.DRUIDA, TipoClasse.PATRULHEIRO));
 
         habilidades.add(
@@ -6819,6 +7098,81 @@ public class HabilidadeService {
                 )
         );
 
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Sabedoria Selvagem",
+                        suporte,
+                        todasRacas,
+                        druidas_patrulheiros,
+                        1,
+                        "Você passou muito tempo em ambientes selvagens e dedicou muito tempo ao estudo da natureza em todas as suas formas. Você rola +1d6 em testes que envolvam a natureza como forragear, rastrear, encontrar abrigo, identificar ervas, etc.",
+                        "",
+                        0,
+                        null,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Companheiro Animal 3",
+                        suporte,
+                        todasRacas,
+                        druidas_patrulheiros,
+                        5,
+                        "Seu Companheiro Animal recebe +1 em todos os seus Atributos e +10 Pontos de Vida ou +10 Pontos de Mana à sua escolha. Além disso, seu Companheiro Animal recebe uma Habilidade do tipo Técnica à sua escolha (desde que faça sentido; o Mestre tem a palavra final sobre o assunto).",
+                        "",
+                        0,
+                        null,
+                        "Companheiro animal 2",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Venefício",
+                        acao,
+                        todasRacas,
+                        druidas_patrulheiros,
+                        5,
+                        "Você é um especialista na fabricação, aplicação e cura de venenos. Você pode produzir qualquer veneno ou antídoto avançado.",
+                        "Se você tiver alguma Habilidade do tipo Magia que cause dano por Perfuração ou Corte em um alvo, ela também aplicam um efeito de veneno potente (O alvo perde 5 Pontos de Vida por turno) além do dano normal. Esse veneno é considerado mágico e permanece ativo por uma quantidade de turnos igual à sua Vontade ou até ser curado.",
+                        0,
+                        null,
+                        "Herbalismo",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
         // Druidas, Patrulheiros e Xamãs
         List<Classe> druidas_patrulheiros_xamas = obterListaClasse(TipoClasse.obterTrio(TipoClasse.DRUIDA, TipoClasse.PATRULHEIRO, TipoClasse.XAMA));
 
@@ -6847,6 +7201,35 @@ public class HabilidadeService {
                 )
         );
 
+        // Feiticeiros e Rúnicos
+        List<Classe> feiticeiros_runico = obterListaClasse(TipoClasse.obterDupla(TipoClasse.FEITICEIRO, TipoClasse.RUNICO));
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Conhecimento Arcano",
+                        acao,
+                        todasRacas,
+                        feiticeiros_runico,
+                        1,
+                        "Você é capaz de decifrar e canalizar os fenômenos do sobrenatural. Você pode ler e utilizar tomos mágicos e desenhar Runas Arcanas (veja a página 36 para regras sobre magia). Você também é capaz de canalizar sua energia para a conjuração de fenômenos mágicos com eficiência. Sempre que usar uma Habilidade do tipo Magia, você pode gastar Pontos de Vida ao invés de Pontos de Mana para pagar seu custo. Nesse caso, cada 2 Pontos de Vida equivalem à 1 Ponto de Mana.",
+                        "",
+                        0,
+                        null,
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+
         // Druidas, Feiticeiros e Rúnicos
         List<Classe> druidas_feiticeiros_runico = obterListaClasse(TipoClasse.obterTrio(TipoClasse.DRUIDA, TipoClasse.FEITICEIRO, TipoClasse.RUNICO));
 
@@ -6863,6 +7246,31 @@ public class HabilidadeService {
                         8,
                         "0",
                         "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Aparar Magia",
+                        reacao,
+                        todasRacas,
+                        druidas_feiticeiros_runico,
+                        1,
+                        "Sempre que for alvo de uma Magia que cause dano ou perda de vida, você pode reduzir aquele dano ou perda de vida pela metade. Essa Habilidade não afeta quaisquer outros efeitos da magia além de dano ou perda de vida.",
+                        "Se você tiver Resistência ao tipo de dano que a magia causa, você não sofre dano e evita qualquer outro efeito da magia.",
+                        null,
+                        "0",
+                        "Detectar Magia",
                         0,
                         0,
                         0,
