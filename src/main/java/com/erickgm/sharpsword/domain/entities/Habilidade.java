@@ -15,7 +15,12 @@ public class Habilidade implements Serializable {
         super();
     }
 
-    public Habilidade(Long id, String nome, TipoHabilidade tipoHabilidade, List<Raca> racas, List<Classe> classes, Integer nivel, String descricao, String especial, Integer dificuldade, String mana, String requisito, Integer modificadorForca, Integer modificadorAgilidade, Integer modificadorInteligencia, Integer modificadorVontade, Integer modificadorMana, Integer modificadorPv, Integer modificadorDefesa, Integer modificadorDeslocamento, Boolean automatica) {
+    public Habilidade(Long id, String nome, TipoHabilidade tipoHabilidade, List<Raca> racas, List<Classe> classes,
+                      Integer nivel, String descricao, String especial, String dificuldade, String mana,
+                      String requisito, Integer modificadorForca, Integer modificadorAgilidade,
+                      Integer modificadorInteligencia, Integer modificadorVontade, Integer modificadorMana,
+                      Integer modificadorPv, Integer modificadorDefesa, Integer modificadorDeslocamento,
+                      Boolean automatica) {
         this.id = id;
         this.nome = nome;
         this.tipoHabilidade = tipoHabilidade;
@@ -61,7 +66,7 @@ public class Habilidade implements Serializable {
     @Column(length = 400)
     private String especial;
 
-    private Integer dificuldade;
+    private String dificuldade;
 
     private String mana;
 
@@ -117,7 +122,7 @@ public class Habilidade implements Serializable {
         return especial;
     }
 
-    public Integer getDificuldade() {
+    public String getDificuldade() {
         return dificuldade;
     }
 
@@ -197,7 +202,7 @@ public class Habilidade implements Serializable {
         this.especial = especial;
     }
 
-    protected void setDificuldade(Integer dificuldade) {
+    protected void setDificuldade(String dificuldade) {
         this.dificuldade = dificuldade;
     }
 
