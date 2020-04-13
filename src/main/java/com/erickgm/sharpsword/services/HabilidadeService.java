@@ -43,14 +43,12 @@ public class HabilidadeService {
     private List<Raca> getListaRacasBanco() {
         if (listaRacasBanco == null)
             listaRacasBanco = racaRepository.findAll();
-
         return listaRacasBanco;
     }
 
     private List<Classe> getListaClassesBanco() {
         if (listaClassesBanco == null)
             listaClassesBanco = classeRepository.findAll();
-
         return listaClassesBanco;
     }
 
@@ -136,7 +134,7 @@ public class HabilidadeService {
 
         List<Habilidade> habilidades = new ArrayList<>();
 
-        // Habilidades
+// Habilidades
         TipoHabilidade suporte = TipoHabilidade.SUPORTE;
         TipoHabilidade acao = TipoHabilidade.ACAO;
         TipoHabilidade reacao = TipoHabilidade.REACAO;
@@ -206,10 +204,10 @@ public class HabilidadeService {
         List<Classe> patrulheiros = obterListaClasse(TipoClasse.PATRULHEIRO);
         // Runicos
         List<Classe> runicos = obterListaClasse(TipoClasse.RUNICO);
-        // Sacerdote
-        List<Classe> sacerdote = obterListaClasse(TipoClasse.SACERDOTE);
+        // Sacerdotes
+        List<Classe> sacerdotes = obterListaClasse(TipoClasse.SACERDOTE);
         // Xamã
-        List<Classe> xama = obterListaClasse(TipoClasse.XAMA);
+        List<Classe> xamas = obterListaClasse(TipoClasse.XAMA);
         // Ladinos e Patrulheiros
         List<Classe> ladinos_patrulheiros = obterListaClasse(TipoClasse.obterDupla(TipoClasse.LADINO, TipoClasse.PATRULHEIRO));
         // Anões, Mahoks e Guerreiros e Paladinos
@@ -234,6 +232,8 @@ public class HabilidadeService {
         List<Classe> druidas_feiticeiros = obterListaClasse(TipoClasse.obterDupla(TipoClasse.DRUIDA, TipoClasse.FEITICEIRO));
         // Espadachim, Guerreiro, Paladinos e Rúnicos
         List<Classe> espadachins_guerreiros_paladinos_runicos = obterListaClasse(TipoClasse.obterQuarteto(TipoClasse.ESPADACHIM, TipoClasse.GUERREIRO, TipoClasse.PALADINO, TipoClasse.RUNICO));
+        // Espadachim, Guerreiro, Paladinos, Rúnicos e Xamãs
+        List<Classe> espadachins_guerreiros_paladinos_runicos_xamas = obterListaClasse(TipoClasse.obterQuinteto(TipoClasse.ESPADACHIM, TipoClasse.GUERREIRO, TipoClasse.PALADINO, TipoClasse.RUNICO, TipoClasse.XAMA));
         // Espadachim, Guerreiro e Paladinos
         List<Classe> espadachins_guerreiros_paladinos = obterListaClasse(TipoClasse.obterTrio(TipoClasse.ESPADACHIM, TipoClasse.GUERREIRO, TipoClasse.PALADINO));
         // Espadachim e Guerreiro
@@ -252,15 +252,22 @@ public class HabilidadeService {
         List<Classe> feiticeiros_runico = obterListaClasse(TipoClasse.obterDupla(TipoClasse.FEITICEIRO, TipoClasse.RUNICO));
         // Druidas, Feiticeiros e Rúnicos
         List<Classe> druidas_feiticeiros_runico = obterListaClasse(TipoClasse.obterTrio(TipoClasse.DRUIDA, TipoClasse.FEITICEIRO, TipoClasse.RUNICO));
-        // Feiticeiros e Rúnicos
+        // Druidas e Sacerdotes
+        List<Classe> druidas_sacerdotes = obterListaClasse(TipoClasse.obterDupla(TipoClasse.DRUIDA, TipoClasse.SACERDOTE));
+        // Feiticeiros e Runicos
         List<Classe> feiticeiros_runicos = obterListaClasse(TipoClasse.obterDupla(TipoClasse.FEITICEIRO, TipoClasse.RUNICO));
         // Guerreiros, Paladinos e Rúnicos
         List<Classe> guerreiros_paladinos_runicos = obterListaClasse(TipoClasse.obterTrio(TipoClasse.GUERREIRO, TipoClasse.PALADINO, TipoClasse.RUNICO));
-        // Druidas, Feiticeiros e Rúnicos
-        List<Classe> druidas_feiticeiros_runicos = obterListaClasse(TipoClasse.obterTrio(TipoClasse.DRUIDA, TipoClasse.FEITICEIRO, TipoClasse.RUNICO));
-        // Espadachins, Guerreiros e runicos
+        // Druidas, Feiticeiros, Rúnicos e Sacerdotes
+        List<Classe> druidas_feiticeiros_runicos_sacerdotes = obterListaClasse(TipoClasse.obterQuarteto(TipoClasse.DRUIDA, TipoClasse.FEITICEIRO, TipoClasse.RUNICO, TipoClasse.SACERDOTE));
+        // Espadachins, Guerreiros e Rúnicos
         List<Classe> espadachins_guerreiros_runicos = obterListaClasse(TipoClasse.obterTrio(TipoClasse.ESPADACHIM, TipoClasse.GUERREIRO, TipoClasse.RUNICO));
-
+        // Guerreiros e Xamãs
+        List<Classe> guerreiros_xamas = obterListaClasse(TipoClasse.obterDupla(TipoClasse.GUERREIRO, TipoClasse.XAMA));
+        // Espadachins, Guerreiros, Ladinos e Xamãs
+        List<Classe> espadachins_guerreiros_ladinos_xamas = obterListaClasse(TipoClasse.obterQuarteto(TipoClasse.ESPADACHIM, TipoClasse.GUERREIRO, TipoClasse.LADINO, TipoClasse.XAMA));
+        // Sacerdotes e Xamãs
+        List<Classe> sacerdotes_xamas = obterListaClasse(TipoClasse.obterDupla(TipoClasse.SACERDOTE , TipoClasse.XAMA));
         habilidades.add(
                 new Habilidade(
                         null,
@@ -668,7 +675,7 @@ public class HabilidadeService {
                         faunos,
                         todasClasses,
                         1,
-                        " Você possui pernas mais fortes do que a maioria dos membros da sua raça. Você pode rolar +1d6 quando fizer testes de corrida, salto, evitar quedas, etc. Além disso, o dano dos seus ataques com cascos é aumentado em +2.",
+                        "Você possui pernas mais fortes do que a maioria dos membros da sua raça. Você pode rolar +1d6 quando fizer testes de corrida, salto, evitar quedas, etc. Além disso, o dano dos seus ataques com cascos é aumentado em +2.",
                         "",
                         "",
                         "",
@@ -995,7 +1002,7 @@ public class HabilidadeService {
                         1,
                         "Você possui uma constituição leve e um par de asas que lhe permitem voar. Você pode voar em qualquer direção (com o dobro da sua movimentação normal) e pode parar no ar. No entanto, suas asas precisam bater continua e velozmente, e você não pode planar nem permanecer no ar por mais do que uma hora antes de ter que descansá-las por pelo menos meia hora. Enquanto está voando, o bater das suas asas produzem um zumbido característico e facilmente audível, e é impossível para você se mover em silêncio enquanto voa.",
                         "O dano de qualquer manobra de Encontrão usada em voo é duplicado (mas o dano da arma que você usar no Encontrão não é alterado, nem quaisquer outros possíveis efeitos de Encontrão).",
-                        "",
+                        "0",
                         "",
                         "",
                         0,
@@ -1366,7 +1373,7 @@ public class HabilidadeService {
                         "Bravura Selvagem 1",
                         suporte,
                         aesires,
-                        todasClasses,
+                        xamas,
                         1,
                         "Você confia mais nas suas habilidades naturais do que em armaduras para se defender. Quando não estiver usando armadura, você recebe +2 em sua Defesa. Quando escolhe essa Habilidade, você deve escolher se este será um bônus de Bloqueio ou Esquiva. Essa escolha é permanente e não pode ser mudada mais tarde.",
                         "",
@@ -2012,7 +2019,7 @@ public class HabilidadeService {
                         "Contato com Espíritos",
                         acao,
                         levents,
-                        todasClasses,
+                        xamas,
                         1,
                         "Você pode se comunicar com os espíritos que estejam próximos. Você é capaz de ouvir e ver qualquer espírito num raio de 20 metros. Esse efeito dura 10 minutos. Você pode gastar 10 Pontos de Mana enquanto estiver sob o efeito dessa Habilidade para ser capaz de tocar espíritos por 1 minuto.",
                         "",
@@ -2037,7 +2044,7 @@ public class HabilidadeService {
                         "Comunhão com Espíritos",
                         suporte,
                         levents,
-                        todasClasses,
+                        xamas,
                         1,
                         "Enquanto estiver utilizando Contato com Espíritos, você pode tocar outro personagem que será capaz de ouvir e ver qualquer espírito num raio de 20 metros por 10 minutos. Um personagem sob esse efeito pode gastar 10 Pontos de Mana para ser capaz de tocar espíritos por 1 minuto.",
                         "",
@@ -2836,7 +2843,7 @@ public class HabilidadeService {
                         "Conhecimento Místico",
                         suporte,
                         todasRacas,
-                        druidas,
+                        druidas_sacerdotes,
                         1,
                         "Você está ligado as energias místicas provenientes de forças superiores e consegue comungar com elas. Você pode ler e utilizar tomos mágicos e desenhar Selos Místicos (veja a página 36 para regras sobre magia). Você também pode entrar em um estado de transe se concentrando por 1 minuto. Enquanto continuar meditando dessa forma, você recupera uma quantidade de Pontos de Mana igual à sua Vontade a cada 10 minutos.",
                         "",
@@ -2861,13 +2868,13 @@ public class HabilidadeService {
                         "Asas Celestiais",
                         acao,
                         todasRacas,
-                        druidas,
+                        druidas_sacerdotes,
                         1,
                         "Desenhando um Selo Místico sobre uma criatura viva, você faz surgir em suas costas um grande par de asas. O alvo ganha a Habilidade Asas Pesadas. Esse Selo dura por 1 Hora.",
                         "",
                         "10",
                         "20",
-                        " Caminhada Mágica",
+                        "Caminhada Mágica",
                         0,
                         0,
                         0,
@@ -2936,7 +2943,7 @@ public class HabilidadeService {
                         "Caminhada Mágica",
                         acao,
                         todasRacas,
-                        druidas,
+                        druidas_sacerdotes,
                         1,
                         "Desenhando um Selo Místico sobre uma criatura viva, você permite que ela possa caminhar sobre qualquer tipo de superfície (incluindo líquidos), paredes ou teto e não sofre nenhum tipo de redutor ou penalidade de movimentação por terrenos difíceis ou acidentados. Finalmente, o alvo pode escolher á vontade se vai deixar rastros ou não enquanto esta runa estiver ativa sobre ele. Esse Selo Místico dura 1 hora.",
                         "",
@@ -4311,7 +4318,7 @@ public class HabilidadeService {
                         "Ataque do Búfalo",
                         acao,
                         todasRacas,
-                        guerreiros,
+                        guerreiros_xamas,
                         1,
                         "Faça uma manobra de encontrão. Se acertar o ataque, além de causar o dano normal pelo encontrão, o alvo precisa vencer um teste de Força (Dificuldade igual à sua Determinação mais a FN da arma que estiver usando) ou será derrubado. Alvos com o dobro do seu peso não são afetados.",
                         "",
@@ -4361,7 +4368,7 @@ public class HabilidadeService {
                         "Brigão",
                         suporte,
                         todasRacas,
-                        guerreiros,
+                        guerreiros_xamas,
                         1,
                         "Você está acostumado à combater desarmado. Você rola +1 em seus ataques desarmados e adiciona +2 nos danos desses ataques.",
                         "",
@@ -6255,7 +6262,7 @@ public class HabilidadeService {
                 )
         );
 
-        // Guerreiros e Paladinos
+// Guerreiros e Paladinos
         habilidades.add(
                 new Habilidade(
                         null,
@@ -6612,7 +6619,7 @@ public class HabilidadeService {
                         "Dissipar Magia",
                         acao,
                         todasRacas,
-                        druidas_feiticeiros_runicos,
+                        druidas_feiticeiros_runicos_sacerdotes,
                         5,
                         "Você dissipa todas as Runas Arcanas ou Selos Místicos de uma criatura, objeto ou estrutura com seu toque. Essa Habilidade não tem efeito em Runas ou Selos com efeitos instantâneos (como Curar Ferimentos, Rajada de Espinhos ou Teleporte) nem reverte efeitos permanentes de magia (como restaurar os Pontos de Vida perdidos devido a uma Bola de Fogo, dissipar água criada por Princípio Natural ou reverter água afetada por Raio Gélido de volta ao estado líquido). Você pode também escolher quais Runas ou Selos dissipar e quais não, caso o alvo tenha mais de um Selo ou Runa afetando-o. O custo para dissipar um Selo ou Runa é igual ao custo usado para conjurá-los.",
                         "",
@@ -6712,7 +6719,7 @@ public class HabilidadeService {
                         "Combate Tático",
                         reacao,
                         todasRacas,
-                        espadachins_guerreiros_paladinos_runicos,
+                        espadachins_guerreiros_paladinos_runicos_xamas,
                         1,
                         "Se você derrotar um oponente com um ataque corporal, você pode imediatamente realizar outro ataque corporal normal (mas não Habilidades de Ação).",
                         "",
@@ -6762,7 +6769,7 @@ public class HabilidadeService {
                         "Sem Escapatória",
                         reacao,
                         todasRacas,
-                        espadachins_guerreiros_paladinos_runicos,
+                        espadachins_guerreiros_paladinos_runicos_xamas,
                         1,
                         "Se um oponente que está adjacente a você tentar se afastar ou se levantar, você pode imediatamente fazer um ataque corporal normal contra ele. Se acertar, além de sofrer o dano normal pelo ataque, o oponente não poderá se deslocar neste turno.",
                         "",
@@ -6812,7 +6819,7 @@ public class HabilidadeService {
                         "Implacável",
                         suporte,
                         todasRacas,
-                        espadachins_guerreiros_paladinos_runicos,
+                        espadachins_guerreiros_paladinos_runicos_xamas,
                         5,
                         "Sempre que errar um ataque corporal, o alvo sofre metade do dano normal do ataque (arredondando para baixo).",
                         "",
@@ -6937,7 +6944,7 @@ public class HabilidadeService {
                         "Combate com Duas Armas 1",
                         suporte,
                         todasRacas,
-                        espadachins_guerreiros_ladinos,
+                        espadachins_guerreiros_ladinos_xamas,
                         1,
                         "Você treinou para usar duas armas em combate de forma eficiente. Você pode fazer um ataque para cada arma que estiver segurando, desde que pelo menos uma delas tenha uma FN igual à metade (ou menos) do que a Força do personagem.",
                         "Se você utilizar uma Habilidade de Ação, seus efeitos se aplicam a apenas um dos seus ataques – mas você ainda pode fazer um ataque normal com a outra arma no mesmo turno, antes ou depois de utilizar a Habilidade de Ação.",
@@ -7212,7 +7219,7 @@ public class HabilidadeService {
                         "Companheiro Animal 1",
                         suporte,
                         todasRacas,
-                        druidas_patrulheiros,
+                        druidas_patrulheiros_xamas,
                         1,
                         "Você possui uma ligação de fidelidade com um animal. Escolha uma Besta dos tipos Mamífero, Ave, Réptil ou Peixe e faça um teste de Vontade (Dificuldade igual à soma de todos os atributos do animal +1 para cada metro de tamanho que o animal tiver). Se passar no teste, o animal escolhido será atraído para você e lhe será fiel até a morte (ele passa a ter o temperamento Protetor). Se o animal morrer, você pode tentar atrair outro animal – que não precisa ser do mesmo tipo escolhido anteriormente – com fazendo o mesmo teste. Este teste pode ser realizado 1 vez por dia. Você pode atrair 1 animal de cada vez com essa Habilidade.",
                         "Se essa Habilidade for escolhida durante a criação do personagem, o animal já estará com você, sem a necessidade de qualquer teste para atraí-lo, desde que a dificuldade para atraí-lo seja menor do que a soma dos Atributos do personagem.",
@@ -7237,7 +7244,7 @@ public class HabilidadeService {
                         "Companheiro Animal 2",
                         suporte,
                         todasRacas,
-                        druidas_patrulheiros,
+                        druidas_patrulheiros_xamas,
                         1,
                         "Seu companheiro animal recebe +1 em 2 Atributos à sua escolha, +5 Pontos de vida e +5 Pontos de Mana. Além disso, seu companheiro Animal recebe uma Habilidade do tipo Técnica à sua escolha (desde que faça sentido; o Mestre tem a palavra final sobre o assunto).",
                         "",
@@ -7262,7 +7269,7 @@ public class HabilidadeService {
                         "Espírito Animal",
                         suporte,
                         todasRacas,
-                        druidas_patrulheiros,
+                        druidas_patrulheiros_xamas,
                         1,
                         "Seu espírito possui a forma de um animal. Escolha um Espírito Animal para ser seu guia. Essa escolha é permanente.",
                         "",
@@ -7287,7 +7294,7 @@ public class HabilidadeService {
                         "Herbalismo",
                         suporte,
                         todasRacas,
-                        druidas_patrulheiros,
+                        druidas_patrulheiros_xamas,
                         1,
                         "Você pode rolar testes de Inteligência para criar poções básicas e, enquanto estiver em um ambiente selvagem, você e seus aliados não são afetados por doenças e venenos naturais – seus aliados passam a ser imunes depois de um dia inteiro que estiverem com você, desde que eles aceitem suas dicas do que comer e do que não comer. Além disso, enquanto estiver em terreno natural que possa fornecer ervas, folhas e frutos (qualquer lugar exceto cidades, desertos ou regiões glaciais) você sempre faz testes de primeiros socorros como se tivesse um Kit de Cura à mão.",
                         "",
@@ -7312,7 +7319,7 @@ public class HabilidadeService {
                         "Sabedoria Selvagem",
                         suporte,
                         todasRacas,
-                        druidas_patrulheiros,
+                        druidas_patrulheiros_xamas,
                         1,
                         "Você passou muito tempo em ambientes selvagens e dedicou muito tempo ao estudo da natureza em todas as suas formas. Você rola +1d6 em testes que envolvam a natureza como forragear, rastrear, encontrar abrigo, identificar ervas, etc.",
                         "",
@@ -7337,7 +7344,7 @@ public class HabilidadeService {
                         "Companheiro Animal 3",
                         suporte,
                         todasRacas,
-                        druidas_patrulheiros,
+                        druidas_patrulheiros_xamas,
                         5,
                         "Seu Companheiro Animal recebe +1 em todos os seus Atributos e +10 Pontos de Vida ou +10 Pontos de Mana à sua escolha. Além disso, seu Companheiro Animal recebe uma Habilidade do tipo Técnica à sua escolha (desde que faça sentido; o Mestre tem a palavra final sobre o assunto).",
                         "",
@@ -7437,12 +7444,12 @@ public class HabilidadeService {
                         "Detectar Magia",
                         acao,
                         todasRacas,
-                        druidas_feiticeiros_runico,
+                        druidas_feiticeiros_runicos_sacerdotes,
                         1,
                         "Concentrando-se nos fluxos de energias mágicas, você pode enxergar a aura de objetos mágicos, Runas Arcanas e Selos Místicos. Você pode analisar a aura mágica de um Selo, Runa ou objeto para entender suas propriedades observando-a por 1 minuto.",
                         "",
                         "8",
-                        "",
+                        "0",
                         "",
                         0,
                         0,
@@ -7462,12 +7469,12 @@ public class HabilidadeService {
                         "Aparar Magia",
                         reacao,
                         todasRacas,
-                        druidas_feiticeiros_runico,
+                        druidas_feiticeiros_runicos_sacerdotes,
                         1,
                         "Sempre que for alvo de uma Magia que cause dano ou perda de vida, você pode reduzir aquele dano ou perda de vida pela metade. Essa Habilidade não afeta quaisquer outros efeitos da magia além de dano ou perda de vida.",
                         "Se você tiver Resistência ao tipo de dano que a magia causa, você não sofre dano e evita qualquer outro efeito da magia.",
                         "",
-                        "",
+                        "5",
                         "Detectar Magia",
                         0,
                         0,
@@ -7480,6 +7487,1107 @@ public class HabilidadeService {
                         false
                 )
         );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Abençoar Aliados 1",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Você desenha um Selo Místico sobre sí mesmo que concede um bônus de +1 em todas as suas rolagens. Todos os seus aliados que estiverem à uma distância em metros de você igual à sua Determinação quando você desenha este Selo também são afetados  por ele. Esse Selo Místico dura 1 minuto.",
+                        "",
+                        "10",
+                        "10",
+                        "Graça Divina",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Abençoar Objeto",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Você desenha um Selo Místico sobre uma arma ou armadura para que ela se torne mais eficiente contra criaturas sobrenaturais. Uma arma abençoada causa +6 de dano contra demônios, mortos-vivos e espíritos, além de atingir criaturas incorpóreas como se elas não tivessem a Habilidade Corpo Intangível. Se você abençoar uma armadura, qualquer demônio, morto-vivo ou espírito que tocá-la (incluindo com ataques desarmados) perde imediatamente 6 Pontos de Vida – e perde 6 Pontos de vida a cada turno que comece em contato com a armadura. Esse Selo Místico dura 1 hora.",
+                        "",
+                        "8",
+                        "10",
+                        "Graça Divina",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Asceta",
+                        suporte,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Através de sua dedicação aos dogmas de sua divindade ou panteão, você adquiriu um considerável conhecimento e uma compreensão intuitiva sobre seus desígnios. Você rola +1 em todos os seus testes envolvendo magias (incluindo conjurá-las) e conhecimento. Além disso, todas as suas magias de Cura recuperam 5 Pontos de Vida a mais.",
+                        "",
+                        "",
+                        "",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Aura de Cura 1",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Você desenha um Selo Místico sobre sí mesmo que recupera 10 Pontos de Vida. Todas as criaturas vivas que estiverem à uma distância em metros de você igual à sua Determinação quando você desenha este selo também são afetados por ele. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                        "",
+                        "11",
+                        "15",
+                        "Curar Ferimentos 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Cariátide",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Você pode dar movimentos para uma estátua desenhando um Selo Místico sobre ela. A estátua precisa ter uma forma aproximadamente humanoide e toda feita de um mesmo material. O custo da magia depende do tamanho da estátua: 20 Pontos de Mana para uma estátua pequena, 40 Pontos de Mana para uma estátua média e 80 Pontos de Mana para uma estátua grande. A estátua terá as características de um Golem do material e tamanho apropriados. Esse Selo Místico dura 1 Minuto. Veja os dados dos Golens no Monstrum Codex para mais detalhes.",
+                        "",
+                        "12",
+                        "Variável",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Conjurar Arma dos Deuses",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Você desenha um Selo Místico no ar que se materializa na forma da arma favorecida pela sua divindade. O Selo Místico que conjura a arma se dissipa após 1 minuto, mas se você soltar a arma ele se dissipa imediatamente.",
+                        "",
+                        "10",
+                        "20",
+                        "Dogma",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Conjurar Lança do Destino",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Você desenha um Selo Místico no ar que assume a forma de uma lança de luz. A lança arremete na direção de um alvo que você possa ver e causa dano igual a 10/Perfuração. Se a criatura for um demônio, morto-vivo ou espírito a lança causa o dobro do dano. Após atingir o alvo a lança se dissipa em uma explosão de luz, e o alvo precisa fazer um teste de Vontade (dificuldade igual à sua Determinação) ou fica Distraído por 1 turno. Demônios, mortos-vivos ou espíritos não têm direito ao teste para evitar ficarem Distraídos. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                        "",
+                        "10",
+                        "15",
+                        "Exorcismo",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Conjurar Broquel Místico",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Você desenha um Selo Místico sobre uma criatura que se materializa na forma de um escudo que flutua ao redor do alvo defletindo ataques, mas pode ser segurado como um escudo normal. Ele garante Esquiva +2, e se for segurado tem FN 2, ocupa 1 mão e seu bônus passa a ser de Bloqueio. Esse Selo Místico dura 1 minuto.",
+                        "",
+                        "10",
+                        "10",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Corpo Fechado",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Desenhando um Selo Místico sobre um alvo, você confere Resistência à Contusão, Corte ou Perfuração a ele. Esse Selo Místico dura por 1 minuto.",
+                        "",
+                        "12",
+                        "20",
+                        "Proteção Mística",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Curar Ferimentos 1",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Desenhando um Selo Místico sobre uma criatura viva que recupera imediatamente 10 Pontos de Vida. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                        "",
+                        "8",
+                        "5",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Dogma",
+                        suporte,
+                        todasRacas,
+                        sacerdotes_xamas,
+                        1,
+                        "Você segue estritamente os ensinamentos de uma divindade que, em troca, lhe concede um favor especial. Escolha um Dogma para seguir. Essa escolha é permanente e não pode ser mudada posteriormente.",
+                        "Um personagem que não siga os Dogmas de uma divindade específica é considerado um Discípulo do Panteão ou Sacerdote do Panteão e não está vinculado a nenhuma divindade em particular – nem recebe quaisquer benefícios ou precisa seguir nenhuma conduta específica.",
+                        "",
+                        "",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Exorcismo",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Você desenha um Selo Místico no ar que expurga os mortos-vivos, demônios e espíritos que estiverem a uma distância em metros igual à sua Determinação ao seu redor, fazendo com que eles imediatamente percam 10 Pontos de Vida e 10 Pontos de Mana. Criaturas afetadas que tenham Mente Vazia perdem todos os seus Pontos devida e Mana imediatamente. Mortos-vivos destruídos por essa magia voltarão a ser cadáveres inanimados e não poderão ser reanimados novamente, demônios são imediatamente enviados de volta ao inferno e não podem sair de lá por 1 ano e espíritos são permanentemente dissipados. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                        "",
+                        "11",
+                        "20",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Graça Divina",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Desenhando um Selo Místico sobre uma criatura viva, você imbui ela com a graça de sua Divindade. O alvo recebe +1 em todas as suas rolagens. Este Selo Místico dura por 1 minuto.",
+                        "",
+                        "8",
+                        "5",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Proteção Mística",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Desenhando um Selo Divino sobre uma criatura viva, você à deixa imune a todos os efeitos mentais, efeitos de Medo, e Ilusões. Este Selo dura uma quantidade de horas igual à Vontade do conjurador.",
+                        "",
+                        "10",
+                        "10",
+                        "Toque Místico",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Purgar",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Desenhando um Selo Místico sobre uma criatura, objeto ou superfície, você os purifica de impurezas mundanas. Qualquer veneno ou agente infeccioso de origem natural afetado por essa magia se torna água pura  e límpida, incluindo substâncias que estiverem em alimentos ou bebidas. Qualquer criatura afetada é imediatamente curada de qualquer veneno, doença, infecção de origem natural e também de quaisquer efeitos de sangramento. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                        "",
+                        "10",
+                        "10",
+                        "Curar Ferimentos 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Toque Místico",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Desenhando um Selo Místico sobre uma criatura viva você a infunde com inspiração momentânea. Se o alvo usar uma Habilidade com Custo de Mana igual ou menor a 30, ele não gasta nenhum Ponto de Mana. Essa magia não tem efeito em Habilidades com Custo de Mana maiores do que 30 e não pode ser usada sobre você mesmo. Este Selo Místico dura até o final do próximo turno do alvo, mas se ele gastar Pontos de Mana antes disso, o Selo se dissipa imediatamente.",
+                        "",
+                        "10",
+                        "20",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Velocidade",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        1,
+                        "Desenhando um Selo Místico sobre uma criatura viva você aumenta a velocidade dela, deixando-a com o dobro do Deslocamento e de ações. Este Selo Místico se dissipa no final do próximo turno do alvo.",
+                        "",
+                        "11",
+                        "20",
+                        "Caminhada Mágica",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Abençoar Aliados 2",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        5,
+                        "Você desenha um Selo Místico sobre sí mesmo que concede um bônus de +2 em todas as suas rolagens. Todos os seus aliados que estiverem à uma distância em metros de você igual à sua Determinação quando você desenha este Selo também são afetados por ele. Esse Selo Místico dura 1 minuto.",
+                        "",
+                        "12",
+                        "15",
+                        "Abençoar Aliados 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Aura de Cura 2",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        5,
+                        "Você desenha um Selo Místico sobre sí mesmo que recupera 30 Pontos de Vida. Todas as criaturas vivas que estiverem à uma distância em metros de você igual à sua Determinação quando você desenha este Selo também são afetados por ele. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                        "",
+                        "13",
+                        "30",
+                        "Aura de Cura 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Círculo da Proteção",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        5,
+                        "Você desenha um Selo Místico no ar que se transforma em uma barreira de energia centrada em você e com um diâmetro igual á sua Vontade. A barreira é imaterial, indestrutível, imóvel, translúcida e bloqueia qualquer magia (tanto de fora para dentro quanto de dentro para fora). Além disso, qualquer demônio, morto-vivo ou espírito perde 20 Pontos de Vida A cada turno em começar dentro da barreira. O Selo Místico dura tanto tempo quanto você se mantiver dentro da barreira e concentrado em mantê-la.",
+                        "",
+                        "13",
+                        "40",
+                        "Conjurar Broquel Místico, Exorcismo",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Conjurar Falange do Destino",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        5,
+                        "Você desenha um Selo Místico no ar que se transforma em um conjunto de lanças de luz igual à metade da sua Vontade que arremetem imediatamente na direção de seus inimigos. Cada lança causa dano igual a 10/Perfuração. Se o alvo for um demônio, morto-vivo ou espírito, a lança causa o triplo de dano. Após atingir o alvo a lança se dissipa em uma explosão de luz, e o alvo precisa fazer um teste de Vontade (dificuldade igual à Determinação do conjurador) ou fica Distraído por 1 turno. Demônios, mortos-vivos e espíritos não tem direito ao teste para evitarem ficar Distraídos. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                        "Você pode atingir o mesmo alvo com várias lanças, ou um alvo com cada lança.",
+                        "12",
+                        "60",
+                        "Conjurar Lança do Destino",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Criar Golem",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        5,
+                        "Você pode dar movimentos para um receptáculo especialmente preparado. Você precisa de um receptáculo de forma aproximadamente humanoide todo feito de um mesmo material com uma pedra preciosa incrustada nele. A pedra preciosa precisa ter um valor de 400 moedas para cada metro de altura do Golem. Você então desenha um Selo Místico sobre o receptáculo, que se torna um Golem do material e tamanho apropriados. O Selo Místico que mantém o Golem dura 1 hora. Veja os dados de diversos tipos de Golens no Monstrum Codex para mais detalhes.",
+                        "",
+                        "14",
+                        "60",
+                        "Cariátide",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Curar Ferimentos 2",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        5,
+                        "Desenhando um Selo Místico sobre uma criatura viva, ela recupera imediatamente 60 pontos de vida. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
+                        "",
+                        "12",
+                        "30",
+                        "Curar Ferimentos 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Manter Golem",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        5,
+                        "Você desenha um Selo Místico sobre um Golem que você tenha criado, com o objetivo de fortalecer sua coesão. Cada vez que você desenhar este Selo Místico sobre o Golem, a duração do Selo que o mantém ativo será duplicada. Você pode desenhar quantos selos desses quiser sobre um Golem, e seus efeitos são cumulativos.",
+                        "",
+                        "12",
+                        "10",
+                        "Criar Golem",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Portal",
+                        acao,
+                        todasRacas,
+                        sacerdotes,
+                        5,
+                        "Desenhando um Selo Místico no ar, ele se torna uma passagem (com o tamanho aproximado de uma porta) até um local onde haja outro Selo da sua divindade (pode ser uma igreja que você conheça, ou algum lugar onde você tenha escrito um Selo da sua divindade previamente). A distância entre os dois pontos é irrelevante. Este Selo Místico dura 1 minuto, mas você pode dissipá-lo à qualquer momento.",
+                        "",
+                        "14",
+                        "60",
+                        "Caminhada Mágica",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Primaz",
+                        suporte,
+                        todasRacas,
+                        sacerdotes,
+                        5,
+                        "Você acumulou um grande conhecimento sobre os desígnios das divindades. Você rola +1 em todos os seus testes envolvendo magias (incluindo conjurá-las) e conhecimento (esse bônus se acumula com os bônus de Asceta). Além disso, o custo de todas as Habilidades do tipo Magia que você lançar é diminuído em 5.",
+                        "",
+                        "",
+                        "",
+                        "Clérigo",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Pontífice",
+                        suporte,
+                        todasRacas,
+                        sacerdotes,
+                        10,
+                        "Você adquiriu uma profunda ligação e um conhecimento extremamente amplo sobre a magia e seu fluxo das Divindades para o mundo material. Você rola +2 em todos os seus testes envolvendo magias (incluindo conjurá-las), todas as suas magias de Cura recuperam 5 Pontos de Vida a mais e o custo de todas as Habilidades do tipo Magia que você lançar é diminuído em 5. Além disso todos os Selos Místicos que você desenhar duram o dobro do tempo normal.",
+                        "",
+                        "",
+                        "",
+                        "Primaz",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Guia Espiritual",
+                        suporte,
+                        todasRacas,
+                        xamas,
+                        1,
+                        "Você possui um Guia Espiritual que está constantemente com você. Este Guia pode assumir qualquer forma, mas normalmente escolhe a forma de um animal com o qual você tenha uma ligação ou de um de seus ancestrais. Ele se mantém sempre alerta e próximo de você, e irá lhe despertar se algum perigo se aproximar enquanto você estiver dormindo, além de lhe avisar de qualquer perigo imediato, garantir um bônus de +2 em seus testes de Iniciativa. O Guia Espiritual também pode oferecer conselhos e ajuda quando necessário. Quando estiver diante de uma situação que envolva um teste ligado à animais (adestrar, convocar um Companheiro Animal), natureza (rastrear, procurar abrigo) ou algum outro conhecimento que seu Guia poderia ter (como lidar com outros espíritos) você pode meditar por 1 hora em busca de orientação de seu Guia, recebendo +1d6 no teste apropriado.",
+                        "",
+                        "",
+                        "",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        true
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Chamado do Alfa",
+                        acao,
+                        todasRacas,
+                        xamas,
+                        1,
+                        "Você solta um poderoso uivo (ou uma poderosa vibração sob a água) que será entendida como um chamado irresistível para os animais que o ouvirem. Você consegue atrair todas as Bestas (Escolha entre Mamífero, Ave, Réptil ou Peixe) do tipo escolhido que estejam a até 500 metros por ponto de Força que você tenha. Os animais não estarão sob seu controle, mas se sentirão inclinados a ajudá-lo dentro de suas capacidades – animais com temperamento pacífico ou covarde não irão entrar em combate, mas animais sobreviventes ou agressivos não terão problemas com isso. ",
+                        "Você pode refinar o tipo específico de animal (Ursos, Marsupiais, Batráquios) ou até mesmo um animal específico (Aquele esquilo com quem eu conversei ontem, meu Companheiro Animal, O cão do guarda-caça) quando conjurar essa magia.",
+                        "",
+                        "20",
+                        "Benção de Ellenis",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Cura Espiritual",
+                        acao,
+                        todasRacas,
+                        xamas,
+                        1,
+                        "Com seu toque você pode recuperar as energias de um espírito. Você pode curar até 40 Pontos de Vida de uma criatura com Corpo Intangível, além de remover quaisquer efeitos Mentais, de medo, Selos Místicos e Runas Arcanas que a estiverem afetando.",
+                        "",
+                        "",
+                        "20",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Forma Animal 1",
+                        acao,
+                        todasRacas,
+                        xamas,
+                        1,
+                        "Você pode se transformar em qualquer Besta dos tipos Mamífero, Réptil, Ave ou Peixe com até 1,5 metros de tamanho. Use as estatísticas do animal em que se transformou, mantendo apenas sua Inteligência, Vontade, Pontos de Vida e Pontos de Mana. Não é possível lançar magias, usar armas ou falar com criaturas que não sejam da espécie em que você se transformou enquanto este efeito estiver ativo. Todo o equipamento que você estiver carregando é absorvido e desaparece na transformação e nenhum deles oferecerá nenhum modificador enquanto você permanecer na forma animal (incluindo itens mágicos). Você pode permanecer nesta forma por até 1 hora, mas pode retomar sua forma natural à qualquer momento.",
+                        "",
+                        "",
+                        "20",
+                        "Benção de Ellenis",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Invocar Espírito Animal",
+                        acao,
+                        todasRacas,
+                        xamas,
+                        1,
+                        "Você invoca um espírito animal espectral para protegê-lo. Esse espectro tem a forma do seu Espírito Animal, mas os Atributos dele serão todos iguais à sua Vontade. Além das Habilidades normais do animal, todos os Espíritos Animais terão Mente Bloqueada e Corpo Intangível. Seus ataques causam dano igual à Força +2 por Corte, Perfuração ou Esmagamento – o que for mais apropriado, de acordo com os ataques do animal – e recebem os bônus referentes ao seu Espírito Animal. Espíritos Animais têm 30 Pontos de Vida e 30 Pontos de Mana. Espíritos Animais são sempre Bestas do tipo Espírito com o temperamento Servo. Essa magia dura 1 minuto ou até o animal espectral ser destruído.",
+                        "Águias Espectrais invocadas por essa magia recebem +1 em seus ataques corporais ao invés do bônus normal.",
+                        "",
+                        "20",
+                        "Espírito Animal, Contato com Espíritos",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Rugido do Alfa",
+                        acao,
+                        todasRacas,
+                        xamas,
+                        1,
+                        "Você emite um rugido capaz de abalar até o mais valente dos predadores Todos os oponentes que estiverem a até 10 metros à sua frente que tiverem uma Determinação menor do que a sua ficam Paralisados por 1 turno. Um oponente só é afetado por esta habilidade uma vez por combate. Este é um efeito de Medo.",
+                        "",
+                        "",
+                        "40",
+                        "Rugido do Predador",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Rugido do Predador",
+                        acao,
+                        todasRacas,
+                        xamas,
+                        1,
+                        "Você emite um rugido amedrontador. Todos os oponentes que estiverem a até 10 metros à sua frente que tiverem uma Determinação menor do que a sua ficam Amedrontados por 1 turno. Um oponente só é afetado por esta habilidade uma vez por combate. Este é um efeito de Medo.",
+                        "",
+                        "",
+                        "25",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Vantagem Animal 1",
+                        acao,
+                        todasRacas,
+                        xamas,
+                        1,
+                        "Você pode transformar uma pequena parte do seu corpo para que ela assuma uma característica animal, lhe conferindo uma Habilidade temporária. Você pode transformar seus olhos para captar mais luz como uma coruja, recebendo Visão no Escuro, tornar suas unhas em garras de um tigre e receber Garras ou modificar seu nariz para que se pareça com o de um lobo, recebendo Faro, por exemplo. Apenas pequenas modificações são possíveis, e as possibilidades devem ser discutidas com o Mestre. Esse efeito dura 1 hora, mas você pode cancelá-lo quando quiser.",
+                        "",
+                        "",
+                        "10",
+                        "Forma Animal 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Atropelar",
+                        suporte,
+                        todasRacas,
+                        xamas,
+                        5,
+                        "Quando usar Ataque do Búfalo, se o alvo for derrubado ele sofre um dano adicional igual a 6/Contusão para cada 100 quilos de peso que você tiver.",
+                        "",
+                        "",
+                        "0",
+                        "Ataque do Búfalo",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Caminhada Fantasma",
+                        acao,
+                        todasRacas,
+                        xamas,
+                        5,
+                        "Você tornou-se um canal entre o mundo físico e o mundo espiritual. Você (e tudo o que você estiver carregando) pode tomar a forma de um espírito, adquirindo a Habilidade Corpo Intangível – você não tem peso, pode voar ao seu Deslocamento normal em qualquer direção e atravessar objetos sólidos. Você pode materializar partes do seu corpo, permitindo que você ataque ou conjure magias, e a menos que escolha o contrário, você é Imune à Corte, Perfuração e Contusão. Magias que causem danos desses tipos, no entanto, afetam você normalmente. Além disso, você pode ver, ouvir e tocar espíritos ou criaturas com a Habilidade Corpo Intangível enquanto estiver sob efeito dessa Habilidade. Este efeito dura um número de minutos igual à sua Determinação. Se o efeito terminar enquanto você estiver dentro de algum material sólido, você é expelido para fora e sofre dano igual a 30/Contusão.",
+                        "Se você tiver Imunidade Espiritual, os efeitos dessa Habilidade não funcionam enquanto você estiver sob efeito de Caminhada Fantasma.",
+                        "",
+                        "40",
+                        "Comunhão com Espíritos",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Companheiro Espiritual",
+                        suporte,
+                        todasRacas,
+                        xamas,
+                        5,
+                        "Seus Espíritos Animais conjurados duram permanentemente (mas você ainda pode cancelar o efeito quando quiser) e recebem +20 PV, ou +20 PM, ou +10 PV e +10 PM à sua escolha quando você os conjura. No entanto, enquanto esses Espíritos Animais estiverem conjurados, você não pode recuperar os Pontos de Mana gastos para conjurá-los. Depois que eles forem dissipados (ou destruídos) você pode recuperar esses Pontos de Mana normalmente.",
+                        "",
+                        "",
+                        "",
+                        "Invocar Espírito Animal",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Estraçalhar",
+                        acao,
+                        todasRacas,
+                        xamas,
+                        5,
+                        "Você salta sobre um alvo atacando com tudo o que tem! Faça um Encontrão realizando todos os seus possíveis ataques corporais (em geral dois socos/garradas/ataques com armas, dois chutes/ataques com cascos e uma cabeçada/mordida/marrada). Se você possuir Habilidades do tipo Característica que permitam mais ataques (como Braços Extras 2) você pode realizar todos estes ataques.",
+                        "",
+                        "",
+                        "35",
+                        "Combate com Duas Armas 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Forma Animal 2",
+                        acao,
+                        todasRacas,
+                        xamas,
+                        5,
+                        "Sua capacidade de assumir a forma de um animal permite que você se transforme em qualquer Besta dos tipos Mamífero, Ave, Réptil ou Peixe com até 3 metros de tamanho. Use as estatísticas do animal em que se transformou, mantendo apenas sua Inteligência, Vontade, pontos de vida e pontos de Mana. Não é possível lançar magias, usar armas ou falar com criaturas que não sejam da espécie em que você se transformou enquanto este efeito estiver ativo. Todo o equipamento que você estiver carregando é absorvido e desaparece na transformação, nenhum deles oferecerá qualquer modificadores enquanto você permanecer na forma animal (incluindo itens mágicos). Você pode permanecer nesta forma por até 1 hora, mas pode retomar sua forma natural a qualquer momento",
+                        "",
+                        "Variável",
+                        "30",
+                        "Forma Animal 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Imunidade Espiritual",
+                        suporte,
+                        todasRacas,
+                        xamas,
+                        5,
+                        "Você não recebe nenhum dano de criaturas do tipo Espírito e rola +1d6 em todos os testes de Vontade ligados a estas criaturas.",
+                        "",
+                        "",
+                        "",
+                        "Comunhão com Espíritos",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Mestre Domador",
+                        suporte,
+                        todasRacas,
+                        xamas,
+                        5,
+                        "Você é capaz de domar animais com extrema facilidade. Quando você captura uma criatura do tipo Besta, pode fazer um teste de Vontade com dificuldade igual à soma de todos os Atributos do animal depois que tiver cativo e bem tratado por pelo menos 1 dia inteiro. Se conseguir sucesso no teste, a criatura passa a ser considerada seu Companheiro Animal e a ter o Temperamento Protetor. Se falhar no teste, você pode tentar novamente uma vez por dia. No caso de uma falha crítica no teste, você perde completamente a confiança do animal e não será capaz de domá-lo. Você pode liberar um animal domado dessa forma. Nesse caso, o temperamento da criatura volta ao normal, mas quaisquer bônus que ele receba por suas Habilidades de Companheiro Animal permanecem. Você pode ter, simultaneamente, uma quantidade de Companheiros Animais igual à metade da sua Vontade (arredondada para baixo). ",
+                        "",
+                        "",
+                        "0",
+                        "",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Vantagem Animal 2",
+                        acao,
+                        todasRacas,
+                        xamas,
+                        5,
+                        "Você pode transformar uma parte do seu corpo para que ela assuma uma característica animal, lhe conferindo uma Habilidade temporária. Você pode transformar seus braços em asas de grifo, recebendo Asas Pesadas, transformar sua cabeça para a de um lobo atroz e receber Mordida Poderosa ou desenvolver guelras como as de um tubarão, recebendo Anfíbio, por exemplo. Quaisquer modificações são possíveis, mas as possibilidades devem ser discutidas com o Mestre. Esse efeito dura 10 minutos, mas você pode cancelá-lo a qualquer momento.",
+                        "",
+                        "",
+                        "20",
+                        "Vantagem Animal 1",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
+        habilidades.add(
+                new Habilidade(
+                        null,
+                        "Guardião da Natureza",
+                        suporte,
+                        todasRacas,
+                        xamas,
+                        10,
+                        "Sua capacidade de assumir a forma de um animal permite que você se transforme em qualquer Besta dos tipos Mamífero, Ave, Réptil ou Peixe de qualquer tamanho. O custo de Mana e a Dificuldade de qualquer Habilidade relacionada a animais também são reduzidos à metade – Transformar-se em qualquer Besta maior do que 3 metros consome 20 pontos de Mana. Finalmente, todas as habilidades de assumir formas animais passam a ter duração permanente – mas você pode cancelar seus efeitos a qualquer momento.",
+                        "",
+                        "",
+                        "0",
+                        "Forma Animal 2",
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        false
+                )
+        );
+
 
         return gravarHabilidades(habilidades);
     }

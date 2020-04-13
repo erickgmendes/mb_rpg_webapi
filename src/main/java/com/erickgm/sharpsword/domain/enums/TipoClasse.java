@@ -95,6 +95,17 @@ public enum TipoClasse {
         return retorno;
     }
 
+    public static List<TipoClasse> obterQuinteto(TipoClasse tipo1, TipoClasse tipo2, TipoClasse tipo3, TipoClasse tipo4, TipoClasse tipo5) {
+        List<TipoClasse> retorno = new ArrayList<>();
+
+        for (TipoClasse t : TipoClasse.values())
+            if (t.equals(tipo1) || t.equals(tipo2) || t.equals(tipo3) || t.equals(tipo4) || t.equals(tipo5))
+                retorno.add(t);
+
+        return retorno;
+    }
+
+
     @Override
     public String toString() {
         return this.nome;
