@@ -1,6 +1,12 @@
 package com.erickgm.sharpsword.domain.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.*;
@@ -9,22 +15,11 @@ import javax.persistence.*;
 @Table(name = "racas")
 public class Raca implements Serializable {
 
-	protected Raca() {
-		super();
-	}
-
-	public Raca(Long id, String nome, int valorForca, int valorAgilidade, int valorInteligencia, int valorVontade) {
-		this.id = id;
-		this.nome = nome;
-		this.valorForca = valorForca;
-		this.valorAgilidade = valorAgilidade;
-		this.valorInteligencia = valorInteligencia;
-		this.valorVontade = valorVontade;
-	}
-
 	@Id
 	@GeneratedValue(generator = "seq_raca", strategy = GenerationType.IDENTITY)
 	private Long id;
+
+	private boolean comum;
 
 	@Column(unique = true, nullable = false)
 	private String nome;
@@ -41,19 +36,30 @@ public class Raca implements Serializable {
 	@Column(nullable = false)
 	private int valorVontade;
 
+	@OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "raca")
+	private List<HabilidadeRaca> habilidadesRacas;
+
 	public Long getId() {
 		return id;
 	}
 
-	protected void setId(Long id) {
+	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public boolean isComum() {
+		return comum;
+	}
+
+	public void setComum(boolean comum) {
+		this.comum = comum;
 	}
 
 	public String getNome() {
 		return nome;
 	}
 
-	protected void setNome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
@@ -61,7 +67,7 @@ public class Raca implements Serializable {
 		return valorForca;
 	}
 
-	protected void setValorForca(int valorForca) {
+	public void setValorForca(int valorForca) {
 		this.valorForca = valorForca;
 	}
 
@@ -69,7 +75,7 @@ public class Raca implements Serializable {
 		return valorAgilidade;
 	}
 
-	protected void setValorAgilidade(int valorAgilidade) {
+	public void setValorAgilidade(int valorAgilidade) {
 		this.valorAgilidade = valorAgilidade;
 	}
 
@@ -77,7 +83,7 @@ public class Raca implements Serializable {
 		return valorInteligencia;
 	}
 
-	protected void setValorInteligencia(int valorInteligencia) {
+	public void setValorInteligencia(int valorInteligencia) {
 		this.valorInteligencia = valorInteligencia;
 	}
 
@@ -85,7 +91,16 @@ public class Raca implements Serializable {
 		return valorVontade;
 	}
 
-	protected void setValorVontade(int valorVontade) {
+	public void setValorVontade(int valorVontade) {
 		this.valorVontade = valorVontade;
 	}
+
+	public List<HabilidadeRaca> getHabilidadesRacas() {
+		return habilidadesRacas;
+	}
+
+	public void setHabilidadesRacas(List<HabilidadeRaca> habilidadesRacas) {
+		this.habilidadesRacas = habilidadesRacas;
+	}
+
 }

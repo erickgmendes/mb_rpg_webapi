@@ -1,6 +1,5 @@
 package com.erickgm.sharpsword.services;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,24 +15,19 @@ public class ClasseService {
 	private ClasseRepository classeRepository;
 	
 	public String cargaInicial() {
-		List<Classe> itens = new ArrayList<>();
-
 		if (classeRepository.count() == 0) {
-			itens.add(new Classe(null, "Bardo",0,1,0,1));
-			itens.add(new Classe(null, "Druida",0,0,1,1));
-			itens.add(new Classe(null, "Espadachim",1,1,0,0));
-			itens.add(new Classe(null, "Feiticeiro",0,0,1,1));
-			itens.add(new Classe(null, "Guerreiro",1,1,0,0));
-			itens.add(new Classe(null, "Ladino",0,1,1,0));
-			itens.add(new Classe(null, "Paladino",1,0,0,1));
-			itens.add(new Classe(null, "Patrulheiro",0,1,1,0));
-			itens.add(new Classe(null, "Rúnico",1,0,1,0));
-			itens.add(new Classe(null, "Sacerdote",0,0,1,1));
-			itens.add(new Classe(null, "Xamã",1,0,0,1));
+			classeRepository.save(getClasse("Guerreiro",1,1,0,0, true));
+			classeRepository.save(getClasse("Patrulheiro",0,1,1,0, true));
+			classeRepository.save(getClasse("Feiticeiro",0,0,1,1, true));
+			classeRepository.save(getClasse("Ladino",0,1,1,0, true));
 
-			for (Classe item : itens) {
-				classeRepository.save(item);
-			}
+			classeRepository.save(getClasse("Bardo",0,1,0,1, false));
+			classeRepository.save(getClasse("Druida",0,0,1,1, false));
+			classeRepository.save(getClasse("Espadachim",1,1,0,0, false));
+			classeRepository.save(getClasse("Paladino",1,0,0,1, false));
+			classeRepository.save(getClasse("Rúnico",1,0,1,0, false));
+			classeRepository.save(getClasse("Sacerdote",0,0,1,1, false));
+			classeRepository.save(getClasse("Xamã",1,0,0,1, false));
 
 			return "Classes carregadas";
 		}
@@ -42,5 +36,17 @@ public class ClasseService {
 
 	public List<Classe> listarClasses() {
 		return classeRepository.findByOrderByNomeAsc();
+	}
+
+	private Classe getClasse(String nome, int forca, int agilidade, int inteligencia, int vontade, boolean comum){
+		Classe classe = new Classe();
+		classe.setNome(nome);
+		classe.setValorForca(forca);
+		classe.setValorAgilidade(agilidade);
+		classe.setValorInteligencia(inteligencia);
+		classe.setValorVontade(vontade);
+		classe.setComum(comum);
+
+		return classe;
 	}
 }

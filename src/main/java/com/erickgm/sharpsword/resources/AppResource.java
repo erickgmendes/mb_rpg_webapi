@@ -23,6 +23,12 @@ public class AppResource {
 	private HabilidadeService habilidadeService;
 
 	@Autowired
+	private HabilidadeRacaService habilidadeRacaService;
+
+	@Autowired
+	private HabilidadeClasseService habilidadeClasseService;
+
+	@Autowired
 	private EquipamentoService equipamentoService;
 	
 	@Autowired
@@ -39,6 +45,8 @@ public class AppResource {
 		lista.add(racaService.cargaInicial());
 		lista.add(classeService.cargaInicial());
 		lista.add(habilidadeService.cargaInicial());
+		lista.add(habilidadeRacaService.cargaInicial());
+		lista.add(habilidadeClasseService.cargaInicial());
 		lista.add(equipamentoService.cargaInicial());
 
 		return lista;
