@@ -256,7 +256,6 @@ public class HabilidadeService {
                 0, 0, 0, 0,
                 0, 0, 0, 0));
 
-
         habilidades.add(getHabilidade("Herança Feérica", suporte, 1,
                 "Você possui algumas características comuns aos seus ancestrais feéricos. Você é imune a qualquer efeito mental e efeito de medo além de perceber automaticamente ilusões. Você também ganha +5 Pontos de Mana.",
                 "", "", "", "",
@@ -671,3402 +670,1065 @@ public class HabilidadeService {
                 0, 0, 0, 0,
                 0, 0, 0, 0));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        habilidades.add(getHabilidade("Poesia dos Bardos",
-                suporte,
-                //todasRacas,                bardos,
-                1,
+        habilidades.add(getHabilidade("Poesia dos Bardos", suporte, 1,
                 "Através das inúmeras canções e poemas épicos, você conhece muitas histórias e lendas. Você pode rolar +1d6 quando fizer testes referentes à qualquer tipo de conhecimento. Se o conhecimento em questão for considerado perdido, maçante ou técnico para figurar uma canção ou poema, não há como o Bardo conseguir informações sobre o assunto.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Canção do Triunfo",
-                acao,
-                //todasRacas,                bardos,
-                1,
+        habilidades.add(getHabilidade("Canção do Triunfo", acao, 1,
                 "Você canta uma música relembrando os êxitos e vitórias do grupo, seus feitos mais memoráveis e exaltando seus laços de amizade, aumentando a moral do grupo. Todos os seus aliados (incluindo você) que puderem ouvir essa canção recuperam 5 Pontos e Vida por turno, enquanto você continuar a tocar essa Música.",
-                "",
-                "",
-                "25",
-                "Melodia do Repouso",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "25", "Melodia do Repouso",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Canção Exultante",
-                acao,
-                //todasRacas,                bardos,
-                1,
+        habilidades.add(getHabilidade("Canção Exultante", acao, 1,
                 "Você canta uma música exaltando as capacidades e qualidades dos seus aliados, deixando-os confiantes. Todos os seus aliados (incluindo você) que puderem ouvir essa canção recebem +1 em todos os seus testes enquanto você continuar a tocar essa Música.",
-                "",
-                "",
-                "",
-                "Melodia do Repouso",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Melodia do Repouso",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Grito Ensurdecedor",
-                acao,
-                //todasRacas,                bardos,
-                1,
+        habilidades.add(getHabilidade("Grito Ensurdecedor", acao, 1,
                 "Você solta um grito tão alto e poderoso que faz com que todos ao redor fiquem atordoados. Todas as criaturas em uma área de 10 metros à sua frente ficam atordoadas por um número de turnos igual à sua Vontade.",
-                "",
-                "",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Grito Estilhaçador",
-                acao,
-                //todasRacas,                bardos,
-                1,
+        habilidades.add(getHabilidade("Grito Estilhaçador", acao, 1,
                 "Seu agudo é tão poderoso que você pode direcionar um grito capaz de romper vidros, cristais e tímpanos! Tudo e todos em até 10 metros à sua frente sofrem dano igual a 10/Corte. Criaturas com Corpo Amórfico, objetos inanimados e estruturas que sejam atingidas por esse grito sofrem o dobro do dano.",
-                "",
-                "",
-                "20",
-                "Grito Ensurdecedor",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "20", "Grito Ensurdecedor",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Melodia Dançante",
-                acao,
-                //todasRacas,                bardos,
-                1,
+        habilidades.add(getHabilidade("Melodia Dançante", acao, 1,
                 "Você toca ritmos empolgantes que fazem com que todos que escutarem esta música sintam uma vontade incontrolável de dançar. Todos os Humanoides que estiverem escutando sua música rolam um confronto de Vontade contra você. Aqueles que tiverem um resultado mais baixo que o seu começarão a dançar incontrolavelmente, realizando todos os seus testes baseados em Agilidade como se fosse Inábil e ficando com Defesa -1 enquanto você continuar a tocar essa Melodia. Este é um efeito mental.",
                 "Personagens usando Dança das Espadas são imunes a esse efeito.",
-                "",
-                "20",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "20", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Melodia do Enjoo",
-                acao,
-                //todasRacas,                bardos,
-                1,
+        habilidades.add(getHabilidade("Melodia do Enjoo", acao, 1,
                 "Sua melodia é perfeitamente desconexa e perturbadora. Todas as criaturas vivas que puderem lhe escutar rolam um confronto de Vontade contra você a cada turno em que você continuar tocando. Aqueles que tiverem um resultado mais baixo do que você ficam enjoados, sofrendo um redutor de -1 em sua Defesa e testes de ataque até o final do turno. Qualquer um que obtenha 3 resultados mais baixos que os seus em confrontos para resistir a esse efeito durante um mesmo combate ficarão tão enjoados que vomitarão, ficando Paralisados durante 1 turno.",
-                "",
-                "",
-                "20",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "20", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Melodia do Repouso",
-                acao,
-                //todasRacas,                bardos,
-                1,
+        habilidades.add(getHabilidade("Melodia do Repouso", acao, 1,
                 "Você toca uma série de canções simples e relaxantes, que permitem que todos os que a ouvirem repousem com serenidade e recobrem suas forças. Qualquer um que escute sua canção por pelo menos 10 minutos – mesmo que esteja dormindo – recupera o dobro de Pontos de Mana e de Pontos de Vida devido ao descanso por aquele período. Tocar a Melodia do Repouso é considerado descanso, e os efeitos dessa música também afetam você.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Melodia Sonífera",
-                acao,
-                //todasRacas,                bardos,
-                1,
+        habilidades.add(getHabilidade("Melodia Sonífera", acao, 1,
                 "Você toca uma melodia lenta e ritmada, que acalma a ponto de fazer quem a escuta cair no sono. Após 3 turnos ouvindo essa Melodia, todos que puderem escutá-la (menos você) rolam um confronto de Vontade contra você. Aqueles que tiverem um resultado menor que o seu caem em um sono profundo que dura 1 hora. Este é um efeito mental.",
-                "",
-                "",
-                "15",
-                "Melodia do Repouso",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "15", "Melodia do Repouso",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Mestre das Notas",
-                reacao,
-                //todasRacas,                bardos,
-                1,
+        habilidades.add(getHabilidade("Mestre das Notas", reacao, 1,
                 "Sempre que você fizer um teste que envolva contar histórias, entreter uma plateia, cantar ou tocar instrumento musicais (incluindo Habilidades do tipo Música) você pode rolar novamente 1 dos dados. Você pode escolher com qual dos resultados vai ficar. Você só pode usar esta Habilidade 1 vez por turno.",
-                "",
-                "",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Canção da Sereia",
-                acao,
-                //todasRacas,                bardos,
-                5,
+        habilidades.add(getHabilidade("Canção Desesperadora", acao, 1,
+                "Você canta uma música que fala sobre a morte, destruição e derrotas dos seus adversários, instilando medo em seus corações. Escolha uma profissão, raça, cultura ou classe social. Todas as criaturas do grupo escolhido que puderem entendê-lo e ouvirem sua música por pelo menos 2 turnos rolam um confronto de Vontade contra você. Aqueles que tiverem um resultado menor que o seu precisam usar sua ação de movimento para tentar se afastar de você enquanto você continuar a tocar essa Música. Este é um efeito de medo.",
+                "", "", "30", "Canção da Provocação",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
+
+        habilidades.add(getHabilidade("Canção da Sereia", acao, 5,
                 "Você canta uma música melancólica capaz de deixar aqueles que a escutam enfeitiçados. Todos que estiverem a até 10 metros de você e puderem ouvir a canção rolam um confronto de Vontade contra você a cada turno enquanto você continuar cantando. Alvos que tenham um resultado menor do que o seu não poderão realizar qualquer ação exceto tentar se aproximar de você enquanto você estiver cantando – ou ficar imóvel lhe observando se estiverem a 1 metro ou menos de você. Esse efeito é cancelado e o alvo fica imune aos seus efeitos até o fim do combate se a vítima sofrer algum dano enquanto estiver sob efeito dessa Música. Enquanto estiver sob o efeito dessa Música o alvo é considerado Desprevenido para todos os seus aliados – mas não para você. Este é um efeito mental.",
-                "",
-                "",
-                "20",
-                "Eloquente",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "20", "Eloquente",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Canção Desconcentrante",
-                acao,
-                //todasRacas,                bardos,
-                5,
+        habilidades.add(getHabilidade("Canção Desconcentrante", acao, 5,
                 "Você canta uma canção com tom jocoso e com uma melodia irritante que prende a atenção dos ouvintes e não permite que eles se concentrem. Todos que estiverem a até 10 metros de você e puderem ouvir a canção rolam um confronto de Vontade contra você a cada turno enquanto você continuar cantando. Alvos que tenham um resultado menor do que o seu são considerados Distraídos até o final do seu próximo turno. Este é um efeito mental.",
-                "",
-                "",
-                "20",
-                "Melodia do Enjoo",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "20", "Melodia do Enjoo",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Melodia da Fúria",
-                acao,
-                //todasRacas,                bardos,
-                5,
+        habilidades.add(getHabilidade("Melodia da Fúria", acao, 5,
                 "Você toca um ritmo primitivo, que faz com que todos os Humanoides que o escutem sintam seus instintos mais violentos aflorarem. Todos os Humanoides capazes de escutar essa canção desferem seus ataques com mais selvageria, causando +5 de dano, mas sofrendo um redutor de -2 em sua Defesa enquanto você continuar a tocar essa música. Este é um efeito mental.",
-                "",
-                "",
-                "10",
-                "Melodia Dançante",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "Melodia Dançante",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Melodia dos Animais",
-                acao,
-                // +
-                // ,,todasRacas,                bardos,
-                5,
+        habilidades.add(getHabilidade("Melodia dos Animais", acao, 5,
                 "Escolha um tipo de Besta (mamífero, réptil ou ave). Todas as criaturas do tipo escolhido que puderem escutar sua música ficarão fascinadas com ela e o seguirão enquanto você continuar a tocar. Os alvos não irão realizar qualquer ação além de seguir você para onde for enquanto você continuar a tocar. Esse efeito é cancelado se o alvo sofrer algum dano enquanto estiver sob efeito dessa Música, mas se você continuar a tocar essa Música o alvo será afetado novamente no começo do seu próximo turno. Este é um efeito mental.",
-                "",
-                "",
-                "10",
-                "Canção da Sereia",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "Canção da Sereia",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Virtuoso",
-                suporte,
-                //todasRacas,                bardos,
-                5,
+        habilidades.add(getHabilidade("Virtuoso", suporte, 5,
                 "Você treinou exaustivamente até se tornar um mestre no uso de instrumentos musicais. Você rola +1d6 em todos os testes envolvendo tocar instrumentos musicais (incluindo Habilidades do tipo Música).",
-                "",
-                "",
-                "",
-                "Mestre das Notas",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Mestre das Notas",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Vocalista",
-                suporte,
-                //todasRacas,                bardos,
-                5,
+        habilidades.add(getHabilidade("Vocalista", suporte, 5,
                 "Você treinou sua voz para se tornar mais potente e límpida e sua dicção mais clara e segura. Você recebe +2 em todos os testes que envolvam a fala – como mentir, seduzir, barganhar ou cantar (incluindo Canções, mas não Melodias) – e na sua Determinação para determinar se os alvos de seus Gritos e Rugidos são afetados por seus efeitos. Além disso, seus Gritos e Rugidos têm a área de efeito dobrada.",
-                "",
-                "",
-                "",
-                "Pelo menos uma Habilidade de Grito",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Pelo menos uma Habilidade de Grito",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Canção do Réquiem",
-                acao,
-                //todasRacas,                bardos,
-                10,
+        habilidades.add(getHabilidade("Canção do Réquiem", acao, 10,
                 "Você toca uma música que fala sobre a morte, derrota e fracasso dos ancestrais do alvo e do sofrimento e amarguras que ele ainda provará no futuro. A cada turno em que você canta essa canção e o alvo estiver a menos de 10 metros de você e puder escutá-lo, ele rola um Confronto de Vontade contra você. O alvo tem sua moral tão profundamente atingida pela canção que perde 20 Pontos de Mana sempre que rolar esse Confronto (independente do resultado), e se ficar sem Pontos de Mana devido aos efeitos dessa canção, ele imediatamente entra em um estado de profundo pesar e tristeza, e se entregará sem resistir. Além disso, se tiver um resultado menor do que o seu na rolagem, ele é tomado por um profundo pesar e sofrimento decorrente dos desgostos que já viveu, além das perspectivas de um futuro negro, perdendo 50 Pontos de Vida. Este é um efeito mental.",
-                "",
-                "",
-                "80",
-                "Virtuoso, Canção Desesperadora",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "80", "Virtuoso, Canção Desesperadora",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Conhecimento Místico",
-                suporte,
-                //todasRacas,                druidas_sacerdotes,
-                1,
+        habilidades.add(getHabilidade("Conhecimento Místico", suporte, 1,
                 "Você está ligado as energias místicas provenientes de forças superiores e consegue comungar com elas. Você pode ler e utilizar tomos mágicos e desenhar Selos Místicos (veja a página 36 para regras sobre magia). Você também pode entrar em um estado de transe se concentrando por 1 minuto. Enquanto continuar meditando dessa forma, você recupera uma quantidade de Pontos de Mana igual à sua Vontade a cada 10 minutos.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Asas Celestiais",
-                acao,
-                //todasRacas,                druidas_sacerdotes,
-                1,
+        habilidades.add(getHabilidade("Asas Celestiais", acao, 1,
                 "Desenhando um Selo Místico sobre uma criatura viva, você faz surgir em suas costas um grande par de asas. O alvo ganha a Habilidade Asas Pesadas. Esse Selo dura por 1 Hora.",
-                "",
-                "10",
-                "20",
-                "Caminhada Mágica",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "10", "20", "Caminhada Mágica",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Bestializar",
-                acao,
-                // todasRacas,                druidas,
-                1,
+        habilidades.add(getHabilidade("Bestializar", acao, 1,
                 "Desenhando um Selo Místico sobre qualquer aliado do tipo Besta, Humanóide ou Troglodita, ele recebe +2 de Força e Agilidade e desenvolve garras e dentes afiados (dano igual à Força +2/Corte) pela duração do efeito. Esse Selo Místico dura 1 minuto.",
-                "",
-                "11",
-                "20",
-                "Benção de Ellenis",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "11", "20", "Benção de Ellenis",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Bons Frutos",
-                acao,
-                //todasRacas,                druidas,
-                1,
+        habilidades.add(getHabilidade("Bons Frutos", acao, 1,
                 "Desenhando um Selo Místico sobre uma planta você faz com que ela desenvolva flores, frutas ou raízes. Uma planta só vai gerar flores ou frutos se ela normalmente for capaz disso. Utilizando essa magia sobre uma planta comestível, é possível alimentar um número de pessoas igual à sua Vontade. Um personagem que consuma uma dessas plantas recupera o dobro de Pontos de vida e Mana por descanso durante as próximas 6 horas. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "8",
-                "",
-                "Sabedoria Selvagem",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "8", "", "Sabedoria Selvagem",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Caminhada Mágica",
-                acao,
-                //todasRacas,                druidas_sacerdotes,
-                1,
+        habilidades.add(getHabilidade("Caminhada Mágica", acao, 1,
                 "Desenhando um Selo Místico sobre uma criatura viva, você permite que ela possa caminhar sobre qualquer tipo de superfície (incluindo líquidos), paredes ou teto e não sofre nenhum tipo de redutor ou penalidade de movimentação por terrenos difíceis ou acidentados. Finalmente, o alvo pode escolher á vontade se vai deixar rastros ou não enquanto esta runa estiver ativa sobre ele. Esse Selo Místico dura 1 hora.",
-                "",
-                "9",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "9", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Convocar Animais",
-                acao,
-                //todasRacas,                druidas,
-                1,
+        habilidades.add(getHabilidade("Convocar Animais", acao, 1,
                 "Desenhando um Selo Místico sobre si mesmo, você consegue atrair todas as Bestas escolhidas entre Mamífero, Ave, Réptil ou Peixe que estejam a até 1 km de você. Os animais não estarão sob seu controle, mas se sentirão inclinados a ajudá-lo dentro de suas capacidades – animais com temperamento pacífico ou covarde não irão entrar em combate, mas animais sobreviventes ou agressivos não terão problemas com isso. Esse Selo Místico dura 1 hora. Depois disso, as Bestas afetadas voltarão pacificamente para os locais de onde vieram.",
                 "Você pode refinar o tipo específico de animal ('Ursos', 'Marsupiais', 'Batráquios') ou até mesmo um animal específico ('Aquele esquilo com quem eu conversei ontem', 'meu Companheiro Animal', 'O cão do guarda-caça') quando conjurar essa magia.",
-                "10",
-                "10",
-                "Benção de Ellenis",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "10", "10", "Benção de Ellenis",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Entrelaçar",
-                acao,
-                //todasRacas,                druidas,
-                1,
+        habilidades.add(getHabilidade("Entrelaçar", acao, 1,
                 "Desenhando um Selo Místico sobre o solo você faz com que plantas comecem a brotar e agarrem um alvo que esteja com os pés no chão, reduzindo seu Deslocamento a 0 e sua Agilidade em -2 enquanto estiver preso dessa forma. Para se soltar, ele (ou outro personagem) deve passar uma quantidade de turnos igual à Vontade do conjurador cortando as plantas (com uma arma que faça dano por corte), ou passar em um teste de Força (Dificuldade igual à Determinação do conjurador). As plantas murcham e se desfazem após 1 minuto. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "10",
-                "10",
-                "Sabedoria Selvagem",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "10", "10", "Sabedoria Selvagem",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Evocar Temporal",
-                acao,
-                //todasRacas,                druidas,
-                1,
+        habilidades.add(getHabilidade("Evocar Temporal", acao, 1,
                 "Desenhando um Selo Místico sobre si mesmo, você inicia uma poderosa tempestade de chuva ou vento. A tempestade cobre uma área de 1 km de diâmetro e se move conforme você se desloca, permanecendo centrada em você. Todos na área realizam seus testes como se fossem Inaptos. O temporal leva 3 turnos para se formar e o Selo Místico se dissipa em um número de minutos igual à sua Vontade.",
-                "",
-                "11",
-                "20",
-                "Princípio Natural",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "11", "20", "Princípio Natural",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Fruto Revigorante",
-                acao,
-                //todasRacas,                druidas,
-                1,
+        habilidades.add(getHabilidade("Fruto Revigorante", acao, 1,
                 "Desenhando um Selo Místico sobre uma planta frutífera – mesmo morta – você faz com que ela desenvolva um único fruto grande e suculento capaz de restaurar 30 Pontos de Vida de quem o ingerir. Se não for ingerida, a fruta perde sua capacidade de cura após 1 minuto. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "10",
-                "10",
-                "Bons Frutos",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "10", "10", "Bons Frutos",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Mover Terra",
-                acao,
-                //todasRacas,                druidas,
-                1,
+        habilidades.add(getHabilidade("Mover Terra", acao, 1,
                 "Você desenha um Selo Místico sobre o solo, fazendo com que ele se mova subitamente sob os pés de seus adversários (todos em uma área de 2 metros de diâmetro dentro de sua área de visão precisam fazer um teste de Agilidade com Dificuldade igual à sua Determinação ou cairão). Você também pode abrir uma passagem através de pedra ou terra. Essa passagem terá aproximadamente 2 metros de diâmetro e uma profundidade igual à sua Vontade em metros. Você pode deixar a passagem aberta, criando um túnel, ou fechá-la atrás de si depois que passar. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "11",
-                "15",
-                "Princípio Natural",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "11", "15", "Princípio Natural",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Princípio Natural",
-                acao,
-                //todasRacas,                druidas,
-                1,
+        habilidades.add(getHabilidade("Princípio Natural", acao, 1,
                 "Você desenha um Selo Místico no ar que se transforma em uma pequena quantidade de terra, água ou ar. Um punhado de terra pode ser usado para nutrir uma pequena planta, uma porção de água pode ser usada para matar a sede de uma pessoa e uma porção de ar criado desse modo permite que uma criatura respire normalmente por até 10 minutos debaixo d’água. Essa magia pode ser conjurada na forma de uma rajada mágica. Uma rajada de água pode apagar uma chama do tamanho de uma fogueira de acampamento, uma rajada de ar derruba ou espalha objetos leves e pequenos e uma rajada de pedras causa dano igual a 8/ Contusão. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados e qualquer quantidade de terra, água ou ar criada são permanentes.",
-                "",
-                "8",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "8", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Rajada de Água",
-                acao,
-                //todasRacas,                druidas,
-                1,
+        habilidades.add(getHabilidade("Rajada de Água", acao, 1,
                 "Você desenha um Selo Místico no ar de onde uma massa de água jorra em um poderoso jato. Um alvo dentro de sua linha de visão sofre dano igual a 6/Contusão e precisa vencer uma rolagem de Força (Dificuldade igual à Determinação do conjurador) para não cair. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados mas qualquer quantidade de água criada é permanente.",
-                "",
-                "10",
-                "10",
-                "Princípio Natural",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "10", "10", "Princípio Natural",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Rajada de Espinhos",
-                acao,
-                //todasRacas,                druidas,
-                1,
+        habilidades.add(getHabilidade("Rajada de Espinhos", acao, 1,
                 "Desenhando um Selo Místico em um item de madeira você faz com que ele desenvolva espinhos longos e afiados que se projetam atingindo um número de alvos igual à sua Vontade que estiverem à uma distância de até 10 metros à sua frente, causando dano igual à 12/Perfuração. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "10",
-                "10",
-                "Sabedoria Selvagem",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "10", "10", "Sabedoria Selvagem",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Turbilhão",
-                acao,
-                //todasRacas,                druidas,
-                1,
+        habilidades.add(getHabilidade("Turbilhão", acao, 1,
                 "Desenhando um Selo Místico sobre você mesmo e em seguida realizando um rápido movimento circular com as mãos você dispara poderosas rajadas de água. Todas as criaturas a até 10 metros de você sofrem um dano igual à 6/contusão e precisam vencer um teste de Força (Dificuldade igual à sua Determinação) para não serem arremessados um número de metros igual à sua Vontade e ficando caídos. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados e qualquer quantidade de água criada é permanente.",
-                "",
-                "12",
-                "25",
-                "Rajada de àgua",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "25", "Rajada de àgua",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Conjurar Abrigo",
-                acao,
-                //todasRacas,                druidas,
-                5,
+        habilidades.add(getHabilidade("Conjurar Abrigo", acao, 5,
                 "Você desenha um Selo Místico sobre o solo, de onde uma estrutura simples e resistente se ergue seguindo a sua vontade. O custo em Mana da Magia depende do tamanho da estrutura: 10 Pontos de Mana criam um domo para até 4 pessoas, 20 Pontos de Mana criam uma cabana para até 10 pessoas, 40 Pontos de Mana criam uma torre para até 20 pessoas e 80 Pontos de Mana criam um pequeno forte para até 40 pessoas. O Selo Místico se dissipa depois de 24h, fazendo com que a estrutura comece a desmoronar lentamente.",
-                "",
-                "12",
-                "Variável",
-                "Mover Terra",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "Variável", "Mover Terra",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Despertar a Flora",
-                acao,
-                //todasRacas,                druidas,
-                5,
+        habilidades.add(getHabilidade("Despertar a Flora", acao, 5,
                 "Você desenha um Selo Místico sobre uma planta, imbuindo ela com percepção e fala de uma criatura inteligente além de capacidade de movimentação. Um rosto se cria no caule ou tronco da planta e pode interagir com qualquer um. Nenhuma planta gosta de ser incomodada e elas tendem a não ser muito amistosas. O custo em Mana da Magia depende do tamanho da planta: 10 Pontos de Mana para afetar uma planta pequena, 20 Pontos de Mana para afetar uma planta média, 40 Pontos de Mana para afetar uma planta grande e 80 Pontos de Mana para afetar uma planta gigante. Trate uma planta sob efeito dessa magia como um Golem de madeira do tamanho apropriado, exceto o Tipo que será Esfinge e o Temperamento que será Pacífico. O Selo Místico dura 1 minuto por ponto de Vontade do conjurador.",
-                "",
-                "13",
-                "Variado",
-                "Entrelaçar",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "13", "Variado", "Entrelaçar",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Evocar Nevasca",
-                acao,
-                //todasRacas,                druidas,
-                5,
+        habilidades.add(getHabilidade("Evocar Nevasca", acao, 5,
                 "Desenhando um Selo Místico sobre si mesmo, você pode iniciar um nevasca ou chuva de granizo que cobre uma área de 1 km de diâmetro. Essa área se move conforme você se desloca, permanecendo centrada em você. Todos na área, exceto você, sofrem dano igual a 6/Frio (nevasca) ou 6/ Contusão (granizo) a cada turno que estiverem desabrigados e todos os testes dentro da área são realizados como se os personagens fossem Inaptos. O temporal leva 3 turnos para se formar e o Selo Místico se dissipa em um número de minutos igual à sua vontade.",
-                "",
-                "12",
-                "40",
-                "Evocar Temporal",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "40", "Evocar Temporal",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Gavinhas e Espinhos",
-                acao,
-                //todasRacas,                druidas,
-                5,
+        habilidades.add(getHabilidade("Gavinhas e Espinhos", acao, 5,
                 "Desenhando um Selo Místico sobre o solo você faz com que plantas espinhosas comecem a brotar e agarrem um alvo que esteja com os pés no chão. O alvo fica com Deslocamento 0, é considerado Desprevenido e sofre uma quantidade de dano igual a 10/Perfuração. Para se soltar ele (ou outro personagem) deve passar uma quantidade de turnos igual à sua Vontade cortando as plantas (com uma arma que faça dano por corte), ou passar em um teste de Força (Dificuldade igual à Determinação do conjurador). Toda vez que ataca as plantas ou fracassa no teste de Força, o alvo sofre dano igual a 10/Perfuração. As plantas murcham e se desfazem após 1 minuto. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "12",
-                "25",
-                "Entrelaçar, Rajada de Espinhos",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "25", "Entrelaçar, Rajada de Espinhos",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Olho do Furacão",
-                acao,
-                //todasRacas,                druidas,
-                5,
+        habilidades.add(getHabilidade("Olho do Furacão", acao, 5,
                 "Desenhando um Selo Místico sobre si mesmo, você cria um poderoso turbilhão de vento em uma área com um diâmetro em metros igual à sua Vontade e uma altura igual à 10 vezes sua Vontade. Essa área tem um olho central com cerca de 2 metros de diâmetro onde não há vento. O furacão se move conforme você se desloca, permanecendo centrado em você. Todos dentro da área do furacão devem fazer um teste de Força (Dificuldade igual à sua Determinação) para não serem arremessados um número de metros igual à sua Vontade, ficando caídos. Vencendo 2 testes consecutivos um personagem consegue chegar ao olho do furacão – mas o conjurador pode se deslocar para tentar engolfar personagens na parede de vento outra vez. O furacão impede a linha de visão através dele. Este Selo Místico dura uma quantidade de turnos igual à Vontade do conjurador.",
-                "",
-                "14",
-                "40",
-                "Evocar Temporal",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "14", "40", "Evocar Temporal",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Orbe de Contenção",
-                acao,
-                //todasRacas,                druidas,
-                5,
+        habilidades.add(getHabilidade("Orbe de Contenção", acao, 5,
                 "Conjurando um Selo Místico sobre um item esférico com pelo menos 10 cm de diâmetro (um ovo de canidrako ou uma maçã por exemplo) que não tenha nenhum Selo Místico ou Runa Arcana sobre ele, o item passa a ser capaz de absorver qualquer Besta que tenha o temperamento Protetor com relação á você, simplesmente tocando-o. Enquanto estiver dentro da orbe o tempo não passa para o animal (ele não envelhece, não precisa comer ou dormir e não é afetado por efeitos de sangramentos, venenos ou doenças, nem recupera Pontos de Vida e Mana por descanso). Liberar o animal exige que o conjurador destrua o item (geralmente arremessando-o no chão) o que exige uma ação padrão, mas não exige novos testes para conjurar a magia. Esse Selo Místico dura indefinidamente até o item ser destruído.",
-                "",
-                "12",
-                "20",
-                "Convocar Animais",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "20", "Convocar Animais",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Punho de Pedra",
-                acao,
-                //todasRacas,                druidas,
-                5,
+        habilidades.add(getHabilidade("Punho de Pedra", acao, 5,
                 "Você desenha um Selo Místico sobre o solo (ou em uma estrutura de pedra como Paredes de alvenaria, estátuas de pedra e tetos de cavernas), fazendo com que uma coluna se projete violentamente da estrutura. Um alvo dessa magia sofre dano igual à 30/Contusão e precisa vencer um teste de Força (dificuldade igual à Determinação do conjurador) para não ser derrubado. A coluna tem cerca de 1 metro de diâmetro e uma extensão em metros igual à Vontade do conjurador. O Selo Místico se dissipa imediatamente depois que seus efeitos são desencadeados, mas a coluna de pedra é permanente.",
-                "",
-                "12",
-                "30",
-                "Mover Terra",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "30", "Mover Terra",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Hierofante",
-                suporte,
-                //todasRacas,                druidas,
-                10,
+        habilidades.add(getHabilidade("Hierofante", suporte, 10,
                 "Você adquiriu um vínculo poderoso com a natureza e um vasto entendimento de seu funcionamento. Você recebe +2 em seus testes com relação a natureza, animais e magias e o custo de todas as magias que você lançar é diminuído em 5. Além disso, você pode atrair um segundo Companheiro Animal seguindo as mesmas regras descritas em Companheiro Animal 1. Seu segundo Companheiro Animal recebe os benefícios de todas as Habilidades Companheiro Animal que você tiver.",
-                "",
-                "",
-                "",
-                "Princípio Natural, Companheiro Animal 1, Sabedoria Selvagem",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Princípio Natural, Companheiro Animal 1, Sabedoria Selvagem",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Dança das Espadas 1",
-                acao,
-                //todasRacas,                espadachins,
-                1,
+        habilidades.add(getHabilidade("Dança das Espadas 1", acao, 1,
                 "Você pode entrar em um fluxo incessante de movimentos fluidos e vigorosos. Enquanto estiver neste estado você recebe Agilidade +2 e recebe +1d6 em seus testes de dança. Este efeito dura até 5 minutos ou até que você pare, ou seja alvo de um efeito que o impeça da continuar se movendo continuamente (Constringido, Derrubado, amedrontado, etc.).",
-                "",
-                "",
-                "30",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "30", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Desarmar Oponente",
-                acao,
-                //todasRacas,                espadachins,
-                1,
+        habilidades.add(getHabilidade("Desarmar Oponente", acao, 1,
                 "Você pode usar a sua arma para tirar a arma do seu oponente. Faça um teste resistido de Agilidade contra Força ou Agilidade do adversário (dependendo do que ele usar para combater), somando a FN das armas (a sua e a do seu adversário) nas suas respectivas rolagens. Se você estiver desarmado, use apenas Agilidade. Se o seu adversário tiver um sucesso igual ou menor do que o seu, a arma dele cairá no chão entre você e ele.",
-                "",
-                "",
-                "20",
-                "Ataque Redirecionado",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "20", "Ataque Redirecionado",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Panache",
-                suporte,
-                //todasRacas,                espadachins,
-                1,
+        habilidades.add(getHabilidade("Panache", suporte, 1,
                 "Você possui uma bravura petulante e uma confiança inabalável nas suas próprias habilidades. Enquanto não estiver usando armadura, você recebe +1 na Defesa para cada 2 pontos de Vontade. Esse é um bônus de Esquiva.",
-                "",
-                "",
-                "",
-                "Língua Afiada",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Língua Afiada",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Touché",
-                acao,
-                //todasRacas,                espadachins,
-                1,
+        habilidades.add(getHabilidade("Touché", acao, 1,
                 " Faça um ataque corporal com uma arma que estiver empunhando com apenas 1 mão, rolando +1d6 no teste.",
                 "Se você utilizar uma Habilidade de Ação, seus efeitos se aplicam a apenas um dos seus ataques – mas você ainda pode fazer um ataque normal com a outra arma no mesmo turno, antes ou depois de utilizar a Habilidade de Ação.",
-                "",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Dança das Espadas 2",
-                suporte,
-                // todasRacas,                espadachins,
-                5,
+        habilidades.add(getHabilidade("Dança das Espadas 2", suporte, 5,
                 "Quando entra em combate, seu fluxo de movimentos pode criar um estado de hipnose autoinduzida, produzindo efeitos quase sobre-humanos de agilidade, velocidade e foco. Sempre que você estiver usando Dança das Espadas, você recebe um acréscimo de +2 na sua Agilidade (acumulado com o bônus de Dança das Espadas 1) e em sua Determinação. Este efeito dura enquanto durar o efeito de Dança das Espadas 1.",
-                "",
-                "",
-                "",
-                "Dança das Espadas 1",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Dança das Espadas 1",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Decapitar",
-                reacao,
-                // todasRacas,                espadachins,
-                5,
+        habilidades.add(getHabilidade("Decapitar", reacao, 5,
                 " Quando fizer ataques contra alvos específicos visando áreas vitais, todo dano de Corte que você causar será o triplo do normal, ao invés do dobro. Se você tiver um sucesso crítico nesse ataque, o alvo morre imediatamente.",
-                "",
-                "",
-                "",
-                "Retalhar",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Retalhar",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Retalhar",
-                suporte,
-                // todasRacas,                espadachins,
-                5,
+        habilidades.add(getHabilidade("Retalhar", suporte, 5,
                 "Sempre que você rolar um Sucesso Crítico em um ataque corporal usando uma arma que cause dano por Corte ou Perfuração, o dano será multiplicado por 3 ao invés de 2. Este é um efeito de sangramento.",
-                "",
-                "",
-                "",
-                "Corte Arterial",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Corte Arterial",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Tempestade de Lâminas",
-                reacao,
-                // todasRacas,                espadachins,
-                5,
+        habilidades.add(getHabilidade("Tempestade de Lâminas", reacao, 5,
                 "Sempre que acertar um ataque corporal você pode fazer 1 ataque normal extra com a mesma arma. Esse efeito só pode ser usado 1 vez por turno com cada arma que você estiver usando.",
-                "",
-                "",
-                "",
-                "Golpes Rápidos",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Golpes Rápidos",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Senhor das Lâminas",
-                suporte,
-                // todasRacas,                espadachins,
-                10,
+        habilidades.add(getHabilidade("Senhor das Lâminas", suporte, 10,
                 "Sempre que for realizar um teste de ataque corpo-a-corpo usando uma arma que cause dano por corte ou perfuração, você pode rolar +1d6.",
-                "",
-                "",
-                "",
-                "Touché",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Touché",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Arco Voltaico",
-                reacao,
-                // todasRacas,                feiticeiros,
-                1,
+
+        habilidades.add(getHabilidade("Arco Voltaico", reacao, 1,
                 "Você aprendeu a usar sua capacidade de teleporte na velocidade de um raio! Desenhando uma Runa Arcana sobre si mesmo, você sempre pode ativá-la se for alvo de um ataque ou magia que cause dano (mas não perda de vida ou outros efeitos que não causem dano), se teleportando para algum lugar a um número de metros igual à sua Inteligência de onde você está, evitando o ataque completamente. Essa Runa Arcana se dissipa apenas quando você dormir (ou perder a consciência de alguma forma) e não quando é ativada – mas consome seu custo em Mana sempre que seu efeito for desencadeado.",
-                "",
-                "12",
-                "15",
-                "Relâmpago 1, Teleporte 1",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "15", "Relâmpago 1, Teleporte 1",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Aríete Mágico",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Aríete Mágico", acao, 1,
                 "Você projeta um poderoso golpe mágico capaz de derrubar oponentes – e estruturas! Desenhando uma runa arcana no ar, você projeta uma rajada de energia mágica bruta que causa dano igual a 10/Contusão em um alvo em sua linha de visão, e obriga o alvo a vencer um teste de Força com dificuldade igual à Determinação do conjurador para não ser derrubado. Itens inanimados e estruturas sofrem o dobro do dano normal. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "10",
-                "10",
-                "Telecinésia",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "10", "10", "Telecinésia",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Bola de Fogo",
-                acao,
-                //  todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Bola de Fogo", acao, 1,
                 "Desenhando uma runa Arcana no ar você projeta uma esfera de chamas de 20 cm de diâmetro contra um alvo na sua linha de visão. A esfera explode ao atingir o alvo, causando dano igual a 20/Fogo nele e 10/Fogo em tudo e todos em até 2 metros dele. Objetos inanimados inflamáveis atingidos por essa magia tendem a entrar em combustão. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "12",
-                "20",
-                "Inflamar",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "20", "Inflamar",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Congelar",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Congelar", acao, 1,
                 "Desenhando uma runa Arcana sobre um objeto ou superfície, você infunde um frio intenso congelando-o. Essa magia pode congelar até 200 litros de líquido ou de material sólido por ponto de Inteligência do conjurador. Apenas matéria inanimada pode ser afetada por essa magia. Essa magia pode ser usada para criar uma camada de gelo grosso (cerca de 5 centímetros) e extremamente escorregadio numa área circular com um diâmetro igual à sua Inteligência. Qualquer criatura sobre essa superfície (incluindo você) precisa fazer um teste de Agilidade (Dificuldade 12) sempre que realizar um ataque, se mover ou tentar se levantar. Uma falha nesse teste significa que o personagem cai. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas o gelo criado é permanente e descongela em velocidade normal.",
-                "",
-                "8",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "8", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Eletricidade Estática",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Eletricidade Estática", acao, 1,
                 "Desenhando uma runa Arcana sobre um objeto ou criatura, você o carrega com uma forte carga de eletricidade estática, prendendo-o à qualquer superfície em que estiver tocando. Pode ser usado em um item portátil para tornar impossível que ele seja derrubado ou em uma criatura para impedir que ela tire os pés do chão – reduzindo seu Deslocamento para 0 e sua Agilidade em -2. Um alvo afetado dessa forma pode fazer um teste de Força com dificuldade igual à Determinação do conjurador como uma ação de movimento para tentar tirar os pés do chão. Essa Runa Arcana dura 1 minuto, mas se a criatura afetada conseguir tirar um dos pés do chão, seus efeitos sobre ela se dissipam imediatamente.",
-                "",
-                "8",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "8", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Inflamar",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Inflamar", acao, 1,
                 "Desenhando uma Runa Arcana entre você e um objeto ou superfície dentro de sua linha de visão você faz com que ele irrompa em chamas. O custo depende do tamanho da chama criada: criar a chama em uma vela tem custo 0, enquanto uma chama suficiente para acender uma tocha tem custo 5 e fazer uma fogueira de acampamento irromper em chamas imediatamente tem custo 10. Você pode produzir uma explosão de chamas diretamente sobre um item segurado por uma criatura ou na superfície onde ela está, causando dano igual a 4/Fogo, por 0 Pontos de Mana, 8/Fogo por 5 Pontos de Mana ou 12/Fogo por 10 Pontos de Mana. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas material combustível afetado se incendeia automaticamente.",
-                "",
-                "8",
-                "Variado",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "8", "Variado", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Infravisão",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Infravisão", acao, 1,
                 "Você desenha uma Runa Arcana sobre um alvo, que passa a perceber o calor que emana dos objetos e criaturas sobrepondo a sua visão normal. Ele pode enxergar normalmente em locais sem iluminação nenhuma, pode perceber criaturas invisíveis pelo calor (ou frio) que elas emanam e consegue identificar ilusões, já que elas não emanam calor nem frio. Essa Runa Arcana dura 1 hora.",
-                "",
-                "9",
-                "5",
-                "Detectar Magia, Inflamar",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "9", "5", "Detectar Magia, Inflamar",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Invocar Elemental 1",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Invocar Elemental 1", acao, 1,
                 "Você conjura um pequeno Elemental de Fogo ou do Gelo desenhando uma runa Elemental no ar. O Elemental obedecerá todos os seus comandos e agirá a partir do turno seguinte, logo depois de você. A runa que mantém o Elemental coeso se dissipa depois de 10 minutos. Veja os dados dos Elementais no Monstrum Codex para mais detalhes.",
-                "",
-                "9",
-                "15",
-                "Congelar e Inflamar",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "9", "15", "Congelar e Inflamar",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Invocar Elemental 2",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Invocar Elemental 2", acao, 1,
                 "Você conjura um Elemental Médio de Fogo ou do Gelo desenhando uma Runa arcana no ar. O Elemental obedecerá todos os seus comandos e agirá a partir do turno seguinte, logo depois de você. A runa que mantém o Elemental coeso se dissipa depois de 10 minutos. Veja os dados dos Elementais no Monstrum Codex para mais detalhes.",
-                "",
-                "11",
-                "30",
-                "Invocar Elemental 1",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "11", "30", "Invocar Elemental 1",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Levitar",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Levitar", acao, 1,
                 "Desenhando uma Runa Arcana sobre uma criatura, você faz com que ela seja capaz de voar livremente no ar para qualquer direção no seu deslocamento normal. Essa Runa Arcana dura 1 hora, mas se dissipa automaticamente se alvo tocar o solo.",
-                "",
-                "11",
-                "20",
-                "Telecinésia",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "11", "20", "Telecinésia",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Manto Crepitante",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Manto Crepitante", acao, 1,
                 "Você desenha uma Runa Arcana sobre uma criatura, envolvendo-a numa aura elétrica extremamente brilhante. A aura ilumina uma área de 20 metros ao seu redor, tornando-a clara como se fosse dia, de forma que, qualquer um tentando acertar você à distância (com ataques ou magias) fica ofuscado, realizando seus ataques como se fossem Inaptos. Além disso, a aura elétrica causa dano igual a 10/Eletricidade em qualquer um que tocar em você ou golpeá-lo com ataques corporais. Essa Runa dura 1 minuto, mas pode ser dissipada a qualquer momento pela criatura sobre a qual foi desenhada.",
-                "",
-                "9",
-                "15",
-                "Eletricidade Estática",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "9", "15", "Eletricidade Estática",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Parede de Gelo",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Parede de Gelo", acao, 1,
                 "Desenhando uma runa Arcana no ar, você congela a umidade do ambiente na forma de uma grossa parede de gelo. A parede tem 3 metros de altura por 3 de largura e 1 metro de espessura, e pode ser criada em qualquer ângulo. A parede tem 60 Pontos de Vida, Defesa 10, é Vulnerável ao Fogo e sempre que receber dano por Frio recupera Pontos de Vida ao invés de sofrer dano. Ela pode suportar até 500 quilos de peso sobre ela antes de quebrar. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas o gelo criado é permanente e descongela em velocidade normal.",
-                "",
-                "10",
-                "15",
-                "Congelar",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "10", "15", "Congelar",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Rajada de Gelo",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Rajada de Gelo", acao, 1,
                 "Desenhando uma Runa arcana no ar você projeta a partir dela uma rajada de energia mágica que causa dano igual a 20/Frio em um alvo dentro da sua linha de visão. Se o alvo for uma criatura viva, ele fica Enregelado por 1 turno. Se a magia tiver como alvo um objeto inanimado, ela congela até 100 litros ou 100 quilos de material. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas o gelo criado é permanente e descongela em velocidade normal.",
-                "",
-                "12",
-                "20",
-                "Congelar",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "20", "Congelar",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Relâmpago 1",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Relâmpago 1", acao, 1,
                 "A partir de uma Runa Arcana que desenha no ar você dispara uma faísca elétrica contra um alvo dentro de seu campo de visão. O alvo sofre um dano igual a 20/Eletricidade e fica Atordoado por 2 rodadas. Alvos usando armaduras de metal sofrem o dobro do redutor (-2 na Defesa, no Deslocamento e em todos os seus testes). A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "10",
-                "20",
-                "Eletricidade Estática",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "10", "20", "Eletricidade Estática",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Rajada Elemental",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Rajada Elemental", acao, 1,
                 "Desenhando uma runa Arcana no ar você pode disparar uma rajada de energia elemental em qualquer alvo que possa ver. Essa magia causa 8 pontos de dano elemental (Fogo, Frio ou Eletricidade) escolhido no momento que o conjurador lança a magia. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "8",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "8", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Telecinésia",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Telecinésia", acao, 1,
                 "Desenhando uma Runa Arcana entre você e um objeto ou criatura dentro de sua linha de visão, você pode mover o alvo através de uma energia mágica invisível. O alvo pode ser movido à vontade em qualquer direção, e até mesmo ser erguido no ar, mas apenas de forma lenta (1 metro por turno no máximo). A dificuldade será igual ao peso do alvo dividido por 5 (arredondado para baixo) Se estiver usando essa magia sobre si próprio, diminua a sua Vontade da Dificuldade final. A dificuldade mínima dessa magia será sempre 8, independente do peso do alvo ou da Vontade do Conjurador. Essa Runa Arcana dura por tanto tempo quanto você estiver concentrado nela, mas se o alvo for uma criatura, ela pode cancelar os efeitos dessa Runa no início do seu turno se vencer um teste de Força com dificuldade igual à Determinação do conjurador. *Dificuldade variável.",
-                "",
-                "",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Teleporte 1",
-                acao,
-                // todasRacas,                feiticeiros,
-                1,
+        habilidades.add(getHabilidade("Teleporte 1", acao, 1,
                 "Desenhando uma Runa Arcana sobre si mesmo enquanto fita um local você se teleporta de onde está para o ponto que está olhando. Você pode levar alguém com você se puder tocar o alvo e ele concordar (ou estiver inconsciente). Some +2 na dificuldade da magia para cada pessoa além de você. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "12",
-                "30",
-                "Levitar",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "30", "Levitar",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Aptidão Elemental",
-                suporte,
-                // todasRacas,                feiticeiros_runicos,
-                5,
+
+        habilidades.add(getHabilidade("Aptidão Elemental", suporte, 5,
                 "Você possui um domínio considerável sobre as energias mais elementares da magia. Todas as suas magias custam 5 Pontos de Mana a menos para serem conjuradas e todas as suas magias e técnicas que causam dano por Fogo, Frio ou Eletricidade causam 5 pontos de dano a mais.",
-                "",
-                "",
-                "",
-                "Mente Disciplinada",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Mente Disciplinada",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Eletrosfera",
-                acao,
-                // todasRacas,                feiticeiros,
-                5,
+        habilidades.add(getHabilidade("Eletrosfera", acao, 5,
                 "Você desenha uma Runa Arcana sobre si mesmo, fazendo um turbilhão de raios elétricos emanarem a partir dela. No final do seu turno, tudo e todos que estiver a uma quantidade de metros igual à sua Inteligência ao seu redor sofrem uma quantidade de dano igual a 20/Eletricidade. Alvos usando armaduras com a Característica Pesada que sofram esse dano também ficam Atordoadas por 1 turno. Essa Runa Arcana dura uma quantidade de turnos igual à sua Vontade.",
-                "",
-                "13",
-                "40",
-                "Relâmpago 2",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "13", "40", "Relâmpago 2",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Incandescer",
-                acao,
-                // todasRacas,                feiticeiros,
-                5,
+        habilidades.add(getHabilidade("Incandescer", acao, 5,
                 "Desenhando uma Runa Arcana sobre um objeto ou superfície, você faz com que ele aquece ao ponto de incandescer ou inflamar. Objetos de pedra e metal se tornarão quentes ao ponto de tornarem-se candentes, causando dano igual a 20/Fogo em qualquer coisa que tocarem – e produzindo uma quantidade considerável de calor. Metais aquecidos a esse ponto amolecem e podem ser facilmente dobrados ou quebrados. Objetos combustíveis irão se inflamar instantaneamente, e pegarão fogo mesmo que estejam ensopados – a água vai evaporar em segundos antes que eles entrem em combustão. Essa magia pode ser usada em armas, armaduras e vestimentas de criaturas vivas. Note que o objeto alvo se aquece por inteiro. Assim, uma árvore inteira secaria e então irromperia em chamas, e uma imensa sessão de uma caverna poderia subitamente se tornar mortalmente quente. Essa Runa dura um número de turnos igual à sua Inteligência, mas materiais inflamáveis que irrompam em chamas vão queimar enquanto houver combustível disponível, mesmo depois da runa se dissipar.",
-                "",
-                "14",
-                "50",
-                "Inferno",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "14", "50", "Inferno",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Inferno",
-                acao,
-                // todasRacas,                feiticeiros,
-                5,
+        habilidades.add(getHabilidade("Inferno", acao, 5,
                 "Desenhando uma Runa arcana sobre o solo, você faz com que uma área de 4 metros de diâmetro dentro da sua linha de visão entre em combustão enquanto é atingido por uma chuva de brasas e fogo. Todos que tiverem nessa área sofrem dano igual a 30/Fogo quando essa magia for lançada e mais 30/Fogo no início de cada turno que iniciarem dentro da área. Esta Runa Arcana dura 1 rodada por ponto de Inteligência que você tiver, mas você posse dissipá-la a qualquer momento. Material inflamável na área irrompe em chamas instantaneamente.",
-                "",
-                "13",
-                "40",
-                "Bola de Fogo",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "13", "40", "Bola de Fogo",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Invocar Elemental 3",
-                acao,
-                // todasRacas,                feiticeiros,
-                5,
+        habilidades.add(getHabilidade("Invocar Elemental 3", acao, 5,
                 "Você conjura um grande Elemental de Fogo ou do Gelo desenhando uma runa Arcana no ar. O Elemental obedecerá todos os seus comandos e agirá a partir do turno seguinte, logo depois de você. A Runa Arcana que mantém o Elemental coeso se dissipa depois de 10 minutos. Veja os dados dos Elementais no Monstrum Codex para mais detalhes.",
-                "",
-                "13",
-                "60",
-                "Invocar Elemental 2",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "13", "60", "Invocar Elemental 2",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Prisão de Gelo",
-                acao,
-                // todasRacas,                feiticeiros,
-                5,
+        habilidades.add(getHabilidade("Prisão de Gelo", acao, 5,
                 "Desenhando uma runa arcana sobre uma criatura ou objeto você cria um imenso bloco de gelo ao redor dele. O alvo pode ter um peso máximo igual a 100 vezes sua Inteligência em quilos. Uma criatura presa dentro do bloco é considerada Paralisada, sofre dano igual a 10/Frio no começo de cada um de seus turnos e só pode ser alvo de efeitos mentais. O bloco tem 60 Pontos de Vida, Defesa 10, é Vulnerável a Fogo e sempre que receber dano por Frio recupera Pontos de Vida ao invés de sofrer dano. Ataques de Eletricidade causam dano normal ao bloco, mas também causa a mesma quantidade de dano na criatura presa dentro dele. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados, mas o gelo criado é permanente e descongela em velocidade normal.",
-                "",
-                "13",
-                "40",
-                "Parede de Gelo",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "13", "40", "Parede de Gelo",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Relâmpago 2",
-                acao,
-//                 todasRacas,                feiticeiros,
-                5,
+        habilidades.add(getHabilidade("Relâmpago 2", acao, 5,
                 "Você projeta uma poderosa rajada de energia elétrica em um alvo dentro de seu campo de visão a partir de uma runa Arcana que você desenha no ar. O alvo sofre um dano igual a 40/Eletricidade, e precisa fazer um teste de Força com dificuldade igual a sua Determinação ou ficará Paralisado por 1 turno. Alvos usando armaduras de metal realizam esse teste como se fossem Inaptos. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "12",
-                "30",
-                "Relâmpago 1",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "30", "Relâmpago 1",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Teleporte 2",
-                acao,
-                // todasRacas,                feiticeiros,
-                5,
+        habilidades.add(getHabilidade("Teleporte 2", acao, 5,
                 "Desenhando uma runa arcana sobre si mesmo enquanto se concentra em um local qualquer que já tenha visitado pelo menos uma vez, você se teleportar imediatamente para o local pretendido. Você pode levar alguém com você se puder tocar o alvo e ele concordar (ou estiver inconsciente). Some +2 na dificuldade da magia para cada pessoa além de você. A Runa Arcana se dissipa imediatamente depois que seus efeitos são desencadeados.",
-                "",
-                "14",
-                "50",
-                "Teleporte 1",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "14", "50", "Teleporte 1",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Tempestade de Gelo",
-                acao,
-                // todasRacas,                feiticeiros,
-                5,
+        habilidades.add(getHabilidade("Tempestade de Gelo", acao, 5,
                 "Desenhando uma runa Arcana sobre o solo você pode evocar uma tempestade de gelo em uma área circular de 10 metros de diâmetro que você possa ver. Uma chuva de pedaços finos e afiados de gelo cai sobre a área. Todos que estiverem na área escolhida sofrerão dano igual a 10/Corte + 10/Frio quando essa magia for lançada. A cada turno em começar dentro da área de efeito um personagem sofre dano igual a 10/Corte + 10/Frio e fica Enregelado por 1 rodada. A Runa Arcana dura 1 rodada por ponto de Inteligência que você tiver, mas você pode dissipá-la a qualquer momento.",
-                "",
-                "13",
-                "40",
-                "Rajada de Gelo",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "13", "40", "Rajada de Gelo",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Maestria Elemental",
-                suporte,
-                // todasRacas,                feiticeiros,
-                10,
+        habilidades.add(getHabilidade("Maestria Elemental", suporte, 10,
                 "Você possui um profundo conhecimento sobre a essência elemental da magia. Sempre que você for alvo de uma magia ou efeito que o deixa Resistente ao Frio, Fogo ou Eletricidade, você fica Imune aquele elemento. Se você já for Resistente a um elemento e receber Resistência a ele através de uma magia, você passa a absorver o elemento (recuperando uma quantidade de Pontos de Vida iguais a qualquer quantidade de dano que sofreria daquele elemento). Além disso, todas as magias e técnicas que você conjura e que causem dano por fogo, frio ou eletricidade causam 5 pontos de dano a mais (esse bônus se acumula com o bônus de Aptidão Elemental).",
-                "",
-                "",
-                "",
-                "Resistência Elemental, Aptidão Elemental",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Resistência Elemental, Aptidão Elemental",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Anular Golpe",
-                reacao,
-                // todasRacas,                guerreiros,
-                1,
+        habilidades.add(getHabilidade("Anular Golpe", reacao, 1,
                 "Você se especializou em perceber e evitar os ataques mais complexos dos seus adversários. Sempre que um oponente utilizar uma Habilidade de Ação do tipo Técnica, você pode evitar totalmente seus efeitos (incluindo o dano). O custo dessa Habilidade é o mesmo da Técnica a ser evitada. Você só pode utilizar essa Habilidade 1 vez por turno.",
-                "",
-                "",
-                "",
-                "Defesa Agressiva",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Defesa Agressiva",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Ataque do Búfalo",
-                acao,
-                // todasRacas,                guerreiros_xamas,
-                1,
+
+        habilidades.add(getHabilidade("Ataque do Búfalo", acao, 1,
                 "Faça uma manobra de encontrão. Se acertar o ataque, além de causar o dano normal pelo encontrão, o alvo precisa vencer um teste de Força (Dificuldade igual à sua Determinação mais a FN da arma que estiver usando) ou será derrubado. Alvos com o dobro do seu peso não são afetados.",
-                "",
-                "",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Ataque Simultâneo",
-                acao,
-                // todasRacas,                guerreiros,
-                1,
+        habilidades.add(getHabilidade("Ataque Simultâneo", acao, 1,
                 "Você está acostumado a lutar em grupo e sabe como abrir a guarda de um adversário para que seus aliados possam atingi-lo. Faça um ataque corporal contra um oponente. Se acertar, todos aliados que estiverem adjacentes ao mesmo oponente poderão fazer um ataque corporal normal contra ele imediatamente.",
-                "",
-                "",
-                "20",
-                "Combate em Grupo",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "20", "Combate em Grupo",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Brigão",
-                suporte,
-                // todasRacas,                guerreiros_xamas,
-                1,
+        habilidades.add(getHabilidade("Brigão", suporte, 1,
                 "Você está acostumado à combater desarmado. Você rola +1 em seus ataques desarmados e adiciona +2 nos danos desses ataques.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Combate em Grupo",
-                reacao,
-                // todasRacas,                guerreiros,
-                1,
+        habilidades.add(getHabilidade("Combate em Grupo", reacao, 1,
                 "Você ganha +1 nos testes de ataques corporais para cada aliado que esteja em combate corporal com o alvo.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Combate Pesado",
-                reacao,
-                // todasRacas,                guerreiros,
-                1,
+        habilidades.add(getHabilidade("Combate Pesado", reacao, 1,
                 "Sempre que você fizer uma manobra de encontrão ou um ataque corporal enquanto estiver portando uma arma de duas mãos ou um escudo, você pode rolar novamente 1 dos dados em seus testes de ataque. Você pode escolher com qual dos resultados vai ficar. Você só pode usar esta Habilidade 1 vez por turno.",
-                "",
-                "",
-                "10",
-                "Combate Tático",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "Combate Tático",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Defesa Agressiva",
-                suporte,
-                // todasRacas,                guerreiros,
-                1,
+        habilidades.add(getHabilidade("Defesa Agressiva", suporte, 1,
                 "Você entende que a melhor defesa é um ataque eficiente. Quando estiver empunhando uma arma corporal de duas mãos, duas armas corporais ou um escudo, você recebe +1 em seus testes de ataque corporal e +1 na sua Defesa. Esse bônus de Defesa é considerado um bônus de Bloqueio.",
-                "",
-                "",
-                "",
-                "Defletor",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Defletor",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Golpe Devastador 1",
-                acao,
-                // todasRacas,                guerreiros,
-                1,
+        habilidades.add(getHabilidade("Golpe Devastador 1", acao, 1,
                 "Você pode fazer um ataque corporal que causa o dobro de dano, e se acertar, o alvo precisa vencer um confronto de Força (adicione a FN da arma que estiver usando no seu teste) contra você ou ficará Paralisado por um turno.",
-                "",
-                "",
-                "30",
-                "Nocautear",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "30", "Nocautear",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Golpe com Escudo",
-                reacao,
-                // todasRacas,                guerreiros,
-                1,
+        habilidades.add(getHabilidade("Golpe com Escudo", reacao, 1,
                 "Se você estiver portando um escudo e errar um ataque corporal com sua arma, você pode imediatamente fazer um ataque corporal normal contra o mesmo alvo com seu escudo. Um ataque com um escudo causa dano igual à Força + FN do escudo/Contusão.",
-                "",
-                "",
-                "5",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "5", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Transpor",
-                suporte,
-                // todasRacas,                guerreiros,
-                1,
+        habilidades.add(getHabilidade("Transpor", suporte, 1,
                 "Você sabe encontrar os espaços deixados pelo escudo do adversário. Ignore sempre o bônus de Bloqueio da Defesa do oponente.",
-                "",
-                "",
-                "",
-                "Defesa Agressiva",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Defesa Agressiva",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Força de Explosão",
-                suporte,
-                // todasRacas,                guerreiros,
-                5,
+        habilidades.add(getHabilidade("Força de Explosão", suporte, 5,
                 "Quando fizer ataques que têm chance de derrubar o oponente você pode afetar alvos até 10 vezes mais pesados do que você (a maioria dos ataques que derrubam oponentes só afetam alvos com até o dobro do seu peso). Além disso, se você usar qualquer Habilidade que derrube o oponente, a dificuldade para resistir ao efeito e aumentada em +2.",
-                "",
-                "",
-                "",
-                "Ataque do Búfalo",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Ataque do Búfalo",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Golpe Devastador 2",
-                acao,
-                // todasRacas,                guerreiros,
-                1,
+        habilidades.add(getHabilidade("Golpe Devastador 2", acao, 1,
                 "Faça um ataque corporal contra o alvo. Se acertar, o ataque causa o triplo do dano normal e o alvo precisa vencer um confronto de Força (adicione a FN da arma que estiver usando no seu teste) contra você ou ficará Paralisado por um turno.",
-                "",
-                "",
-                "60",
-                "Golpe Devastador 1",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "60", "Golpe Devastador 1",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Investida Forte",
-                suporte,
-                // todasRacas,                guerreiros,
-                5,
+        habilidades.add(getHabilidade("Investida Forte", suporte, 5,
                 "Sempre que acertar uma manobra de encontrão usando um escudo, o alvo precisa vencer um teste de Resistência (Dificuldade igual à sua Determinação + a FN do escudo que você estiver usando) ou será derrubado. Alvos com o dobro do seu peso não são afetados. Um ataque com um escudo causa dano igual à Força + FN do escudo/Contusão.",
-                "",
-                "",
-                "",
-                "Golpe com Escudo",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Golpe com Escudo",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Mestre de Armas 3",
-                acao,
-                // todasRacas,                guerreiros,
-                10,
+        habilidades.add(getHabilidade("Mestre de Armas 3", acao, 10,
                 "Faça um ataque corporal contra uma criatura. Se o ataque acertar o alvo, ao invés do dano normal da arma, os Pontos de Vida atuais dele são reduzidos à metade. No caso de um sucesso crítico no ataque, o oponente é morto instantaneamente.",
-                "",
-                "",
-                "50",
-                "Mestre de Armas 2",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "50", "Mestre de Armas 2",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Gatuno",
-                suporte,
-                // todasRacas,                ladinos,
-                1,
+        habilidades.add(getHabilidade("Gatuno", suporte, 1,
                 "Você aprendeu com a dura vida nas ruas a sobreviver na selva urbana. Você nunca é considerado Inapto quando tentar furtar bolsos ou arrombar fechaduras usando um kit de arrombamento. Além disso, você rola +1d6 quando tentar escalar, se esconder e tentar passar despercebido.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Ataque Evasivo",
-                acao,
-                // todasRacas,                ladinos,
-                1,
+        habilidades.add(getHabilidade("Ataque Evasivo", acao, 1,
                 "Você realiza um ataque seguido de uma movimentação errática para confundir seu oponente. Faça um ataque baseado em Agilidade. Se acertar, o alvo realiza seus ataques contra você como se fosse Inapto durante o próximo turno. Se o ataque for à distância e houver alguma cobertura à disposição, você pode se esconder tornando impossível para o alvo lhe atacar enquanto ele não o ver primeiro.",
-                "",
-                "",
-                "10",
-                "Evasão",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "10", "Evasão",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Contatos no Crime",
-                suporte,
-                // todasRacas,                ladinos,
-                1,
+        habilidades.add(getHabilidade("Contatos no Crime", suporte, 1,
                 "Você possui muitos contatos entre os criminosos – pequenos e grandes. Com isto você pode descobrir informações privilegiadas ou comprar e vender mercadoria roubada. Obviamente o mestre poderá restringir informações se isso for atrapalhar o andamento ou a trama da campanha, e você nem sempre será capaz de encontrar qualquer item à disposição em qualquer lugar – mas o mercado negro nas grandes cidades costuma estar abastecido de praticamente qualquer item disponível na campanha. Criminosos pagarão metade do preço normal de qualquer item que você quiser vender – desde que tenham dinheiro para tanto – e venderão itens com um custo um terço menor do que o normal. Itens proibido ou controlados, no entanto, podem ser extremamente caros. Informações terão um preço dependendo da importância e dificuldade de obtê-las, de acordo com a vontade do Mestre.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Flanquear",
-                suporte,
-                // todasRacas,                ladinos,
-                1,
+        habilidades.add(getHabilidade("Flanquear", suporte, 1,
                 "Você prefere atacar seus alvos quando eles estão desatentos – e é muito eficiente fazendo isso! Sempre que você e pelo menos mais um aliado estiverem em alcance corporal de um oponente, você considera aquele oponente Despreparado em relação a você. Você só pode flanquear um alvo por turno. Se 2 ou mais adversários estiverem adjacentes a você e a um aliado ao mesmo tempo, você deve definir qual deles vai flanquear.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Flexível",
-                suporte,
-                //  todasRacas,                ladinos,
-                1,
+        habilidades.add(getHabilidade("Flexível", suporte, 1,
                 "Você tem o corpo muito flexível, capaz de se dobrar, esticar e espremer de maneiras extremas. Você pode passar por aberturas como se tivesse apenas metade do seu tamanho, consegue escorregar para fora de grilhões e amarras com facilidade, pode se esticar e dobrar de modos a alcançar pontos de apoio difíceis numa escalada além de ser mais ágil quando corre e escapa de obstáculos, recebendo um bônus de +2 em qualquer teste que envolva esse tipo de circunstância.",
                 "Armaduras com a Característica Pesada impedem que você receba os bônus por esta Habilidade.",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Mestre das Adagas 1",
-                acao,
-                //todasRacas,                ladinos,
-                1,
+        habilidades.add(getHabilidade("Mestre das Adagas 1", acao, 1,
                 "Você se especializou em arremessar armas pequenas de forma eficiente. Você pode arremessar 2 armas com a característica Arremesso e FN 1.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Mestre das Adagas 2",
-                acao,
-                // todasRacas,                ladinos,
-                1,
+        habilidades.add(getHabilidade("Mestre das Adagas 2", acao, 1,
                 "Você refinou sua técnica de arremesso de pequenos objetos. Você pode arremessar até 4 armas com a característica Arremesso e FN 1.",
-                "",
-                "",
-                "",
-                "Mestre das Adagas 1",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "Mestre das Adagas 1",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("En Passant",
-                reacao,
-                // todasRacas,                ladinos,
-                5,
+        habilidades.add(getHabilidade("En Passant", reacao, 5,
                 "Se um alvo que está adjacente a você tentar se afastar ou se levantar, você pode imediatamente fazer uma ação normal (sem Habilidades de Ação) contra ele. O alvo é considerado Despreparado contra essa ação",
-                "",
-                "",
-                "",
-                "Flanquear",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "Flanquear",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Explorar Surpresa",
-                acao,
-                //  todasRacas,                ladinos,
-                5,
+        habilidades.add(getHabilidade("Explorar Surpresa", acao, 5,
                 "Faça um ataque contra um alvo Despreparado. Esse ataque causa o dobro do dano normal.",
-                "",
-                "",
-                "20",
-                "Flanquear",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "20", "Flanquear",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Improvisação Ladina",
-                suporte,
-                // todasRacas,                ladinos,
-                5,
+        habilidades.add(getHabilidade("Improvisação Ladina", suporte, 5,
                 "Você pode pegar garrafas quebradas, lascas de madeira ou osso, pedaços de vidro ou mesmo de gelo e usar como se fosse uma adaga. Em geral uma adaga improvisada dessa forma se torna inútil depois de um ataque. Você também pode montar ou desarmar armadilhas e abrir fechaduras sem ter os materiais apropriados, desde que possa improvisar gazuas ou ferramentas – com agulhas, galhos, lascas de pedra, pedaços de armas, etc.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Mestre das Adagas 3",
-                acao,
-                // todasRacas,                ladinos,
-                5,
+        habilidades.add(getHabilidade("Mestre das Adagas 3", acao, 5,
                 "Você é um mestre da técnica de arremessar pequenos objetos! Você pode arremessar até 6 armas com a característica Arremesso e FN 1.",
-                "",
-                "",
-                "",
-                "Mestre das Adagas 2",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "Mestre das Adagas 2",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Mestre Especialista",
-                suporte,
-                // todasRacas,                ladinos,
-                10,
+        habilidades.add(getHabilidade("Mestre Especialista", suporte, 10,
                 "Sempre que uma Habilidade oferecer um bônus de +1d6 em uma determinada ação, você recebe +2d6 para aquela ação ao invés disso.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Código da Justiça",
-                suporte,
-                // todasRacas,                paladinos,
-                1,
+        habilidades.add(getHabilidade("Código da Justiça", suporte, 1,
                 "Você confia nas leis para se apoiar e possui uma crença inabalável na ordem. Você sempre respeita as leis vigentes nos locais onde está e não permite que outros as descumpram impunemente. Sua fé na ordem faz com que criaturas geradas no caos se sintam repelidas por você. Todo demônio, morto-vivo ou espírito deve ser bem sucedido em um teste Vontade (Dificuldade igual à sua Determinação) ou não será capaz de se aproximar ou atacar você. Criaturas desses tipos com Mente Vazia fazem seus testes de baseados em Força, e se falhar serão completamente destruídas.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Código da Lealdade",
-                suporte,
-                // todasRacas,                paladinos,
-                1,
+        habilidades.add(getHabilidade("Código da Lealdade", suporte, 1,
                 "Você nunca ataca um combatente que já está derrotado, nem luta ou permite que outros lutem de forma injusta ou com deslealdade, e jamais trai ou permite que outros traiam aqueles que confiam em você. Você recupera o dobro de Pontos de Vida (por descanso, através de poções, magias, etc.) e é imune a venenos e doenças naturais ou mágicas.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Combate Montado",
-                suporte,
-                // todasRacas,                paladinos,
-                1,
+        habilidades.add(getHabilidade("Combate Montado", suporte, 1,
                 "Sempre que fizer um ataque corporal enquanto estiver sobre uma montaria, acrescente +6 de dano ao ataque.",
-                "",
-                "",
-                "",
-                "Cavaleiro Experiente",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Cavaleiro Experiente",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Égide",
-                reacao,
-                // todasRacas,                paladinos,
-                1,
+        habilidades.add(getHabilidade("Austeridade", suporte, 1,
+                "Sua integridade e retidão são tão inabaláveis que é impossível para outros influenciarem suas decisões. Você é imune a efeitos mentais (mas não Ilusões ou efeitos de Medo) e tentativas de influenciar sua opinião com persuasão e manipulação.",
+                "", "", "", "Código da Honestidade",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
+
+        habilidades.add(getHabilidade("Código da Coragem", suporte, 1,
+                "Um Paladino nunca teme a morte, principalmente na proteção dos indefesos. Você nunca pode fugir de uma luta justa e deve sempre proteger os mais fracos – com a vida, se necessário. Você é imune a todos os efeitos de Medo.",
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
+
+        habilidades.add(getHabilidade("Égide", reacao, 1,
                 "Você sempre está pronto para se interpor diante do perigo. Se um ataque ou magia for atingir um alvo adjacente a você, você pode se interpor e sofrer o ataque no lugar do alvo original. Você sofre apenas metade do dano do ataque ou magia, mas sofre quaisquer outros efeitos normalmente.",
-                "",
-                "",
-                "",
-                "Código da Coragem",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Código da Coragem",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Justiça Final 1",
-                acao,
-                //  todasRacas,                paladinos,
-                1,
+        habilidades.add(getHabilidade("Justiça Final 1", acao, 1,
                 "Você pode fazer um ataque corporal que, se acertar, causa o dobro do dano normal, ou o triplo do dano normal se a criatura for um demônio, morto-vivo ou espírito.",
-                "",
-                "",
-                "25",
-                "Código da Justiça",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "25", "Código da Justiça",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Montaria Especial 1",
-                suporte,
-                // todasRacas,                paladinos,
-                1,
+        habilidades.add(getHabilidade("Código da Cortesia", suporte, 1,
+                "Você se porta de maneira cortês e exala uma aura de autoconfiança e nobreza que inspira aqueles ao seu redor. Você sempre trata os nobres com o respeito que eles merecem e os seus inferiores com a cortesia devida. Você recebe Vontade +1, todos os seus aliados num raio de 1 metro por ponto de Vontade que você tiver também recebem +1 na Vontade.",
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
+
+
+        habilidades.add(getHabilidade("Montaria Especial 1", suporte, 1,
                 "Um animal especial foi atraído pela aura de nobreza que você exala. Ele é extremamente fiel e fará de tudo para protegê-lo. Com assovios e sons você consegue pedir para que ele faça ações simples. Além disso, ele tem 10 Pontos de Vida a mais do que um animal comum de seu tipo. Você pode escolher entre um Cavalo de Guerra, um Pônei de Guerra ou um Camelo de Guerra. Se sua montaria morrer, outro animal do mesmo tipo será atraído em seu lugar assim que você estiver em uma região em que esse tipo de animal seja comum.",
-                "",
-                "",
-                "",
-                "Código da Cortesia",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Código da Cortesia",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Montaria Especial 2",
-                suporte,
-                // todasRacas,                paladinos,
-                1,
+        habilidades.add(getHabilidade("Montaria Especial 2", suporte, 1,
                 "Sua montaria especial foi tocada pela sua aura de coragem e tornou-se ainda mais ligada a você. Sua montaria é totalmente imune a efeitos mentais e efeitos de Medo, e recebe +10 Pontos de Vida.",
-                "",
-                "",
-                "",
-                "Montaria Especial 1, Código da Coragem",
-                0,
-                0,
-                0,
-                0,
-                0,
-                10,
-                0,
-                0
-                )
-        );
+                "", "", "", "Montaria Especial 1, Código da Coragem",
+                0, 0, 0, 0,
+                0, 10, 0, 0));
 
-        habilidades.add(getHabilidade("Motivar",
-                acao,
-                // todasRacas,                paladinos,
-                1,
+        habilidades.add(getHabilidade("Motivar", acao, 1,
                 "Você profere palavras de encorajamento que inspiram seus aliados, recuperando sua moral e vontade. Todos os aliados num raio de 1 metro por ponto de Vontade que você tiver e que puderem lhe ouvir recuperam imediatamente 10 Pontos de Vida e quaisquer efeitos de Medo que os estiver afetando é removido. Estes efeitos não afetam o personagem usando essa Habilidade.",
-                "",
-                "",
-                "30",
-                "Código da Lealdade",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "30", "Código da Lealdade",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Banir",
-                acao,
-                // todasRacas,                paladinos,
-                5,
+        habilidades.add(getHabilidade("Banir", acao, 5,
                 "Sua crença na ordem natural das coisas é tão arrebatadora que você é capaz de purgar criaturas geradas do caos. Tocando uma criatura do tipo morto-vivo, demônio ou espírito, você pode destruí-las (no caso de mortos-vivos e espíritos) ou bani-las de volta aos seus planos de origem (no caso de demônios) a menos que passem em um teste de Vontade (Dificuldade igual à sua Determinação). Criaturas desses tipos com Mente Vazia não podem resistir a esse efeito e são automaticamente destruídas ou banidas. ",
-                "",
-                "",
-                "30",
-                "Código da Justiça",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "30", "Código da Justiça",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Comando Heroico",
-                acao,
-                // todasRacas,                paladinos,
-                5,
+        habilidades.add(getHabilidade("Comando Heroico", acao, 5,
                 "Você ordena uma palavra a um aliado (pule, resista, viva, acerte, etc.) e o alvo realiza imediatamente aquela ação. A ordem não pode ser negativa (falhe, morra, caia, etc.). O alvo ainda rola seu teste normalmente, apenas para verificar a possibilidade de um sucesso crítico – qualquer outro resultado (mesmo uma falha crítica) é considerado um sucesso normal.",
-                "",
-                "",
-                "30",
-                "Motivar",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "30", "Motivar",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Destemor",
-                suporte,
-                // todasRacas,                paladinos,
-                5,
+        habilidades.add(getHabilidade("Destemor", suporte, 5,
                 "Sua coragem o impulsiona em situações de perigo para si e para seus companheiros. Sempre que for realizar um teste que represente um risco direto para você ou para um amigo (incluindo praticamente todas as situações de combate), você soma +2 ao resultado de todas as suas rolagens.",
-                "",
-                "",
-                "",
-                "Código da Coragem",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Código da Coragem",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Justiça Final 2",
-                acao,
-                // todasRacas,                paladinos,
-                5,
+        habilidades.add(getHabilidade("Justiça Final 2", acao, 5,
                 "Você pode fazer um ataque corporal que, se acertar, causa o triplo do dano normal ou o quádruplo se a criatura for um demônio, morto-vivo ou espírito.",
-                "",
-                "",
-                "50",
-                "Justiça Final 1",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "50", "Justiça Final 1",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Montaria Especial 3",
-                suporte,
-                // todasRacas,                paladinos,
-                5,
+        habilidades.add(getHabilidade("Código da Honestidade", suporte, 5,
+                "Você sempre cumpre suas promessas, não importa quão difícil isso seja, e preza a verdade acima de tudo, emanando uma aura de honestidade que deixa desconfortáveis aqueles que escondem a verdade. Você sempre saberá quando alguém estiver mentindo. Nem sempre omitir é mentir, depende das intenções da pessoa que está omitindo. Mentir é passar informações erradas propositalmente.",
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
+
+        habilidades.add(getHabilidade("Canção da Provocação", acao, 1,
+                "Você canta uma música que contém teor ofensivo para seus adversários, deixando les irritados e desconcentrados em combate. Escolha uma profissão, raça, cultura ou classe social. Todas as criaturas do grupo selecionado que puderem entende-lo rolam um confronto de Vontade contra você. Aqueles que tiverem um resultado menor que o seu ficam com -2 na Defesa enquanto você continuar a tocar essa Música. Este é um efeito mental.",
+                "", "", "20", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
+
+        habilidades.add(getHabilidade("Montaria Especial 3", suporte, 5,
                 "Sua montaria desenvolveu um vínculo profundo com você, permitindo que você veja pelos olhos dela apenas se concentrando. Ela também recebe +1 em Força e +1 em Vontade e é capaz de enxergar criaturas invisíveis. ",
-                "",
-                "",
-                "",
-                "Montaria Especial 2, Código da Honestidade",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Montaria Especial 2, Código da Honestidade",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Integridade",
-                suporte,
-                // todasRacas,                paladinos,
-                10,
+        habilidades.add(getHabilidade("Integridade", suporte, 10,
                 "Sua inflexibilidade moral é tanta, que você não se dá por vencido nem diante da morte certa. Quando um ataque, magia, música ou técnica reduziriam seus Pontos de Vida a ponto de deixá-lo Por Um Fio, você ignora totalmente seu dano e quaisquer outros efeitos. Essa Habilidade não tem efeito em venenos, doenças ou fatores ambientais que causem dano",
-                "",
-                "",
-                "10",
-                "Austeridade, Destemor",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "Austeridade, Destemor",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Arqueria",
-                suporte,
-                // todasRacas,                patrulheiros,
-                1,
+        habilidades.add(getHabilidade("Arqueria", suporte, 1,
                 "Você recebe +2 em todos os seus ataques à distância (incluindo arremessos) e em testes envolvendo Arcos, Bestas, Prodds e fundas de todos os tipos. Você sabe como consertar essas armas e como fabricar a munição para elas.",
                 "Para consertar as armas ou fabricar a munição, você deve ter as matérias primas adequadas e as ferramentas, com isso faça um teste de Inteligência, a dificuldade é 10 (o Mestre pode aumentar a dificuldade no caso de consertos muito complexos ou de uma fabricação do zero).",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Caçador de [Criatura]",
-                suporte,
-                // todasRacas,                patrulheiros,
-                1,
+        habilidades.add(getHabilidade("Caçador de [Criatura]", suporte, 1,
                 "Você se especializou em caçar um tipo de criatura. Escolha entre Humanoides, Trogloditas, Bestas ou Esfinges. Você sempre causa +2 pontos de dano em todos os ataques contra este tipo de criatura. Além disso, você recebe +2 em todos os seus testes relacionados a esse tipo de criatura.",
-                "",
-                "",
-                "",
-                "Armadilheiro",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Armadilheiro",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Chuva de Flechas",
-                acao,
-                // todasRacas,                patrulheiros,
-                1,
+        habilidades.add(getHabilidade("Chuva de Flechas", acao, 1,
                 "Você pode atirar até 4 flechas em um só ataque em múltiplos oponentes. Faça uma rolagem para cada flecha, que devem ter alvos diferentes. ",
-                "",
-                "",
-                "30",
-                "Flechas Rápida",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "30", "Flechas Rápida",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Disparo Forte",
-                acao,
-                // todasRacas,                patrulheiros,
-                1,
+        habilidades.add(getHabilidade("Disparo Forte", acao, 1,
                 "Faça um ataque à distância. Se acertar, some +8 ao dano da arma",
-                "",
-                "",
-                "10",
-                "Retesar Eficiente",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "Retesar Eficiente",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Disparo Certeiro",
-                acao,
-                // todasRacas,                patrulheiros,
-                1,
+        habilidades.add(getHabilidade("Disparo Certeiro", acao, 1,
                 "Você realiza um ataque à distância rolando +1d6.",
-                "",
-                "",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Flechas Rápidas",
-                reacao,
-                // todasRacas,                patrulheiros,
-                1,
+        habilidades.add(getHabilidade("Flechas Rápidas", reacao, 1,
                 "Após fazer um ataque normal usando um arco, você pode fazer imediatamente outro ataque normal com o arco.",
                 "Esta Habilidade só pode ser usada 1 vez por turno.",
-                "",
-                "20",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "20", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Precisão",
-                suporte,
-                // todasRacas,                patrulheiros,
-                1,
+        habilidades.add(getHabilidade("Precisão", suporte, 1,
                 "Você confia mais em uma pontaria bem feita do que em força bruta quando arremessa armas ou dispara com arcos. Quando fizer ataques à distância você pode usar Inteligência ou Agilidade ao invés de Força para calcular o dano de armas de distância e de arremesso.",
-                "",
-                "",
-                "",
-                "Disparo Certeiro",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Disparo Certeiro",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Retesar Eficiente",
-                suporte,
-                // todasRacas,                patrulheiros,
-                1,
+        habilidades.add(getHabilidade("Retesar Eficiente", suporte, 1,
                 "Você possui uma técnica eficiente em retesar arcos e bestas. Quando estiver usando uma besta ou prodd de qualquer tipo, você ignora a Característica Carregar dessas armas. Quando estiver usando um arco ou funda de qualquer tipo, o dano de seus ataques à distância é aumentado em +2.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Caçador de [Monstro]",
-                suporte,
-                // todasRacas,                patrulheiros,
-                5,
+        habilidades.add(getHabilidade("Caçador de [Monstro]", suporte, 5,
                 "Escolha um monstro (orc, troll, ogro, goblin ou qualquer outro monstro) quando comprar esta habilidade. Você sempre causa +6 de dano em todos os ataques contra este tipo de monstro e rola +1d6 em testes relacionados a eles.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Chuva de Flechas 2",
-                acao,
-                // todasRacas,                patrulheiros,
-                5,
+        habilidades.add(getHabilidade("Chuva de Flechas 2", acao, 5,
                 "Você pode atirar até 6 flechas em um só ataque. Faça uma rolagem para cada flecha, que podem ter alvos diferentes.",
-                "",
-                "",
-                "40",
-                "Chuva de Flechas",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "40", "Chuva de Flechas",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Empalar",
-                suporte,
-                // todasRacas,                patrulheiros,
-                5,
+        habilidades.add(getHabilidade("Empalar", suporte, 5,
                 "Se você rolar um Sucesso Crítico em um ataque à distância (incluindo arremessos) usando uma arma que cause dano por Perfuração, o dano será multiplicado por 3 ao invés de 2. Este é um efeito de sangramento.",
-                "",
-                "",
-                "",
-                "Ataque Aleijador, Disparo Certeiro",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Ataque Aleijador, Disparo Certeiro",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Matador de [Criatura]",
-                suporte,
-                // todasRacas,                patrulheiros,
-                5,
+        habilidades.add(getHabilidade("Matador de [Criatura]", suporte, 5,
                 "Escolha uma criatura dentre aquelas do tipo que escolheu para Caçador (Goblins, Orcs, Gnolls ou Draconianos se você escolheu Humanóides, por exemplo). Você sempre causa +4 pontos de dano em todos os ataques contra este tipo de criatura (esse bônus se acumula com o bônus de Caçador de [Criatura]). Além disso, você rola +1d6 em todos os testes relacionados a essa criatura (esse bônus se acumula com o bônus de Caçador de [Criatura]).",
-                "",
-                "",
-                "",
-                "Caçador de [Criatura]",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Caçador de [Criatura]",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Olho da Águia",
-                reacao,
-                // todasRacas,                patrulheiros,
-                5,
+        habilidades.add(getHabilidade("Olho da Águia", reacao, 5,
                 "Sempre que você fizer um ataque à distância (incluindo arremessos) você pode rolar novamente 1 dos dados. Você pode escolher com qual dos resultados vai ficar. Você só pode usar esta Habilidade 1 vez por turno.",
-                "",
-                "",
-                "10",
-                "Disparo Certeiro",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "Disparo Certeiro",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Arqueria de Mestre",
-                suporte,
-                // todasRacas,                patrulheiros,
-                10,
+        habilidades.add(getHabilidade("Arqueria de Mestre", suporte, 10,
                 "Você sempre rola +1d6 para ataques à distância (incluindo arremessos).",
-                "",
-                "",
-                "",
-                "Olho da Águia",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Olho da Águia",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Arma Fiel",
-                acao,
-                // todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Arma Fiel", acao, 1,
                 "Você pode fazer um item portátil vir até você desenhando uma Runa Arcana no ar entre você e o objeto. O item precisa estar em sua linha de visão, e irá desaparecer de onde está e aparecer na sua mão. Essa magia só funciona com itens portáteis como armas, escudos, ferramentas ou frascos e o item precisa estar marcado com sua Runa pessoal. Além disso, você precisa ter pelo menos uma mão livre para que essa magia funcione.",
-                "",
-                "12",
-                "20",
-                "Enfeitiçar Arma 1",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "20", "Enfeitiçar Arma 1",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Arma Incandescente",
-                acao,
-                // todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Arma Incandescente", acao, 1,
                 "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal. Esse ataque causa o dano normal da arma e um dano adicional igual a 10/Fogo. Esse efeito pode ser usado para inflamar objetos combustíveis – mas não faz alvos vivos irromperem em chamas.",
-                "",
-                "",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Arma Gélida",
-                acao,
-                // todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Arma Gélida", acao, 1,
                 "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal. Esse ataque causa o dano normal da arma, mais um dano adicional igual a 8/Frio. Se esse efeito for conjurado enquanto a arma estiver submersa em líquido, ele congela uma esfera de meio metro de diâmetro (aproximadamente 125 litros). ",
-                "",
-                "",
-                "5",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "5", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Arma Relampejante",
-                acao,
-                //  todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Arma Relampejante", acao, 1,
                 "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal. Esse ataque causa o dano normal da arma, mais um dano adicional igual a 10/Eletricidade. Ignore bônus de Armadura e Bloqueio se o alvo estiver usando armaduras ou escudos de metal ou se estiver usando uma arma de metal para bloquear.",
-                "",
-                "",
-                "15",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "15", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Armadura Fiel",
-                acao,
-                // todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Armadura Fiel", acao, 1,
                 "Você pode fazer uma vestimenta vir até você desenhando uma Runa Arcana no ar entre você e ela. O item precisa estar em sua linha de visão, e irá desaparecer de onde está e aparecer vestido no seu corpo. Essa magia só funciona com itens que possam ser vestidos, como armaduras, roupas, mochilas ou cintos e o item precisa estar marcado com sua Runa pessoal. Além disso, você precisa ter espaço para que o item seja vestido para que essa magia funcione – é impossível trazer uma mochila se você já estiver usando alguma coisa nas costas, ou trazer uma armadura se você já estiver usando uma.",
-                "",
-                "12",
-                "30",
-                "Arma Fiel, Enfeitiçar Armadura",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "30", "Arma Fiel, Enfeitiçar Armadura",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Ataque Fantasma",
-                acao,
-                // todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Ataque Fantasma", acao, 1,
                 "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal. Esse ataque causa +8 de dano e afeta criaturas incorpóreas como se elas não tivessem essa Habilidade.",
-                "",
-                "",
-                "15",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "15", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Conjurar Escudo",
-                acao,
-                //todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Conjurar Escudo", acao, 1,
                 "Você desenha uma Runa Arcana no ar e ela se transforma em um escudo de energia para proteger uma criatura dentro de sua linha de visão. O escudo flutua ao redor do alvo, bloqueando ataques, mas pode ser segurado como um escudo normal. Ele garante um Bônus de Bloqueio de +2, e se for segurado tem FN 2 e ocupa 1 mão. A Runa Arcana que mantém o escudo se dissipa depois de 1 minuto.",
-                "",
-                "10",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "10", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Desativar Item",
-                acao,
-                // todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Desativar Item", acao, 1,
                 "Você pode desativar temporariamente um item mágico desenhando uma Runa Arcana sobre ele, fazendo com que todos os efeitos mágicos fornecidos pelo item deixem de funcionar por 10 minutos por ponto de Inteligência que você tiver – mas ele ainda conta como um item mágico para qualquer efeito que afete ou não afete itens mágicos especificamente. Itens mágicos de aura Nula ou Divina não são afetados por essa Habilidade. Esta Habilidade também dissipa todas as Runas Arcanas e Selos Místicos do item tocado.",
-                "",
-                "11",
-                "20",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "11", "20", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Enfeitiçar Arma 1",
-                acao,
-                // todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Enfeitiçar Arma 1", acao, 1,
                 "Desenhando uma Runa Arcana sobre uma arma, você confere um bônus de +1 nas rolagens de ataque e nos danos dessa arma. Essa Runa Arcana dura 1 minuto.",
-                "",
-                "10",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "10", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Enfeitiçar Armadura",
-                acao,
-                // todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Enfeitiçar Armadura", acao, 1,
                 "Desenhando uma Runa Arcana sobre uma armadura ou vestimenta, você aumenta o bônus de defesa do item em +1 (ou confere +1 de Armadura para uma peça de roupa comum). Essa Runa Arcana dura 1 minuto.",
-                "",
-                "10",
-                "20",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "10", "20", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Onda de Chamas",
-                acao,
-                // todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Onda de Chamas", acao, 1,
                 "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal, contra um alvo dentro da sua linha de visão. Esse ataque produz uma onda flamejante que causa dano igual a 10/Fogo. Esse efeito pode ser usado para inflamar objetos combustíveis – mas não faz alvos vivos irromperem em chamas.",
-                "",
-                "",
-                "10",
-                "Arma Incandescente",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "Arma Incandescente",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Onda de Frio",
-                acao,
-                //  todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Onda de Frio", acao, 1,
                 "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal, contra um alvo dentro da sua linha de visão. Esse ataque produz uma rajada de ar gélido e partículas de gelo que causa igual a 10/Frio. Se o alvo for um líquido, ele congela uma área de até 10 metros quadrados, com cerca de 10 centímetros de espessura.",
-                "",
-                "",
-                "10",
-                "Arma Gélida",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "Arma Gélida",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Onda de Raios",
-                acao,
-                // todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Onda de Raios", acao, 1,
                 "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal, contra um alvo dentro da sua linha de visão. Esse ataque produz uma descarga elétrica que causa igual a 10/Eletricidade. Esse ataque ignora qualquer escudo ou armadura com a Característica Pesada e quaisquer bônus de bloqueio do alvo.",
-                "",
-                "",
-                "15",
-                "Arma Relampejante",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "15", "Arma Relampejante",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Onda Fantasma",
-                acao,
-                // todasRacas,                runicos,
-                1,
+        habilidades.add(getHabilidade("Onda Fantasma", acao, 1,
                 "Faça um ataque corporal contra um alvo que possa ver. Você precisa estar usando uma arma que esteja marcada com sua Runa pessoal. Esse ataque produz uma onda espectral que ignora paredes, portas, armaduras, escudos e quaisquer outros obstáculos inorgânicos. Essa rajada causa 10 de dano (o tipo de dano causado pelo ataque será o mesmo do tipo que a arma usada puder causar normalmente) e afeta criaturas incorpóreas como se elas fossem sólidas.",
-                "",
-                "",
-                "15",
-                "Ataque Fantasma",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "15", "Ataque Fantasma",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Ataque Chocante",
-                acao,
-                // todasRacas,                runicos,
-                5,
+        habilidades.add(getHabilidade("Ataque Chocante", acao, 5,
                 "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal. Esse ataque causa o dano normal da arma em conjunto com uma potente rajada elétrica que causa 10/eletricidade e faz com que o alvo fique Paralisado por 2 turno. Ignore bônus de Armadura e Bloqueio se o alvo estiver usando armaduras ou escudos de metal ou se estiver usando uma arma de metal para bloquear.",
                 "Alvos Imunes à Eletricidade não são afetados por essa Habilidade – mas alvos Resistentes à Eletricidade são afetados normalmente",
-                "",
-                "25",
-                "Arma Relampejante",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "25", "Arma Relampejante",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Ataque Congelante",
-                acao,
-                // todasRacas,                runicos,
-                5,
+        habilidades.add(getHabilidade("Ataque Congelante", acao, 5,
                 "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal. Esse ataque causa o dano normal da arma além de 8/Frio e congela dentro de um bloco de gelo (o alvo é considerado Paralisado e só pode ser afetado por efeitos Mentais) e sofre dano igual a 8/Frio no começo de seu turno. Esse efeito dura uma quantidade de turnos igual à sua Inteligência.",
                 "O bloco de gelo contendo o personagem pode ser destruído se sofrer uma quantidade de dano igual à Determinação do conjurador da magia. O bloco de gelo é imune a ataques que causem dano por Frio e ataques que causam dano por Eletricidade também afetam o alvo congelado.",
-                "",
-                "30",
-                "Arma Gélida",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "30", "Arma Gélida",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Ataque Flamejante",
-                acao,
-                //todasRacas,                        runicos,
-                5,
+        habilidades.add(getHabilidade("Ataque Flamejante", acao, 5,
                 "Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal. Esse ataque causa o dano normal da arma além de 10/fogo e faz o alvo entrar em combustão (o alvo sofre uma quantidade de dano igual a 10/fogo no começo do seu turno) por uma quantidade de turnos igual à sua Inteligência ou até que as chamas sejam apagadas de alguma forma.",
                 "Um personagem em combustão pode gastar seu turno rolando no chão para apagar as chamas. Ele será considerado Caído e Despreparado enquanto fizer isso.",
-                "",
-                "20",
-                "Arma Incandescente",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "20", "Arma Incandescente",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Golpe do Vento",
-                acao,
-                //todasRacas,                        runicos,
-                5,
+        habilidades.add(getHabilidade("Golpe do Vento", acao, 5,
                 "Você é capaz de cortar o ar, enviando uma rajada de vento mágico que corta alvos distantes. Faça um ataque corporal com uma arma que esteja marcada com sua Runa pessoal contra um alvo dentro da sua linha de visão. Esse ataque causa o dano normal da arma.",
-                "",
-                "Defesa do Alvo",
-                "20",
-                "Enfeitiçar Arma 1",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "Defesa do Alvo", "20", "Enfeitiçar Arma 1",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Enfeitiçar Arma 2",
-                acao,
-                //todasRacas,                        runicos,
-                5,
+        habilidades.add(getHabilidade("Enfeitiçar Arma 2", acao, 5,
                 "Desenhando uma Runa Arcana sobre uma arma, você confere um bônus de +3 nas rolagens de ataque e nos danos dessa arma. Essa Runa Arcana dura 1 minuto.",
-                "",
-                "12",
-                "25",
-                "Enfeitiçar Arma",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "12", "25", "Enfeitiçar Arma",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Destruição Elemental",
-                suporte,
-                //todasRacas,                        runicos,
-                10,
+        habilidades.add(getHabilidade("Destruição Elemental", suporte, 10,
                 "Você se tornou extremamente hábil no controle das energias elementais. Sempre que usar uma técnica ou magia que causa dano por Fogo, Frio ou Eletricidade, esse dano é dobrado.",
-                "",
-                "",
-                "",
-                "Arma Incandescente, Arma Gélida e Arma Relampejante",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Arma Incandescente, Arma Gélida e Arma Relampejante",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Armadilheiro",
-                acao,
-                //todasRacas,                        ladinos_patrulheiros,
-                1,
+        habilidades.add(getHabilidade("Armadilheiro", acao, 1,
                 "Você se especializou em desarmar e preparar armadilhas. Você nunca é considerado Inapto para desarmar armadilhas e se tiver os materiais e o tempo necessários, você pode armar uma armadilha. Faça um teste de Inteligência: O resultado do teste será a dificuldade para a armadilha ser percebida e desarmada.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Camuflagem",
-                suporte,
-                //todasRacas,                        ladinos_patrulheiros,
-                5,
+        habilidades.add(getHabilidade("Camuflagem", suporte, 5,
                 "Você pode se camuflar em florestas usando galhos, folhas e lama, ou nas sombras de becos e ruas usando uma capa preta e talvez fuligem ou barro. Quando puder usar o ambiente a seu favor dessa forma, você pode rolar +1d6 nos testes para se esconder.",
-                "",
-                "",
-                "",
-                "Furtivo",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "", "Furtivo",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Emboscar",
-                acao,
-                //todasRacas,                        ladinos_patrulheiros,
-                5,
+        habilidades.add(getHabilidade("Emboscar", acao, 5,
                 "Você se especializou em emboscar inimigos incapazes de percebê-lo. Quando fizer um ataque à distância contra um alvo Desprevenido (ver Condições, pág. 169), faça imediatamente um Confronto com sua Agilidade versus Inteligência do alvo. Se o seu resultado for mais alto do que o do alvo, ele não consegue perceber de onde veio o ataque, tornando impossível para o alvo lhe atacar (ou mesmo ter uma ideia aproximada da sua posição, a menos que ela seja óbvia) enquanto você permanecer escondido.",
-                "",
-                "",
-                "20",
-                "Camuflagem",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "20", "Camuflagem",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Passo Leve",
-                reacao,
-                //todasRacas,                         ladinos_patrulheiros,
-                5,
+        habilidades.add(getHabilidade("Passo Leve", reacao, 5,
                 "Sempre que você fizer um teste para mover-se em silencio, se esconder ou camuflar ou bater carteiras você pode rolar novamente 1 dos dados. Você pode escolher com qual dos resultados vai ficar. Esta Habilidade só pode ser usada uma vez por turno.",
-                "",
-                "",
-                "10",
-                "Furtivo",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "10", "Furtivo",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Estabilidade",
-                suporte,
-                //anoes_mahoks,                        guerreiros_paladinos,
-                1,
+        habilidades.add(getHabilidade("Estabilidade", suporte, 1,
                 " Você gosta de ter os dois pés solidamente plantados no chão – e faz isso muito bem! Você sempre rola +1d6 em todos os seus testes de evitar quedas e manter o equilíbrio.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-// Guerreiros e Paladinos
-        habilidades.add(getHabilidade("Defletor",
-                suporte,
-                //todasRacas,                        guerreiros_paladinos,
-                1,
+        habilidades.add(getHabilidade("Defletor", suporte, 1,
                 "Você está acostumado a se defender de projéteis. Enquanto estiver empunhando uma arma corporal de duas mãos, duas armas corporais ou um escudo, você recebe +2 no seu bônus de Bloqueio contra ataques à distância. Esse bônus de Defesa é considerado um bônus de Bloqueio.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Nocautear",
-                acao,
-                //todasRacas,                        guerreiros_paladinos,
-                1,
+        habilidades.add(getHabilidade("Nocautear", acao, 1,
                 "Faça um ataque corporal que cause dano por Contusão. Se acertar, além de sofrer o dano normal do ataque, o alvo fica Paralisado (veja Condições na página 169) por 1 turno.",
-                "",
-                "",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                //, true
-                )
-        );
+                "", "", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Parede de Escudos",
-                suporte,
-                // todasRacas,                        guerreiros_paladinos,
-                1,
+        habilidades.add(getHabilidade("Parede de Escudos", suporte, 1,
                 "Você está acostumado a lutar em grupo e usar seu escudo para proteger seus aliados. Enquanto você estiver usando um escudo, todos os aliados adjacentes a você recebem um bônus de +1 na Defesa. Este é um bônus de Bloqueio.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Guerreiro de Aço 2",
-                suporte,
-                // todasRacas,                        guerreiros_paladinos_runicos,
-                5,
+        habilidades.add(getHabilidade("Guerreiro de Aço 2", suporte, 5,
                 "Você está extremamente acostumado a usar armaduras pesadas e se sente confortável quando verga uma. Você considera a FN de Qualquer armadura com a Característica Pesada como tendo FN-1 para todos os propósitos. Essa redução se acumula com a redução fornecida por Guerreiro de Aço 1.",
-                "",
-                "",
-                "",
-                "Guerreiro de Aço 1",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Guerreiro de Aço 1",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Furtivo",
-                suporte,
-                //todasRacas,                         bardos_ladinos_patrulheiros,
-                1,
+        habilidades.add(getHabilidade("Furtivo", suporte, 1,
                 "Você é particularmente discreto quando quer. Você pode rolar +1d6 quando fizer testes para se mover em silêncio, se esconder, camuflar, ou usar disfarces.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Malabarista",
-                suporte,
-                //todasRacas,                        bardos_ladinos,
-                1,
+        habilidades.add(getHabilidade("Malabarista", suporte, 1,
                 "Você tem uma ótima coordenação para jogar e pegar objetos no ar. Além de poder realizar malabarismos – mesmo usando objetos perigosos como adagas ou tochas – como entretenimento, você recebe +2 em todas as suas jogadas para arremessar objetos e +1 na Defesa contra ataques à distância. Esse bônus de Defesa conta como Esquiva.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Trapaceiro Impecável",
-                suporte,
-                //todasRacas,                        bardos_ladinos,
-                5,
+        habilidades.add(getHabilidade("Trapaceiro Impecável", suporte, 5,
                 "Você está acostumado a enganar e mentir, e seu raciocínio se tornou tão condicionado a extrapolar situações rapidamente que até ler (ou mesmo dominar) sua mente é mais difícil! Sua Inteligência é considerada o dobro em Confrontos para tentar esconder ou dissimular a verdade e para calcular sua Determinação contra efeitos mentais – exceto os de medo.",
-                "",
-                "",
-                "",
-                "Eloquente",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "Eloquente",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Eloquente",
-                suporte,
-                //todasRacas,                        bardos_espadachins_ladinos,
-                1,
+        habilidades.add(getHabilidade("Eloquente", suporte, 1,
                 "Você tem um talento de convencer ou comover outras pessoas apenas falando do jeito certo. Você recebe +1d6 em todos os seus testes para persuadir, mentir, perceber mentiras, intimidar ou em qualquer outra interação social.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Evasão",
-                reacao,
-                //todasRacas,                        bardos_espadachins_ladinos_patrulheiro,
-                1,
+        habilidades.add(getHabilidade("Evasão", reacao, 1,
                 "Se o seu inimigo fizer um ataque corporal e acertar, você pode declarar evasão, e obrigar o inimigo a rolar novamente o teste de ataque. Você pode escolher com qual dos resultados o oponente vai ficar. Esta Habilidade só pode ser usada uma vez por rodada.",
-                "",
-                "",
-                "20",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "20", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Truque Sujo",
-                acao,
-                //todasRacas,                        bardos_espadachins_ladinos_patrulheiro,
-                1,
+        habilidades.add(getHabilidade("Truque Sujo", acao, 1,
                 "Quando estiver em distância corporal do oponente e ele estiver te vendo, faça um Confronto de Inteligência contra o alvo. Se você tiver um resultado igual ou maior do que o do oponente nesse teste, você realiza um truque sujo (joga areia nos olhos do oponente, joga um pano em seu rosto, enrola uma corda em suas pernas, etc.) fazendo com que o alvo fique confuso ou desequilibrado, não podendo realizar nenhuma ação no próximo turno, e sendo considerado Desprevenido por 1 turno.",
-                "",
-                "",
-                "10",
-                "Evasão",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "Evasão",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Língua Afiada",
-                acao,
-                //todasRacas,                        bardos_espadachins,
-                1,
+        habilidades.add(getHabilidade("Língua Afiada", acao, 1,
                 "Você possui uma língua ferina e um talento especial para insultar seus adversários. Escolha um inimigo do tipo Humanoide ou Esfinge. Você faz uma série de comentários jocosos ou degradantes sobre ele. Faça um confronto de Vontade contra o alvo. Se você tiver um resultado igual ou maior do que o alvo e se ele for capaz de entendê-lo, ele ataca você em detrimento de qualquer outro alvo, e é considerado Desprevenido para todos os seus aliados – mas não para você. Este é um efeito mental.",
-                "",
-                "",
-                "10",
-                "Eloquente",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "Eloquente",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Coração da Batalha",
-                reacao,
-                //todasRacas,                        bardos_espadachins_paladinos,
-                5,
+        habilidades.add(getHabilidade("Coração da Batalha", reacao, 5,
                 "Quando sofrer algum dano proveniente de um ataque, Magia, ou Música você recupera 5 Pontos de Mana. Você só pode usar esta Habilidade uma vez por turno.",
-                "",
-                "",
-                "",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Grito de Guerra 1",
-                acao,
-                // todasRacas,                        bardos_guerreiros_paladinos,
-                1,
+        habilidades.add(getHabilidade("Grito de Guerra 1", acao, 1,
                 "Você pode dar um grito fervoroso que motiva todos seus aliados. Eles recebem (assim como você) +1 em todas as rolagens até o final da batalha. Além disso, remova todos os efeitos de Medo que estiverem afetando os seus aliados. Você não pode usar esta Habilidade se estiver sob qualquer efeito de Medo. Este é um efeito mental.",
-                "",
-                "",
-                "10",
-                "",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "10", "",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
 
-        habilidades.add(getHabilidade("Grito de Guerra 2",
-                acao,
-                //todasRacas,                        bardos_guerreiros_paladinos,
-                5,
+        habilidades.add(getHabilidade("Grito de Guerra 2", acao, 5,
                 "Você pode dar um grito fervoroso que motiva todos seus aliados. Eles recebem (assim como você) +2 em todas as rolagens até o final da batalha. Além disso, remova todos os efeitos de Medo que estiverem afetando os seus aliados. Você não pode usar esta Habilidade se estiver sob qualquer efeito de Medo.",
-                "",
-                "",
-                "15",
-                " Grito de Guerra 1",
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-                )
-        );
+                "", "", "15", " Grito de Guerra 1",
+                0, 0, 0, 0,
+                0, 0, 0, 0));
+
+
+
 
         habilidades.add(getHabilidade("Dissipar Magia",
                 acao,
@@ -4225,7 +1887,7 @@ public class HabilidadeService {
                 0,
                 0,
                 0
-                //, true
+
                 )
         );
 
@@ -4726,7 +2388,7 @@ public class HabilidadeService {
                 0,
                 0,
                 0
-                //, true
+
                 )
         );
 
@@ -5328,7 +2990,7 @@ public class HabilidadeService {
                 0,
                 0,
                 0
-                //, true
+
                 )
         );
 

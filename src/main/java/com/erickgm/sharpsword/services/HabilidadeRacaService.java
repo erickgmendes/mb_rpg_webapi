@@ -125,6 +125,7 @@ public class HabilidadeRacaService {
         Habilidade voadorEximio = habilidadeRepository.findByNome("Voador Exímio");
         Habilidade vontadeDeFerro = habilidadeRepository.findByNome("Vontade de Ferro");
         Habilidade vontadeHeroica = habilidadeRepository.findByNome("Vontade Heróica");
+        Habilidade estabilidade = habilidadeRepository.findByNome("Estabilidade");
 
         // Todas as raças
         List<Raca> todasRacas = new ArrayList<>();
@@ -192,6 +193,7 @@ public class HabilidadeRacaService {
         habilidadeRacaRepository.save(new HabilidadeRaca(coracaoDaMontanha, anao, true));
         habilidadeRacaRepository.save(new HabilidadeRaca(coracaodaMontanha2, anao, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(duroComoPedra, anao, false));
+        habilidadeRacaRepository.save(new HabilidadeRaca(estabilidade, mahok, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(forjadoAFogo, anao, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(nascidoNasMontanhas, anao, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(racaSubterranea, anao, true));
@@ -270,6 +272,7 @@ public class HabilidadeRacaService {
         habilidadeRacaRepository.save(new HabilidadeRaca(abracoDePedra, mahok, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(bracosExtras1, mahok, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(bracosExtras2, mahok, false));
+        habilidadeRacaRepository.save(new HabilidadeRaca(estabilidade, mahok, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(gregario, mahok, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(nascidoNasMontanhas, mahok, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(peleDePedra, mahok, true));
