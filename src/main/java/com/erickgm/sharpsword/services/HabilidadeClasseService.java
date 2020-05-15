@@ -715,4 +715,8 @@ public class HabilidadeClasseService {
 
         return "Habilidades de Classe carregadas";
     }
+
+    public HabilidadeClasse obterHabilidadeClassePeloId(long id) {
+        return habilidadeClasseRepository.findById(id);
+    }
 }

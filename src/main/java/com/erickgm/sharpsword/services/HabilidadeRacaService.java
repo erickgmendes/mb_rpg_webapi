@@ -20,6 +20,10 @@ public class HabilidadeRacaService {
     @Autowired
     private RacaRepository racaRepository;
 
+    public HabilidadeRaca obterHabilidadeRacaPeloId(long id) {
+        return habilidadeRacaRepository.findById(id);
+    }
+
     public String cargaInicial() {
         if (habilidadeRacaRepository.count() == 0)
             return cargaHabilidadesRaca();
@@ -154,6 +158,19 @@ public class HabilidadeRacaService {
             habilidadeRacaRepository.save(new HabilidadeRaca(vontadeHeroica, raca, false));
         }
 
+        // Automáticas
+        habilidadeRacaRepository.save(new HabilidadeRaca(coracaoDaMontanha, anao, true));
+        habilidadeRacaRepository.save(new HabilidadeRaca(vigorNordico, aesir, true));
+        habilidadeRacaRepository.save(new HabilidadeRaca(bencaodeLathellanis, elfo, true));
+        habilidadeRacaRepository.save(new HabilidadeRaca(constituicaoFeerica, faen, true));
+        habilidadeRacaRepository.save(new HabilidadeRaca(patasComCascos, fauno, true));
+        habilidadeRacaRepository.save(new HabilidadeRaca(habitantedoDeserto, fira, true));
+        habilidadeRacaRepository.save(new HabilidadeRaca(adaptabilidade, humano, true));
+        habilidadeRacaRepository.save(new HabilidadeRaca(corpoPesado, juban, true));
+        habilidadeRacaRepository.save(new HabilidadeRaca(asasPesadas, levent, true));
+        habilidadeRacaRepository.save(new HabilidadeRaca(peleDePedra, mahok, true));
+        habilidadeRacaRepository.save(new HabilidadeRaca(pernasVulpinas, tailox, true));
+
         // Todas as racas menos Aesir
         habilidadeRacaRepository.save(new HabilidadeRaca(furiaDeBatalha, anao, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(furiaDeBatalha, elfo, false));
@@ -186,20 +203,17 @@ public class HabilidadeRacaService {
         habilidadeRacaRepository.save(new HabilidadeRaca(potencia, aesir, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(robustez, aesir, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(ulfhednar, aesir, false));
-        habilidadeRacaRepository.save(new HabilidadeRaca(vigorNordico, aesir, true));
 
         // Anões
         habilidadeRacaRepository.save(new HabilidadeRaca(cabecaDura, anao, false));
-        habilidadeRacaRepository.save(new HabilidadeRaca(coracaoDaMontanha, anao, true));
         habilidadeRacaRepository.save(new HabilidadeRaca(coracaodaMontanha2, anao, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(duroComoPedra, anao, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(estabilidade, mahok, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(forjadoAFogo, anao, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(nascidoNasMontanhas, anao, false));
-        habilidadeRacaRepository.save(new HabilidadeRaca(racaSubterranea, anao, true));
+        habilidadeRacaRepository.save(new HabilidadeRaca(racaSubterranea, anao, false));
 
         // Elfos
-        habilidadeRacaRepository.save(new HabilidadeRaca(bencaodeLathellanis, elfo, true));
         habilidadeRacaRepository.save(new HabilidadeRaca(herancaFeerica, elfo, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(domDaMagia, elfo, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(invisibilidadeNatural, elfo, false));
@@ -209,7 +223,6 @@ public class HabilidadeRacaService {
         habilidadeRacaRepository.save(new HabilidadeRaca(intelectoElfico, elfo, false));
 
         // Faens
-        habilidadeRacaRepository.save(new HabilidadeRaca(constituicaoFeerica, faen, true));
         habilidadeRacaRepository.save(new HabilidadeRaca(domDaMagia, faen, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(herancaFeerica, faen, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(invisibilidadeNatural, faen, false));
@@ -222,7 +235,6 @@ public class HabilidadeRacaService {
         habilidadeRacaRepository.save(new HabilidadeRaca(cascosAgeis, fauno, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(flautaDePa, fauno, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(marrada, fauno, false));
-        habilidadeRacaRepository.save(new HabilidadeRaca(patasComCascos, fauno, true));
         habilidadeRacaRepository.save(new HabilidadeRaca(patasFortes, fauno, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(pinturaCorporal, fauno, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(racaFlorestal, fauno, false));
@@ -233,13 +245,11 @@ public class HabilidadeRacaService {
         habilidadeRacaRepository.save(new HabilidadeRaca(chamasInternas1, fira, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(chamasInternas2, fira, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(fulgurante, fira, false));
-        habilidadeRacaRepository.save(new HabilidadeRaca(habitantedoDeserto, fira, true));
         habilidadeRacaRepository.save(new HabilidadeRaca(menteIluminada, fira, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(soproDeFogo, fira, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(vigorDoDeserto, fira, false));
 
         //Humanos
-        habilidadeRacaRepository.save(new HabilidadeRaca(adaptabilidade, humano, true));
         habilidadeRacaRepository.save(new HabilidadeRaca(assuntosDiversos, humano, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(audacia, humano, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(barganha, humano, false));
@@ -249,7 +259,6 @@ public class HabilidadeRacaService {
         habilidadeRacaRepository.save(new HabilidadeRaca(sorte, humano, false));
 
         // Jubans
-        habilidadeRacaRepository.save(new HabilidadeRaca(corpoPesado, juban, true));
         habilidadeRacaRepository.save(new HabilidadeRaca(fortaleza, juban, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(garras, juban, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(imparavel, juban, false));
@@ -260,7 +269,6 @@ public class HabilidadeRacaService {
 
         // Levents
         habilidadeRacaRepository.save(new HabilidadeRaca(asasFortes, levent, false));
-        habilidadeRacaRepository.save(new HabilidadeRaca(asasPesadas, levent, true));
         habilidadeRacaRepository.save(new HabilidadeRaca(comunhaoComEspiritos, levent, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(contatoComEspiritos, levent, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(dancarinoDoAr, levent, false));
@@ -275,7 +283,6 @@ public class HabilidadeRacaService {
         habilidadeRacaRepository.save(new HabilidadeRaca(estabilidade, mahok, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(gregario, mahok, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(nascidoNasMontanhas, mahok, false));
-        habilidadeRacaRepository.save(new HabilidadeRaca(peleDePedra, mahok, true));
         habilidadeRacaRepository.save(new HabilidadeRaca(peleDePedra2, mahok, false));
 
         // Tailox
@@ -284,7 +291,6 @@ public class HabilidadeRacaService {
         habilidadeRacaRepository.save(new HabilidadeRaca(contosDaEstrada, tailox, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(faro, tailox, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(formaDaRaposa, tailox, false));
-        habilidadeRacaRepository.save(new HabilidadeRaca(pernasVulpinas, tailox, true));
         habilidadeRacaRepository.save(new HabilidadeRaca(racaFlorestal, tailox, false));
         habilidadeRacaRepository.save(new HabilidadeRaca(visaoAuditiva, tailox, false));
 
